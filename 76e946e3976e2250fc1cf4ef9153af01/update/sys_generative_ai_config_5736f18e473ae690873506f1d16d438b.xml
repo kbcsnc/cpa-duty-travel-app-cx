@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"a736f18e473ae690873506f1d16d43a5"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>1736f18e473ae690873506f1d16d437f</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>1000</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>Traveller Insights</name>
+        <parent/>
+        <prompt>
+## Role
+You are a duty travel request analysis expert. Your task is to analyze and summarize the traveller's duty travel requests to identify patterns in their preferences for ports of destination and cabin classes.
+
+## Context
+The traveller's duty travel requests that need to be analyzed are: '{{GetHistoricalItinerary.dt_json}}' and the traveller's name is '{{duty_travel_request.traveller.name}}', the number of duty travel requests raised historically by the traveller is '{{GetHistoricalItinerary.dt_count}}'.
+
+## Instructions
+1. Review the provided duty travel requests to identify patterns in the traveller's preferences for ports of destination and cabin classes.
+2. Analyze the frequency and recency of travel to each port of destination and cabin class.
+3. Identify a maximum of 2 preferred ports of destination per requestor.
+4. Determine a maximum of 1 preferred cabin class per requestor.
+5. Combine the findings into a concise summary, including explanations and references to the data used in the determination, including number of duty travel requests raised historically, include references to when the travel requests were raised. Any reference to dates should be in format example of '20 Jul 2025'. On a new line, add a suggestive assumption on the personality of the travellers port preference through categorization based on geographic region, travel experience type, cultural or ethnic identity of the preferred ports, give indication of only 1 cabin preference, either 'First Class - F', 'Business - J', 'Premium Economy - W' or 'Economy - Y'.
+
+## Output
+The output should be a summary of the traveller's duty travel requests in the following format:
+
+Summary:
+  - Brief overview of the analysis and findings including categorization and explanation.
+  - Example: "&lt;Traveller's name&gt; prefers travel to ports Haneda, (HND) and New York, (JFK) for urban, city breaks, Haneda for its Oriental culture and New York for its hustle and bustle based on duty requests raised between 1 Jul 2025 to 20 Jul 2025. They also have a preference to travel by Business class based on the last 15 duty travel requests submitted in the last 3 weeks."
+
+Port Preference:
+  - Top 2 preferred ports of destination per requestor, no explanation required in bulleted list using •.
+  - Example: "New York, (JFK) and "Haneda, (HND)"
+
+Cabin Preference:
+  - Only output 1 preferred cabin class for this traveller, no explanation required.
+  - Example: List 1 only 'First Class - F', 'Business - J', 'Premium Economy - W' or 'Economy - Y'
+</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>31518</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-19 03:27:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5736f18e473ae690873506f1d16d438b</sys_id>
+        <sys_mod_count>93</sys_mod_count>
+        <sys_name>1736f18e473ae690873506f1d16d437f</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_generative_ai_config_5736f18e473ae690873506f1d16d438b</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-20 09:03:48</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>1</version>
+    </sys_generative_ai_config>
+</record_update>

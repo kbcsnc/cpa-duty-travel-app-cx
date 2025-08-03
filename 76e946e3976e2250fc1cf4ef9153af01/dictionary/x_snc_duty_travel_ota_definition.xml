@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7e14bab79762e250fc1cf4ef9153af7b" label="Outbound Travel Alert Definition" max_length="40" name="x_snc_duty_travel_ota_definition" type="collection">
+        <element display="true" label="Alert" max_length="40" name="alert" type="string"/>
+        <element label="Alert Description" max_length="4000" name="alert_description" type="string"/>
+        <element label="Alert Color" max_length="40" name="alert_color" type="string"/>
+    </element>
+</database>

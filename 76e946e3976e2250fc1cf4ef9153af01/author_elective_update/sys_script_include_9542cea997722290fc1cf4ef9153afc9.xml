@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_duty_travel.HKOWeatherHandler</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Implements extension point x_snc_duty_travel.HKOWeatherHandler</description>
+        <mobile_callable>false</mobile_callable>
+        <name>HKOWeatherHandler</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var HKOWeatherHandler = Class.create();
+HKOWeatherHandler.prototype = {
+    initialize: function() {},
+
+	handles: function (tableName) {
+		//return true;
+		return tableName === 'x_snc_duty_travel_duty_travel_req';
+	},
+
+    getHKOWeather: function(lang) {
+		let hkoHTML = "";
+		
+		try {
+			var inputs = {};
+			inputs['lang'] = lang; // String 
+
+			// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+			// sn_fd.FlowAPI.getRunner().action('x_snc_duty_travel.get_weather_warning_hko').inBackground().withInputs(inputs).run();
+					
+			// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+			var result = sn_fd.FlowAPI.getRunner().action('x_snc_duty_travel.get_weather_warning_hko').inForeground().withInputs(inputs).run();
+			var outputs = result.getOutputs();
+
+			// Get Outputs:
+			// Note: outputs can only be retrieved when executing synchronously.
+			var response = outputs['response']; // String
+			var status = outputs['status']; // String
+			var generalsituation = outputs['generalsituation']; // String
+
+			hkoHTML = generalsituation;
+			
+		} catch (ex) {
+			var message = ex.getMessage();
+			gs.error(message);
+		}
+
+		return {
+			html: hkoHTML,
+			updatedOn: new GlideDateTime()
+		};
+    },
+
+    type: 'HKOWeatherHandler'
+};
+
+
+
+
+/**
+* A record summary and relevant metadata about it
+* @typedef {Object} SummaryReturnObject
+* @property {String} html - The HTML content of the summary
+* @property {String} updatedOn - When the summary was generated
+*/
+
+var DutyTravelSummaryHandler = Class.create();
+DutyTravelSummaryHandler.prototype = {
+	initialize: function () { },
+
+	/**
+	 * Called by the "Get AI Summary for Record" data resource to check whether 
+	 * this script include can provide a summary for the specified table.
+	 * 
+	 * @param {String} tableName The table name to check
+	 * @returns {Boolean} Whether this script include handles it or not
+	 */
+	handles: function (tableName) {
+		return tableName === 'x_snc_duty_travel_duty_travel_req';
+	},
+
+	/**
+	 * Called by the "Get AI Summary for Record" data resource to actually get
+	 * the AI summary. Within this method, call out to a custom Now Assist skill
+	 * to obtain a summary, and update 
+	 * 
+	 * @param {String} tableName the table of the record to summarize
+	 * @param {String} sysId the sys ID of the record to summarize
+	 * @returns {SummaryReturnObject} The record summary
+	 */
+	getSummaryFor: function (tableName, sysId) {
+
+		let summaryResultHTML = "";
+
+		var request = {
+			executionRequests: [{
+				payload: {
+					duty_travel_request: {
+						tableName: tableName,
+						sysId: sysId,
+						queryString: ''
+					}
+				},
+				capabilityId: 'fa699dec97f22a50fc1cf4ef9153af71',
+				meta: {
+					skillConfigId: 'cb69156097362a50fc1cf4ef9153af81'
+				}
+			}],
+			mode: 'sync'
+		};
+
+		try {
+			var output = sn_one_extend.OneExtendUtil.execute(request)['capabilities'][request.executionRequests[0].capabilityId]['response'];
+			summaryResultHTML = JSON.parse(output).model_output;
+		} catch (e) {
+			gs.error(e);
+			summaryResultHTML = 'Something went wrong while executing the skill.';
+		}
+
+		return {
+			html: summaryResultHTML,
+			updatedOn: new GlideDateTime().getDisplayValue()
+		};
+	},
+
+	type: 'DutyTravelSummaryHandler'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-17 15:02:42</sys_created_on>
+        <sys_id>9542cea997722290fc1cf4ef9153afc9</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>HKOWeatherHandler</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_script_include_9542cea997722290fc1cf4ef9153afc9</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-17 16:00:20</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>sys_script_include_9542cea997722290fc1cf4ef9153afc9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_snc_duty_travel.HKOWeatherHandler&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Implements extension point x_snc_duty_travel.HKOWeatherHandler&lt;/description&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;HKOWeatherHandler&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var HKOWeatherHandler = Class.create();
+HKOWeatherHandler.prototype = {
+    initialize: function() {},
+
+	handles: function (tableName) {
+		//return true;
+		return tableName === 'x_snc_duty_travel_duty_travel_req';
+	},
+
+    getHKOWeather: function(lang) {
+		let hkoHTML = "";
+		
+		try {
+			var inputs = {};
+			inputs['lang'] = lang; // String 
+
+			// Start Asynchronously: Uncomment to run in background. Code snippet will not have access to outputs.
+			// sn_fd.FlowAPI.getRunner().action('x_snc_duty_travel.get_weather_warning_hko').inBackground().withInputs(inputs).run();
+					
+			// Execute Synchronously: Run in foreground. Code snippet has access to outputs.
+			var result = sn_fd.FlowAPI.getRunner().action('x_snc_duty_travel.get_weather_warning_hko').inForeground().withInputs(inputs).run();
+			var outputs = result.getOutputs();
+
+			// Get Outputs:
+			// Note: outputs can only be retrieved when executing synchronously.
+			var response = outputs['response']; // String
+			var status = outputs['status']; // String
+			var generalsituation = outputs['generalsituation']; // String
+
+			hkoHTML = generalsituation;
+			
+		} catch (ex) {
+			var message = ex.getMessage();
+			gs.error(message);
+		}
+
+		return {
+			html: hkoHTML,
+			updatedOn: new GlideDateTime()
+		};
+    },
+
+    type: 'HKOWeatherHandler'
+};
+
+
+
+
+/**
+* A record summary and relevant metadata about it
+* @typedef {Object} SummaryReturnObject
+* @property {String} html - The HTML content of the summary
+* @property {String} updatedOn - When the summary was generated
+*/
+
+var DutyTravelSummaryHandler = Class.create();
+DutyTravelSummaryHandler.prototype = {
+	initialize: function () { },
+
+	/**
+	 * Called by the "Get AI Summary for Record" data resource to check whether 
+	 * this script include can provide a summary for the specified table.
+	 * 
+	 * @param {String} tableName The table name to check
+	 * @returns {Boolean} Whether this script include handles it or not
+	 */
+	handles: function (tableName) {
+		return tableName === 'x_snc_duty_travel_duty_travel_req';
+	},
+
+	/**
+	 * Called by the "Get AI Summary for Record" data resource to actually get
+	 * the AI summary. Within this method, call out to a custom Now Assist skill
+	 * to obtain a summary, and update 
+	 * 
+	 * @param {String} tableName the table of the record to summarize
+	 * @param {String} sysId the sys ID of the record to summarize
+	 * @returns {SummaryReturnObject} The record summary
+	 */
+	getSummaryFor: function (tableName, sysId) {
+
+		let summaryResultHTML = "";
+
+		var request = {
+			executionRequests: [{
+				payload: {
+					duty_travel_request: {
+						tableName: tableName,
+						sysId: sysId,
+						queryString: ''
+					}
+				},
+				capabilityId: 'fa699dec97f22a50fc1cf4ef9153af71',
+				meta: {
+					skillConfigId: 'cb69156097362a50fc1cf4ef9153af81'
+				}
+			}],
+			mode: 'sync'
+		};
+
+		try {
+			var output = sn_one_extend.OneExtendUtil.execute(request)['capabilities'][request.executionRequests[0].capabilityId]['response'];
+			summaryResultHTML = JSON.parse(output).model_output;
+		} catch (e) {
+			gs.error(e);
+			summaryResultHTML = 'Something went wrong while executing the skill.';
+		}
+
+		return {
+			html: summaryResultHTML,
+			updatedOn: new GlideDateTime().getDisplayValue()
+		};
+	},
+
+	type: 'DutyTravelSummaryHandler'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-17 15:02:42&lt;/sys_created_on&gt;&lt;sys_id&gt;9542cea997722290fc1cf4ef9153afc9&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;HKOWeatherHandler&lt;/sys_name&gt;&lt;sys_package display_value="Duty Travel" source="x_snc_duty_travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_9542cea997722290fc1cf4ef9153afc9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-17 16:00:20&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>380976048</payload_hash>
+        <record_name>HKOWeatherHandler</record_name>
+        <reverted_from/>
+        <source>d8f0a2a497be2a50fc1cf4ef9153afcc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-17 16:00:20</sys_created_on>
+        <sys_id>917f4ae147bae290873506f1d16d434f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198191d7e730000001</sys_recorded_at>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-17 16:00:20</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>957f4ae1f1bae2900849617bdc755d4e</update_guid>
+        <update_guid_history>957f4ae1f1bae2900849617bdc755d4e:380976048,df8c8221def22290d5c14d5cf2cd8806:-677772014,ef6c4ead86b22290abf3471b7a5a258a:1839597704,72e90a690cb22290b44c196445e39c90:-677772014,b9a3cee5e072229092e43482b8b00093:-77362801,e942cea945722290dbb77186a09a02cb:116564389</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-18 07:04:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>4fe4b3e9043e419e85f059dd3c8a25c4</sys_id>
+        <sys_metadata>9542cea997722290fc1cf4ef9153afc9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HKOWeatherHandler</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sys_script_include_9542cea997722290fc1cf4ef9153afc9</sys_update_name>
+        <sys_update_version display_value="sys_script_include_9542cea997722290fc1cf4ef9153afc9">917f4ae147bae290873506f1d16d434f</sys_update_version>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-18 07:04:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

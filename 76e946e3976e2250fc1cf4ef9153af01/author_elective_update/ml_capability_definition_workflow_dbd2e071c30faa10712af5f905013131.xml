@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ml_capability_definition_workflow">
+    <ml_capability_definition_workflow action="DELETE">
+        <active>true</active>
+        <capability display_value="Workflow">d12a03f173212010c0bbb63854f6a7b9</capability>
+        <current_solution_version/>
+        <dataset_language>en</dataset_language>
+        <description>DocIntel OCR workflow</description>
+        <fields/>
+        <filter/>
+        <pretrained>false</pretrained>
+        <request_source>api</request_source>
+        <solution_label>docintel_ocr_workflow_97d2e071c30faa10712af5f905013130</solution_label>
+        <solution_name>ml_x_icpa_x_snc_duty_travel_global_docintel_ocr_workflow_97d2e071c30faa10712af5f905013130</solution_name>
+        <solution_parameters/>
+        <solution_properties>{"concurrency_policy":"allow","description":"DocIntel OCR workflow","label":"docintel_ocr_workflow_97d2e071c30faa10712af5f905013130","predictPipeline":{},"schedulingInfo":{"useCase":"docintel_ocr_workflow","overrideCapability":{"name":"docintel_trainer","version":"27.1"}},"tags":"docintel,ocr,workflow,prediction","trainingPipeline":{"pipelineName":"docintel_preprocessing_v27_1","pipelineInput":{"config":{"detection_model":"fcos-text_checkbox-1.1.8","recognition_model":"shi-1.4.0","document_orientation_model":"document-orientation-1.3.0","document_deskewing_model":"document-deskewing-2.0.0","layout_component_version":"27.1"},"datasets":{"ocr_input":{"tableName":"sys_di_ocr_input","fieldNames":["image","data"],"encodedQuery":"state\u003dassigned^task_definition\u003d97d2e071c30faa10712af5f905013130","name":"ocr_input","fetchDisplayValue":false}}}},"workflowConfiguration":{"trainingFrequency":"run_once"},"workflowLanguageVersion":"1.0.0"}</solution_properties>
+        <stopwords>a6282a25533333008c5bddeeff7b12c3</stopwords>
+        <sys_class_name>ml_capability_definition_workflow</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:00:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dbd2e071c30faa10712af5f905013131</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DocIntel OCR workflow</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>ml_capability_definition_workflow_dbd2e071c30faa10712af5f905013131</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:00:03</sys_updated_on>
+        <table/>
+        <tags>docintel,ocr,workflow,prediction</tags>
+        <training_frequency>run_once</training_frequency>
+        <triggered_source>API</triggered_source>
+        <word_vector_corpus/>
+    </ml_capability_definition_workflow>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>b48a4d13fbf422901feef633beefdc1e</instance_id>
+        <instance_name>cpagenaipov</instance_name>
+        <name>ml_capability_definition_workflow_dbd2e071c30faa10712af5f905013131</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ml_capability_definition_workflow"><ml_capability_definition_workflow action="INSERT_OR_UPDATE"><active>true</active><capability display_value="Workflow">d12a03f173212010c0bbb63854f6a7b9</capability><current_solution_version/><dataset_language>en</dataset_language><description>DocIntel OCR workflow</description><fields/><filter/><pretrained>false</pretrained><request_source>api</request_source><solution_label>docintel_ocr_workflow_97d2e071c30faa10712af5f905013130</solution_label><solution_name>ml_x_icpa_x_snc_duty_travel_global_docintel_ocr_workflow_97d2e071c30faa10712af5f905013130</solution_name><solution_parameters/><solution_properties>{"concurrency_policy":"allow","description":"DocIntel OCR workflow","label":"docintel_ocr_workflow_97d2e071c30faa10712af5f905013130","predictPipeline":{},"schedulingInfo":{"useCase":"docintel_ocr_workflow","overrideCapability":{"name":"docintel_trainer","version":"27.1"}},"tags":"docintel,ocr,workflow,prediction","trainingPipeline":{"pipelineName":"docintel_preprocessing_v27_1","pipelineInput":{"config":{"detection_model":"fcos-text_checkbox-1.1.8","recognition_model":"shi-1.4.0","document_orientation_model":"document-orientation-1.3.0","document_deskewing_model":"document-deskewing-2.0.0","layout_component_version":"27.1"},"datasets":{"ocr_input":{"tableName":"sys_di_ocr_input","fieldNames":["image","data"],"encodedQuery":"state\u003dassigned^task_definition\u003d97d2e071c30faa10712af5f905013130","name":"ocr_input","fetchDisplayValue":false}}}},"workflowConfiguration":{"trainingFrequency":"run_once"},"workflowLanguageVersion":"1.0.0"}</solution_properties><stopwords>a6282a25533333008c5bddeeff7b12c3</stopwords><sys_class_name>ml_capability_definition_workflow</sys_class_name><sys_created_by>kinbon</sys_created_by><sys_created_on>2025-07-30 13:00:03</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dbd2e071c30faa10712af5f905013131</sys_id><sys_mod_count>0</sys_mod_count><sys_name>DocIntel OCR workflow</sys_name><sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package><sys_policy/><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_update_name>ml_capability_definition_workflow_dbd2e071c30faa10712af5f905013131</sys_update_name><sys_updated_by>kinbon</sys_updated_by><sys_updated_on>2025-07-30 13:00:03</sys_updated_on><table/><tags>docintel,ocr,workflow,prediction</tags><training_frequency>run_once</training_frequency><triggered_source>API</triggered_source><word_vector_corpus/></ml_capability_definition_workflow></record_update>]]></payload>
+        <payload_hash>101466137</payload_hash>
+        <record_name>DocIntel OCR workflow</record_name>
+        <reverted_from/>
+        <source>54706875c3cbaa10712af5f905013153</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:00:03</sys_created_on>
+        <sys_id>1fd2a471c30faa10712af5f905013175</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1985b6b1efa0000001</sys_recorded_at>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:00:03</sys_updated_on>
+        <type>Workflow Definition</type>
+        <update_guid>9fd2a4718e0faa10cd8ce53941f74974</update_guid>
+        <update_guid_history>9fd2a4718e0faa10cd8ce53941f74974:101466137</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="DocIntel OCR workflow">001328b1c30faa10712af5f90501317c</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:00:55</sys_created_on>
+        <sys_db_object display_value="" name="ml_capability_definition_workflow">ml_capability_definition_workflow</sys_db_object>
+        <sys_id>06e1bcb18d8947f09a918b76a9c8b444</sys_id>
+        <sys_metadata>dbd2e071c30faa10712af5f905013131</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DocIntel OCR workflow</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>ml_capability_definition_workflow_dbd2e071c30faa10712af5f905013131</sys_update_name>
+        <sys_update_version display_value="ml_capability_definition_workflow_dbd2e071c30faa10712af5f905013131">1fd2a471c30faa10712af5f905013175</sys_update_version>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:00:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

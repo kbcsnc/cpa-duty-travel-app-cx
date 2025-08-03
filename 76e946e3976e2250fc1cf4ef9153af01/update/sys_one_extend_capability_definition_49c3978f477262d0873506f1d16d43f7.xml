@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_capability_definition">
+    <sys_one_extend_capability_definition action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <advanced>false</advanced>
+        <api>6b9fcf83477262d0873506f1d16d4337</api>
+        <api_type>sys_hub_action_type_definition</api_type>
+        <capability display_value="6b9fcf83477262d0873506f1d16d4337_Get Por">c1c3db8b477262d0873506f1d16d4377</capability>
+        <category display_value="Other">04c489f3532121106b38ddeeff7b1215</category>
+        <connection/>
+        <description/>
+        <filter_properties>{}</filter_properties>
+        <metadata>{}</metadata>
+        <name>6b9fcf83477262d0873506f1d16d4337_Get Ports (NASK)</name>
+        <order>0</order>
+        <postprocessor><![CDATA[(function(outputs) {     	/* write code here to transform definition output to capability output.*/     	     	outputs = JSON.parse(outputs);     	     	return outputs;     })(outputs);]]></postprocessor>
+        <preprocessor><![CDATA[(function(inputs) {     	/* write code here to transform capability input to definition input.*/     	     	inputs = JSON.parse(inputs);     	     	return inputs;     })(inputs);]]></preprocessor>
+        <sys_class_name>sys_one_extend_capability_definition</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-22 12:49:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>49c3978f477262d0873506f1d16d43f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>6b9fcf83477262d0873506f1d16d4337_Get Ports (NASK)</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_one_extend_capability_definition_49c3978f477262d0873506f1d16d43f7</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-22 12:49:39</sys_updated_on>
+        <truncate_strategy display_value="Default Truncation Strategy">2b99e1137fb20210f465c3b76d86650d</truncate_strategy>
+    </sys_one_extend_capability_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=49c3978f477262d0873506f1d16d43f7"/>
+</record_update>

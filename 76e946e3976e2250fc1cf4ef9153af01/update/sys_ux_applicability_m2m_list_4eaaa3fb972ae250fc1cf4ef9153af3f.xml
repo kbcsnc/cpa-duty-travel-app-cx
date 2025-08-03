@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_applicability_m2m_list">
+    <sys_ux_applicability_m2m_list action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability display_value="Audience for app duty-travel">cce03a7f9722e250fc1cf4ef9153affd</applicability>
+        <list display_value="All">f5aa23fb972ae250fc1cf4ef9153afe0</list>
+        <order>0</order>
+        <sys_class_name>sys_ux_applicability_m2m_list</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-12 12:09:24</sys_created_on>
+        <sys_id>4eaaa3fb972ae250fc1cf4ef9153af3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_ux_applicability_m2m_list_4eaaa3fb972ae250fc1cf4ef9153af3f</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-12 12:09:24</sys_updated_on>
+    </sys_ux_applicability_m2m_list>
+</record_update>

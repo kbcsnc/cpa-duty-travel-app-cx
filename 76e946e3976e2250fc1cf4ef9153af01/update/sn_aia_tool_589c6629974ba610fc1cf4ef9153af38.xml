@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>This subflow, named "[AI] Retrieve Traveller Request and Approval Trends", is designed to retrieve and analyze duty travel requests for a specified traveller. It takes a single input, the traveller, as a reference to a user record. The subflow looks up all approved and rejected duty travel requests for the specified traveller and counts the number of requests in each state. It then lists all the approved and rejected countries for the traveller and counts the number of requests for each country. The subflow outputs the count of approved and rejected requests, as well as the approved and rejected countries in JSON format, with each country and its corresponding request count. The purpose of this subflow is to provide insights into the traveller's request and approval trends, which can be useful for analysis and reporting purposes.</description>
+        <input_schema>[]</input_schema>
+        <name>Retrieve Traveller Historical Request and Approval Trends</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[undefined]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 04:23:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>589c6629974ba610fc1cf4ef9153af38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Retrieve Traveller Historical Request and Approval Trends</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_tool_589c6629974ba610fc1cf4ef9153af38</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 04:23:12</sys_updated_on>
+        <target_document>d55a35299783a610fc1cf4ef9153af3b</target_document>
+        <target_document_table>sys_hub_flow</target_document_table>
+        <type>subflow</type>
+    </sn_aia_tool>
+</record_update>

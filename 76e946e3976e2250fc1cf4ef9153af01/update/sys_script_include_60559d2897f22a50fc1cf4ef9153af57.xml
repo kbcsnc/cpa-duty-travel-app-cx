@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_duty_travel.RecordSummaryHandlers</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Implements extension point x_snc_wds_ais.RecordSummaryHandlers</description>
+        <mobile_callable>false</mobile_callable>
+        <name>RecordSummaryHandlers</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[/**
+* A record summary and relevant metadata about it
+* @typedef {Object} SummaryReturnObject
+* @property {String} html - The HTML content of the summary
+* @property {String} updatedOn - When the summary was generated
+*/
+
+var DemoSummaryHandler = Class.create();
+DemoSummaryHandler.prototype = {
+	initialize: function () { },
+
+	/**
+	 * Called by the "Get AI Summary for Record" data resource to check whether 
+	 * this script include can provide a summary for the specified table.
+	 * 
+	 * @param {String} tableName The table name to check
+	 * @returns {Boolean} Whether this script include handles it or not
+	 */
+	handles: function (tableName) {
+		return tableName === 'x_snc_duty_travel_duty_travel_req';
+	},
+
+	/**
+	 * Called by the "Get AI Summary for Record" data resource to actually get
+	 * the AI summary. Within this method, call out to a custom Now Assist skill
+	 * to obtain a summary, and update 
+	 * 
+	 * @param {String} tableName the table of the record to summarize
+	 * @param {String} sysId the sys ID of the record to summarize
+	 * @returns {SummaryReturnObject} The record summary
+	 */
+	getSummaryFor: function (tableName, sysId) {
+
+		let summaryResultHTML = "";
+
+		var request = {
+			executionRequests: [{
+				payload: {
+					duty_travel_request: {
+						tableName: tableName,
+						sysId: sysId,
+						queryString: ''
+					}
+				},
+				capabilityId: 'fa699dec97f22a50fc1cf4ef9153af71',
+				meta: {
+					skillConfigId: 'cb69156097362a50fc1cf4ef9153af81'
+				}
+			}],
+			mode: 'sync'
+		};
+
+		try {
+			var output = sn_one_extend.OneExtendUtil.execute(request)['capabilities'][request.executionRequests[0].capabilityId]['response'];
+			summaryResultHTML = JSON.parse(output).model_output;
+		} catch (e) {
+			gs.error(e);
+			summaryResultHTML = 'Something went wrong while executing the skill.';
+		}
+
+		return {
+			html: summaryResultHTML,
+			updatedOn: new GlideDateTime().getDisplayValue()
+		};
+	},
+
+	type: 'DemoSummaryHandler'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:12:23</sys_created_on>
+        <sys_id>60559d2897f22a50fc1cf4ef9153af57</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>RecordSummaryHandlers</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_script_include_60559d2897f22a50fc1cf4ef9153af57</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 10:34:40</sys_updated_on>
+    </sys_script_include>
+</record_update>

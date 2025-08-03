@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>This subflow retrieves duty travel request details based on a provided duty travel number. It takes a single input, the duty travel number, and returns various outputs including trip type, leaving from location, cabin class, departure and return dates, travel alert classification, details, and recommendations, as well as destination city and country, and the traveller's details. The subflow looks up the duty travel request record using the provided number and then looks up the outbound travel alert record based on the destination country. Finally, it assigns the retrieved values to the subflow outputs.</description>
+        <input_schema>[]</input_schema>
+        <name>Retrieve Duty Travel Request</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[undefined]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 04:18:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a68b6a65974ba610fc1cf4ef9153afc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Retrieve Duty Travel Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_tool_a68b6a65974ba610fc1cf4ef9153afc1</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 04:18:42</sys_updated_on>
+        <target_document>f6742e61970ba610fc1cf4ef9153af4a</target_document>
+        <target_document_table>sys_hub_flow</target_document_table>
+        <type>subflow</type>
+    </sn_aia_tool>
+</record_update>

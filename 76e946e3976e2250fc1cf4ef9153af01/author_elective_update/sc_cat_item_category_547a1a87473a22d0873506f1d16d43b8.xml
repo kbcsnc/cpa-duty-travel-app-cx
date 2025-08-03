@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Incident Collection Form">2f4a5287473a22d0873506f1d16d43be</sc_cat_item>
+        <sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-22 08:39:12</sys_created_on>
+        <sys_id>547a1a87473a22d0873506f1d16d43b8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Can We Help You?.Incident Collection Form</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sc_cat_item_category_547a1a87473a22d0873506f1d16d43b8</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-22 08:41:40</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>sc_cat_item_category_547a1a87473a22d0873506f1d16d43b8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Incident Collection Form">2f4a5287473a22d0873506f1d16d43be</sc_cat_item><sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>kb.cheung</sys_created_by><sys_created_on>2025-07-22 08:39:12</sys_created_on><sys_id>547a1a87473a22d0873506f1d16d43b8</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Can We Help You?.Incident Collection Form</sys_name><sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package><sys_policy/><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_update_name>sc_cat_item_category_547a1a87473a22d0873506f1d16d43b8</sys_update_name><sys_updated_by>kb.cheung</sys_updated_by><sys_updated_on>2025-07-22 08:41:40</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>-653444831</payload_hash>
+        <record_name>Can We Help You?.Incident Collection Form</record_name>
+        <reverted_from/>
+        <source>500bd6cb9776ea90fc1cf4ef9153af1e</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-22 08:41:40</sys_created_on>
+        <sys_id>f00b5acb9776ea90fc1cf4ef9153af02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198314bb1050000001</sys_recorded_at>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-22 08:41:40</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>340b5acbea76ea9076410f470ddebc01</update_guid>
+        <update_guid_history>340b5acbea76ea9076410f470ddebc01:-653444831</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">5af2a3659783e610fc1cf4ef9153af62</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 08:20:54</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>45731c3b7b2f433fa4cdf4e9456bdda9</sys_id>
+        <sys_metadata>547a1a87473a22d0873506f1d16d43b8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Incident Collection Form</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_547a1a87473a22d0873506f1d16d43b8</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_547a1a87473a22d0873506f1d16d43b8">f00b5acb9776ea90fc1cf4ef9153af02</sys_update_version>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:20:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

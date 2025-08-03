@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_list_menu_config">
+    <sys_ux_list_menu_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Duty Travel Workspace_menu_config</name>
+        <sys_class_name>sys_ux_list_menu_config</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-12 07:56:57</sys_created_on>
+        <sys_id>1ce07a7f9722e250fc1cf4ef9153af05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Duty Travel Workspace_menu_config</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_ux_list_menu_config_1ce07a7f9722e250fc1cf4ef9153af05</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-12 07:56:57</sys_updated_on>
+    </sys_ux_list_menu_config>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_duty_travel_duty_travel_req</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Duty Travel - Update Short Desc</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var leaveIcon = ']]>🛫<![CDATA[';
+	var goingIcon = ']]>🛬<![CDATA[';
+	var returnIcon = '↩️';
+	var onewayIcon = '➡️';
+
+	var tripType = '';
+
+	if (current.trip_type.getDisplayValue() === 'Return') {
+		tripType = returnIcon;
+	} else if (current.trip_type.getDisplayValue() === 'One way') {
+		tripType = onewayIcon;
+	}
+
+	current.short_description = current.traveller.name+' | '+leaveIcon+' '+current.leaving_from.iata+' '+goingIcon+' '+current.going_to.iata+' '+tripType+' | '+current.airline.iata+' | Cabin: '+current.cabin_class.toUpperCase();
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-12 07:34:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c0bbaab39722e250fc1cf4ef9153af9d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Duty Travel - Update Short Desc</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_script_c0bbaab39722e250fc1cf4ef9153af9d</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:10:19</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=c0bbaab39722e250fc1cf4ef9153af9d"/>
+</record_update>

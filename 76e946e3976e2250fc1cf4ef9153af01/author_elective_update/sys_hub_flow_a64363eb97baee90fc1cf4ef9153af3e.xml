@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>housekeeping</internal_name>
+        <label_cache>[{"name":"fcc1a1a2-1e62-4573-8405-52cee99d24ed.item","label":"3 - For Each➛Duty Travel Alerts Record","reference":"x_snc_duty_travel_alerts","reference_display":"Duty Travel Alerts Record","type":"reference","base_type":"reference","usedInstances":{"0b4ad34b-678d-4c7d-930a-7e370869ada1":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9d1f7789-3f78-4a19-a278-500d944b5a5a.Records","label":"2 - Look Up Records➛Duty Travel Alerts Records","reference":"x_snc_duty_travel_alerts","reference_display":"Duty Travel Alerts Records","type":"records","base_type":"records","usedInstances":{"fcc1a1a2-1e62-4573-8405-52cee99d24ed":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.count","label":"Flow Variables➛count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"062e8460-f8e1-446d-9e74-b341706595b6":["count-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"7d17f419-83a1-4add-95b2-c2b1bffd866f"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Housekeeping </name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:14:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a64363eb97baee90fc1cf4ef9153af3e</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Housekeeping </sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_hub_flow_a64363eb97baee90fc1cf4ef9153af3e</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:24:08</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=a64363eb97baee90fc1cf4ef9153af3e"/>
+    <sys_variable_value action="DELETE" query="document_key=a64363eb97baee90fc1cf4ef9153af3e"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=a64363eb97baee90fc1cf4ef9153af3e"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=a64363eb97baee90fc1cf4ef9153af3e^sys_idNOT IN664363eb97baee90fc1cf4ef9153af41"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>a64363eb97baee90fc1cf4ef9153af3e</id>
+        <name>Housekeeping </name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:14:26</sys_created_on>
+        <sys_id>664363eb97baee90fc1cf4ef9153af41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:14:26</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=664363eb97baee90fc1cf4ef9153af41"/>
+    <sys_hub_flow_input action="DELETE" query="model=a64363eb97baee90fc1cf4ef9153af3e"/>
+    <sys_hub_flow_output action="DELETE" query="model=a64363eb97baee90fc1cf4ef9153af3e"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=a64363eb97baee90fc1cf4ef9153af3e"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=a64363eb97baee90fc1cf4ef9153af3e^sys_idNOT INa094ef6f97baee90fc1cf4ef9153af8d"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Housekeeping ">a64363eb97baee90fc1cf4ef9153af3e</flow>
+        <generation_source/>
+        <name>Run Once</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:20:01</sys_created_on>
+        <sys_id>a094ef6f97baee90fc1cf4ef9153af8d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:20:59</sys_updated_on>
+        <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/3VSXUvkQBD8KzLPa5jNqqd5OzgW7uEUVHwRCZ2Zzm7DfDmZWY3if7+eJC6HciEvXd1dXVXM47sw0KERjbjN7sQ7sRLkEkYH5n4MyPjOkMZWQ8I2kUUesOC49HEUTYoZV6KP3t6jDYaHRNODGRj0UWMUzVrKlTiAyXg3Dr81EzKDA1uoY3YtlZNTn4Fa1uen8sdpfX4i142U/HNX7cnoiE40j08rESDydirc719aVOivauiVvjpTm5o/KevLs3V3senWtd4A4iUTfrP8VU/6n/V/TeFrQqdRHx1/yyUi6BtnxuPEnrOdE7DwOtAbLlQRe2QXCufmsWw1DZzqOMNq70nhTUjEoickQWeWHeVNtu56NsK1xh6ySQ9LsozkgfkwFM1FxSKpv9v7l9vPg1tyk8GlabwCc6wgpUhdTjiU6NGgZaLWQgjkdm2I/kDTMmux1ZRd1Rv/wkcH2rkKVBFecURQbRn/NcEPEKm4+MM0vPwxuW+fc7k7+1gUt7NpHlhC2RKa5T0NKlJIP/nA4fMBfjz9BbBhi+/cAgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>run_once</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=a64363eb97baee90fc1cf4ef9153af3e^sys_idNOT IN2094ef6f97baee90fc1cf4ef9153af97,ec94ef6f97baee90fc1cf4ef9153af9a"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Housekeeping ">a64363eb97baee90fc1cf4ef9153af3e</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:20:01</sys_created_on>
+        <sys_id>2094ef6f97baee90fc1cf4ef9153af97</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:20:59</sys_updated_on>
+        <ui_id>9d1f7789-3f78-4a19-a278-500d944b5a5a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VXS0/jMBD+K1HOUZWQUlhuCIS0B0ACtBeELMdxWmtdO2s7fYD47zuO4zS0AUq3uwtHj+fxzcw3E+f+KWR5eBIeF8M4xsnh8VEcp2kcj0YpwUmWpSOSxdkwC6NQ4CkFTYMzTuE4w7yy5wXSgqC8MktkFJ5RjjCnymhQyZkuOV7+aDTPQSe4q3WCU69DJozniorw5P4hCkusIIqhKjx5Wrsyy5IijjPKwdWdBRFcWUTR1gm8MN5MyAbwRySca6lyiyWOQrowVOQUQhWYaxqFUyxybKRathJFcX4t+EowYcKAx9AqLzR7BPfHsdUrKKRFqLtrj6iplxOTiWSEXpeGSeEkDqi7lLyaiiuXgK00LXDFja80SCoN/mhpMVsQDaLidiLnNz7gBRN1es0llwTz9oSNUSyrDNW2F5TTKThCU1yWTIxRqeSM1caAZToYczgMCi7nEFSzsRhgYoEPoER4cAHy81r8Aytms7gEN2AMgBiHbiNXdC0rVVdlhgivdH2hsNDOV/hc1wr9qixKl3WTH3IlAgVNFCvNKRjMaJPKc7QVxw/jFSWIFDmzMXWH6JuE3pm+Z13/22LrNe4D3BD5hawhcrI3IgPc/0Rlo6rPx+T3uOkSfoeg5OhNEhyu+q2lMshVrsNQvdSIQPMMzW3UDb5u3O/G3gtGef5i+W4B3BtfWyIG2fK1XBryFjbG2hY++PJb+FNSFwDlyNWbCc5E/REEoPvhdPz2Yvu2xoO6/R1GWxnWZJPLODAyeNx9A9d99fzdAqQ3vAVEwZ1D2QPc717vvqFuujfqpgcfoy4Q5/6pRd9WrafA/q1jW+f1H60+XtcHdnUMkueHlvpnu8VMPhrzwMZcm830Q8PZZZa7OX+FYHt+Sb0ybNHfnO4JmDbxkBtWNGf5mJpVdK+VSzPH/GfffcOudobq9P74VTZ8c/ZGyWrOYAaQohpa1X2WJfAQ2VwPSeTEu22H78LQcV28bSF6y0u8CG5ajL3AmxXB2hgNp4d7fJv9i8+bL3zv9Pj6f4nfkF0p/PAbTzAqWz4PAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=2094ef6f97baee90fc1cf4ef9153af97"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Housekeeping ">a64363eb97baee90fc1cf4ef9153af3e</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>fcc1a1a2-1e62-4573-8405-52cee99d24ed</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:20:02</sys_created_on>
+        <sys_id>ec94ef6f97baee90fc1cf4ef9153af9a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:24:08</sys_updated_on>
+        <ui_id>0b4ad34b-678d-4c7d-930a-7e370869ada1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V32/bNhD+Vw56alNbluw4TdInY16wPSwZmqAvdSHQ5MnmQFEaSTl2A//vO5KS47ZrFhQBhgEzYFg834/vu/uO+viQSJFcJqcosvwiP+OTfDIZZ9n4/DRfnk2W+VhMGGKeDBLNKiRPg7w2gs4bplpveHgoOc9ZzsbDHM/Gw9Pp28nw/DSbDqdjjnhxIcaUPZUOq/2e4oS0jWK7D104WfhaKmFQJ5cfPw2Shhmq5NAklw9f/eV2DRaKLVFR4LzmbYXawa9zyvFcFn30+57G17R8DTqLLnshvZH+8njybJDg1qEWSOVKpiwOkoppwVxtdsmlMy0ZDDJxo9Xu4LGW2kWmFdta+Znyn2ber0SixrsuHI5F16G+ObXkeNM4WetocWyp+s7Vqq30daTge4sla5U76m1rKR82HrIHERGWt+v6/n1f70rqwK5Dq2rO1OHEnDNy2Tq0fhyoMDSlYk0j9apoTL2RIZigVOlK0SEtVX1PNa1c6ZRxjzulBrH0iuzzYP7AjPQkfqM0FLwP5Is/W1830ugAF4FzIFyEQZGr5UY2bkaJN9jB3A86GS+nTwmAXzzO+yjno5S3hdW8EK3bFc6wDaqCKTTOfqvaOfnAXfCBWe/zYzq+80jgOiJ5Losvgr/DqlPyF7ZOyNMXE/L5vyTkDtF/TMn/pN9s/OQFdjTpIFl7pF3dVks0izbLJqIUw1gFxbfS/b7jD+oXK0rvEGKBwbOZ9AmuJCph/4ZaL+CuQLHpChxu4xdTcX6Whc//l/KLXMqRULR5hFFy/ukpv2R0stAnJzPO0VrwwEazgBQ8UmgtkQO3RihFESz18g/kLoXbkACq1jow6FqjgUEQSwo+443XC0QQIC3UZWnRwXIHb3KQGn42pjbwCwlH+RK3GPsTwGyYVOGCrsOwLXQ6gLYhYI0hqD5mkaSLBFhJ69LD8+G4ZaRdvCQ0Buy6No56zSEuX++Y0jBXKzQpbw3N3qXB0Q8r8KKq73yujtkhizeOFnqhAfwXYDSC35kIHeq4uhomBHglnYV76dagaBc83M9oahujPLKGCVqh6xjUgXvlf8dvaSniA7w54A1aoriU1612r1OraBleDSev30U4AcpP1CyaL3dxZFIzBWTw1QMUal0pt9S4+d1skTxioY7SsvQoYm3v0oM4xnqo1/UmxpKV5Grp3SwOr+u7WZblyX6///QXzb9vUfIKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=ec94ef6f97baee90fc1cf4ef9153af9a"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=a64363eb97baee90fc1cf4ef9153af3e"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=a64363eb97baee90fc1cf4ef9153af3e^sys_idNOT IN2094ef6f97baee90fc1cf4ef9153af99,6ac423ef97baee90fc1cf4ef9153afb5,b485af2397faee90fc1cf4ef9153afdb"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">e094ef6f97baee90fc1cf4ef9153af98</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Housekeeping ">a64363eb97baee90fc1cf4ef9153af3e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:20:01</sys_created_on>
+        <sys_id>2094ef6f97baee90fc1cf4ef9153af99</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:24:08</sys_updated_on>
+        <ui_id>fcc1a1a2-1e62-4573-8405-52cee99d24ed</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51Sy27jMAz8F50Tw4+8nFuBRYEedgt0i16KwqAlOhFWlrSSnNRr+N9LxU5a9Lgnm0NyOCNyYKYLtgv+2dx5Lw+a7V/fFkzqiNH/wDS0yPZMBmw9W7ATqC7Gw1CKrNlud+WyaLa75Qqycgk5/a3TVJSrVb2GNSRPyI0TfhypVUhvFfQv/8/Aj1IJh7NIC460BXRsP3xLhd5ipaBGRYNmBuqXgsKsFE2ZpSUv8k2Rp2m+W2X1pqizXBSAYkN1186H2fS3N4jsFLobL32iijxdMHwPqAXSoAaUxwVrQQsIxvVsH1xHgEMQj1r1t4qj1IHoWKx99/IfcWdpGgsbJEccp+QtrOaHnGB+NJLjow3S6AkJUKu5hxvVtfrXJD+uABvoVLiugJDOEx/aqDmqmCU1v4/m/HQdeC/1xd+cVIaDukUQgpN1F9DHNaDCloiqFqyV+lBZZ07y0kxa2uSgKEgaZc40NJ5bAjwKT+iJILkn/McFfgEno4ufREPN48V99beLcycfs+JqMk0Fnjtpwx3RnXAWN77Fe52Y/HQYArn0NPA5Yg/XK4+JnpYs+VfobNyfKPUTGz8A8cgtFy8DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">62c423ef97baee90fc1cf4ef9153afb5</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Housekeeping ">a64363eb97baee90fc1cf4ef9153af3e</flow>
+        <flow_variables_assigned>count</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:20:59</sys_created_on>
+        <sys_id>6ac423ef97baee90fc1cf4ef9153afb5</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:24:08</sys_updated_on>
+        <ui_id>72119292-19dc-4569-af6a-0f6535195edb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8F55twUoU2/ItQBHAQNsArZtLEQgrcmkTpUiGIu24hv+9Sz2cwPmCArlpZ1+zw4FOzMbgYmg39r5t1daw1e/nCVMmYfR9YgYaZCvGbTSBTdgedEzxjL6Fap2G49M7iO+UFh6HMQ48dQf0bHW6SoWjw0pDjZo61ybglqposaAQi7JAOZflogbEciZ5ziUhZX53C3KJVDd2jrSuWKbpFKrLXOtFYjGbMHwNaATSHgm6xQlrwAgI1h8viEcQj0a/ATsaRONYKn5t1V+aXcxSnUQ6iGOfu4TVIEwP851VHB9dUNb0SIBaDz3c6tiY7z37JClKiDqMkhISW5qHLnFOJAZG8ufOHn6MCx+U6c4bktpy0JcIQvCqjgHb9ApRba616aGvH94CNTa0s2rAOWW2lfN2r7o9RLvJtpqCTGp7IH7JOhnwdGNGakL2QPiXDn4Cr9LB32jMsO+XUS8R1+mtFyJfyCIvp8tbyKcFCDEt7+qbKb+p81pKsZzPJTt34lYvMZ3VyzQIUvWaUkHLvXLhnijscbj9/Jz82m/vzdzZ66NdPk39aer/ydQCuWqJ1SZRWI//6pQ4kmcUfw8drP+T7nnDzv8Az9jvNPUFAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">7885af2397faee90fc1cf4ef9153afda</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Housekeeping ">a64363eb97baee90fc1cf4ef9153af3e</flow>
+        <flow_variables_assigned>count</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>fcc1a1a2-1e62-4573-8405-52cee99d24ed</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:24:08</sys_created_on>
+        <sys_id>b485af2397faee90fc1cf4ef9153afdb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:24:08</sys_updated_on>
+        <ui_id>062e8460-f8e1-446d-9e74-b341706595b6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/82QSwqDMBCG75K1ghWt1V2X3Us3RUqcJO3QmEgeioh3bwKW9gjd/Q9m5mNWor0bvbOtPluLD0WaW5cQVDELeiXISENIQhQdeFCgvXLBTlT66NdVsLszVFmhzdDkPAOgcEjLsizSgtV5eqrzPhVVkVVZfqyqmm5bmGdoR0mX674mJPBEyQzfCSwYHN0ZHE6hF1RavnXxrEHaS/6PbIwDWtSqjYCXzwdjsQRAhN9o1uYlpJ6/2fYGZC4IO4sBAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=a64363eb97baee90fc1cf4ef9153af3e^sys_idNOT IN7485af2397faee90fc1cf4ef9153afde,bc85af2397faee90fc1cf4ef9153afdd"/>
+    <sys_hub_pill_compound action="DELETE">
+        <attached_to>a64363eb97baee90fc1cf4ef9153af3e</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>2e0ccac1-5554-4d92-892b-f7407026779a</source_ui_id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:24:08</sys_created_on>
+        <sys_id>7485af2397faee90fc1cf4ef9153afde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:24:08</sys_updated_on>
+        <transform_compositions>[{"id":"06190ffa23a220103a3339e1d7bf65f9","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{},"value":"1","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="add">50980bfa23a220103a3339e1d7bf6510</transform_definition_id>
+        <ui_id>94ef7d9b-e21f-46a8-a917-6af58bc8bced</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="DELETE">
+        <attached_to>a64363eb97baee90fc1cf4ef9153af3e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.count}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:24:08</sys_created_on>
+        <sys_id>bc85af2397faee90fc1cf4ef9153afdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:24:08</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>2e0ccac1-5554-4d92-892b-f7407026779a</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="DELETE" query="model=a64363eb97baee90fc1cf4ef9153af3e^sys_idNOT INe494ef6f97baee90fc1cf4ef9153af8e"/>
+    <sys_hub_flow_variable action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=7d17f419-83a1-4add-95b2-c2b1bffd866f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Housekeeping ">a64363eb97baee90fc1cf4ef9153af3e</model>
+        <model_id>a64363eb97baee90fc1cf4ef9153af3e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_a64363eb97baee90fc1cf4ef9153af3e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:20:01</sys_created_on>
+        <sys_id>e494ef6f97baee90fc1cf4ef9153af8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:20:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_a64363eb97baee90fc1cf4ef9153af3e"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_a64363eb97baee90fc1cf4ef9153af3e"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=a64363eb97baee90fc1cf4ef9153af3e"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=a64363eb97baee90fc1cf4ef9153af3e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>sys_hub_flow_a64363eb97baee90fc1cf4ef9153af3e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes&gt;browserActivatedIn=chrome,integrationActivatedIn=integrated,viewActivatedIn=naturalLanguage&lt;/attributes&gt;&lt;authored_on_release_version&gt;27000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from&gt;9a41b6c2ff12101088e94ee9453bf1a4&lt;/copied_from&gt;&lt;copied_from_name&gt;FlowTemplate_Empty&lt;/copied_from_name&gt;&lt;description/&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority/&gt;&lt;generation_source/&gt;&lt;internal_name&gt;housekeeping&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"fcc1a1a2-1e62-4573-8405-52cee99d24ed.item","label":"3 - For Each➛Duty Travel Alerts Record","reference":"x_snc_duty_travel_alerts","reference_display":"Duty Travel Alerts Record","type":"reference","base_type":"reference","usedInstances":{"0b4ad34b-678d-4c7d-930a-7e370869ada1":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"9d1f7789-3f78-4a19-a278-500d944b5a5a.Records","label":"2 - Look Up Records➛Duty Travel Alerts Records","reference":"x_snc_duty_travel_alerts","reference_display":"Duty Travel Alerts Records","type":"records","base_type":"records","usedInstances":{"fcc1a1a2-1e62-4573-8405-52cee99d24ed":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.count","label":"Flow Variables➛count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"062e8460-f8e1-446d-9e74-b341706595b6":["count-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"7d17f419-83a1-4add-95b2-c2b1bffd866f"}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;Housekeeping &lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;carmen.man&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-24 03:14:26&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;a64363eb97baee90fc1cf4ef9153af3e&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Housekeeping &lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Duty Travel" source="x_snc_duty_travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_a64363eb97baee90fc1cf4ef9153af3e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;carmen.man&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-24 03:24:08&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=a64363eb97baee90fc1cf4ef9153af3e"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=a64363eb97baee90fc1cf4ef9153af3e"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=a64363eb97baee90fc1cf4ef9153af3e"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=a64363eb97baee90fc1cf4ef9153af3e^sys_idNOT IN664363eb97baee90fc1cf4ef9153af41"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;a64363eb97baee90fc1cf4ef9153af3e&lt;/id&gt;&lt;name&gt;Housekeeping &lt;/name&gt;&lt;sys_created_by&gt;carmen.man&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-24 03:14:26&lt;/sys_created_on&gt;&lt;sys_id&gt;664363eb97baee90fc1cf4ef9153af41&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;carmen.man&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-24 03:14:26&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=664363eb97baee90fc1cf4ef9153af41"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=a64363eb97baee90fc1cf4ef9153af3e"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=a64363eb97baee90fc1cf4ef9153af3e"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=a64363eb97baee90fc1cf4ef9153af3e"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=a64363eb97baee90fc1cf4ef9153af3e^sys_idNOT INa094ef6f97baee90fc1cf4ef9153af8d"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="Housekeeping "&gt;a64363eb97baee90fc1cf4ef9153af3e&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Run Once&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;carmen.man&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-24 03:20:01&lt;/sys_created_on&gt;&lt;sys_id&gt;a094ef6f97baee90fc1cf4ef9153af8d&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;carmen.man&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-24 03:20:59&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Run Once"&gt;0a76e504c32222002841b63b12d3aeac&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;H4sIAAAAAAAA/3VSXUvkQBD8KzLPa5jNqqd5OzgW7uEUVHwRCZ2Zzm7DfDmZWY3if7+eJC6HciEvXd1dXVXM47sw0KERjbjN7sQ7sRLkEkYH5n4MyPjOkMZWQ8I2kUUesOC49HEUTYoZV6KP3t6jDYaHRNODGRj0UWMUzVrKlTiAyXg3Dr81EzKDA1uoY3YtlZNTn4Fa1uen8sdpfX4i142U/HNX7cnoiE40j08rESDydirc719aVOivauiVvjpTm5o/KevLs3V3senWtd4A4iUTfrP8VU/6n/V/TeFrQqdRHx1/yyUi6BtnxuPEnrOdE7DwOtAbLlQRe2QXCufmsWw1DZzqOMNq70nhTUjEoickQWeWHeVNtu56NsK1xh6ySQ9LsozkgfkwFM1FxSKpv9v7l9vPg1tyk8GlabwCc6wgpUhdTjiU6NGgZaLWQgjkdm2I/kDTMmux1ZRd1Rv/wkcH2rkKVBFecURQbRn/NcEPEKm4+MM0vPwxuW+fc7k7+1gUt7NpHlhC2RKa5T0NKlJIP/nA4fMBfjz9BbBhi+/cAgAA&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;run_once&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=a64363eb97baee90fc1cf4ef9153af3e^sys_idNOT IN2094ef6f97baee90fc1cf4ef9153af97,ec94ef6f97baee90fc1cf4ef9153af9a"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Look Up Records"&gt;43400a1587003300663ca1bb36cb0b4b&lt;/action_type&gt;&lt;action_type_parent display_value="Look Up Records"&gt;d1c56ec50b30030085c083eb37673a50&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Housekeeping "&gt;a64363eb97baee90fc1cf4ef9153af3e&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;carmen.man&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-24 03:20:01&lt;/sys_created_on&gt;&lt;sys_id&gt;2094ef6f97baee90fc1cf4ef9153af97&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_updated_by&gt;carmen.man&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-24 03:20:59&lt;/sys_updated_on&gt;&lt;ui_id&gt;9d1f7789-3f78-4a19-a278-500d944b5a5a&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/9VXS0/jMBD+K1HOUZWQUlhuCIS0B0ACtBeELMdxWmtdO2s7fYD47zuO4zS0AUq3uwtHj+fxzcw3E+f+KWR5eBIeF8M4xsnh8VEcp2kcj0YpwUmWpSOSxdkwC6NQ4CkFTYMzTuE4w7yy5wXSgqC8MktkFJ5RjjCnymhQyZkuOV7+aDTPQSe4q3WCU69DJozniorw5P4hCkusIIqhKjx5Wrsyy5IijjPKwdWdBRFcWUTR1gm8MN5MyAbwRySca6lyiyWOQrowVOQUQhWYaxqFUyxybKRathJFcX4t+EowYcKAx9AqLzR7BPfHsdUrKKRFqLtrj6iplxOTiWSEXpeGSeEkDqi7lLyaiiuXgK00LXDFja80SCoN/mhpMVsQDaLidiLnNz7gBRN1es0llwTz9oSNUSyrDNW2F5TTKThCU1yWTIxRqeSM1caAZToYczgMCi7nEFSzsRhgYoEPoER4cAHy81r8Aytms7gEN2AMgBiHbiNXdC0rVVdlhgivdH2hsNDOV/hc1wr9qixKl3WTH3IlAgVNFCvNKRjMaJPKc7QVxw/jFSWIFDmzMXWH6JuE3pm+Z13/22LrNe4D3BD5hawhcrI3IgPc/0Rlo6rPx+T3uOkSfoeg5OhNEhyu+q2lMshVrsNQvdSIQPMMzW3UDb5u3O/G3gtGef5i+W4B3BtfWyIG2fK1XBryFjbG2hY++PJb+FNSFwDlyNWbCc5E/REEoPvhdPz2Yvu2xoO6/R1GWxnWZJPLODAyeNx9A9d99fzdAqQ3vAVEwZ1D2QPc717vvqFuujfqpgcfoy4Q5/6pRd9WrafA/q1jW+f1H60+XtcHdnUMkueHlvpnu8VMPhrzwMZcm830Q8PZZZa7OX+FYHt+Sb0ybNHfnO4JmDbxkBtWNGf5mJpVdK+VSzPH/GfffcOudobq9P74VTZ8c/ZGyWrOYAaQohpa1X2WJfAQ2VwPSeTEu22H78LQcV28bSF6y0u8CG5ajL3AmxXB2hgNp4d7fJv9i8+bL3zv9Pj6f4nfkF0p/PAbTzAqWz4PAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=2094ef6f97baee90fc1cf4ef9153af97"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="Update Record"&gt;f9d01dd2c31332002841b63b12d3aea1&lt;/action_type&gt;&lt;action_type_parent display_value="Update Record"&gt;baf174c8c3c232002841b63b12d3aee4&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot/&gt;&lt;display_text/&gt;&lt;flow display_value="Housekeeping "&gt;a64363eb97baee90fc1cf4ef9153af3e&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;5&lt;/order&gt;&lt;parent_ui_id&gt;fcc1a1a2-1e62-4573-8405-52cee99d24ed&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;carmen.man&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-24 03:20:02&lt;/sys_created_on&gt;&lt;sys_id&gt;ec94ef6f97baee90fc1cf4ef9153af9a&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_updated_by&gt;carmen.man&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-24 03:24:08&lt;/sys_updated_on&gt;&lt;ui_id&gt;0b4ad34b-678d-4c7d-930a-7e370869ada1&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1V32/bNhD+Vw56alNbluw4TdInY16wPSwZmqAvdSHQ5MnmQFEaSTl2A//vO5KS47ZrFhQBhgEzYFg834/vu/uO+viQSJFcJqcosvwiP+OTfDIZZ9n4/DRfnk2W+VhMGGKeDBLNKiRPg7w2gs4bplpveHgoOc9ZzsbDHM/Gw9Pp28nw/DSbDqdjjnhxIcaUPZUOq/2e4oS0jWK7D104WfhaKmFQJ5cfPw2Shhmq5NAklw9f/eV2DRaKLVFR4LzmbYXawa9zyvFcFn30+57G17R8DTqLLnshvZH+8njybJDg1qEWSOVKpiwOkoppwVxtdsmlMy0ZDDJxo9Xu4LGW2kWmFdta+Znyn2ber0SixrsuHI5F16G+ObXkeNM4WetocWyp+s7Vqq30daTge4sla5U76m1rKR82HrIHERGWt+v6/n1f70rqwK5Dq2rO1OHEnDNy2Tq0fhyoMDSlYk0j9apoTL2RIZigVOlK0SEtVX1PNa1c6ZRxjzulBrH0iuzzYP7AjPQkfqM0FLwP5Is/W1830ugAF4FzIFyEQZGr5UY2bkaJN9jB3A86GS+nTwmAXzzO+yjno5S3hdW8EK3bFc6wDaqCKTTOfqvaOfnAXfCBWe/zYzq+80jgOiJ5Losvgr/DqlPyF7ZOyNMXE/L5vyTkDtF/TMn/pN9s/OQFdjTpIFl7pF3dVks0izbLJqIUw1gFxbfS/b7jD+oXK0rvEGKBwbOZ9AmuJCph/4ZaL+CuQLHpChxu4xdTcX6Whc//l/KLXMqRULR5hFFy/ukpv2R0stAnJzPO0VrwwEazgBQ8UmgtkQO3RihFESz18g/kLoXbkACq1jow6FqjgUEQSwo+443XC0QQIC3UZWnRwXIHb3KQGn42pjbwCwlH+RK3GPsTwGyYVOGCrsOwLXQ6gLYhYI0hqD5mkaSLBFhJ69LD8+G4ZaRdvCQ0Buy6No56zSEuX++Y0jBXKzQpbw3N3qXB0Q8r8KKq73yujtkhizeOFnqhAfwXYDSC35kIHeq4uhomBHglnYV76dagaBc83M9oahujPLKGCVqh6xjUgXvlf8dvaSniA7w54A1aoriU1612r1OraBleDSev30U4AcpP1CyaL3dxZFIzBWTw1QMUal0pt9S4+d1skTxioY7SsvQoYm3v0oM4xnqo1/UmxpKV5Grp3SwOr+u7WZblyX6///QXzb9vUfIKAAA=&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=ec94ef6f97baee90fc1cf4ef9153af9a"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=a64363eb97baee90fc1cf4ef9153af3e"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=a64363eb97baee90fc1cf4ef9153af3e^sys_idNOT IN2094ef6f97baee90fc1cf4ef9153af99,6ac423ef97baee90fc1cf4ef9153afb5,b485af2397faee90fc1cf4ef9153afdb"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;e094ef6f97baee90fc1cf4ef9153af98&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Housekeeping "&gt;a64363eb97baee90fc1cf4ef9153af3e&lt;/flow&gt;&lt;flow_variables_assigned/&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="For Each"&gt;098e1dc5c3e232002841b63b12d3ae33&lt;/logic_definition&gt;&lt;order&gt;3&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;carmen.man&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-24 03:20:01&lt;/sys_created_on&gt;&lt;sys_id&gt;2094ef6f97baee90fc1cf4ef9153af99&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_updated_by&gt;carmen.man&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-24 03:24:08&lt;/sys_updated_on&gt;&lt;ui_id&gt;fcc1a1a2-1e62-4573-8405-52cee99d24ed&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/51Sy27jMAz8F50Tw4+8nFuBRYEedgt0i16KwqAlOhFWlrSSnNRr+N9LxU5a9Lgnm0NyOCNyYKYLtgv+2dx5Lw+a7V/fFkzqiNH/wDS0yPZMBmw9W7ATqC7Gw1CKrNlud+WyaLa75Qqycgk5/a3TVJSrVb2GNSRPyI0TfhypVUhvFfQv/8/Aj1IJh7NIC460BXRsP3xLhd5ipaBGRYNmBuqXgsKsFE2ZpSUv8k2Rp2m+W2X1pqizXBSAYkN1186H2fS3N4jsFLobL32iijxdMHwPqAXSoAaUxwVrQQsIxvVsH1xHgEMQj1r1t4qj1IHoWKx99/IfcWdpGgsbJEccp+QtrOaHnGB+NJLjow3S6AkJUKu5hxvVtfrXJD+uABvoVLiugJDOEx/aqDmqmCU1v4/m/HQdeC/1xd+cVIaDukUQgpN1F9DHNaDCloiqFqyV+lBZZ07y0kxa2uSgKEgaZc40NJ5bAjwKT+iJILkn/McFfgEno4ufREPN48V99beLcycfs+JqMk0Fnjtpwx3RnXAWN77Fe52Y/HQYArn0NPA5Yg/XK4+JnpYs+VfobNyfKPUTGz8A8cgtFy8DAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;62c423ef97baee90fc1cf4ef9153afb5&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Housekeeping "&gt;a64363eb97baee90fc1cf4ef9153af3e&lt;/flow&gt;&lt;flow_variables_assigned&gt;count&lt;/flow_variables_assigned&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Set Flow Variables"&gt;4f787d1e0f9b0010ecf0cc52ff767ea0&lt;/logic_definition&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;carmen.man&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-24 03:20:59&lt;/sys_created_on&gt;&lt;sys_id&gt;6ac423ef97baee90fc1cf4ef9153afb5&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_updated_by&gt;carmen.man&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-24 03:24:08&lt;/sys_updated_on&gt;&lt;ui_id&gt;72119292-19dc-4569-af6a-0f6535195edb&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+1Uy27bMBD8F55twUoU2/ItQBHAQNsArZtLEQgrcmkTpUiGIu24hv+9Sz2cwPmCArlpZ1+zw4FOzMbgYmg39r5t1daw1e/nCVMmYfR9YgYaZCvGbTSBTdgedEzxjL6Fap2G49M7iO+UFh6HMQ48dQf0bHW6SoWjw0pDjZo61ybglqposaAQi7JAOZflogbEciZ5ziUhZX53C3KJVDd2jrSuWKbpFKrLXOtFYjGbMHwNaATSHgm6xQlrwAgI1h8viEcQj0a/ATsaRONYKn5t1V+aXcxSnUQ6iGOfu4TVIEwP851VHB9dUNb0SIBaDz3c6tiY7z37JClKiDqMkhISW5qHLnFOJAZG8ufOHn6MCx+U6c4bktpy0JcIQvCqjgHb9ApRba616aGvH94CNTa0s2rAOWW2lfN2r7o9RLvJtpqCTGp7IH7JOhnwdGNGakL2QPiXDn4Cr9LB32jMsO+XUS8R1+mtFyJfyCIvp8tbyKcFCDEt7+qbKb+p81pKsZzPJTt34lYvMZ3VyzQIUvWaUkHLvXLhnijscbj9/Jz82m/vzdzZ66NdPk39aer/ydQCuWqJ1SZRWI//6pQ4kmcUfw8drP+T7nnDzv8Az9jvNPUFAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;attributes/&gt;&lt;block display_value=""&gt;7885af2397faee90fc1cf4ef9153afda&lt;/block&gt;&lt;comment/&gt;&lt;connected_to/&gt;&lt;decision_table/&gt;&lt;display_text/&gt;&lt;flow display_value="Housekeeping "&gt;a64363eb97baee90fc1cf4ef9153af3e&lt;/flow&gt;&lt;flow_variables_assigned&gt;count&lt;/flow_variables_assigned&gt;&lt;generation_source/&gt;&lt;logic_definition display_value="Set Flow Variables"&gt;4f787d1e0f9b0010ecf0cc52ff767ea0&lt;/logic_definition&gt;&lt;order&gt;4&lt;/order&gt;&lt;outputs_assigned/&gt;&lt;parent_ui_id&gt;fcc1a1a2-1e62-4573-8405-52cee99d24ed&lt;/parent_ui_id&gt;&lt;sys_class_name&gt;sys_hub_flow_logic_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;carmen.man&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-24 03:24:08&lt;/sys_created_on&gt;&lt;sys_id&gt;b485af2397faee90fc1cf4ef9153afdb&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_updated_by&gt;carmen.man&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-24 03:24:08&lt;/sys_updated_on&gt;&lt;ui_id&gt;062e8460-f8e1-446d-9e74-b341706595b6&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/82QSwqDMBCG75K1ghWt1V2X3Us3RUqcJO3QmEgeioh3bwKW9gjd/Q9m5mNWor0bvbOtPluLD0WaW5cQVDELeiXISENIQhQdeFCgvXLBTlT66NdVsLszVFmhzdDkPAOgcEjLsizSgtV5eqrzPhVVkVVZfqyqmm5bmGdoR0mX674mJPBEyQzfCSwYHN0ZHE6hF1RavnXxrEHaS/6PbIwDWtSqjYCXzwdjsQRAhN9o1uYlpJ6/2fYGZC4IO4sBAAA=&lt;/values&gt;&lt;workflow_reference/&gt;&lt;/sys_hub_flow_logic_instance_v2&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=a64363eb97baee90fc1cf4ef9153af3e^sys_idNOT IN7485af2397faee90fc1cf4ef9153afde,bc85af2397faee90fc1cf4ef9153afdd"/&gt;&lt;sys_hub_pill_compound action="INSERT_OR_UPDATE"&gt;&lt;attached_to&gt;a64363eb97baee90fc1cf4ef9153af3e&lt;/attached_to&gt;&lt;extra_info/&gt;&lt;order&gt;1&lt;/order&gt;&lt;prescription/&gt;&lt;source_ui_id&gt;2e0ccac1-5554-4d92-892b-f7407026779a&lt;/source_ui_id&gt;&lt;sys_created_by&gt;carmen.man&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-24 03:24:08&lt;/sys_created_on&gt;&lt;sys_id&gt;7485af2397faee90fc1cf4ef9153afde&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_updated_by&gt;carmen.man&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-24 03:24:08&lt;/sys_updated_on&gt;&lt;transform_compositions&gt;[{"id":"06190ffa23a220103a3339e1d7bf65f9","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"number","label":"Number","order":0,"attributes":{},"value":"1","type":"int","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]&lt;/transform_compositions&gt;&lt;transform_definition_id display_value="add"&gt;50980bfa23a220103a3339e1d7bf6510&lt;/transform_definition_id&gt;&lt;ui_id&gt;94ef7d9b-e21f-46a8-a917-6af58bc8bced&lt;/ui_id&gt;&lt;/sys_hub_pill_compound&gt;&lt;sys_hub_pill_compound action="INSERT_OR_UPDATE"&gt;&lt;attached_to&gt;a64363eb97baee90fc1cf4ef9153af3e&lt;/attached_to&gt;&lt;extra_info/&gt;&lt;order&gt;0&lt;/order&gt;&lt;prescription&gt;{{flow_variable.count}}&lt;/prescription&gt;&lt;source_ui_id/&gt;&lt;sys_created_by&gt;carmen.man&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-24 03:24:08&lt;/sys_created_on&gt;&lt;sys_id&gt;bc85af2397faee90fc1cf4ef9153afdd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_updated_by&gt;carmen.man&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-24 03:24:08&lt;/sys_updated_on&gt;&lt;transform_compositions&gt;[]&lt;/transform_compositions&gt;&lt;transform_definition_id/&gt;&lt;ui_id&gt;2e0ccac1-5554-4d92-892b-f7407026779a&lt;/ui_id&gt;&lt;/sys_hub_pill_compound&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=a64363eb97baee90fc1cf4ef9153af3e^sys_idNOT INe494ef6f97baee90fc1cf4ef9153af8e"/&gt;&lt;sys_hub_flow_variable action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=7d17f419-83a1-4add-95b2-c2b1bffd866f&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;count&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Integer"&gt;integer&lt;/internal_type&gt;&lt;label&gt;count&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Housekeeping "&gt;a64363eb97baee90fc1cf4ef9153af3e&lt;/model&gt;&lt;model_id&gt;a64363eb97baee90fc1cf4ef9153af3e&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_variable_a64363eb97baee90fc1cf4ef9153af3e&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;0&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_variable&lt;/sys_class_name&gt;&lt;sys_created_by&gt;carmen.man&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-24 03:20:01&lt;/sys_created_on&gt;&lt;sys_id&gt;e494ef6f97baee90fc1cf4ef9153af8e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;carmen.man&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-24 03:20:01&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_variable&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a64363eb97baee90fc1cf4ef9153af3e"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a64363eb97baee90fc1cf4ef9153af3e"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=a64363eb97baee90fc1cf4ef9153af3e"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=a64363eb97baee90fc1cf4ef9153af3e"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-387374105</payload_hash>
+        <record_name>Housekeeping </record_name>
+        <reverted_from/>
+        <source>91117a534772e2d0873506f1d16d43ae</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:24:08</sys_created_on>
+        <sys_id>f085af2397faee90fc1cf4ef9153afe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1983a75b2900000001</sys_recorded_at>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:24:08</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>7885af23f6faee90ab68fb3c1b8056e7</update_guid>
+        <update_guid_history>7885af23f6faee90ab68fb3c1b8056e7:-387374105,8535e3233efaee90bac436b09f3ce674:621935186,fac423efd4baee90bb42d569ca9d6cd0:32709865,e494ef6f7dbaee90fb7da0bc01d2c5cb:1493128209,ee4363eb76baee900cd357cb7d71e644:-733895233</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:57:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>818a47c4737440dcaeaac828fd4b6444</sys_id>
+        <sys_metadata>a64363eb97baee90fc1cf4ef9153af3e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Housekeeping </sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_a64363eb97baee90fc1cf4ef9153af3e</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_a64363eb97baee90fc1cf4ef9153af3e">f085af2397faee90fc1cf4ef9153afe8</sys_update_version>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:57:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

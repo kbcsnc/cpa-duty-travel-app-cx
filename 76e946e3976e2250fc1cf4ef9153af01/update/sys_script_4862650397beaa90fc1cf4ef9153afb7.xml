@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_duty_travel_duty_travel_req</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_snc_duty_travel_duty_travel_req">going_toVALCHANGES^ORleaving_fromVALCHANGES^ORdeparting_onVALCHANGES^ORreturning_onVALCHANGES^ORtrip_typeVALCHANGES^ORcabin_classVALCHANGES^ORbusiness_justificationVALCHANGES^ORstateCHANGESTO12^EQ<item endquery="false" field="going_to" goto="false" newquery="false" operator="VALCHANGES" or="false" value=""/>
+            <item endquery="false" field="leaving_from" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="departing_on" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="false" field="returning_on" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item display_value="-- None --" endquery="false" field="trip_type" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item display_value="-- None --" endquery="false" field="cabin_class" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item display_value="Cancelled" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="true" value="12"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Duty Travel - User Changes Request</name>
+        <order>10</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous) {
+
+    // Add your code here 
+    var changeDetails = '';
+	
+    if (current.trip_type != previous.trip_type) {
+        changeDetails += "\nTRIP TYPE has changed from " + previous.trip_type + " to " + current.trip_type;
+    }
+    if (current.departing_on != previous.departing_on) {
+        changeDetails += "\nDEPARTING ON has changed from " + previous.departing_on + " to " + current.departing_on;
+    }
+    if (current.returning_on != previous.returning_on) {
+        changeDetails += "\nRETURNING ON has changed from " + previous.returning_on + " to " + current.returning_on;
+    }
+    if (current.leaving_from != previous.leaving_from) {
+        changeDetails += "\nLEAVING FROM has changed from " + previous.leaving_from.port + " to " + current.leaving_from.port;
+    }
+    if (current.going_to != previous.going_to) {
+        changeDetails += "\nGOING TO has changed from " + previous.going_to.port + " to " + current.going_to.port;
+    }
+	if (current.cabin_class != previous.cabin_class) {
+        changeDetails += "\nCABIN CLASS has changed from "+ previous.cabin_class.getDisplayValue() + " to " + current.cabin_class.getDisplayValue();
+    }
+	if (current.business_justification != previous.business_justification) {
+        changeDetails += "\nBUSINESS JUSTIFICATION has changed from "+ previous.business_justification + " to " + current.business_justification;
+    }
+
+	if (current.state == 12) {
+        changeDetails += "\nTravel request has been CANCELLED.";
+    }
+
+	changeDetails = "Changes made on the travel request:\n"+ changeDetails;
+	current.user_changing_request = changeDetails;
+	current.work_notes=changeDetails;
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-22 04:36:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4862650397beaa90fc1cf4ef9153afb7</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name>Duty Travel - User Changes Request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_script_4862650397beaa90fc1cf4ef9153afb7</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-22 05:35:02</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=4862650397beaa90fc1cf4ef9153afb7"/>
+</record_update>

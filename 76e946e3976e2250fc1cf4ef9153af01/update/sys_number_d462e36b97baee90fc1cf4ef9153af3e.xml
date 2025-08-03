@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_snc_duty_travel_alerts">x_snc_duty_travel_alerts</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>DTA</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-24 03:10:53</sys_created_on>
+        <sys_id>d462e36b97baee90fc1cf4ef9153af3e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DTA</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_number_d462e36b97baee90fc1cf4ef9153af3e</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-24 03:10:53</sys_updated_on>
+    </sys_number>
+</record_update>

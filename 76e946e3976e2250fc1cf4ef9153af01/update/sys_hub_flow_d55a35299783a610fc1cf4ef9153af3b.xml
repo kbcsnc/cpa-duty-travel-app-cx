@@ -1,0 +1,3041 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=1.2,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=25296000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This subflow, named "[AI] Retrieve Traveller Request and Approval Trends", is designed to retrieve and analyze duty travel requests for a specified traveller. It takes a single input, the traveller, as a reference to a user record. The subflow looks up all approved and rejected duty travel requests for the specified traveller and counts the number of requests in each state. It then lists all the approved and rejected countries for the traveller and counts the number of requests for each country. The subflow outputs the count of approved and rejected requests, as well as the approved and rejected countries in JSON format, with each country and its corresponding request count. The purpose of this subflow is to provide insights into the traveller's request and approval trends, which can be useful for analysis and reporting purposes.
+</description>
+        <display_name_after_preview>[AI] Retrieve Travel Request and Trends</display_name_after_preview>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source>text2flow</generation_source>
+        <internal_name>ai_retrieve_travel_request_and_trendsd15</internal_name>
+        <label_cache>[{"name":"c29bd216-02be-4d3b-997e-5fc211c1c646.Count","label":"5 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"d8ca8fa3-4ccc-4b29-b91e-40639f5f7d8a":["approved_locations-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f34aa345-3d78-40c5-9e38-b466b193f8d8.item.going_to.country.name","label":"10 - For Each➛Duty Travel Request Record➛Going to➛Country➛Name","reference":"","reference_display":"Name","type":"translated_field","base_type":"translated_field","parent_table_name":"core_country","column_name":"name","usedInstances":{"4e694c69-4fa6-404e-b134-5974f3d4af96":["rejected_locations-0"],"7cc82822-62a2-4520-8c82-9aefea1371d2":["conditions"],"7196854a-fb01-4728-a5c3-9feaff87e09a":["condition"]}},{"name":"flow_variable.rejected_requests","label":"Flow Variables➛Rejected Requests","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"4e694c69-4fa6-404e-b134-5974f3d4af96":["rejected_locations-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1c687316-9675-4d8e-b600-0e40bd520e01"}},{"name":"61c447af-2ff9-4160-9942-1255000fe843.Records","label":"2 - Look Up Records➛Duty Travel Request Records","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"records","base_type":"records","usedInstances":{"f34aa345-3d78-40c5-9e38-b466b193f8d8":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d95dd61-f11c-4ddb-a232-25e7a53d5f1a.item.going_to.country.name","label":"4 - For Each➛Duty Travel Request Record➛Going to➛Country➛Name","reference":"","reference_display":"Name","type":"translated_field","base_type":"translated_field","parent_table_name":"core_country","column_name":"name","usedInstances":{"d8ca8fa3-4ccc-4b29-b91e-40639f5f7d8a":["approved_locations-0"],"c29bd216-02be-4d3b-997e-5fc211c1c646":["conditions"],"c661a6c4-2bd8-46d2-995c-af73846b6149":["condition"]}},{"name":"flow_variable.approved_locations","label":"Flow Variables➛Approved Locations","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"d8ca8fa3-4ccc-4b29-b91e-40639f5f7d8a":["approved_locations-0"],"4e694c69-4fa6-404e-b134-5974f3d4af96":["rejected_locations-0"],"c661a6c4-2bd8-46d2-995c-af73846b6149":["condition"],"1323b6bc-fa08-41be-9248-d12e46413275":["approved_locations-0"],"5b536205-5b91-4dba-9bd9-a091d49e3602":["approved_locations-0"],"6a223c21-c930-4dd0-8b4f-459fba9341da":["condition"],"b4162d58-4a4f-4057-94cd-b17e2ba80d87":["approved_locations-0"],"d0032cc5-6955-46cb-ba35-c507b3069d68":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"12baf2cc-e9fd-40ae-842b-c5e1e47c9fd3"}},{"name":"61c447af-2ff9-4160-9942-1255000fe843.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"e0ead935-2596-4ea3-82bd-316e3bb09cbd":["rejected_requests-1"],"be006f04-6827-43ba-9653-e80af1ef00d6":["count_rejected_requets-3"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"515a3529-1583-a610-fa0a-b1b951ddf0a3.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"e0ead935-2596-4ea3-82bd-316e3bb09cbd":["approved_requests-0"],"be006f04-6827-43ba-9653-e80af1ef00d6":["count_rejected_requets-0","count_approved_requests-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.traveller","label":"Input➛Traveller","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"515a3529-1583-a610-fa0a-b1b951ddf0a3":["conditions"],"61c447af-2ff9-4160-9942-1255000fe843":["conditions"],"c29bd216-02be-4d3b-997e-5fc211c1c646":["conditions"],"7cc82822-62a2-4520-8c82-9aefea1371d2":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"039ad841-e26c-47f2-af83-4692b9807164","uiTypeLabel":"Reference"}},{"name":"515a3529-1583-a610-fa0a-b1b951ddf0a3.Records","label":"1 - Look Up Records➛Duty Travel Request Records","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"records","base_type":"records","usedInstances":{"658220c9-0c73-48fe-b1db-7edbda4dcf29":["items"],"3d95dd61-f11c-4ddb-a232-25e7a53d5f1a":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.rejected_locations","label":"Flow Variables➛Rejected Locations","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"4e694c69-4fa6-404e-b134-5974f3d4af96":["rejected_locations-0"],"7196854a-fb01-4728-a5c3-9feaff87e09a":["condition"],"0a09553a-e445-4806-9818-ebf95a56b152":["condition"],"5cacf8d7-adc5-4dde-a172-a741fa94e293":["rejected_locations-0"],"afd857c9-e0de-47ac-a1ef-2939e88ec4d1":["condition"],"f653174e-1d4b-42b7-8522-f3ee53d3b9e1":["rejected_locations-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b73276b2-d6c5-440f-8f1e-6fae437c546c"}},{"name":"7cc82822-62a2-4520-8c82-9aefea1371d2.Count","label":"11 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"4e694c69-4fa6-404e-b134-5974f3d4af96":["rejected_locations-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>7c6c922197c7a610fc1cf4ef9153af2e</master_snapshot>
+        <master_snapshot_digest/>
+        <name>[AI] Retrieve Traveller Historical Request and Approval Trends</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:43:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d55a35299783a610fc1cf4ef9153af3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>[AI] Retrieve Traveller Historical Request and Approval Trends</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_hub_flow_d55a35299783a610fc1cf4ef9153af3b</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 12:47:58</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=d55a35299783a610fc1cf4ef9153af3b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d55a35299783a610fc1cf4ef9153af3b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b^id=d55a35299783a610fc1cf4ef9153af3b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=d55a35299783a610fc1cf4ef9153af3b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d55a35299783a610fc1cf4ef9153af3b^sys_idNOT IN9d5a35299783a610fc1cf4ef9153af95"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d55a35299783a610fc1cf4ef9153af3b</id>
+        <name>[AI] Retrieve Travel Request and Trendsd15</name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:43:43</sys_created_on>
+        <sys_id>9d5a35299783a610fc1cf4ef9153af95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 00:43:43</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9d5a35299783a610fc1cf4ef9153af95"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=d55a35299783a610fc1cf4ef9153af3b^sys_idNOT INbc9af1299783a610fc1cf4ef9153af1b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=039ad841-e26c-47f2-af83-4692b9807164</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>traveller</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Traveller</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</model>
+        <model_id>d55a35299783a610fc1cf4ef9153af3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_d55a35299783a610fc1cf4ef9153af3b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:44:47</sys_created_on>
+        <sys_id>bc9af1299783a610fc1cf4ef9153af1b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 00:44:47</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bc9af1299783a610fc1cf4ef9153af1b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=d55a35299783a610fc1cf4ef9153af3b^sys_idNOT IN1aab16ad9787a610fc1cf4ef9153afd0,2a614ee597c3a610fc1cf4ef9153afc9,974ebd6197c3a610fc1cf4ef9153af52,d6ab16ad9787a610fc1cf4ef9153afcc"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=f3336f0f-d4f3-48c1-ace8-8d8142a89547</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>rejected_countries</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Rejected Countries</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</model>
+        <model_id>d55a35299783a610fc1cf4ef9153af3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:09:19</sys_created_on>
+        <sys_id>1aab16ad9787a610fc1cf4ef9153afd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:09:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1aab16ad9787a610fc1cf4ef9153afd0"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b579bfbe-e561-4d21-a70e-675e9e069334</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>count_rejected_requets</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Count Rejected Requets</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</model>
+        <model_id>d55a35299783a610fc1cf4ef9153af3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:14:39</sys_created_on>
+        <sys_id>2a614ee597c3a610fc1cf4ef9153afc9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:09:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2a614ee597c3a610fc1cf4ef9153afc9"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=a23955b4-1816-4f8e-8ea4-52c0afbc5a59</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>count_approved_requests</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Count Approved Requests</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</model>
+        <model_id>d55a35299783a610fc1cf4ef9153af3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:01:03</sys_created_on>
+        <sys_id>974ebd6197c3a610fc1cf4ef9153af52</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:09:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=974ebd6197c3a610fc1cf4ef9153af52"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=8c6cfe4f-3218-4c84-add7-38991a13b9e4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>approved_countries</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Approved Countries</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</model>
+        <model_id>d55a35299783a610fc1cf4ef9153af3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:09:19</sys_created_on>
+        <sys_id>d6ab16ad9787a610fc1cf4ef9153afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:09:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d6ab16ad9787a610fc1cf4ef9153afcc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d55a35299783a610fc1cf4ef9153af3b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=d55a35299783a610fc1cf4ef9153af3b"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=d55a35299783a610fc1cf4ef9153af3b^sys_idNOT IN2d5a35299783a610fc1cf4ef9153afef,32614ee597c3a610fc1cf4ef9153aff6,71528e6997c3a610fc1cf4ef9153aff4,81bb312d9783a610fc1cf4ef9153aff0"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>look up all APPROVED duty travel requests for the traveller</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <generation_source>text2flow</generation_source>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:43:43</sys_created_on>
+        <sys_id>2d5a35299783a610fc1cf4ef9153afef</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:02:40</sys_updated_on>
+        <ui_id>515a3529-1583-a610-fa0a-b1b951ddf0a3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX2W7iMBT9FZTnCCWF0uVtVFRppC5SW/Wl07Gc2AFrjJN6YSni3+c6dkIG0g6MqNRq3vBdfM+9PscxT8uAkeA8OM36UYTj49OTKOr1omgw6KU4TpLeIE2ipJ8EYSDwhEKkxgmnsJxibux6jpRIETF6gbTEU8r/+C3pC8QSpgqOF48+ZQgBnYcyoHNHXwxVGoLSMeNEUhGcPz2HQYEl1NNUBufLDdeugDlOKIfQB494owG9KOolKn3OdtVM69w4Ry6JhRKFAZ1rKggFDBnmiobBBAuCdS4XtUVSTG4FXxvGTGjYMbDBc8Veoe5pZOMyCl2l1PnqJfLzcuZsiDW+19Kk2kgfmo5zllLl5kFohg3XF02bC7gtNMuFS3Ftu+ycm4m4ceMI6g2q4wGLUQCCFrZRi9y3kd2P89ldhfKSiXIm3snzFPN6hbWWLDHa4lkGlNMJbIQmuCiYGKFC5lNWJgOWSXfEYdHNeD6DooqNRBenFngX5oq7l2AfluZHLJnt4hq2gWQAxDgwBLkjVLmR5SinKOVGlQ6JhXJ7BaswUAt1wbFS685h5OjFWNxuDr5j5IZmU1LJCv0NtphS39wq3Ekzx9GacmkuCLMoVEM4TiGcyh8G8slyqUxiZ9CtHavVT6Wxpi7gbFtI/7LFIWVW9ljJ7KLZZFvjXnBbtqu2Dbzg4oMJDvr4SpKD4p9PcftryI3gL0JKT94l2fGaTyqXGrlZNpS0LYy9eb4DhIrnt5aZnWTxFipP84xRTtq+K5fWsfFdOfo/vyufkuQAiCB3ekxwJtxFa+hHsT96/4o92+BZSa8190sbVum2BnBH553XvZWwA5xKCfdQu/Pg8LRArO77kjKbd31l9ALoHUwAvaPDCGBZt1kPsmXm1bvQnmYV/2rj8WY8ULCREK/aBLZXzXjfmkerbQH39lJwk2zOM3yDcwd+QL6hyPAjr4AxpPp6yOkXzRgZUb2uXkWRXM8w/9Xm94xD1UGV7X3AY7T/rmwH8VqioBT4W6bg8Jqv0RieR9t3SBw6835XyA5YqnFc4zn8BazAtCL01wgonY7Ks2neI99rqyd5/4APxk/7Ja0Oq1WD1Zl9if9whxPC82810Mp4yxAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2d5a35299783a610fc1cf4ef9153afef"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>look up all APPROVED duty travel requests for the traveller by the Country</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <generation_source>text2flow</generation_source>
+        <order>5</order>
+        <parent_ui_id>3d95dd61-f11c-4ddb-a232-25e7a53d5f1a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:14:40</sys_created_on>
+        <sys_id>32614ee597c3a610fc1cf4ef9153aff6</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:02:40</sys_updated_on>
+        <ui_id>c29bd216-02be-4d3b-997e-5fc211c1c646</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXW2/iOhD+KyjPNEoI0G7fVq0qHWl3K22rfdlLNLEdsI6xU9uhpYj/vuM4CVlIe0CiUlfnDc/F883lm5jv64DT4DK4yMdRBPHk4jyKkiSKptOEQJxlyZRkUTbOgmEgYcHQ0kImGB6XIEp3fkqNJCkt7Sq1GpZM/PFbswe0pdwUAlbfapdrNBjcVwaDr+yhZMaiEZlzQTWTweX3n8OgAI3xLNPB5XpHdShgARkTaHpfI95JwK6K9phWOi/71HUbfPEKpamDEg0D9mSZpAwx5CAMGwYLkBSs0qtWohnQWym2gjmXFm8MnPGT4c8Y9yJydjnDrAjzuvaY1vXy4vwaLNxZXRJb6tqUzBUnzPh6UJZDKexVV+YNbgvLlfQuPm3vrUS5kF98OYL2gqY9KCkNgmCFS9Qhr9PI7+bq8WuD8obLqia1UigCoj2BtZpnpXV41gETbIEXpQsoCi5naaHVklfOiGURzgQewlyoRwxq+EyGQBzwEOsK4Q3KryvxN9DcZfEZr0FnBMQFTkjqW2hUqatSLlMiSlMpNEjj7wo2w8CszJUAY7aZY8nTh9Lh9nWoM0590ZwL0bywH/GKJauT2wwP4swk2o4cUZJyh8J0iOMZIpj+UaI/Xa9NmbkahK1is/llLFjmDT78milXPKtCokpp9Sp01zfeaDChdBqf5XFMzsaUZmcwSkZnowk7h0lCJ3kMIbcMy913zWazz9N3iPCUS6LqULMkrrot6mtbvS72ZJ/6LqjXRXyydYF5/E0LA4O/v31x/AbwJfiPNUDOXx2yyXaejNI29bXs7IF93h095wdAaOb81k3mIFu9hKoe85wzQfu+ijdOsfNVHP0/v4rvcsgREE1997gUXPo9XrK3mv7o9RX7YWfOqvHazn4lA0P2OQADqwbPRzPhADgNE+4w9uDe4+mB2Oz7amR2d30jrAmQnIwAyeg0BFi3abaF7Kl586p13Wzsn5097NrjCHYc4k0fwY6KGR8bc7TZJ3ByFIO7w+Y11y/M3Imfvy8wcviWK2COrnW81PM3feR0xuw2emNFlX0E8W+fvp64tGlUld4bPKXHr9J2Gm8pikzBP5UGm9d9S8f4PNrfIfHQi49bIQdgacrxGZ7wD2wDphdhvUaQ6WxW9aa7R/5ppfWQj0/4YHy3X9KmWb0cbHr2V/wDPR0Rfv4GH7G3kokRAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=32614ee597c3a610fc1cf4ef9153aff6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>look up all REJECTED duty travel requests for the traveller by the Country</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <generation_source>text2flow</generation_source>
+        <order>11</order>
+        <parent_ui_id>f34aa345-3d78-40c5-9e38-b466b193f8d8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:18:42</sys_created_on>
+        <sys_id>71528e6997c3a610fc1cf4ef9153aff4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:02:40</sys_updated_on>
+        <ui_id>7cc82822-62a2-4520-8c82-9aefea1371d2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX207jMBD9lSrPJUpIWwpvKyqklbhIgHhhIXJsp7XWtYPttJSq/77jOEmzbWBbqUigfavn4jlzORP3cekx4p15w7QXBCjsD0+CIIqCYDCIMAqTJBrgJEh6idf1BJpSsDQo4RSOM8Rze36NtcAxyc0iNgrNKP/rt6IvYEuYzjhaPJQuIzDo3BcGnVv6klNtwAhPGCeKCu/s8anrZUhBPEOVd7bcUO0KmKOEcjC9LxFvJGAWWX2MC52TXTbdOtdOIRWxUIKuR18NFYQChhRxTbveFAmCjFSLWqIoIjeCrwUTJgzc6FnjV83eIO4wsHYphawwdbr6GJf1cuJ0hAy6MyrHJlelKZ5Ihql29SA0RTk3502ZM7jJDJPCubi0nbfk+VRcu3J49QVVe0CSawBBM5uoRV6mkd5N5Py2QnnBRFGTUsklRrw+IWMUS3Jj8Sw9yukULoqnKMuYGMeZkjNWOAOWqT/mcPBTLucQVLOx8BG2wH2oK/IvQD4qxA9IMZvFFVwDzgCIcZiQ2LVQy1wVpZzFmOe6UCgktLvLW3U9vdDnHGm9zhxKHr/kFrerQ5lx7IpmXbBimfkBV8xomdyquxNn+sF65LAUhFkUukEcxxBO1a8c/MlyqfPE1sCvFavVszbIUGcQBs9jaatnpI9lLoxa+Pb+yj2NeghFvf5RRE6GR70A949OaTQ8SnqDQRKeRumQDH1mKNS77ZrVapuoXxHiIddE0aNqTZw3m9TWuHJhbMku2y4oF0Z4sIUBeXynlQHBv97G2H8HuBL8YxHgkw+HrL+eJy2ViV0tG5tgm3h7z/kOEKo5v7GT2UkW76EqxzxllJO27+KFVWx8F4//z+/ilxxyAERi1z0mOBNukef0s6Y/+HjFnm7MWTFe69kvZEjjbQ6gjpGdt72ZsAOcigl3ELtz7/C0QKz2fTEym7u+EpYEiA5GgOj4MARY1mnWhWypefWutd2s7N+sPdq0hxFsOISrNoLtFTPcN+bxapvA0V4Mbg6b04zembkDP4DfYWT3M1fABFzLeLHjbzxnZEzNOnplRaSZI/67TV9OXFw1qkjvEx7TvQ9pOwjXFAWmwN9KDc1rvqZDeB5t75Cw68T7rZAdsFTluEKv8Be2AtOKsFwjwHQ6LnrT3CM/a2k55L0DPhi/7Je0alYrB6uefYv/oIcjwtMfpcahd4sRAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=71528e6997c3a610fc1cf4ef9153aff4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>look up all REJECTED duty travel requests for the traveller</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <generation_source>text2flow</generation_source>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:49:42</sys_created_on>
+        <sys_id>81bb312d9783a610fc1cf4ef9153aff0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 08:02:40</sys_updated_on>
+        <ui_id>61c447af-2ff9-4160-9942-1255000fe843</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX207jMBD9lSrPUZXQUljeVlRIK3GRAPHCguXYTmut6wTb6YWq/77j2EmzbWDbVZFA+1bPxXNmfI7jPi4DToOz4DTtRxGOj09PoqjXi6LBoEdwnCS9AUmipJ8EYSDxhEGkwYlgsJxiUdj1HGlJEC3MAhmFp0z88VuxF4ilXOcCLx58yhACOvdlQOeWvRRMGwgiYy6oYjI4e3wKgxwrqGeYCs6WG65dAQucMAGh9x7xRgNmkddLVPqc7bKZ1rl2jkxRCyUKAzY3TFIGGFIsNAuDCZYUm0wtaotimN5IsTaMuTSwY2CD55q/Qt3TyMalDLoizPnqJfLzcuZ0iA2+M6ogplA+lIwzTph286AsxYUw502bC7jJDc+kS3Ftu+xMFBN57cYR1BtUxwOWQgMIlttGLXLfRno3zma3FcoLLsuZeKfICBb1ChujeFIYi2cZMMEmsBGa4DzncoRylU15mQxYJt2RgEU3FdkMimo+kl1MLPAuzBV3L8A+LM0PWHHbxRVsA8kAiAtgCHJHqLNClaOcIiIKXToUltrtFazCQC/0ucBarzuHkaOXwuJ2c/AdIzc0m0IUz8132GLKfHOrcCfNHEdrypFMUm5R6IZwnEIEUz8LyKfLpS4SO4Nu7VitnrXBhrmAONpW0j/tcUihlV1WQjtvttnWupfclu2ybQMvufhgkoM+vpLooPjn09z+KnIj+IuUyMm7JDte80lnyiA3y4aWtpWxN893gFDx/MYys5Ms3kLlaZ5yJmjbl+XCOja+LEf/55flU5IcAFHkTo9LwaW7aQv2UeyP3r9iv23wrKTXmvulDWuyrQHcMVnndW8l7ACnUsId1O7cOzwtEKv7vqTM5l1fGb0AegcTQO/oMAJY1m3Wg2yZefUytKdZxb/aeLwZDxRsJMSrNoHtVTPet+bRalvAvb0U3CSb8wzf4NyBn5BvKDL8yCtgDKm+HnL6RTNOR8ysq1dRNDMzLH61+T3jUHVQZXsf8BztvyvbQbyWKCgF/phpOLzmezSG59H2HRKHzrzfFbIDlmocV3gOfwIrMK0I/TUCSmej8mya98iP2upJ3j/gg/HTfkmrw2rVYHVmX+Jf3OGE8PQbOo8N/c0QAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=81bb312d9783a610fc1cf4ef9153aff0"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=d55a35299783a610fc1cf4ef9153af3b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=d55a35299783a610fc1cf4ef9153af3b^sys_idNOT IN31528e6997c3a610fc1cf4ef9153aff5,38adf52197c3a610fc1cf4ef9153afc3,3c42dae99747a610fc1cf4ef9153aff3,62ab56ad9787a610fc1cf4ef9153af1a,74adf52197c3a610fc1cf4ef9153afc1,74adf52197c3a610fc1cf4ef9153afc4,7c42dae99747a610fc1cf4ef9153aff2,996406ed97c3a610fc1cf4ef9153afe3,996406ed97c3a610fc1cf4ef9153afec,c1b25a2d9747a610fc1cf4ef9153aff0,d2439e6d9747a610fc1cf4ef9153af04,d56406ed97c3a610fc1cf4ef9153afed,d96406ed97c3a610fc1cf4ef9153afe2,f8adf52197c3a610fc1cf4ef9153afc2,fa1cbd2d9783a610fc1cf4ef9153af11,fe614ee597c3a610fc1cf4ef9153aff6"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">39528e6997c3a610fc1cf4ef9153aff4</block>
+        <comment>the courty is not already counted</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>f34aa345-3d78-40c5-9e38-b466b193f8d8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:18:42</sys_created_on>
+        <sys_id>31528e6997c3a610fc1cf4ef9153aff5</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:18</sys_updated_on>
+        <ui_id>7196854a-fb01-4728-a5c3-9feaff87e09a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lUBnW9DDcm3fgrYBgqYJ0Bi5FIGwIlcOW4pUScqOa+jfu9QjMRoHLYqip97EIXd3ZrwDHwLduLpxdq3PrRUbFaw+308CoTxG34dAQYXBKmBaceGEVnkHTIItyMZf0CcXtpawv3tG2IOQ3ODQrQZDNQ5NsDr8dOX2NeYSCpRUeOuMUBsqF5xOZQRlvGQxS5N5mkRRspjFxTwt4oSngJDSu7Hw7Uju7KpDJq+y9vMIt+MkbbinFUeTAB8dKo40ugRpcRJUoDg4bfZPiEHgN0o+Aw9CuV5xBY9WfKfeSZb5hyWSRjbY8XTMB6tGl7RgeFN7gj3ioJCjhVo2lbrudXiTsYRGuiOTG0v9sPakPYuBUnn7oHefxoEXQnUCh0upGcinEziyoWgcWv/DoMSKGuUV1DWZk9dGb0VXTFyqcCPpEJZS72io35QQmCcekkcQXhD+roPvwAiv4iO1oeKeZgFWsLzbKmrnDEloO1vyb40n1AscpOS9G/TAMiNqd05ztjiwbicvV/JoGw+HjuF2IBEa/ILMIc+9cv/Wtu31zfrs6vLDe3qbzgDSWTZN+ZvFdBaxbLrEdDEtZvN5ES/TcsEXoXBI6rW3xOmQ6UY5sw89h7Z9ufz/nsDfyNoSsjKLo+x01mbzU1k7kbLXA5b8ImB+JX4zX1EU/Q/YccCEzfugDNq64X+cr3sfpn6C7feGIxOWiKw9djn+M/iLPS2AYMfQTpuvXsIz1v4AKdoORGMGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">30adf52197c3a610fc1cf4ef9153afc3</block>
+        <comment>List all the REJECTED Countries</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:58:09</sys_created_on>
+        <sys_id>38adf52197c3a610fc1cf4ef9153afc3</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:18</sys_updated_on>
+        <ui_id>f34aa345-3d78-40c5-9e38-b466b193f8d8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51STW/bMAz9LzonhvxRr86twFCgh7ZAV/QyFIYsUYkwWdIkOaln+L+Pip106HEnm4/k43siJ2KH6IYYXu1dCGpvyO7n+4YokzD8n4hhPZAdURH6QDbkyPSQ4mmqc15V35jcFlI22yqv6bZpqmKbFzc3lFIJt1WZvQC3XoR5xlahgtNsfPt/Bn5QWnhYRTrmUVsET3bTl1QcHbSadaBx0MqA/UpgmDdCNjlteFnUZUFpcVvlXV12eSFKBqLGukvnw2r6yxskdgz9lRc/SUVBNwQ+IhgBOEgyHWBDemYEi9aPZBf9gIAHJp6NHq8VB2Ui0pFU+xHUH+TOKU2FEtARhyV5Ddv1IReYH6zi8OyismZBIuv02sOtHnrztMhPKwDJBh0vK0BkCMgHLmlOKlZJ8sfBnl4uA++VOftbk9pypq8Ri9GrbogQ0hpAQ49Ebc+cU2bfOm+P6tyMWvpsrzHIpLYnHJrOLWM8Cc/wiVh2j/j3M/zGvEouHpEGm+ez+/b3kOYuPlbF7WIaCwL3ysU7pDvCKm5+T/e6MIXlMARwFXDga8IeLleeEiMuWfF/oZP1v5LUT2z+C0SevHAvAwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3442dae99747a610fc1cf4ef9153aff3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned>rejected_locations</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <parent_ui_id>0a09553a-e445-4806-9818-ebf95a56b152</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 02:28:15</sys_created_on>
+        <sys_id>3c42dae99747a610fc1cf4ef9153aff3</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:18</sys_updated_on>
+        <ui_id>5cacf8d7-adc5-4dde-a172-a741fa94e293</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V22obMRD9laBne1nfL2+BEgikDSRuXkpYtNLIVquVNpLWjmv8753Zi2McaOm733bO3M4czbAH5qpYVjGs3G0Iem3Z8sdrj2lLGH4fmOUFsCXz8BNEBJkZJ3jUzgbWY1tuKnIeDsq4XbblXvPcQPI5+Hjs3WCC1KE0fP/yv3lio4300LIruUdSETxbHi5ccV9CZngOBss/R6/tGtO1RGuYznIl+WIxm4/4dJAqMRBqDGoxmIy4mkiM6xKfWh43D2fD/k0Iaou+0DV0XhK7tMfgPYKVgAQUNwF6rOBW8uj8/oR44PLRmg9go23EaoyC34P+jaXnaZpSpAIcVUDjPZlZq2sDi43TAh5LItcgkdRtnc5Uhf3WzEIvAopXJnYvgkgVsB6UxJpotJzU88btnrqGd9rWA7ZOksKcLB5RhryKEOh9Kr26EKdBHi4fCQwU2DEreFkikpXebXXdBUkXydqgkdT7IoE2NeGCJkxQTZ7cIf6lhl/aZfqKZTCZ2n23+q2Ce1qCfDYazqb5sC+nYtIfj1PVn6sB9KeKw3g0E5PxVLBjLW32VtFQjUitHFmjKAYE4XUZb5HCFtrJj690EU335nbqvfvH6lxv6HpD1xs6vyEJQgdktSIK992fiBx73B8tzqGd879ong/s+AfGUFhC0wYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">66ab56ad9787a610fc1cf4ef9153af19</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>20</order>
+        <outputs_assigned>count_approved_requests,approved_countries,rejected_countries,count_rejected_requets</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:09:20</sys_created_on>
+        <sys_id>62ab56ad9787a610fc1cf4ef9153af1a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:19</sys_updated_on>
+        <ui_id>be006f04-6827-43ba-9653-e80af1ef00d6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1X227cNhD9FUJPrbuURd1Wcp6MtEFdNDFgu3mpiwVFDm2mWkkhKV9q7L93qNXKjrNxjMBwU8BPC80Oh+ccnhmQN0Hbu6539qTdt1afNcHenzeBlsFeUM5TqGTOyrlIeM4iJZhQKaiSZQlXWRzMgoYvATNF2zduwbvOtBcgFwY+9mCdxYQLXvc+4+YmYxlPsrikLCsS6utRxSNOK1aVGZNSRTwJX/tCqxUulNp2Nb9+P67HiDjXtTTgAf41CzpucG8HJti7ufeXu+5gUfMKalx40Dg4w6zZozltVg5YyP5Iihzdkvoqa48AE/S0d2ukR5rOArhy0EhALIrXFmbBkjeSu9ZcTxEDXB429W3gHAutNVjyK6v/wdpp5PMUIGkx6jN9LkbtNrK1WsBh53TbrCOOV/VG07bul827NR+vOije1+6O6r3FetB5zB7EiEgdn7eXR5sN3+hmoDf+WbeC19MXd87oqndg/Un1+uS+NuvQ75+dF9SwxD0XS1RYN2cLL7Me9kHYy/Csxo9Q1e0l4vPGDbnwHENUk4dvMP7zEH7PjfaE32KZcb8/Go1HdeD9wOOkzLIqpaxgOU1VAbQAntIsFhFXlch4VgarQdzFx97TWss0CrJYa4oJVhjduX2EcAEj99VsbCSZ84rlXJbzYv656YS4tdRkpsFbRsPdHnrCrvjt+PDdpiUegW6zbGqG13fgPQR9bIQPFnWauoA9YRdE//c+GKX5tAnG43mWDihELhSkiiYxK2gqipRyKec0KcqScZZUJaTf0AHO9LCJecJb7IHRh9YEuzunzc7OvhBgLfF0dvcHfsTzI71FSYg7B6LkYoi01QcQLiTHQwGy7K0jBlxvGsLJ0EQh8RUPvQ1J0y8r/NGWtEpZcKS6Jj8xohvyizGtIb+iI2u/xTGsVR3AXHBdey1JOxjJktFjpO8QWGcQql9zGoSnAeEKO3EDzy+HK77sathDNIbY89Y4PCFBTvsoSuQmMUR1znAEhqI3aCsXDon+iAdeuOsrX2tkNlXxwd3TZgx7B4U4DSz8sCk7GAU3Dqej8AYdWPz4KlitpnHF+EMDQUa3PW/AK/684+oR6DbLjkZ428bVVuhbx1X8Mq6+o3GlkiTJVaSoTFVC00IwygUUtJAFS2NelFk6f4JxtcUeL+PqvxlX01F8YVzFOAVSgGz7lV6U9y/sU73hwn7vlZIzkaZzrmisVElTlke0LNOYsjjLsHsVFOkzvFIeQenTV8o06Y4mTl/j/KU3SvLyRvnO3ihVNi8rVQGFLGc0lTGOvHkENJ9nUEKUl0nyLTe09RsFnagb//5fu/JiRDJ+ShDaIuATHzu4kyev0V9a3A1dtuZvT/U2tvoXeJ9dC10QAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b8adf52197c3a610fc1cf4ef9153afa7</block>
+        <comment>List all the approved countries</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:58:09</sys_created_on>
+        <sys_id>74adf52197c3a610fc1cf4ef9153afc1</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:18</sys_updated_on>
+        <ui_id>3d95dd61-f11c-4ddb-a232-25e7a53d5f1a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51SwW7bMAz9F50Tw7LnoM6twFCgh61AV/QyFAYt0YkwWdIkOaln+N9HxU5W9LiTzUfy8T2RE7NDdEMML/Y+BHUwbP/zbcOUSRj9T8xAj2zPVMQ+sA07gR5SPE0Vr6CsinrLq7tyCzuebzvIYdvytq64lF0OZfaMwnoZ5plapQpOw/j6/wziqLT0uIp04ElbRM/206dUHB02GlrUNGhloH4lKeS17Gqe16IsdmWR58XdF97uypYXsgSUO6q7dj6upj+9QWKn0N946ZNUFPmG4XtEI5EGdaADblgPRkK0fmT76AcCPIJ8Mnq8VRyViUTHUu17UH+Im+d5KuyQHAlckrewWR9ygcXRKoFPLiprFiRCq9ceYfXQm++L/LQC7GDQ8boCQoZAfOiS5qRildT9ONrz83XggzIXf2tSWwH6FkGMXrVDxJDWgBp7Imp6cE6ZQ+O8PalLM2nps4OmIOu0PdPQdG4ZiCQ8oyeC7IHwrxf4FbxKLr4RDTXPF/fN7yHNXXysipvFNBUE4ZWL90R3wlXc/JbudWEKy2FIFCrQwJeEPV6vPCVGWrISH6Gz9b+S1H/Y/BeaEIBVLwMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7cadf52197c3a610fc1cf4ef9153afc3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned>rejected_locations</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id>7196854a-fb01-4728-a5c3-9feaff87e09a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:58:09</sys_created_on>
+        <sys_id>74adf52197c3a610fc1cf4ef9153afc4</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:18</sys_updated_on>
+        <ui_id>4e694c69-4fa6-404e-b134-5974f3d4af96</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WTW/bMAz9K4XOseGv2E5uxYYCBboVaLtd1sKQJarRpkiuLafNDP/3kbHTFh2wnYf1Zj1S5CP5RHhgrvdN77sbd9p1+t6y9be7BdOWMPwemOVbYGvWwncQHmRlnOBeO9uxBdtx05NxGJRxj9WOt5rXBsLfncfx5Jbc0ozzNFsGqSzKIIvEMlhBWgZ1lud1vEpVKctQe9iG907b+8q7ULje+nYfEo9xvGXrk2EohCiTMkmCPOFJkC2TKCgRCVYcFPA4LWKZhB/o4jgiTam7xvD913+DrdhoI1uYJ9HwFkN5aNl6eGPy+wYqw2swWNS1b5ECXtcST0lU1Ery1aooU57HkRKxUBmoVbxMuVpK9DtevJqrP7l4Ndg/DZ3Soq07JnStJHbRgsGTBysBCShuOliwLbeSe9fun5EWuLy05gXYaOsxGiPnp07/xNBlFEXkqQBLFTBZn4/VPM0JFhunBVw2RG5CPM10NjrTb+3nqRbSASjeG3/UASJ9h/GgIdZEY+akrjfu8eqY8EzbQ4GzkVphnk/cYxvq3kNH8+n1zZvmTMjF2yGBgS1mrLa8aUg5Tet2+pAFSaOcDB7Cg0ol0KsMuaAKQ+wmD88Q/3iAv84S/oRh8DKl+2L1Qw/nJIK6SJMir5NA5qjcLItUUKoYglxxyNJCLLNcsPHQ2uqhp6KmJs3tqKaOokMnWt34U6Swg7ny8Y5e/5R92hMH3f1FOu/74n1fvO+L/3VfSBC6Q1Y3ROH8+IdBhj3qR4vX0KNrf1A9L9j4C43sOMerCAAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3042dae99747a610fc1cf4ef9153aff2</block>
+        <comment>Add "," comma separator</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <parent_ui_id>7196854a-fb01-4728-a5c3-9feaff87e09a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 02:28:15</sys_created_on>
+        <sys_id>7c42dae99747a610fc1cf4ef9153aff2</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:18</sys_updated_on>
+        <ui_id>0a09553a-e445-4806-9818-ebf95a56b152</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8PPxvijCWveyrZCYW3GEgpjFHMtXSfaZMmT5KRZ8H/flT+SsKa0G3vcm3Wu7r3nHB28D3Tj6sbZpb6yVqxUMPv6EAZCeYy+94GCCoNZwLTiwgmt8g4Igw3IxhfokwtbS9jdHxG2FpIbHKbVYKjHoQlm+99KbldjLqFASY0LZ4RaUbvgdCpjKJNLlrAsnWZpHKdvL5JimhVJyjNAyOje2PhuJPfmY4eEz7L2+wi34yZtuKeVxGGAjw4VR1pdgrQYBhUoDk6b3QExCHyu5BFYC+V6xRU8WvGTZqeTib9YImlkgx2HYz5YNbqkBcN57Qn2iINCjhZq2VTqrtfhTcYSGulOTG4szcPak/YsBkrlYq23n8eF10J1Aoei1Azk4QSObCgah9Y/DEqsaFBeQV2TOXlt9EZ0zcSlilaSDlEp9ZaW+qREwDzxiDyC6Jrw9x18D0Z4Fbc0hpp7mgVYwfIuVTTOGZLQdrbkPxpPqBc4SMl7N+iCZUbU7or2bHBg3YZPI3mSxv2+Y7gZSEQGvyFzyHOv3N+1bXuzuJsvP9x+Wn55mt0/7v8XSb+ESTlJ4sn5pF9MzyX9TMafj3f6Qrz9g7wy3XEc/4/3abyFzfuYDtq65X+d7gcf5X6D7XPDkQlLRJYeuxn/y76wowAIdgpttfnuJRyx9hc8XRur4QUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">916406ed97c3a610fc1cf4ef9153afe3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned>approved_locations</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>6a223c21-c930-4dd0-8b4f-459fba9341da</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:27:40</sys_created_on>
+        <sys_id>996406ed97c3a610fc1cf4ef9153afe3</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:18</sys_updated_on>
+        <ui_id>b4162d58-4a4f-4057-94cd-b17e2ba80d87</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4POieF8NR+3AEOBAt0KrFkvQ2HQEpUIkyXXkpNmQf77SNtJigzYsHtu5iNFPj6S8EH4OpZ1DCu/DMGsnVj8eO0J4xij74NwUKBYCCjLym9RZdZLiMa7IHpiC7Zm5+Ggrd9lW6gM5BaTP4OPxx7FKxNKC/uX/3wmN8aqCjtuJVREKWIlFocrV9yXmFnI0VL251gZt6bnRpF1N5vmWsF8Pp2N4G6QajmQeox6PpiMQE/mFHd6uOxofHr80OrfZOCy5Aungr5SzC7tCXyP6BQSAQ02YE8U4BREX+3PSIWgnpy9ABvjImUTHPwezC9KPUvTlCM1UqsSW+/ZzDpZW1huvJH4VDK5Foksbuf0ti7c17YXHghqqG08DYSQOlA+LJk10+g46eeN3307Fbw3rmmwc7IU9mxBJBnyOmLg+dRmdSVOizxeDwktFlQxK0hhQjKW2TRViHSRrC0ZSbMuCnlPE5DcYUJqQnJP+OcGful26Qulocdc7rszbzU+8BIMhjnooZR9nGvVH6eA/dl4mPflBAc4nkpCR+LYSJu91dxUK1InR9YqSgFBVqaMS6Kwxa7z4yvfQ1u9vZxm7/6xOrcLul3Q7YIuF6RQmkCsVkzh4fQXYsee9sfIj9DOVz+5nwt2/A1vvt1rzwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">916406ed97c3a610fc1cf4ef9153afec</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>16</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:27:40</sys_created_on>
+        <sys_id>996406ed97c3a610fc1cf4ef9153afec</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:18</sys_updated_on>
+        <ui_id>d0032cc5-6955-46cb-ba35-c507b3069d68</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8PPxthOE9a8la6FwtqMJRTGKOZauk7EZMmT5KSZ8X/flT+SsKZ0G3vcm3Wu7r3nHB3cBLp2Ve3sSl9ZK9YqmH99CgOhPEbfTaCgxGAeMK24cEKrrAPCYAuy9gX65MJWEvaPR4RthOQGh2kVGOpxaIJ580vJ7SvMJOQoqXHpjFBrahecTkUMRXLJEjZJZ5M0jtP3F0k+m+RJyieAMKF7Y+P1SO7dxw4JX2Xt9xFux03acE8ricMAnx0qjrS6AGkxDEpQHJw2+wNiEPhCySOwEcr1ikt4tuIHzU6nU3+xQNLIBjsOx2ywanRJC4aLyhPsEQe5HC3Usi7VQ6/Dm4wF1NKdmFxbmoeVJ+1ZDJSK5UbvPo8Lb4XqBA5FqRnIwwkc2ZDXDq1/GJRY0qCshKoic7LK6K3omolLGa0lHaJC6h0t9UmJgHniEXkE0S3hHzr4EYzwKu5pDDX3NHOwgmVdqmicMySh7WzJvteeUC9wkJL1btAFy4yo3BXt2eLAug1fRvIkjU3TMdwOJCIiQTKQZ165v2vb9m75sFjd3H9afXmZ3T/u/xdJv4RpMU3i6fmkX8zOJf1Mxl+Pd/pGvP2D/Ga64zj+H+/TeAub9TEdtHXL/zrdTz7K/Qbb54YjE5aIrDx2N/6XfWFPARDsFNpp881LOGLtT7GdacnhBQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c9b25a2d9747a610fc1cf4ef9153afef</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>18</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 02:30:11</sys_created_on>
+        <sys_id>c1b25a2d9747a610fc1cf4ef9153aff0</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:19</sys_updated_on>
+        <ui_id>afd857c9-e0de-47ac-a1ef-2939e88ec4d1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8PPxvijCWveyrZCYW3GEgpjFHMtXSfaZMmT5KRZ8H/flT+SsKa0G3vcm3Wu7r3nHB28D3Tj6sbZpb6yVqxUMPv6EAZCeYy+94GCCoNZwLTiwgmt8g4Igw3IxhfokwtbS9jdHxG2FpIbHKbVYKjHoQlm+99KbldjLqFASY0LZ4RaUbvgdCpjKJNLlrAsnWZpHKdvL5JimhVJyjNAyOje2PhuJPfmY4eEz7L2+wi34yZtuKeVxGGAjw4VR1pdgrQYBhUoDk6b3QExCHyu5BFYC+V6xRU8WvGTZqeTib9YImlkgx2HYz5YNbqkBcN57Qn2iINCjhZq2VTqrtfhTcYSGulOTG4szcPak/YsBkrlYq23n8eF10J1Aoei1Azk4QSObCgah9Y/DEqsaFBeQV2TOXlt9EZ0zcSlilaSDlEp9ZaW+qREwDzxiDyC6Jrw9x18D0Z4Fbc0hpp7mgVYwfIuVTTOGZLQdrbkPxpPqBc4SMl7N+iCZUbU7or2bHBg3YZPI3mSxv2+Y7gZSEQGvyFzyHOv3N+1bXuzuJsvP9x+Wn55mt0/7v8XSb+ESTlJ4sn5pF9MzyX9TMafj3f6Qrz9g7wy3XEc/4/3abyFzfuYDtq65X+d7gcf5X6D7XPDkQlLRJYeuxn/y76wowAIdgpttfnuJRyx9hc8XRur4QUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">da439e6d9747a610fc1cf4ef9153af03</block>
+        <comment>Add the "{" and "}" to make it JSON format</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned>rejected_locations</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>19</order>
+        <outputs_assigned/>
+        <parent_ui_id>afd857c9-e0de-47ac-a1ef-2939e88ec4d1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 02:32:44</sys_created_on>
+        <sys_id>d2439e6d9747a610fc1cf4ef9153af04</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:19</sys_updated_on>
+        <ui_id>f653174e-1d4b-42b7-8522-f3ee53d3b9e1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4HOieF8f9wKDAUKdCvQZr0MhSFLVKJNllxJTpoZ+e8jbSctUmDD7rmZj6T4+EjCNXNVLKsY1u4mBL2xbPXjpc+0JQy/a2Z5AWzFPPwEEUFmxgketbOB9dmOm4qcda+ulXH7bMe95rmB5HP48dg7YorUoTT88Pz/mWKrjfTQMSy5R2IRPFvVF654KCEzPAeDBZ6i13aD6VqiNUrnuZJ8uZwvxnw2TJUYCjUBtRxOx1xNJcadEh87Hr37Dw3/TQwqi75wKui8JHZpn8FbBCsBCShuAvRZwa3k0fnDGfHA5YM178BW24ivMQp+C/o3Pr1I05QiFWCrAlrv2cw6ZVtYbJ0W8FASuRaJpG7ndKYq7Le2F5oJKF6ZeJoJIlXA96Ak1kSj46Setm7/eCp4q23TYOckKczZ4hFlyKsIgeZT6fWFOC1yfzkkMFBgxazgZYlIVnq3000VJF0kG4NG0uyLBNrWhAvqMEE1eXKL+JcGfu6W6Ss+g8lU7rvVrxXc0RLk8/FoPstHAzkT08FkkqrBQg1hMFMcJuO5mE5mgh0babPXippqRerkyFpFMSAIr8t4gxR20HV+fKGraKu399Ps3T9W53pH1zu63tHlHUkQOiCrNVG4O/2RyHHA/dHiI7R3/hf1844d/wBZ8fH62wYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dd6406ed97c3a610fc1cf4ef9153afec</block>
+        <comment>Add the "{" and "}" to make it JSON format</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned>approved_locations</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>17</order>
+        <outputs_assigned/>
+        <parent_ui_id>d0032cc5-6955-46cb-ba35-c507b3069d68</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:27:41</sys_created_on>
+        <sys_id>d56406ed97c3a610fc1cf4ef9153afed</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:19</sys_updated_on>
+        <ui_id>5b536205-5b91-4dba-9bd9-a091d49e3602</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4HOieF8NR+3AEOBAt0KrFkvQ2HIEpUIkyVXkpNmhv/7SNtJixTYsHtv5iMpPj6ScM1cFcsqhq3bhKB3lq1/Pg+ZtoThd80sL4CtGS9L7w4gM+MEj9rZwIbswE1FznpQ18q4Y3bgXvPcQPIxvGkGDaZIHUrDT0//nyn22kgPPcOSeyQWwbN1feWKpxIyw3MwWOAxem13mK4lWjfLRa4kX60Wyym/GadKjIWagVqN51Ou5iuMOydueh6D+3cN/00MKou+cC7ovCR26ZDBawQrAQkobgIMWcGt5NH50wXxwOWDNW/AXtuIrzEKfg36Nz69TNOUIhVgqwI678XMemU7WOydFvBQErkOiaRu73SmKuy3rheaCShemXieCSJVwPegJNZEo+ekHvfu+P1c8FbbtsHeSVKYi8UjypBXEQLNp9LbK3E65P56SGCgwIpZgQojkpHMuq2CpItkZ9BI2n2RQNuacEEdJqgmT24R/9LCT/0yfcVnMJnK/bD6pYI7WoLxJOdqIsQIVkqOZimH0XI2yUdiDmOYLQSiU9a00mYvFTXVidTLkXWKYkAQXpdxgxQO0HfePNNVdNW7+2n37h+r83lHn3f0eUfXdyRB6ICstkTh7vxHIscJ90eL99DR+V/UzxvW/AGrVMmJ2wYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9d6406ed97c3a610fc1cf4ef9153afe1</block>
+        <comment>Add "," (comma) separator</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>c661a6c4-2bd8-46d2-995c-af73846b6149</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:27:40</sys_created_on>
+        <sys_id>d96406ed97c3a610fc1cf4ef9153afe2</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:18</sys_updated_on>
+        <ui_id>6a223c21-c930-4dd0-8b4f-459fba9341da</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8PPxthOE9a8la6FwtqMJRTGKOZauk7EZMmT5KSZ8X/flT+SsKZ0G3vcm3Wu7r3nHB3cBLp2Ve3sSl9ZK9YqmH99CgOhPEbfTaCgxGAeMK24cEKrrAPCYAuy9gX65MJWEvaPR4RthOQGh2kVGOpxaIJ580vJ7SvMJOQoqXHpjFBrahecTkUMRXLJEjZJZ5M0jtP3F0k+m+RJyieAMKF7Y+P1SO7dxw4JX2Xt9xFux03acE8ricMAnx0qjrS6AGkxDEpQHJw2+wNiEPhCySOwEcr1ikt4tuIHzU6nU3+xQNLIBjsOx2ywanRJC4aLyhPsEQe5HC3Usi7VQ6/Dm4wF1NKdmFxbmoeVJ+1ZDJSK5UbvPo8Lb4XqBA5FqRnIwwkc2ZDXDq1/GJRY0qCshKoic7LK6K3omolLGa0lHaJC6h0t9UmJgHniEXkE0S3hHzr4EYzwKu5pDDX3NHOwgmVdqmicMySh7WzJvteeUC9wkJL1btAFy4yo3BXt2eLAug1fRvIkjU3TMdwOJCIiQTKQZ165v2vb9m75sFjd3H9afXmZ3T/u/xdJv4RpMU3i6fmkX8zOJf1Mxl+Pd/pGvP2D/Ga64zj+H+/TeAub9TEdtHXL/zrdTz7K/Qbb54YjE5aIrDx2N/6XfWFPARDsFNpp881LOGLtT7GdacnhBQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f0adf52197c3a610fc1cf4ef9153afc2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned>approved_locations</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>c661a6c4-2bd8-46d2-995c-af73846b6149</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:58:09</sys_created_on>
+        <sys_id>f8adf52197c3a610fc1cf4ef9153afc2</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:18</sys_updated_on>
+        <ui_id>d8ca8fa3-4ccc-4b29-b91e-40639f5f7d8a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WTW/bMAz9K4HOseGPOIlzCzYUKNCtwJr1shaGLFGNMEVybTltZvi/j4ydtGiB7Tyst+iRIh8fn4V0zLW+an2zceum0Q+WrX7cT5m2hOHvjlm+A7ZivKpqtwdZGCe41842bMr23LQU7Dpl3FOx57XmpYHwfXLfT+4wLZV5JuU8DlQci2AmZRnwJE2CJIMFz1KZqZiH2sMufHDaPhTehcK11teHkHj0/R1bTbpOJHkpk3geREkJWCYtgzxfQJApkWDhWMxn8/ATXex7pCl1Uxl+uP032IqtNrKGcRMVr7GUh5qtujchf6igMLwEg0Pd+Bop4HUt8TRfLkolObZZpnweRwq7qBmoPM5SrrIc804X1+P0k6tXi/3T0qktxppTQ1dLYhdNGTx7sBKQgOKmgSnbcSu5d/XhjNTA5bU1L8BWW4/VGCU/N/oXll5GUUSZCnBUAUP0fCzGbQ6w2Dot4LoicgPiaadj0Jl2Z78Os5APQPHW+JMPEGkbrAcVsSYaIyd1s3VP304NL7Q9DjgGSQpzPnGPMpSth4b20+rNG3EG5OrtksDADjsWO1SYnEMy62MXJI12MngIjy6VQF9lyAVNGKKaPLxA/PMRvh0t/AXL4GVq993qxxYuyQRxUnKVCBFArmQwizgEy1lSBiKDGGYLgWjK+qO0xWNLQw0ijXIUg6KY0IhaV36NFPYwTt7f09c/dB/eiaPv/mKdj/fi4734eC/+1/dCgtANstoQhcvTPwwKHNA/WryGnlz9k+Z5wfrfGXnx+KsIAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f21cbd2d9783a610fc1cf4ef9153af11</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned>approved_requests,rejected_requests</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:51:27</sys_created_on>
+        <sys_id>fa1cbd2d9783a610fc1cf4ef9153af11</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:18</sys_updated_on>
+        <ui_id>e0ead935-2596-4ea3-82bd-316e3bb09cbd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1XXU/bMBT9K1Oe68pO7KThDW1CQtqGxBgvE4oc+7p4cz5IHKCr+t933aQFMcbDJKYh9a2+1/Y95/ieXmUdNYNvB99fNMd9b5d1dPTtahbZOsTw9zqqZQXRUSTbtmtuQRcd3AzQY3IW3Uo3hNx6LZiQiYhzwsQiITJllBhJJSlZmQumtaEymb9vhtpvNnhQ2751cnU5nceIurZOdzCVb2WHVT100dH6ScqvWiicLMHhwdPawxJ3IWAdMNKsNFrmebZIAgajmDIcTM5EIg0XuG938nii8+78gc4LTENVTNl9vabTAR2dRXDvodaA9Y10PcyiStZa+qZb7SMdSH1Wu4fANV408q7kfW9/4t2chn0GkKiaNNkvi0mvnVSNVXDWetvUY8TL0u10bNxQ1Z9HJkFpMHJw/pHSQ4/3QRswBxATIvPlurk73xU8sfWW3pR0jZJuv5Led7YcPPThdQZ78VSbMfTxtzcCBxXWLCpU2NbLIshst3UQdjVfOlzMjWvuEF9oxblUgeMc1ZTzE4x/2IYvZWcD4U94zVTva23xqU63PWBKyRcsJVmcMMI5JKTMICO5goyLGBImeLTZilvcDIHWKNMkSDFqiht61dnWHyOEW5i4b2Z7O3TwHZT/kx1SpjjPpCGxMTnhLKUkz3lMWCwEpdTAgv8DO8CLdhDpIzucT3SescNzTA92eCt2YCpdZAnaIU8zQbheAClTSgkFTkstYgqU/bUdrkLPj9XHWbFtu5f/SQ8z42CS/80krz0zntjiMDsOtngLtnjt2aFB2R5RXQQIp7svjpBYYf9Y9Th013Q/Ap+H2OYXwLav17sMAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f6614ee597c3a610fc1cf4ef9153aff6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>3d95dd61-f11c-4ddb-a232-25e7a53d5f1a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:14:40</sys_created_on>
+        <sys_id>fe614ee597c3a610fc1cf4ef9153aff6</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:18</sys_updated_on>
+        <ui_id>c661a6c4-2bd8-46d2-995c-af73846b6149</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V207cMBD9lVWed6NcyLbsG2qLhEpBKogXhKKJPWGteu3Udha2Uf69M0kWUAH1oqpPfYuP53LOeI7SRbYNTRv8pT3yXt2aaHV9M4+UYYy+u8jABqNVJKyRKihrygGYR1vQLV+ENc6EbU1wu5nyM2PDDLRDkLsRRknBUvlGw+7qd3LEWmnpcGLUgKO+AV206n64CrsGSw0Vaip9EZwyt5SuJJ3qBOr0UKQiz5Z5liTZ24O0WuZVmskcEHKK2ye+2wucnQ7I/FXl3I9wv+9knWRaaTKP8D6gkUR/VYP2OI82YCQE63YPCMs8N/oRWCsTqFzEwfdefaPaWVFwYI2kUeB4+XAsp2GOsFhbJfC8YYIjEqDSU46wut2Ys1EHPwPW0OqwfwZCWk/1sGHSzGKiVF+s7d3nfcNjZQaB06W2AvTDCQKNoWoDen4Y1LihQuUGmoaGUzbObtWQTFw28a2mQ1xre0dNedtiEEw8phlBfEz4+wG+AqdYxScqQ8kjzQq8EuWwmbxCjiT0w1jKry0TGgVOUspxGhTghVNNOKI+W5xY9/Pna/1ko7tuYLidSMREgmSgLFk5x/q+Pzu/nJ2efPzQdbk8LKRcpos6TcXiQMpqAVmeLbIC30CRy6JOIVYBSb3lkQQbT6sfM4e+f26Pf0/gb3jtEIq6SJPiZa8dLF/y2gsue91g2U8Mxivxi/5KkuS/wZ4aTPlyNMqkbWj+x/66YTONHfy4NxKF8kTkkrGT/d+FL3a0AEo8he6s+8ISHrH+OyqZhhCnBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d55a35299783a610fc1cf4ef9153af3b^sys_idNOT IN1d6406ed97c3a610fc1cf4ef9153afee,556406ed97c3a610fc1cf4ef9153afef"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>d55a35299783a610fc1cf4ef9153af3b</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.approved_locations}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:27:41</sys_created_on>
+        <sys_id>1d6406ed97c3a610fc1cf4ef9153afee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 01:27:41</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c722791b-b167-435d-bae0-3d524cbf6a24</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>d55a35299783a610fc1cf4ef9153af3b</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>c722791b-b167-435d-bae0-3d524cbf6a24</source_ui_id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:27:41</sys_created_on>
+        <sys_id>556406ed97c3a610fc1cf4ef9153afef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 01:27:41</sys_updated_on>
+        <transform_compositions>[{"id":"0970d880c313201027d44077d840dd86","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"string","label":"String","order":0,"attributes":{},"value":",","type":"string","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="ends_with?">5c4c4480c313201027d44077d840dd66</transform_definition_id>
+        <ui_id>17aa5851-d72b-470b-af67-f175260a7dd6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d55a35299783a610fc1cf4ef9153af3b^sys_idNOT IN207bfda99783a610fc1cf4ef9153af5d,687bfda99783a610fc1cf4ef9153af59,a07bfda99783a610fc1cf4ef9153af45,e07bfda99783a610fc1cf4ef9153af56"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b73276b2-d6c5-440f-8f1e-6fae437c546c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>rejected_locations</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Rejected Locations</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</model>
+        <model_id>d55a35299783a610fc1cf4ef9153af3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_d55a35299783a610fc1cf4ef9153af3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:48:34</sys_created_on>
+        <sys_id>207bfda99783a610fc1cf4ef9153af5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 00:48:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=12baf2cc-e9fd-40ae-842b-c5e1e47c9fd3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>approved_locations</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Approved Locations</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</model>
+        <model_id>d55a35299783a610fc1cf4ef9153af3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_d55a35299783a610fc1cf4ef9153af3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:48:34</sys_created_on>
+        <sys_id>687bfda99783a610fc1cf4ef9153af59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 00:48:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=afba4816-7231-44e3-b7e7-9ce7452e3154</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>approved_requests</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Approved Requests</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</model>
+        <model_id>d55a35299783a610fc1cf4ef9153af3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_d55a35299783a610fc1cf4ef9153af3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:48:34</sys_created_on>
+        <sys_id>a07bfda99783a610fc1cf4ef9153af45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 00:48:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=1c687316-9675-4d8e-b600-0e40bd520e01</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>rejected_requests</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Rejected Requests</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</model>
+        <model_id>d55a35299783a610fc1cf4ef9153af3b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_d55a35299783a610fc1cf4ef9153af3b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:48:34</sys_created_on>
+        <sys_id>e07bfda99783a610fc1cf4ef9153af56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 00:48:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>traveller</element>
+        <help/>
+        <hint/>
+        <label>Traveller</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_d55a35299783a610fc1cf4ef9153af3b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 00:44:47</sys_created_on>
+        <sys_id>419abd299783a610fc1cf4ef9153af9f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Traveller</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d55a35299783a610fc1cf4ef9153af3b_traveller_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 00:44:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d55a35299783a610fc1cf4ef9153af3b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>approved_countries</element>
+        <help/>
+        <hint/>
+        <label>Approved Countries</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:09:19</sys_created_on>
+        <sys_id>5aab16ad9787a610fc1cf4ef9153afcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approved Countries</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b_approved_countries_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:09:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>count_rejected_requets</element>
+        <help/>
+        <hint/>
+        <label>Count Rejected Requets</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:14:39</sys_created_on>
+        <sys_id>6a614ee597c3a610fc1cf4ef9153afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Count Rejected Requets</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b_count_rejected_requets_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 01:14:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>count_approved_requests</element>
+        <help/>
+        <hint/>
+        <label>Count Approved Requests</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 01:01:03</sys_created_on>
+        <sys_id>934ebd6197c3a610fc1cf4ef9153af56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Count Approved Requests</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b_count_approved_requests_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 01:01:03</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>rejected_countries</element>
+        <help/>
+        <hint/>
+        <label>Rejected Countries</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:09:19</sys_created_on>
+        <sys_id>9eab16ad9787a610fc1cf4ef9153afd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Rejected Countries</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b_rejected_countries_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:09:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d55a35299783a610fc1cf4ef9153af3b"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=1.2,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This subflow, named "[AI] Retrieve Traveller Request and Approval Trends", is designed to retrieve and analyze duty travel requests for a specified traveller. It takes a single input, the traveller, as a reference to a user record. The subflow looks up all approved and rejected duty travel requests for the specified traveller and counts the number of requests in each state. It then lists all the approved and rejected countries for the traveller and counts the number of requests for each country. The subflow outputs the count of approved and rejected requests, as well as the approved and rejected countries in JSON format, with each country and its corresponding request count. The purpose of this subflow is to provide insights into the traveller's request and approval trends, which can be useful for analysis and reporting purposes.
+</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>ai_retrieve_traveller_request_and_approval_trends</internal_name>
+        <label_cache>[{"name":"c29bd216-02be-4d3b-997e-5fc211c1c646.Count","label":"5 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"d8ca8fa3-4ccc-4b29-b91e-40639f5f7d8a":["approved_locations-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"f34aa345-3d78-40c5-9e38-b466b193f8d8.item.going_to.country.name","label":"10 - For Each➛Duty Travel Request Record➛Going to➛Country➛Name","reference":"","reference_display":"Name","type":"translated_field","base_type":"translated_field","parent_table_name":"core_country","column_name":"name","usedInstances":{"4e694c69-4fa6-404e-b134-5974f3d4af96":["rejected_locations-0"],"7cc82822-62a2-4520-8c82-9aefea1371d2":["conditions"],"7196854a-fb01-4728-a5c3-9feaff87e09a":["condition"]}},{"name":"flow_variable.rejected_requests","label":"Flow Variables➛Rejected Requests","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"4e694c69-4fa6-404e-b134-5974f3d4af96":["rejected_locations-0"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1c687316-9675-4d8e-b600-0e40bd520e01"}},{"name":"61c447af-2ff9-4160-9942-1255000fe843.Records","label":"2 - Look Up Records➛Duty Travel Request Records","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"records","base_type":"records","usedInstances":{"f34aa345-3d78-40c5-9e38-b466b193f8d8":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d95dd61-f11c-4ddb-a232-25e7a53d5f1a.item.going_to.country.name","label":"4 - For Each➛Duty Travel Request Record➛Going to➛Country➛Name","reference":"","reference_display":"Name","type":"translated_field","base_type":"translated_field","parent_table_name":"core_country","column_name":"name","usedInstances":{"d8ca8fa3-4ccc-4b29-b91e-40639f5f7d8a":["approved_locations-0"],"c29bd216-02be-4d3b-997e-5fc211c1c646":["conditions"],"c661a6c4-2bd8-46d2-995c-af73846b6149":["condition"]}},{"name":"flow_variable.approved_locations","label":"Flow Variables➛Approved Locations","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"d8ca8fa3-4ccc-4b29-b91e-40639f5f7d8a":["approved_locations-0"],"4e694c69-4fa6-404e-b134-5974f3d4af96":["rejected_locations-0"],"c661a6c4-2bd8-46d2-995c-af73846b6149":["condition"],"1323b6bc-fa08-41be-9248-d12e46413275":["approved_locations-0"],"5b536205-5b91-4dba-9bd9-a091d49e3602":["approved_locations-0"],"6a223c21-c930-4dd0-8b4f-459fba9341da":["condition"],"b4162d58-4a4f-4057-94cd-b17e2ba80d87":["approved_locations-0"],"d0032cc5-6955-46cb-ba35-c507b3069d68":["condition"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"12baf2cc-e9fd-40ae-842b-c5e1e47c9fd3"}},{"name":"61c447af-2ff9-4160-9942-1255000fe843.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"e0ead935-2596-4ea3-82bd-316e3bb09cbd":["rejected_requests-1"],"be006f04-6827-43ba-9653-e80af1ef00d6":["count_rejected_requets-3"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"515a3529-1583-a610-fa0a-b1b951ddf0a3.Count","label":"1 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"e0ead935-2596-4ea3-82bd-316e3bb09cbd":["approved_requests-0"],"be006f04-6827-43ba-9653-e80af1ef00d6":["count_rejected_requets-0","count_approved_requests-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"subflow.traveller","label":"Input➛Traveller","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"515a3529-1583-a610-fa0a-b1b951ddf0a3":["conditions"],"61c447af-2ff9-4160-9942-1255000fe843":["conditions"],"c29bd216-02be-4d3b-997e-5fc211c1c646":["conditions"],"7cc82822-62a2-4520-8c82-9aefea1371d2":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"039ad841-e26c-47f2-af83-4692b9807164","uiTypeLabel":"Reference"}},{"name":"515a3529-1583-a610-fa0a-b1b951ddf0a3.Records","label":"1 - Look Up Records➛Duty Travel Request Records","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"records","base_type":"records","usedInstances":{"658220c9-0c73-48fe-b1db-7edbda4dcf29":["items"],"3d95dd61-f11c-4ddb-a232-25e7a53d5f1a":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.rejected_locations","label":"Flow Variables➛Rejected Locations","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"4e694c69-4fa6-404e-b134-5974f3d4af96":["rejected_locations-0"],"7196854a-fb01-4728-a5c3-9feaff87e09a":["condition"],"0a09553a-e445-4806-9818-ebf95a56b152":["condition"],"5cacf8d7-adc5-4dde-a172-a741fa94e293":["rejected_locations-0"],"afd857c9-e0de-47ac-a1ef-2939e88ec4d1":["condition"],"f653174e-1d4b-42b7-8522-f3ee53d3b9e1":["rejected_locations-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"b73276b2-d6c5-440f-8f1e-6fae437c546c"}},{"name":"7cc82822-62a2-4520-8c82-9aefea1371d2.Count","label":"11 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","usedInstances":{"4e694c69-4fa6-404e-b134-5974f3d4af96":["rejected_locations-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>[AI] Retrieve Traveller Historical Request and Approval Trends</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7c6c922197c7a610fc1cf4ef9153af2e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=7c6c922197c7a610fc1cf4ef9153af2e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7c6c922197c7a610fc1cf4ef9153af2e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e^id=7c6c922197c7a610fc1cf4ef9153af2e"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=7c6c922197c7a610fc1cf4ef9153af2e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=7c6c922197c7a610fc1cf4ef9153af2e^sys_idNOT IN786c922197c7a610fc1cf4ef9153af2f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>7c6c922197c7a610fc1cf4ef9153af2e</id>
+        <name>[AI] Retrieve Traveller Request and Approval Trends</name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>786c922197c7a610fc1cf4ef9153af2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=786c922197c7a610fc1cf4ef9153af2f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=7c6c922197c7a610fc1cf4ef9153af2e^sys_idNOT IN7c6c922197c7a610fc1cf4ef9153af30"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=039ad841-e26c-47f2-af83-4692b9807164</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>sys_user</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>traveller</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Traveller</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</model>
+        <model_id>7c6c922197c7a610fc1cf4ef9153af2e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sys_user">sys_user</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>7c6c922197c7a610fc1cf4ef9153af30</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7c6c922197c7a610fc1cf4ef9153af30"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=7c6c922197c7a610fc1cf4ef9153af2e^sys_idNOT IN706c922197c7a610fc1cf4ef9153af64,746c922197c7a610fc1cf4ef9153af49,7c6c922197c7a610fc1cf4ef9153af41,f46c922197c7a610fc1cf4ef9153af50"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=a23955b4-1816-4f8e-8ea4-52c0afbc5a59</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>count_approved_requests</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Count Approved Requests</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</model>
+        <model_id>7c6c922197c7a610fc1cf4ef9153af2e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>706c922197c7a610fc1cf4ef9153af64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=706c922197c7a610fc1cf4ef9153af64"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=f3336f0f-d4f3-48c1-ace8-8d8142a89547</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>rejected_countries</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Rejected Countries</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</model>
+        <model_id>7c6c922197c7a610fc1cf4ef9153af2e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>746c922197c7a610fc1cf4ef9153af49</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=746c922197c7a610fc1cf4ef9153af49"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=json,uiTypeLabel=JSON,uiUniqueId=8c6cfe4f-3218-4c84-add7-38991a13b9e4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>approved_countries</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="JSON">json</internal_type>
+        <label>Approved Countries</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</model>
+        <model_id>7c6c922197c7a610fc1cf4ef9153af2e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>7c6c922197c7a610fc1cf4ef9153af41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7c6c922197c7a610fc1cf4ef9153af41"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=b579bfbe-e561-4d21-a70e-675e9e069334</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>count_rejected_requets</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Count Rejected Requets</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</model>
+        <model_id>7c6c922197c7a610fc1cf4ef9153af2e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>f46c922197c7a610fc1cf4ef9153af50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f46c922197c7a610fc1cf4ef9153af50"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7c6c922197c7a610fc1cf4ef9153af2e"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=7c6c922197c7a610fc1cf4ef9153af2e"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=7c6c922197c7a610fc1cf4ef9153af2e^sys_idNOT IN856c922197c7a610fc1cf4ef9153afc6,856c922197c7a610fc1cf4ef9153afc7,8d6c922197c7a610fc1cf4ef9153afc6,8d6c922197c7a610fc1cf4ef9153afc7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment>look up all APPROVED duty travel requests for the traveller</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>856c922197c7a610fc1cf4ef9153afc6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:31</sys_updated_on>
+        <ui_id>515a3529-1583-a610-fa0a-b1b951ddf0a3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX2W7iMBT9FZTnCCWF0uVtVFRppC5SW/Wl07Gc2AFrjJN6YSni3+c6dkIG0g6MqNRq3vBdfM+9PscxT8uAkeA8OM36UYTj49OTKOr1omgw6KU4TpLeIE2ipJ8EYSDwhEKkxgmnsJxibux6jpRIETF6gbTEU8r/+C3pC8QSpgqOF48+ZQgBnYcyoHNHXwxVGoLSMeNEUhGcPz2HQYEl1NNUBufLDdeugDlOKIfQB494owG9KOolKn3OdtVM69w4Ry6JhRKFAZ1rKggFDBnmiobBBAuCdS4XtUVSTG4FXxvGTGjYMbDBc8Veoe5pZOMyCl2l1PnqJfLzcuZsiDW+19Kk2kgfmo5zllLl5kFohg3XF02bC7gtNMuFS3Ftu+ycm4m4ceMI6g2q4wGLUQCCFrZRi9y3kd2P89ldhfKSiXIm3snzFPN6hbWWLDHa4lkGlNMJbIQmuCiYGKFC5lNWJgOWSXfEYdHNeD6DooqNRBenFngX5oq7l2AfluZHLJnt4hq2gWQAxDgwBLkjVLmR5SinKOVGlQ6JhXJ7BaswUAt1wbFS685h5OjFWNxuDr5j5IZmU1LJCv0NtphS39wq3Ekzx9GacmkuCLMoVEM4TiGcyh8G8slyqUxiZ9CtHavVT6Wxpi7gbFtI/7LFIWVW9ljJ7KLZZFvjXnBbtqu2Dbzg4oMJDvr4SpKD4p9PcftryI3gL0JKT94l2fGaTyqXGrlZNpS0LYy9eb4DhIrnt5aZnWTxFipP84xRTtq+K5fWsfFdOfo/vyufkuQAiCB3ekxwJtxFa+hHsT96/4o92+BZSa8190sbVum2BnBH553XvZWwA5xKCfdQu/Pg8LRArO77kjKbd31l9ALoHUwAvaPDCGBZt1kPsmXm1bvQnmYV/2rj8WY8ULCREK/aBLZXzXjfmkerbQH39lJwk2zOM3yDcwd+QL6hyPAjr4AxpPp6yOkXzRgZUb2uXkWRXM8w/9Xm94xD1UGV7X3AY7T/rmwH8VqioBT4W6bg8Jqv0RieR9t3SBw6835XyA5YqnFc4zn8BazAtCL01wgonY7Ks2neI99rqyd5/4APxk/7Ja0Oq1WD1Zl9if9whxPC82810Mp4yxAAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=856c922197c7a610fc1cf4ef9153afc6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment>look up all APPROVED duty travel requests for the traveller by the Country</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>3d95dd61-f11c-4ddb-a232-25e7a53d5f1a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>856c922197c7a610fc1cf4ef9153afc7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:31</sys_updated_on>
+        <ui_id>c29bd216-02be-4d3b-997e-5fc211c1c646</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXW2/iOhD+KyjPNEoI0G7fVq0qHWl3K22rfdlLNLEdsI6xU9uhpYj/vuM4CVlIe0CiUlfnDc/F883lm5jv64DT4DK4yMdRBPHk4jyKkiSKptOEQJxlyZRkUTbOgmEgYcHQ0kImGB6XIEp3fkqNJCkt7Sq1GpZM/PFbswe0pdwUAlbfapdrNBjcVwaDr+yhZMaiEZlzQTWTweX3n8OgAI3xLNPB5XpHdShgARkTaHpfI95JwK6K9phWOi/71HUbfPEKpamDEg0D9mSZpAwx5CAMGwYLkBSs0qtWohnQWym2gjmXFm8MnPGT4c8Y9yJydjnDrAjzuvaY1vXy4vwaLNxZXRJb6tqUzBUnzPh6UJZDKexVV+YNbgvLlfQuPm3vrUS5kF98OYL2gqY9KCkNgmCFS9Qhr9PI7+bq8WuD8obLqia1UigCoj2BtZpnpXV41gETbIEXpQsoCi5naaHVklfOiGURzgQewlyoRwxq+EyGQBzwEOsK4Q3KryvxN9DcZfEZr0FnBMQFTkjqW2hUqatSLlMiSlMpNEjj7wo2w8CszJUAY7aZY8nTh9Lh9nWoM0590ZwL0bywH/GKJauT2wwP4swk2o4cUZJyh8J0iOMZIpj+UaI/Xa9NmbkahK1is/llLFjmDT78milXPKtCokpp9Sp01zfeaDChdBqf5XFMzsaUZmcwSkZnowk7h0lCJ3kMIbcMy913zWazz9N3iPCUS6LqULMkrrot6mtbvS72ZJ/6LqjXRXyydYF5/E0LA4O/v31x/AbwJfiPNUDOXx2yyXaejNI29bXs7IF93h095wdAaOb81k3mIFu9hKoe85wzQfu+ijdOsfNVHP0/v4rvcsgREE1997gUXPo9XrK3mv7o9RX7YWfOqvHazn4lA0P2OQADqwbPRzPhADgNE+4w9uDe4+mB2Oz7amR2d30jrAmQnIwAyeg0BFi3abaF7Kl586p13Wzsn5097NrjCHYc4k0fwY6KGR8bc7TZJ3ByFIO7w+Y11y/M3Imfvy8wcviWK2COrnW81PM3feR0xuw2emNFlX0E8W+fvp64tGlUld4bPKXHr9J2Gm8pikzBP5UGm9d9S8f4PNrfIfHQi49bIQdgacrxGZ7wD2wDphdhvUaQ6WxW9aa7R/5ppfWQj0/4YHy3X9KmWb0cbHr2V/wDPR0Rfv4GH7G3kokRAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=856c922197c7a610fc1cf4ef9153afc7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment>look up all REJECTED duty travel requests for the traveller</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>8d6c922197c7a610fc1cf4ef9153afc6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:31</sys_updated_on>
+        <ui_id>61c447af-2ff9-4160-9942-1255000fe843</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX207jMBD9lSrPUZXQUljeVlRIK3GRAPHCguXYTmut6wTb6YWq/77j2EmzbWDbVZFA+1bPxXNmfI7jPi4DToOz4DTtRxGOj09PoqjXi6LBoEdwnCS9AUmipJ8EYSDxhEGkwYlgsJxiUdj1HGlJEC3MAhmFp0z88VuxF4ilXOcCLx58yhACOvdlQOeWvRRMGwgiYy6oYjI4e3wKgxwrqGeYCs6WG65dAQucMAGh9x7xRgNmkddLVPqc7bKZ1rl2jkxRCyUKAzY3TFIGGFIsNAuDCZYUm0wtaotimN5IsTaMuTSwY2CD55q/Qt3TyMalDLoizPnqJfLzcuZ0iA2+M6ogplA+lIwzTph286AsxYUw502bC7jJDc+kS3Ftu+xMFBN57cYR1BtUxwOWQgMIlttGLXLfRno3zma3FcoLLsuZeKfICBb1ChujeFIYi2cZMMEmsBGa4DzncoRylU15mQxYJt2RgEU3FdkMimo+kl1MLPAuzBV3L8A+LM0PWHHbxRVsA8kAiAtgCHJHqLNClaOcIiIKXToUltrtFazCQC/0ucBarzuHkaOXwuJ2c/AdIzc0m0IUz8132GLKfHOrcCfNHEdrypFMUm5R6IZwnEIEUz8LyKfLpS4SO4Nu7VitnrXBhrmAONpW0j/tcUihlV1WQjtvttnWupfclu2ybQMvufhgkoM+vpLooPjn09z+KnIj+IuUyMm7JDte80lnyiA3y4aWtpWxN893gFDx/MYys5Ms3kLlaZ5yJmjbl+XCOja+LEf/55flU5IcAFHkTo9LwaW7aQv2UeyP3r9iv23wrKTXmvulDWuyrQHcMVnndW8l7ACnUsId1O7cOzwtEKv7vqTM5l1fGb0AegcTQO/oMAJY1m3Wg2yZefUytKdZxb/aeLwZDxRsJMSrNoHtVTPet+bRalvAvb0U3CSb8wzf4NyBn5BvKDL8yCtgDKm+HnL6RTNOR8ysq1dRNDMzLH61+T3jUHVQZXsf8BztvyvbQbyWKCgF/phpOLzmezSG59H2HRKHzrzfFbIDlmocV3gOfwIrMK0I/TUCSmej8mya98iP2upJ3j/gg/HTfkmrw2rVYHVmX+Jf3OGE8PQbOo8N/c0QAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8d6c922197c7a610fc1cf4ef9153afc6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment>look up all REJECTED duty travel requests for the traveller by the Country</comment>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <generation_source/>
+        <order>11</order>
+        <parent_ui_id>f34aa345-3d78-40c5-9e38-b466b193f8d8</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>8d6c922197c7a610fc1cf4ef9153afc7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:31</sys_updated_on>
+        <ui_id>7cc82822-62a2-4520-8c82-9aefea1371d2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX207jMBD9lSrPJUpIWwpvKyqklbhIgHhhIXJsp7XWtYPttJSq/77jOEmzbWBbqUigfavn4jlzORP3cekx4p15w7QXBCjsD0+CIIqCYDCIMAqTJBrgJEh6idf1BJpSsDQo4RSOM8Rze36NtcAxyc0iNgrNKP/rt6IvYEuYzjhaPJQuIzDo3BcGnVv6klNtwAhPGCeKCu/s8anrZUhBPEOVd7bcUO0KmKOEcjC9LxFvJGAWWX2MC52TXTbdOtdOIRWxUIKuR18NFYQChhRxTbveFAmCjFSLWqIoIjeCrwUTJgzc6FnjV83eIO4wsHYphawwdbr6GJf1cuJ0hAy6MyrHJlelKZ5Ihql29SA0RTk3502ZM7jJDJPCubi0nbfk+VRcu3J49QVVe0CSawBBM5uoRV6mkd5N5Py2QnnBRFGTUsklRrw+IWMUS3Jj8Sw9yukULoqnKMuYGMeZkjNWOAOWqT/mcPBTLucQVLOx8BG2wH2oK/IvQD4qxA9IMZvFFVwDzgCIcZiQ2LVQy1wVpZzFmOe6UCgktLvLW3U9vdDnHGm9zhxKHr/kFrerQ5lx7IpmXbBimfkBV8xomdyquxNn+sF65LAUhFkUukEcxxBO1a8c/MlyqfPE1sCvFavVszbIUGcQBs9jaatnpI9lLoxa+Pb+yj2NeghFvf5RRE6GR70A949OaTQ8SnqDQRKeRumQDH1mKNS77ZrVapuoXxHiIddE0aNqTZw3m9TWuHJhbMku2y4oF0Z4sIUBeXynlQHBv97G2H8HuBL8YxHgkw+HrL+eJy2ViV0tG5tgm3h7z/kOEKo5v7GT2UkW76EqxzxllJO27+KFVWx8F4//z+/ilxxyAERi1z0mOBNukef0s6Y/+HjFnm7MWTFe69kvZEjjbQ6gjpGdt72ZsAOcigl3ELtz7/C0QKz2fTEym7u+EpYEiA5GgOj4MARY1mnWhWypefWutd2s7N+sPdq0hxFsOISrNoLtFTPcN+bxapvA0V4Mbg6b04zembkDP4DfYWT3M1fABFzLeLHjbzxnZEzNOnplRaSZI/67TV9OXFw1qkjvEx7TvQ9pOwjXFAWmwN9KDc1rvqZDeB5t75Cw68T7rZAdsFTluEKv8Be2AtOKsFwjwHQ6LnrT3CM/a2k55L0DPhi/7Je0alYrB6uefYv/oIcjwtMfpcahd4sRAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=8d6c922197c7a610fc1cf4ef9153afc7"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=7c6c922197c7a610fc1cf4ef9153af2e"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=7c6c922197c7a610fc1cf4ef9153af2e^sys_idNOT IN016c922197c7a610fc1cf4ef9153afbf,056c922197c7a610fc1cf4ef9153afc2,0d6c922197c7a610fc1cf4ef9153afbb,416c922197c7a610fc1cf4ef9153afc3,456c922197c7a610fc1cf4ef9153afb7,496c922197c7a610fc1cf4ef9153afbc,4d6c922197c7a610fc1cf4ef9153afbf,856c922197c7a610fc1cf4ef9153afbd,896c922197c7a610fc1cf4ef9153afc0,8d6c922197c7a610fc1cf4ef9153afc3,c16c922197c7a610fc1cf4ef9153afbe,c56c922197c7a610fc1cf4ef9153afb8,c56c922197c7a610fc1cf4ef9153afc1,c96c922197c7a610fc1cf4ef9153afb9,c96c922197c7a610fc1cf4ef9153afc4,cd6c922197c7a610fc1cf4ef9153afba"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3042dae99747a610fc1cf4ef9153aff2</block>
+        <comment>Add "," comma separator</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>13</order>
+        <outputs_assigned/>
+        <parent_ui_id>7196854a-fb01-4728-a5c3-9feaff87e09a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>016c922197c7a610fc1cf4ef9153afbf</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>0a09553a-e445-4806-9818-ebf95a56b152</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V0WrbMBT9laFnY2ynCWveSrpCoW3GEgpjFHMtyY02WfIkOWlm8u+7shwntBlb2B73Zh3pXp1zdA9uiW5c3Ti71FfWimdFpl+eIiKUx/C7JQoqTqaEasWEE1rlHRCRNcjGb+AnE7aWsH08IHQlJDO871aDwRrHDZm2r7YEw4IygTK9pCkdZZNRliTZ+4u0mIyKNGMj4DDChhIKLvHobE/j3V2HRL/k57a1x60zQj3367u+y2IPasM8qzSJCH9xXDGOfEqQlkekAsXAabMdEMOBzZU8ACuhXBBcwYsVP/DCbDz2B0uOEmnvxrDMe6cCXF6DA6TSUNeYwTgtKLfBHMZLaKSbHWPhwLz2UkOJg0Luq7VsKvUQHCFDg6OHaSyS4LVX6qn3OsrFSm8+7VneCNW50m9KTUEOK3DoXdE4z6clXPIKG+UV1DU6mtdGr0VXjFyq+FniIi6l3uClfrpioJ54jMZCfIP4dQc/ghFexT22weJAswAraN5NIrZDmzjZRcRu7UyCtQeR6G7+vfEUg+ReXB788SXUiNpd4c1r3uvYRW8H+2im27bjvO5pxYZ/5dRxlnsv/Fm7290uHubLD/cfl5/fJuDs+vPycgnjcpwm49N5uZicysuJpJwZkuw3IfEv9IcZSZLkf0j+OiTC5mG0e23d5f8wI08+EOHOwWsqLFJbeux2/4/wG1scLkGPoY0237yoA7b7CZenDxhtBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dd6406ed97c3a610fc1cf4ef9153afec</block>
+        <comment>Add the "{" and "}" to make it JSON format</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned>approved_locations</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>17</order>
+        <outputs_assigned/>
+        <parent_ui_id>d0032cc5-6955-46cb-ba35-c507b3069d68</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>056c922197c7a610fc1cf4ef9153afc2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>5b536205-5b91-4dba-9bd9-a091d49e3602</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VS2vjQAz+K2HOiXFezeMWWgqF7ha22V6WYpQZTTLs2OPOI2nW+L+vJnYetFDY015ysz5Jo0+fJFwxE3wZvFuahXNqXbD5r9cuU0XE6LtiSrA5Y11WQI70BWVpzRZFpg0Hr0zhyLcFHaKz6lSV1GaXbcEqWGlMPofXdaemFKFcqWH/8u+ZfKO0sNgyLcESMY+WzasPrgPzm+lkJQXMZpPpEG76qeR9LkcoZ/3xEOR4Rg9qWKGm0EVbsfN40dpXbft9GX3OW1WsW/uxfez5CBorIrm0y/DdYyGQWEnQDrssh0KAN3Z/QiyCeCr0Gdiowjf65/Du1B+qN03TNEZKpE45Nt6TmbXCNrC8Aw9EJXAfbBvKN0ZxdI1GAiUE7W8vsSbgqYxtNik+TqTNNjrkxfdGFXZ64DhHQoIjEljGViP3thH5vDG7H0eW96o4qNI6o6j6ZIEn7VbBRz4VC2r5QeYG+SQ0asypYpbTrAjJ4sDUoQqRzpO1JiM57JjAuOkJ8NhhQiOA5J7wuwP80i7gN3qGkmO5n4V6C/gQ16k/WIEccN7DmRS9UQrYm44Gqx4fYx9HE07okNVd5vbuVoNzZ6FoQtlbiG02srUCZY3GMYVbVfoFkdpiq0X9Gm+r4XO9xus1Xq/xf1+jQK4c8VxGUg/Hv2R07Gk3Fb+Edsb+jh2esfovNnNcjW8HAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">916406ed97c3a610fc1cf4ef9153afe3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned>approved_locations</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>6a223c21-c930-4dd0-8b4f-459fba9341da</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>0d6c922197c7a610fc1cf4ef9153afbb</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>b4162d58-4a4f-4057-94cd-b17e2ba80d87</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VS2/bMAz+K4POieG8msctaFGgQLcCa9bLUBi0RCXCZMmV5KRZkP8+KlYeaIEBO+2Sm/mRFD9+JOEds02om+AXdu69Who2+/naYcpEjL53TAk2Y6zDDFRIX1DXzq5RFNpyCMoaT7416CY6dzup7aZYg1NQasw+B+/3HYoXytcati//mMZXSguHiWMNjigFdGy2++A6cL6ZjEspYDodTwZw08sl73E5RDntjQYgR1N6UEOJmkLnqeCXx4um/tZw2NbR54NTZpnsx/TY8xG0TkRyeYfhe0AjkFhJ0B47rAIjIFi3PSEOQTwZfQZWyoRW+QrevfpN9SZ5nsdIidQpx9Z7MoukagvLOwhAVBoeGpdC+coqjr7VSKCERofbS6wNeKpjm21KiANJ2VY3lfnWqsJODxyHSEjjiQTWsdXIPTUin1d28/3I8l6ZgyrJGUXVJwsCaVc2IfLZsUYtPsjcIp+ERo0VVSwqmhUhRRyYOlQh0lW21GRkhxUTGHc8Ax47zGgEkN0TfneAX9L+faVnKDmW+2HUW4MPcZ16/RJkn/MuTqXoDnPA7mTYL7t8hD0cjjmhA0Zr6rf+VoP3Z6FoQsVbE9tsZUsCFa3GMYU7VYc5kVpj0mL/Gq+q5XO9w+sdXu/w/92hQK488VxEUg/HP2N0bGk3Fb+ENtb9ih2esf0f14+MVmMHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c9b25a2d9747a610fc1cf4ef9153afef</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>18</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>416c922197c7a610fc1cf4ef9153afc3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>afd857c9-e0de-47ac-a1ef-2939e88ec4d1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V0WrbMBT9laFnY2ynCWveSrpCoW3GEgpjFHMtyY02WfIkOWlm8u+7shwntBlb2B73Zh3pXp1zdA9uiW5c3Ti71FfWimdFpl+eIiKUx/C7JQoqTqaEasWEE1rlHRCRNcjGb+AnE7aWsH08IHQlJDO871aDwRrHDZm2r7YEw4IygTK9pCkdZZNRliTZ+4u0mIyKNGMj4DDChhIKLvHobE/j3V2HRL/k57a1x60zQj3367u+y2IPasM8qzSJCH9xXDGOfEqQlkekAsXAabMdEMOBzZU8ACuhXBBcwYsVP/DCbDz2B0uOEmnvxrDMe6cCXF6DA6TSUNeYwTgtKLfBHMZLaKSbHWPhwLz2UkOJg0Luq7VsKvUQHCFDg6OHaSyS4LVX6qn3OsrFSm8+7VneCNW50m9KTUEOK3DoXdE4z6clXPIKG+UV1DU6mtdGr0VXjFyq+FniIi6l3uClfrpioJ54jMZCfIP4dQc/ghFexT22weJAswAraN5NIrZDmzjZRcRu7UyCtQeR6G7+vfEUg+ReXB788SXUiNpd4c1r3uvYRW8H+2im27bjvO5pxYZ/5dRxlnsv/Fm7290uHubLD/cfl5/fJuDs+vPycgnjcpwm49N5uZicysuJpJwZkuw3IfEv9IcZSZLkf0j+OiTC5mG0e23d5f8wI08+EOHOwWsqLFJbeux2/4/wG1scLkGPoY0237yoA7b7CZenDxhtBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f21cbd2d9783a610fc1cf4ef9153af11</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned>approved_requests,rejected_requests</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>456c922197c7a610fc1cf4ef9153afb7</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>e0ead935-2596-4ea3-82bd-316e3bb09cbd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1XwU7jMBD9lZXPdWU3TtJwQyAkpN1FApbLClUTe1y86ybBcYBu1X9fuwltBSwnTktv8Rt75s0bP1lZkbrzTefb6/q4bc28Ikc/b0fEVBEL3ytiFDkiZEQqWGD4gqZx9QOqmcP7DtuwaUQewHYxtlqlPIUknRSUp9OEQsYZ1cCAlrwsUq6UZpCMT+qu8ut1OKhM21hY3gznAyLvjFUOBxoNuFDVoyNHqxehDS1geakVFEU+TWIxLbnUAnXB0wS0SENCCyXasPV44P3lcsf7nZb8sokhU3mch/I98HXIdb5Fa6ciOTYi+OSxUhhYabAtjsgCKgW+dsst4hDURWV3wF1I37e9gKfW/AkVBYv7NIY+5SDJdjkb5OphfQoerrzrpO/cVr3aSGx7hRRq6Kw/2cf6DReNN3XVH/FQ2ufTte0W1fdeFLJNsDedrg0ksImNRuZDG/rqrn68fGZ5ZqqNJkPQ1hLsdgXeO1N2PvJZkc5cv5S5h14LjRYXoeZsEYZlqvksTsxs6gTai/HchsVY2/ox8IvXeAwy9jgOI4DxWcBPN/ANOBMb/hbSDPV+VCZM/XxznXQJYsozmk8SToXAhJY55rSQmIt0gglPBVmPSLtsTyy07U6qMKPZfRcb7YUbJJr1Kscj0pnGHwdSDziosR69MpfDXyj9v8yVcSlEDppOtC6o4BmjRSEmlE/SlDGmcSo+0lz4rrnSbM9clwPvN8z1VksHc31Cc3GZTfMkmKvI8pQKNUVaZoxRhoKVKp0wZPwDzXUbndPzObxjB6t9Kqsd3rHDO3Yw13/zjimUpg08ryOp8+c/sxhYhstp5D70WLvfscMdtv4LSCWp9OMNAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f0adf52197c3a610fc1cf4ef9153afc2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned>approved_locations</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>c661a6c4-2bd8-46d2-995c-af73846b6149</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>496c922197c7a610fc1cf4ef9153afbc</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>d8ca8fa3-4ccc-4b29-b91e-40639f5f7d8a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WTWvjMBD9K0Xn2PgjTuLcSkuh0N3CtruXbTFjadSIlS3XktNmjf/7jmInLS3scWEhN+nNh968GQ/umelc0zl7b86tVU81W/98nDFVe4zOPVOCrRmbsRoqpBM0TWu2KAptODhlaku2LejOG/teavNSbKFVUGoMPzsPw9kDuaUiz4RYxIGMYx7MhSgDSNIkSDJcQpaKTMYQKodV+GRU/VQ4E3LT1a7dhZ7HMDyw9Vnf8yQvRRIvgigpkdKkZZDnSwwyyRNKHPPFfBFe+MBhIJpC2UbD7sf/wZZvlBYtTh1poKVUDlu27j+Y9h1arJalFEAJVyks4khSPjlHmcdZCjLLKaGGEjW5nk91nt28a+Hf2ut2jbdZ11J10/1mSnZ3AE0rPLloxvDVYS2QWEnQFmesglqAM+3uiLQI4rbWb8BG1W6cswperfpN762iKPKeEqlSjqP1eC2mZo6wvAQHRKXjrmsnV74xiqMdNRIoodPu4j02Otw2vswxxPk5mKKN7qr666gKOyY4zA4hnSUS2PhSPfepEHm3MS/fDiyvVL1XZTJ6UfXxBo60Kzvn+fSsU/cfZB6RT0KjxopeLCrqlZ823zC1f4VI0whquoT7yRbov+gQuK8wpBZAeEX45R7+MY39F0pDwf6577V67vDaj1OclCATzgPMpQjmEWCwmidlwDOMcb7khKZsmDG7sxcarH0TijpUPHe+zFG2SaBi1NiH8FY17pxIbXHSYnj0O2Tkc9o6p61z2jqnrfNvto5ArizxvPekrg9/Pd6wo9lU/D30YtpfvsI3bPgDZNDIpD8JAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3442dae99747a610fc1cf4ef9153aff3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned>rejected_locations</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <parent_ui_id>0a09553a-e445-4806-9818-ebf95a56b152</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>4d6c922197c7a610fc1cf4ef9153afbf</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>5cacf8d7-adc5-4dde-a172-a741fa94e293</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTWvjMBD9K0VnxzjfH7fSUih0t9Bme1mKGUujRLuy5Epy0mzIf99R7HzQQmFPe8nNejOjee9pBm+ZrUNVBz+3196rhWGzn68JUyZi9L1lSrAZYwkzUCJ9OfyFPKDIteUQlDWeYivQdQxut1Lbdb4Cp6DQmH5O3u2SKyoQylcaNi//WseXSguHLcsKHJEK6Nhs+yG0Z93LxoUUMJ2OJ30YdTPJu1wOUE67wz7IoaALNRSoKfWp7Xj1cCbrK8lhU8WYD06ZRXt+aC97PoDWiUguSxi+BzQCiZUE7TFhJRgBwbrNEXEI4tHoE7BUJjTel/Du1R/qN8myLGZKJKUcm+jxmLe2NrC8hQBEpeahdm0qX1rF0TceCZRQ63BzjjUJj1WU2ZSE+CJttdV1ab43rrDjBYdXJKT2RAKrKDVyb4XI56VdPx1Y3imzd6UNRlP18QSBvCvqEPlsWa3mH2xukE9Go8aSOuYlVBUheeXsSu27EOkyXWg6pPsZExinPAUeFab0BJDeEX67h1/aAfxG11BxbPfDqLca7+M4FeN+bzwqeh0x4sPOYJDJzkR2sTOSgIP+mA8HI852CfMbf6PB+5NR9EL5Wx1lNra1BuWNx7GEO1WFayK1wtaL3Wvcq4bPZRMvm3jZxP+5iQK58sRzHkndH/6OMbCh2VT8HFpb9zsqPGG7vyvtt8NnBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">30adf52197c3a610fc1cf4ef9153afc3</block>
+        <comment>List all the REJECTED Countries</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>856c922197c7a610fc1cf4ef9153afbd</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>f34aa345-3d78-40c5-9e38-b466b193f8d8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TwW6jMBD9F58JAkLZklvVqlKldiulVS+rKprY48RaY7O2Scqi/PuOA6FVj3uCeZ55897DDMx2oe2Cf7U33qudYatf7wlTJmL0PjADDbIVUwEbzxJ2AN3FehiqnJflD5CLQsp6UeZVtqjrsljkxdVVlmUSr8tlukZunfCnE40K5VsN/dv/M/C90sLhJLIFR9oCOrYavh0pQQvyWsg6z2q+LKplkWXFdZlvq+U2L8QSUFREqGGLmlofJnffzIa+jaUbJUzA4zSznlF6RBFFljD8CGgE0noJ2mPCGjACgnU9WwXXEeAQxLPR/dyxVyYQHYu9H179pY15lsVGiWSI43g4l5spxxGWdxDghah56NzUyvdWcfRjFAIldDrcfsXGhuc2KGvGkQBbfZm2umvMzzEJNhNcPhshnScR2EajUfrkQ77s7XF9UXmvzDmU6VBbDnquIASntl2IegaGGhsi2jTQtsrsNq2zB3UeJi1NutNUpFLbIy2NVzQFHoWnlCuk94TfneE3cCq6eCIaGj4lzPf+VoP3n14oxM2fLioZnU0eNmMMcYQ71YYbWnDASe7pPd76kXvOlCtPEl4j9nD5V+JBTzdI8a/Q0brfUfwndvoHfrFirHUDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7cadf52197c3a610fc1cf4ef9153afc3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned>rejected_locations</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <parent_ui_id>7196854a-fb01-4728-a5c3-9feaff87e09a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>896c922197c7a610fc1cf4ef9153afc0</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>4e694c69-4fa6-404e-b134-5974f3d4af96</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WwU7jMBD9FeRzE6VJmqS9IRASErtIwHJZUDWxx9S7bhxip9CN8u87btKCQOK40kq9xW9m7DdvXkftmGld3Tp7Z06tVU8VW/x8nDBVeYy+O6YEWzA2YRWskb4a/IXcoVhqw8EpU1mKbUC3Pth1UpuX5QYaBaXG8HNy3588+LQkBUjSWZCIvAjSiM+COSZFUKZZVk7niSxEESqH6/DJqOpp6UzITVu5Zht6Hn3/wBYnXZdzXsRFHAdZDHGQzuIoKAgJ5oASYZrkUxGHZ76w74mmULbWsL3/P9jyldKiwXEiNTR0lcOGLboPod2E4igvpYD5PC8SyKaR5FMuU5Tz6SwBORN0oYYSNaXejH2eXL0b4Vfjddvax6xrqLvxfDVedrsHTSM8uWjC8NVhJZBYSdAWJ2wNlQBnmu0BaRDEdaXfgJWq3OCzNbxa9YfeK6Io8pkSqVOOQ/RwXI7DHGB5Dg6ISstd24ypfGUURztoJFBCq93Ze2xIuK59m0OJ8z4Yq41u19X3QRV2uGDvHUJaSySw9q167mMj8nZlXm72LC9UtVNlDHpR9eEEjrQrW+f5dKxVdx9kHpBPQqPGNb24XENde7fVjdmo3StEmiyo6RDunC3Q/6JD4L7DkEYA4QXh5zv4frT9N7qGiv1zPyr13OKlt1OZJ3GelXEgMnJ7mkYyKOQUg0wCpknOZ2nGWT9hdmvPNFj7JhRNaPnc+jYH2UaBloPGvoQ3qnanRGqDoxb9o98hA5/j1jlunePWOW6df7N1BHJlieedJ3W5/9fjA1vypuLvoRfT/PYdvmH9Xw8Sx+M/CQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">da439e6d9747a610fc1cf4ef9153af03</block>
+        <comment>Add the "{" and "}" to make it JSON format</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned>rejected_locations</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>19</order>
+        <outputs_assigned/>
+        <parent_ui_id>afd857c9-e0de-47ac-a1ef-2939e88ec4d1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>8d6c922197c7a610fc1cf4ef9153afc3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>f653174e-1d4b-42b7-8522-f3ee53d3b9e1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTWvjMBD9K0HnxDjfaW6lpVDobqHN9rIUM5FGiXZl2ZXkpFnj/76jWPmghcKe9pKb9WZG897TDK5ZUfmy8m5RXDunVobNf752mTIBo++aKcHmjHWZgRzpy+Iv5B5FpgsOXhXGUWwDugrBulPXUhfbbANWwVJj8jm9aToNlQjlSg27l3+v5GulhcXItARLxDxaNq8/hPbMB+l0KQVcXU1nQ5j0U8n7XI5QXvXHQ5BjQRdqWKKm1KfYsfNwJu0r2X5XhpjzVplVPD/Ey54PYGFFIJd2Gb57NAKJlQTtsMtyMAJ8YXdHxCKIR6NPwFoZ3/qfw7tTf6jfLE3TkCmRlHJso8djFo1tYXkLHohKxX1lYypfF4qjaz0SKKHS/uYcaxMeyyCzLfHhRWJ1oavcfG9dYccLDu9ISOWIBJZBauAehcjndbF9OrC8U2bvSgwGU/XxBJ68W1Y+8KlZpRYfbG6RT0ajxpw6ZjmUJSFZaYuN2nch0nmy0nRI9jMmMEx6AjwoTOgJILkj/HYPv8QB/EbXUHFo98Ootwrvwzgtp8PBdLIc9MSEj3ujUSp7M9nH3kQCjoZTPh5NOGu6zO3cjQbnTkbRC2VvVZDZ2hYNylqPQwm3qvTXRGqD0YvmNexWy+eyjZdtvGzj/95GgVw54rkIpO4Pf8kQ2NFsKn4ObQv7Oyg8Yc1fr5nFPG8HAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">39528e6997c3a610fc1cf4ef9153aff4</block>
+        <comment>the courty is not already counted</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <parent_ui_id>f34aa345-3d78-40c5-9e38-b466b193f8d8</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>c16c922197c7a610fc1cf4ef9153afbe</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>7196854a-fb01-4728-a5c3-9feaff87e09a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnWZAsy7V9C5wGCOomQGPkEgTCiqRsthSpkpQT19C/dynJDzQu2qBFT72JQ+7uzHgH3hFdu6p2dqkvrRUrRWaPTwERymP4vSMKSk5mhGrFhBNaZS0QkA3I2l/gJxO2krB9OCJ0LSQzvO9WgcEaxw2Z7X64EgwLigiKeEpjmgzHyTCKhpNRnI+TPB6yBDgk2FBCziU+ne9pXCxaJPgpP7etPG6dEWrVnxd9l/s9qA3zrOIoIPzFccU48ilAWh6QEhQDp832gBgO7E7JI7AWynWCS3ix4hsOHKapf1hwlEh7Nw7HrHeqg4srcIBUaupqczBOC8ptZw7jBdTSzU+x7sFd5aV2JQ5yua/Wsi7VbecIOTQ4+WFqiyR45ZV66r2O4n6tnz/tWV4L1brSX0pNQR5O4NC7vHaez45wyUtslJVQVehoVhm9EW0xcinDlcRDWEj9jEP9doVAPfEQjYXwGvGrFn4AI7yKj9gGizuaOVhBs3YTsR3axEkTELu1cwnWHkWiu9nX2lPsJPfiss4fX0KNqNwlTt7wXkcTvF7sk53e7VrOm55WaPhnTh1nmffCv7VNc3u3vFjcfHiPb5MRQDJKBwl7NxmMIpoOpjyZDPLReJzH06SYsEkoHEc/tDfJ6ZDqWjmzDT2HpnkdoX9P4G2JnUJapHGUnk/saHwusWey+saYDn8RU78jv5nSKIr+x/SPYyps1oWr19YO/4spffKR7GYevKbCIrWlx272/1L+YovLJegp9KzNFy/qiDXfAfJnRLDvBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b8adf52197c3a610fc1cf4ef9153afa7</block>
+        <comment>List all the approved countries</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>c56c922197c7a610fc1cf4ef9153afb8</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>3d95dd61-f11c-4ddb-a232-25e7a53d5f1a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51Ty27bMBD8F55lQY/KiHwLEgQI0DaAE+RSBMKKpGyiFKnyYUcV9O9dmrIS5NiTtMPd2ZkRNRHt3eCdfdG31oqDIrtfbwkRKmD4PhEFPSc7IhzvLUnICaQP9TRVeQVlVdSbvLopN7DNs00HGWzavK2rnLEugzLdc6oNs/OMo0zYQcL4+v8M9CgkM3wROYBBbY4bspu+HAmGC/KadXWe1bQstmWRZcXNt7zdlm1esBI42yKhhJZLbH1c3H0x68YhlCZKWIDvy8x+RfERRBRZQvi744pxXN+BtDwhPSgGTpuR7JzxCBgO7EnJce04CuWQjoTedyv+4sY8y0Jjx9EQ5fFwLZslxwh39+DgGamp82ZppUctKLcxCsY78NLdfcZiw9PghFZxxEErr9Na+l79jEmQleD62RDxFkXwIRgN0hcf3fNRn/dXlQ9CXUJZDqWmINcKnDOi9S7omQiXvEeipodhEOrQDEafxGUYtfTpQWKRdlKfcWm4oinQIDzFXCF9QPz+Ar+CEcHFD6TB4TkhdrR3Eqz98IIhNn98UBKdLR6aGEMYoUYM7hYXnPgid34Ltz5yr5lSYVHCS8Aer/9KOBjxBgn6GTpr8zuI/8Dmf2IKMSh1AwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">916406ed97c3a610fc1cf4ef9153afec</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>16</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>c56c922197c7a610fc1cf4ef9153afc1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>d0032cc5-6955-46cb-ba35-c507b3069d68</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V0WrbMBT9laFnY2ynCWveSrpCoW3GEgpjFHMtyYmYLHmSnDQz+fddWY4T1owtbI97s450r845uge3RDeubpxd6htrxUqR6ZeXiAjlMfxuiYKKkymhWjHhhFZ5B0RkA7LxG/jJhK0l7J6PCF0LyQzvu9VgsMZxQ6btT1uCYUGZQJle05SOsskoS5Ls/VVaTEZFmrERcBhhQwkFl3h0dqDx7qFDol/yc7va49YZoVb9+qHvsjiA2jDPKk0iwl8dV4wjnxKk5RGpQDFw2uwGxHBgcyWPwFooFwRX8GrFd7wwG4/9wZKjRNq7MSzz3qkAl7fgAKk01DVmME4Lym0wh/ESGulmp1g4MK+91FDioJCHai2bSj0FR8jQ4ORhGoskeO2Veuq9jnKx1ttPB5Z3QnWu9JtSU5DDChx6VzTO82kJl7zCRnkFdY2O5rXRG9EVI5cqXklcxKXUW7zUT1cM1BOP0ViI7xC/7eBnMMKreMQ2WBxoFmAFzbtJxHZoEyf7iNidnUmw9igS3c2/NZ5ikNyLy4M/voQaUbsbvHnDex376O1gn8x023acNz2tGGmhMM5y74U/a/f7+8XTfPnh8ePy89sEXFx/WV6uYVyO02R8Pi9Xk3N5OZOUC0OS/SYk/oX+MCNJkvwPyV+HRNg8jHavrbv8H2bkxQci3Dl4TYVFakuP3R/+EX5jh8Ml6Cm01earF3XE9j8A7H79CW0GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f6614ee597c3a610fc1cf4ef9153aff6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>3d95dd61-f11c-4ddb-a232-25e7a53d5f1a</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>c96c922197c7a610fc1cf4ef9153afb9</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>c661a6c4-2bd8-46d2-995c-af73846b6149</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K5Wf0ygfpBt9QzAkNAbSQLwgFN3YDrXm2pntFLKo/333JmlBg2lDm/a0t/r4fpxz4qP2zLahaYO/tkfeq3vDlrd3EVOGMPzdMwNryZaMWyNUUNaUAxCxDeiWLsJKzrhtTXDdTPmZsWEG2kkQ3QhLgcVC+UZDd/OWHr5SWjg5MWrA4d4gHVv2P1wpgSPrBOr0kKc8zxZ5liTZ+4O0WuRVmokcJOQ4UEMlNZYe76TMzgck+qnG0DWE++CUuZ/O59OUqx1onSBWaRIx+RikEch+WYP2MmJrMAKCdd0eIZWXRj8BK2UCjmNU/OjVN1yYFQUV1hIlcjle7o/l5OUI1ycQAKm0PLRuKuUrq7j0ozlC1tDqcPwcGwsuG5I6tgSo9K7b6nZtLkZH2H7A7tMh0nokIRtSStQnHfXVyj583rE8VWZwZbrUloPenyCgd1UbiE/PpJZrHFSuoWnQ0bJxdqOGZuSyju81HuJa2wdcSi80Bk7EYzQW4lPETwb4BpwiFZ9wDDaPNCvwipfDa6Zn51DCNmK+88cavH8Sie6WX1uiOEqexJWjP9TCnWrCEW7eyEnHNnoZjme56PuB82aiFSMtFCZFSV5Qrd9uLy6vZ+dnHz/0fS4OCyEW6bxOUz4/EKKaQ5Zn86yQ76DIRVGnEKsg0Q9LJgUbTwGKicN2+zJk/57A2xJ7CEVdpEnxemIPFq8l9pWsvjGm2S9iSm/kN1OaJMn/mP5xTJUvx3BN2oblfzGldxTJcefea648Ursm7Gz3T0cXHT4uxZ9DD9Z9IVFP2PY7TYz8LDMHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">66ab56ad9787a610fc1cf4ef9153af19</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>20</order>
+        <outputs_assigned>count_approved_requests,approved_countries,rejected_countries,count_rejected_requets</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>c96c922197c7a610fc1cf4ef9153afc4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>be006f04-6827-43ba-9653-e80af1ef00d6</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Y31PcNhD+VzR+aunJWP51NnliSDNNJw0zQPNSOjeytAInPvsiycCVuf+9K9vnO8iV0BlIpy1PcMtq9X3f7n5z4tZrWrtorTlrDo0pL2rv4Ldbr5TegZdPYyhkyvKpiHjKAiWYUDGonCURV0noTbyazwEzRdPWdsYXC91cgZxp+NyCsQYTrnjVuozb24QlPErCnLIki6irRxUPOC1YkSdMShXwyD9yhVYrPChLs6j48sNwHiPisqykBgfw94m34BrvtqC9A4Rb4y81r96V9addyY+lU/ECKkztYJDDgQ852fD5KmG7XLgEh+gCwfWBd0Pdt2O00dJBjyce3FioJSBCxSsDE2/Oa8lto5djRAOXx3W1CVxi+Z7nnN+Y8g+8MQ5cngLkLAbBxo+zQcw+rF5zy0+tboVt9ahtUwowvVoSFG8re7Qd6xOOF7Zs6v6I5UW1Pt1U7bx+30vjjQW2etcaBAELR9QhH2io08vm+mSN8k1Zd5oMf6wawavxE7dWl0VrHZ5bry3P7svch74UGiqY452zOTarrC9mrmNldw/CnvsXFX7wVdVcIz43/j4XjqOPLeD+G4y/7sIfuC4d4V+wzHDfr3WJXX/rRouHUZ4kRUxZxlIaqwxoBjymSSgCrgqR8CT3VhPPLM1RxY3ZSIU9mn1uHdFeuEGiWa+yOyJ0ubCHCOoKBjVWk2FBZcoLlnKZT7PplxMtxGZex0ntBleXsL2bz7Jtj8C23rZxz462wD0EfNixjwZVurtgP58ev99sF3vC7Qr+l/s1SHx3uQaRv8lmZSIVCmJFo5BlNBZZTLmUUxplec44i4oc4ifZLOwXrGNOgh2Dh9GHznj7e+f13t6hwKYa4gjuH3aMiWNMWoMiEXsJRMlZF2mKjyCsT067AmTeGks04NDUhJNuOX3iKh67aSZ1Oy/wR2lIo5QBS4ol+YGRsiY/at1o8hMOduWuOIVe5w7MFS8rpy5putEyZBhV0i4Q2EIjVHfm3PPPPcIVLvYanjsON3y+qOAA0WhiLhttsWeCnLdBEMl1oo/qXKDZ+qLVOGjW7xJd0zteeOsrV2tgNlZxwf3zegi7mfLRZQx8ty7bjQ5e7I+tcCPbsfj+lbdajTbI+ENWI4ONm2hwin9LG3wEtrUNngzgdtngTuCPtcHwxQb/7TaooihKVaCojFVE40wwygVkNJMZi0Oe5Uk8fRYb3DF4Lzb4z9jg2Iq/sMEQ/SUGSHa/b0R+//Uy1uteL/deaykTcTzlioZK5TRmaUDzPA4pC5METUBBFj/va+0RbO6+1kb7PBnpfI3u33urRS9vtf/CW61IpnmhCqCQpIzGMkQrnQZA02kCOQRpHkVP842yf6u5ea7d/1f63lwN2Mb2idIghTMXe7uVJ5c4vKXYDl03+pMjv4mt/gRyQCoCvREAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9d6406ed97c3a610fc1cf4ef9153afe1</block>
+        <comment>Add "," (comma) separator</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <parent_ui_id>c661a6c4-2bd8-46d2-995c-af73846b6149</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>cd6c922197c7a610fc1cf4ef9153afba</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:21</sys_updated_on>
+        <ui_id>6a223c21-c930-4dd0-8b4f-459fba9341da</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V0WrbMBT9laFnY2ynCWveSrpCoW3GEgpjFHMtyYmYLHmSnDQz+fddWY4T1owtbI97s450r845uge3RDeubpxd6htrxUqR6ZeXiAjlMfxuiYKKkymhWjHhhFZ5B0RkA7LxG/jJhK0l7J6PCF0LyQzvu9VgsMZxQ6btT1uCYUGZQJle05SOsskoS5Ls/VVaTEZFmrERcBhhQwkFl3h0dqDx7qFDol/yc7va49YZoVb9+qHvsjiA2jDPKk0iwl8dV4wjnxKk5RGpQDFw2uwGxHBgcyWPwFooFwRX8GrFd7wwG4/9wZKjRNq7MSzz3qkAl7fgAKk01DVmME4Lym0wh/ESGulmp1g4MK+91FDioJCHai2bSj0FR8jQ4ORhGoskeO2Veuq9jnKx1ttPB5Z3QnWu9JtSU5DDChx6VzTO82kJl7zCRnkFdY2O5rXRG9EVI5cqXklcxKXUW7zUT1cM1BOP0ViI7xC/7eBnMMKreMQ2WBxoFmAFzbtJxHZoEyf7iNidnUmw9igS3c2/NZ5ikNyLy4M/voQaUbsbvHnDex376O1gn8x023acNz2tGGmhMM5y74U/a/f7+8XTfPnh8ePy89sEXFx/WV6uYVyO02R8Pi9Xk3N5OZOUC0OS/SYk/oX+MCNJkvwPyV+HRNg8jHavrbv8H2bkxQci3Dl4TYVFakuP3R/+EX5jh8Ml6Cm01earF3XE9j8A7H79CW0GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7c6c922197c7a610fc1cf4ef9153af2e^sys_idNOT IN056c922197c7a610fc1cf4ef9153afc8,856c922197c7a610fc1cf4ef9153afc8"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>7c6c922197c7a610fc1cf4ef9153af2e</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{flow_variable.approved_locations}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>056c922197c7a610fc1cf4ef9153afc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>c722791b-b167-435d-bae0-3d524cbf6a24</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>7c6c922197c7a610fc1cf4ef9153af2e</attached_to>
+        <extra_info/>
+        <order>1</order>
+        <prescription/>
+        <source_ui_id>c722791b-b167-435d-bae0-3d524cbf6a24</source_ui_id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_id>856c922197c7a610fc1cf4ef9153afc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:31</sys_updated_on>
+        <transform_compositions>[{"id":"0970d880c313201027d44077d840dd86","transformType":null,"transformDefinition":null,"order":0,"parameters":[{"id":null,"name":"string","label":"String","order":0,"attributes":{},"value":",","type":"string","defaultValue":"","typeLabel":null,"mandatory":true,"choices":[]}]}]</transform_compositions>
+        <transform_definition_id display_value="ends_with?">5c4c4480c313201027d44077d840dd66</transform_definition_id>
+        <ui_id>17aa5851-d72b-470b-af67-f175260a7dd6</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=7c6c922197c7a610fc1cf4ef9153af2e^sys_idNOT IN386c922197c7a610fc1cf4ef9153afa1,4d6c922197c7a610fc1cf4ef9153afa4,b46c922197c7a610fc1cf4ef9153af81,f06c922197c7a610fc1cf4ef9153af9e"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=afba4816-7231-44e3-b7e7-9ce7452e3154</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>approved_requests</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Approved Requests</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</model>
+        <model_id>7c6c922197c7a610fc1cf4ef9153af2e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>386c922197c7a610fc1cf4ef9153afa1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=1c687316-9675-4d8e-b600-0e40bd520e01</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>rejected_requests</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Rejected Requests</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</model>
+        <model_id>7c6c922197c7a610fc1cf4ef9153af2e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>4d6c922197c7a610fc1cf4ef9153afa4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b73276b2-d6c5-440f-8f1e-6fae437c546c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>rejected_locations</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Rejected Locations</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</model>
+        <model_id>7c6c922197c7a610fc1cf4ef9153af2e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>b46c922197c7a610fc1cf4ef9153af81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=12baf2cc-e9fd-40ae-842b-c5e1e47c9fd3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>approved_locations</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Approved Locations</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">7c6c922197c7a610fc1cf4ef9153af2e</model>
+        <model_id>7c6c922197c7a610fc1cf4ef9153af2e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>f06c922197c7a610fc1cf4ef9153af9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>traveller</element>
+        <help/>
+        <hint/>
+        <label>Traveller</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>f06c922197c7a610fc1cf4ef9153af3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Traveller</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_7c6c922197c7a610fc1cf4ef9153af2e_traveller_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7c6c922197c7a610fc1cf4ef9153af2e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>count_rejected_requets</element>
+        <help/>
+        <hint/>
+        <label>Count Rejected Requets</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>386c922197c7a610fc1cf4ef9153af61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Count Rejected Requets</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e_count_rejected_requets_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>approved_countries</element>
+        <help/>
+        <hint/>
+        <label>Approved Countries</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>3c6c922197c7a610fc1cf4ef9153af46</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approved Countries</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e_approved_countries_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>count_approved_requests</element>
+        <help/>
+        <hint/>
+        <label>Count Approved Requests</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>7c6c922197c7a610fc1cf4ef9153af68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Count Approved Requests</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e_count_approved_requests_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>rejected_countries</element>
+        <help/>
+        <hint/>
+        <label>Rejected Countries</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:30</sys_created_on>
+        <sys_id>bc6c922197c7a610fc1cf4ef9153af4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Rejected Countries</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e_rejected_countries_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:12:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7c6c922197c7a610fc1cf4ef9153af2e"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>d55a35299783a610fc1cf4ef9153af3b</sys_id>
+        <latest_snapshot>7c6c922197c7a610fc1cf4ef9153af2e</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch6-07-17-2025_07-27-2025_1301.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=d55a35299783a610fc1cf4ef9153af3b"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=d55a35299783a610fc1cf4ef9153af3b^sys_idNOT IN816c922197c7a610fc1cf4ef9153afe2"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"816c922197c7a610fc1cf4ef9153afe2","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="[AI] Retrieve Traveller Historical Request and Approval Trends">d55a35299783a610fc1cf4ef9153af3b</plan_id>
+        <snapshot>5f905bfa4747e2105de26ea3a36d43a7</snapshot>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:12:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>816c922197c7a610fc1cf4ef9153afe2</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:45:22</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

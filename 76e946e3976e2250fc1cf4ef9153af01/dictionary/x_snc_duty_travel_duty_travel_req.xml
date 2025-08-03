@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="c3afceaf976e2250fc1cf4ef9153af21" extends="task" label="Duty Travel Request" max_length="40" name="x_snc_duty_travel_duty_travel_req" text_index="true" type="collection">
+        <element label="Returning on" max_length="40" name="returning_on" type="glide_date_time"/>
+        <element attributes="ref_ac_columns=city,iata" label="Leaving from" max_length="32" name="leaving_from" reference="x_snc_duty_travel_ports" type="reference"/>
+        <element label="Document intelligence" max_length="4000" name="docintel" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Business justification" max_length="4000" name="business_justification" type="string"/>
+        <element label="Traveller" max_length="32" name="traveller" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Airline" max_length="32" name="airline" reference="x_snc_duty_travel_airline" type="reference"/>
+        <element choice="1" label="AI Decision" max_length="40" name="ai_decision" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="AI Approve" sequence="0" value="AI Approve"/>
+                <element inactive_on_update="false" label="AI Reject" sequence="1" value="AI Reject"/>
+                <element inactive_on_update="false" label="AI Requires Executive Approval" sequence="2" value="AI Requires Executive Approval"/>
+                <element inactive_on_update="false" label="AI Suggests Executive Approval" sequence="3" value="AI Suggests Executive Approval"/>
+            </choice>
+        </element>
+        <element formula="TIMEDIFF(returning_on,departing_on)" label="Travel Duration" max_length="255" name="travel_duration" read_only="true" type="integer" virtual="true" virtual_type="formula"/>
+        <element label="User Changing Request" max_length="1000" name="user_changing_request" type="string"/>
+        <element active="false" formula="MULTIPLY(1200,travel_duration)" label="[Not used] Trip Cost Estimation" max_length="255" name="trip_cost_estimation" type="integer" virtual="true" virtual_type="formula"/>
+        <element label="Departing on" max_length="40" name="departing_on" type="glide_date_time"/>
+        <element choice="3" label="Trip type" max_length="40" name="trip_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Return" sequence="0" value="return"/>
+                <element inactive_on_update="false" label="One way" sequence="1" value="one_way"/>
+            </choice>
+        </element>
+        <element formula="MULTIPLY(travel_duration,1200)" label="Estimated Travel Cost (HKD)" max_length="255" name="estimated_travel_cost_hkd" type="integer" virtual="true" virtual_type="formula"/>
+        <element label="Going to" max_length="32" name="going_to" reference="x_snc_duty_travel_ports" type="reference"/>
+        <element choice="3" label="Cabin class" max_length="40" name="cabin_class" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Premium Economy" sequence="1" value="w"/>
+                <element inactive_on_update="false" label="Business" sequence="2" value="j"/>
+                <element inactive_on_update="false" label="First" sequence="3" value="f"/>
+                <element inactive_on_update="false" label="Economy" sequence="0" value="y"/>
+            </choice>
+        </element>
+    </element>
+</database>

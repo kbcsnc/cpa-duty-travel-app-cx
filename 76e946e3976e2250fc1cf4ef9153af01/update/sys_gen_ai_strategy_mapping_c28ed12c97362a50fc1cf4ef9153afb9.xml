@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_strategy_mapping">
+    <sys_gen_ai_strategy_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <feature display_value="741c1da497362a50fc1cf4ef9153afcb_Get Jou">c68ed12c97362a50fc1cf4ef9153afb6</feature>
+        <strategy>CAPABILITY_EXECUTION</strategy>
+        <sys_class_name>sys_gen_ai_strategy_mapping</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:52:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c28ed12c97362a50fc1cf4ef9153afb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CAPABILITY_EXECUTION</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_gen_ai_strategy_mapping_c28ed12c97362a50fc1cf4ef9153afb9</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:52:38</sys_updated_on>
+    </sys_gen_ai_strategy_mapping>
+</record_update>

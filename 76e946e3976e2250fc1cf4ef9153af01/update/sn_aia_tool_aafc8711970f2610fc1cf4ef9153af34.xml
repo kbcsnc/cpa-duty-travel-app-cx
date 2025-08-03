@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>This action is responsible for requesting approval of an existing duty travel request record. It takes as parameter an existing record, updates the status to 'Pending Approval' and outputs the updated state.</description>
+        <input_schema>[]</input_schema>
+        <name>Request for Approval</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[undefined]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-29 12:06:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>aafc8711970f2610fc1cf4ef9153af34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request for Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_tool_aafc8711970f2610fc1cf4ef9153af34</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-29 12:06:19</sys_updated_on>
+        <target_document>a72a07d997cb2610fc1cf4ef9153af79</target_document>
+        <target_document_table>sys_hub_flow</target_document_table>
+        <type>subflow</type>
+    </sn_aia_tool>
+</record_update>

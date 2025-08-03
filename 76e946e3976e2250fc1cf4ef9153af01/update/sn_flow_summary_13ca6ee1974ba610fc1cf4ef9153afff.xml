@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_flow_summary">
+    <sn_flow_summary action="INSERT_OR_UPDATE">
+        <document>f6742e61970ba610fc1cf4ef9153af4a</document>
+        <document_table>sys_hub_flow</document_table>
+        <domain>global</domain>
+        <generation_source/>
+        <summary>This subflow retrieves duty travel request details based on a provided duty travel number. It takes a single input, the duty travel number, and returns various outputs including trip type, leaving from location, cabin class, departure and return dates, travel alert classification, details, and recommendations, as well as destination city and country, and the traveller's details. The subflow looks up the duty travel request record using the provided number and then looks up the outbound travel alert record based on the destination country, assigning the retrieved values to the subflow outputs.</summary>
+        <sys_class_name>sn_flow_summary</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 04:15:28</sys_created_on>
+        <sys_id>13ca6ee1974ba610fc1cf4ef9153afff</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>This subflow retrieves duty travel request details based on a provided duty travel number. It takes a single input, the duty travel number, and returns various outputs including trip type, leaving from location, cabin class, departure and return dates, tr</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_flow_summary_13ca6ee1974ba610fc1cf4ef9153afff</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:51:53</sys_updated_on>
+        <updation_source/>
+    </sn_flow_summary>
+    <sys_translated_text action="delete_multiple" query="documentkey=13ca6ee1974ba610fc1cf4ef9153afff"/>
+</record_update>

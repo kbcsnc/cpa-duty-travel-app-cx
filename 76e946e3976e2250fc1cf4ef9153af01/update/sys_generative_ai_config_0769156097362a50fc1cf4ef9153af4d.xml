@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_generative_ai_config">
+    <sys_generative_ai_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_configurations>{"skill_config_id":"cb69156097362a50fc1cf4ef9153af81"}</additional_configurations>
+        <ai_suggested>false</ai_suggested>
+        <definition>3669156097362a50fc1cf4ef9153af41</definition>
+        <definition_table>sys_one_extend_capability_definition</definition_table>
+        <max_tokens>1000</max_tokens>
+        <min_word_count>-1</min_word_count>
+        <model>llm_generic_small</model>
+        <name>Summarize</name>
+        <parent/>
+        <prompt>## Role
+You are a personnel responsible for approving duty travel requests. Your task is to summarize the provided duty travel request in a concise manner, focusing on key details such as the traveller, travel alerts, itinerary, and approvals.
+
+## Context
+The duty travel request details that need to be summarized are:
+- Traveller details: '{{duty_travel_request.traveller.name}}'
+- Travel alerts: '{{GetTravelAlerts.alerts}}'
+- Itinerary details (leaving from and going to destinations and dates): 'Leaving from {{duty_travel_request.leaving_from.port}} on {{duty_travel_request.departing_on}}, going to {{duty_travel_request.going_to.port}} and returning on {{duty_travel_request.returning_on}}'
+- Additional notes: '{{GetJournalEntries.notes}}'
+
+## Instructions
+1. Read through the duty travel request details provided in the context.
+2. Extract the key information about the traveller, including their name and position.
+3. Identify any travel alerts or warnings that may impact the trip and be commanding on the recommendation.
+4. Outline the itinerary, including the destinations, dates, and purpose of the travel, remove times and just use long-hand form of date.
+5. Determine the approval requirements based on the provided information.
+6. Combine the extracted information into a concise summary.
+
+## Output
+The output should be a brief summary of the duty travel request in the following format:
+
+Traveller:
+&lt;Traveller&gt;
+
+Travel Alerts:
+&lt;Travel Alerts&gt; that may impact the trip. 
+
+Itinerary:
+&lt;Itinerary&gt;
+
+Approvals
+&lt;Approvals&gt; taken or acquired.
+
+Replace &lt;Traveller&gt; with the traveller's name and position, &lt;Travel Alerts&gt; with a description of any alerts or warnings, &lt;Itinerary&gt; with the destinations, dates, and purpose of the travel, and &lt;Approvals&gt; with the names or positions of those who have taken or need to approve the request. The output should be clear, concise, and focused on the most important information.
+</prompt>
+        <prompt_template_role>user</prompt_template_role>
+        <request_tokens>31518</request_tokens>
+        <show_in_prompt_library>true</show_in_prompt_library>
+        <state>published</state>
+        <sys_class_name>sys_generative_ai_config</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:30:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>0769156097362a50fc1cf4ef9153af4d</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>3669156097362a50fc1cf4ef9153af41</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_generative_ai_config_0769156097362a50fc1cf4ef9153af4d</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 10:32:39</sys_updated_on>
+        <temperature>0.2</temperature>
+        <thinking_tokens>0</thinking_tokens>
+        <version>1</version>
+    </sys_generative_ai_config>
+</record_update>

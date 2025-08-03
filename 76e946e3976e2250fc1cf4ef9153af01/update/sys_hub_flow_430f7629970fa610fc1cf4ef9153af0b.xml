@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=1.2,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=7993000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This subflow, named "Update Duty Travel Decision", updates the AI decision field in a Duty Travel Request record based on the input decision. It takes two inputs: the Duty Travel Number and the Decision, which can be "AI Approve", "AI Reject", or another value that requires executive approval. The subflow looks up the Duty Travel Request record using the provided number, and then updates the AI decision field accordingly. If the decision is "AI Approve" or "AI Reject", it updates the record with the corresponding value. If the decision is neither, it updates the record with "AI Suggests Executive Approval".</description>
+        <display_name_after_preview>Update Duty Travel Decision</display_name_after_preview>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source>text2flow</generation_source>
+        <internal_name>update_duty_travel_decision4f0</internal_name>
+        <label_cache>[{"name":"07ed7028-9fea-48ea-9411-cb40e85310da.Record.sys_updated_on","label":"1 - Look Up Record➛Duty Travel Request Record➛Updated","reference":"","reference_display":"Updated","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"sys_updated_on","usedInstances":{"10802ad2-6328-4bc6-ac26-99cf0f946820":["due_date"]}},{"name":"07ed7028-9fea-48ea-9411-cb40e85310da.Record.sys_created_on","label":"1 - Look Up Record➛Duty Travel Request Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"sys_created_on","usedInstances":{}},{"name":"{{static.5137153cc611227c000bbd1bd8cd2005}}","label":"Fred Luddy","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"10802ad2-6328-4bc6-ac26-99cf0f946820":["approval_conditions"]}},{"name":"07ed7028-9fea-48ea-9411-cb40e85310da.Record","label":"1 - Look Up Record➛Duty Travel Request Record","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"reference","base_type":"reference","usedInstances":{"f0e4ba4c-9a28-4b5b-92ff-eb824ddc8188":["record"],"8458c87e-e98f-44fa-9c5b-2dcbb5023374":["record"],"4b1344f7-6b00-45e5-89be-947c1ddc9ec4":["record"],"10802ad2-6328-4bc6-ac26-99cf0f946820":["record"],"50d0f7d0-690f-4968-acbe-3e3e3127b4ba":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07ed7028-9fea-48ea-9411-cb40e85310da.Table","label":"1 - Look Up Record➛Duty Travel Request Table","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"table_name","base_type":"table_name","usedInstances":{"12b3fd4c-b345-4a3d-a6ec-31b7cf432708":["table"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}},{"name":"subflow.duty_travel_number","label":"Input➛Duty Travel Number","type":"string","base_type":"string","usedInstances":{"07ed7028-9fea-48ea-9411-cb40e85310da":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c7b3c2d3-791c-44b5-ac8e-a26afe2cb1e4"}},{"name":"subflow.decision","label":"Input➛Decision","type":"string","base_type":"string","usedInstances":{"f13674d4-b64d-4a67-be6c-7a73ba7368e1":["condition"],"264cc3ee-8bf7-46bf-a4fb-8d91b549ab48":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f1895dbd-f7b4-4629-94fa-64a6f997da39"}}]</label_cache>
+        <master_snapshot>694183ed970fa610fc1cf4ef9153af22</master_snapshot>
+        <master_snapshot_digest/>
+        <name>[AI] Update Duty Travel Decision</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:43:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>430f7629970fa610fc1cf4ef9153af0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>[AI] Update Duty Travel Decision</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_hub_flow_430f7629970fa610fc1cf4ef9153af0b</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 12:47:45</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=430f7629970fa610fc1cf4ef9153af0b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=430f7629970fa610fc1cf4ef9153af0b"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=430f7629970fa610fc1cf4ef9153af0b"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=430f7629970fa610fc1cf4ef9153af0b^sys_idNOT IN430f7629970fa610fc1cf4ef9153af0c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>430f7629970fa610fc1cf4ef9153af0b</id>
+        <name>Update Duty Travel Decision4f0</name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:43:56</sys_created_on>
+        <sys_id>430f7629970fa610fc1cf4ef9153af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:43:56</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=430f7629970fa610fc1cf4ef9153af0c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=430f7629970fa610fc1cf4ef9153af0b^sys_idNOT IN0601c3ad970fa610fc1cf4ef9153af50,eecfb2a9970fa610fc1cf4ef9153af53"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f1895dbd-f7b4-4629-94fa-64a6f997da39</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>decision</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Decision</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Update Duty Travel Decision">430f7629970fa610fc1cf4ef9153af0b</model>
+        <model_id>430f7629970fa610fc1cf4ef9153af0b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_430f7629970fa610fc1cf4ef9153af0b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:52:36</sys_created_on>
+        <sys_id>0601c3ad970fa610fc1cf4ef9153af50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:52:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0601c3ad970fa610fc1cf4ef9153af50"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c7b3c2d3-791c-44b5-ac8e-a26afe2cb1e4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>duty_travel_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Duty Travel Number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Update Duty Travel Decision">430f7629970fa610fc1cf4ef9153af0b</model>
+        <model_id>430f7629970fa610fc1cf4ef9153af0b</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_430f7629970fa610fc1cf4ef9153af0b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:47:10</sys_created_on>
+        <sys_id>eecfb2a9970fa610fc1cf4ef9153af53</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:52:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=eecfb2a9970fa610fc1cf4ef9153af53"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=430f7629970fa610fc1cf4ef9153af0b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=430f7629970fa610fc1cf4ef9153af0b"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=430f7629970fa610fc1cf4ef9153af0b"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=430f7629970fa610fc1cf4ef9153af0b^sys_idNOT IN22cfb2a9970fa610fc1cf4ef9153af64,5d6d57259743e610fc1cf4ef9153af71,9a01c3ad970fa610fc1cf4ef9153af8d,a2cfb2a9970fa610fc1cf4ef9153af65,d96d57259743e610fc1cf4ef9153af72,de01c3ad970fa610fc1cf4ef9153af8e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">430f7629970fa610fc1cf4ef9153af0b</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:47:10</sys_created_on>
+        <sys_id>22cfb2a9970fa610fc1cf4ef9153af64</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:00:50</sys_updated_on>
+        <ui_id>07ed7028-9fea-48ea-9411-cb40e85310da</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8Uy7hV6BvqyKklfa2Utvbl72V5cROsc7Yqe3QUsT/fuM4gRykQLRUanVveDy2v5n5vrHDz7XPiH/tk0kwSSeT4TgKgn4/CEajfoLDOO6PkjiI8cDv+AIvKHgaHHMKwyXmuR2/IC0SRHKzQkbhJeX/+a3oE/gSpjOOVz/KJVNw8B4KB++OPuVUG3BK5owTRYV//fNXx8+wgvMMVf71em/qXMAcx5SD60OJeC8As8q2Q1TMOdu3+jLvu5uQilgoQcenL4YKQgFDirmmHX+BBcFGqtXWoigmt4LvDHMmDOzoW+cXzV7h3HFg/VIKUSXUzW2HqMyXM6dTbPC9UXliclW6JnPJEqpdPghNcc7NTd3mHG4zw6RwS1zYbrXk+UJ8d+nwtxtU5QFLrgEEzWygFnkZRno/l893FcoZE0VOykkuE8y3I2yMYnFuLJ61TzldwEZogbOMiUeUKblkxWLAsug+chh0Uy6f4VDNHkUXJxZ4F/KKuzOwTwvzD6yYjeJP2AYWAyDGgSHIlVDLXBWpXKKE57qYUFhot5e/6fh6pW841noXOaQcPeUWt8tDGTFySbNLEsUy8wW2WNIyuE2n0szwKAUnO8olUhBmUeiacES+iKn6O4fFZL3WeWwT0K2Lx3lsNocKarW2pbBOR1UJ66YeVlOopcQObN+aNiglFl5MYoMg+Ewig8M/nsbaq8al4IR0QnKUZGTHJy2VQS6XNe0cKqI1z8+AUPH81jLTi1dvoSppnjLKSdNNMrMTezdJ7/95k3xIkgMgglz1mOBMFM8CAPpe7B8epV4c7vGsoNeO+4UN6+RQA9gz0nttrYQz4FRKuIezvQeHpwFi1e8Lyuz3+spYCqB/MQH0e5cRwHob5jaRDTmvXoK2mpX/q/XH+/5AwdqCcNMksFZnhm3P7G0OBdxvpeA62dzM9A3OXfjJ+IYiO+/ZAuawtDwPOf2iZ0YeqdmdXnkRaZ4x/6dpvmQcqgpVhPcOz8/w6BdQXHt+shQtoHIsg1eyogmQQyOsKEplLggq38c7ItlKpkxpUzofNpo7CvoRngRhemZOvcLb23q3vIhPx1Gl8mvqVYGUp2kPAvGKQLxtIO3CbtO0Bhd8nF66ac0w40U14NMnq5WTKiXVG43rRCGPMOLMrnYmqPCioH6/7TVJoLH9ncD6Kb6jL9+aEorjQQ+Pon4YBkEYkCgYR1E4HsXpCEeDdKdR5P49krBzClSB7VFFjarOwWH/cS21baM5A1VFwakU9uO6FxnPwoL6ehWs08DLhhJLySkWex3lAe6JP2Yl/pKvww/XVT7Fv0o5e9jPtDM15vq93g05+0uwp5x+tRQb06A3DklyNY7C6GqQktHVhODhFZ7Ew6hPaDJIL/kU+PUvbb5LnL8VAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=22cfb2a9970fa610fc1cf4ef9153af64"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">430f7629970fa610fc1cf4ef9153af0b</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>24f5d4ca-c7de-4c79-a948-5e96fe45f062</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 07:56:31</sys_created_on>
+        <sys_id>5d6d57259743e610fc1cf4ef9153af71</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:00:50</sys_updated_on>
+        <ui_id>10802ad2-6328-4bc6-ac26-99cf0f946820</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YW2/aSBT+K8jPwI7vhreoKFKr3VZK0r6EyBrPHIepjE084zQs4r/vsT2+BBIKK/qQpi+IOZeZ7xy+by7cbgzBjanhB7EFk4lFIpMQm5DAZSSwIbJ9z7cpI8bQSOkSMDIHluUcx480KUrDZkN84D6xgtEkBjpyAvyYOKY5YpFDIHBtk3A6vqrytlvM5EKuErr+pidAC1uIhOeQGtPbu6GxojmupSA3ppsd17FgExpBgqFXDdpd9Gq9Ksc8Y8USUhWKxvi3zpxpz+DjDD2YVMIhQwOeFKQcEEdMEwlDY0lTTlWWr42pygs05ED5lzRZtxELkaq6ziV9kuJfXNi2yrgYsDCme9AOQ92f2hzPqKLXODNTRd62KxMMZN0SDjEtEvWhb6sDvqyUyNI6RdEoabKzpFimn+uGGO0EvZ+jkAgCVmWdJfK6rPh6kf24akBeirTqiC4xyRhN2hFVKhdRoUo4GwMSqFq8pKuVSO/DVZ49iioZoSzH9wkOxnGS/cA1pbhPx5SVuMfYVTq+RPusMn+juSiL+AenweTt0JBr+SGhUnalYA/Dh6JEUhemSwirLtQtKPNYLlbqAld5BI15O9RCiNhBbrGOSvV0nQ6eQpmykBdqHaqcPkLy7HsOD/vMn2HA4KYKGFzBQwFSnSyGIwA3YrjRiHcK0FKohmHle66EKm3wuXZoIZiHhaAtnRJqCr0ghIC8ISHost68En4mAnA828UPP7aJaZkkAC8I2IRQFnie69gdhxAB1kBLflOJc3dyOMM+fwSMhtoXGgfKSON4FaCmu8QfJr3fofp1Y9Q0t06k+esbvum9J6IX4many7Vlr8+/RhHlcl9TgRvqx5JHnhV5ExLwEY9JhPcT2x1RBmQEnumCyz3mmvYvUBExD+3MPHiBpLGApH+3ahz7Yup5ThPVEaj2RHWpYb0GV0uqGr50glT5OyfI+aQVEPKWtPWeblPsINmgd5B8z4o8PaCAcCFkxYxXldCLOE0RR4BsFPGpRrkriF3w/0cP9h89/P56cNyDVOtdzltWsyzlokQse6qod2aQV/AdmJIX6frr7WYjFVWCjfE0803XZswzTcvyGdIhirgZ8YBxixB3u73bV9EZZjxNdUe0on3EFwnIn7VGa6677+mkvu66W6J2au0553rWvzHpvZf3DDvItXjScYsX2CCq+u/6zdyoYc+N6RxxlPqYG8O5UcaFJb20I6Hl2q2rsp7059gYyw6LVZnMsbDttp6ryGm7vP3M1K3O6VpWLskWwJHddXQQU88BzggNiOk5hMQOdX3LiYhjO1HwLCOs5FblWc7gaeDPjXP8WXdE7xudzwoYzOrm7/8czbOtQVt3X+ydrdc6oJrprxvRP2Pds52xzh+Zn+ORFrbPGDxAcZc9o/bv/gMhWMGZ2xYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5d6d57259743e610fc1cf4ef9153af71"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">430f7629970fa610fc1cf4ef9153af0b</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>264cc3ee-8bf7-46bf-a4fb-8d91b549ab48</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:52:37</sys_created_on>
+        <sys_id>9a01c3ad970fa610fc1cf4ef9153af8d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:00:50</sys_updated_on>
+        <ui_id>8458c87e-e98f-44fa-9c5b-2dcbb5023374</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/iQBT9K2SekbQUFHgzEhMTVxM0vLimuZ251dlMp2VmirCE/7637RRZMS4mvpjlgXA/zsw5l3vahw2Tgk3YAEUQjsNTHoVR1A+C/mgQJqdREvZFBIgh6zINGVKnQZ4bQfESVFklNpvgDMUZQU7GKcLJYERf40EYnvBkEOBoGIWBgN6sxm23hBTSFgrWc38AZfizVMKgZpOHxy4rwNBdDg2bbN6UjiWrIEFFrbOW7Vv2bl1Usch5maF2sWyT1x459ZXO1ZQqBKrohEGX4cqhFkhEUlAWuywDLcDlZs0mzpSUMAjiVqv1ruNZatcIzWBl5W+6eRBUfSmSMu6HsAtjP6AmnU7BwR2dzF1pdvPKJUfbzERgCqVyF/u5puG2cDLXDcRBolp0rspM3zQTYbsD9v6P0hIJLCqdFfNGVnr3nL/MWpKXUtcj8RJVzkHtInDOyKR0FZ0NQ4X1jDMoCqmf4sLkS1mDiUrWe1IU9FKVv9CdVj7pHvCKd4+mCr1Lyk/r9ByMrET8oGMIvO0yu7YXCqx9lUIzjBdlxaQR5iXE9RTqEcT1JlRgbmThzumqJXri2663QzL8aMP4+HWh9s58tcQqtprHonTr2BlYovrrt8HFoQmm1NC5rxs6M1yUaN2nfXEE69YX9/U2vK/CW+Mgd72P7dw0BW+M4ZcZY/SdjOFlfHtn/MsPQf/DJ+7eJtUWsHteAEncubRE+2cZBJE4v6IF/4XcHZrgw97PeeEIxq0XLiUqYd+R0BoBMyLpMG4kvTGDL3bmvrh7U3yZI8LToP58I1/8Ny+Mxz8Np04lQQkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9a01c3ad970fa610fc1cf4ef9153af8d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">430f7629970fa610fc1cf4ef9153af0b</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>f13674d4-b64d-4a67-be6c-7a73ba7368e1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:47:10</sys_created_on>
+        <sys_id>a2cfb2a9970fa610fc1cf4ef9153af65</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:00:50</sys_updated_on>
+        <ui_id>f0e4ba4c-9a28-4b5b-92ff-eb824ddc8188</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVUU/qMBT+K6TPSDaGCrwRCYmJVxM0vnjNctaeaZOum22Hcgn//Z5tHSAYrya+kMsDoeecr/2+j37bw4pJwcZsgCIIR+EZj8Io6gdBfzgIk7MoCfsiAsSQdZmGDGnSIM+NoPUCVFkVVqvgHMU5QU5GKcLJYEhfo0EYnvBkEODwNAoDAb15jVuvCSmkLRQs7/0GVOHPUgmDmo0fHrusAENnOTRsvNprfZWsggQVjc5btvvs3bKo1iLnZYbaxbItXnnk1Hc6l1PqEKiiEwZdhm8OtUAikoKy2GUZaAEuN0s2dqakgkEQN1otNxPPUrtGaAZvVv6hkwdBNZciKePehM0y9gY15XQKDm5pZ+5Ks/Erlxxt44nAFErlLnZrzcBN4WSuG4iDRLXoXJWZvm4cYZsNdv6P0hIJLCqdFfNGVnr7nL/OW5IzqWtLvESVc1CbFThnZFK6is6KocLa4wyKQuqnuDD5QtZgopL1nhQteqnKX+lMK590D3jFu0euQm9G9WldvgcjKxG/aBsCr7vMLu2FAmu3UsjD+KWsmDTCvIS4dqG2IK5vQgXmRhZuQkct0BNfd30cktPPbhgfbS/Uzp7bSLzFVvNYlG4ZOwMLVO9+G3w5DMGUBjp39UBnji8lWvftXHyBdZuLu/o2fKzCR+OgdrWL7Vw3DR+M0x8LxvCYguFlHH0y/pWHoP/pE3fnJtURsDtZAEncubRE+3cZBJGYXHYmRSUUD1Pw+fD30vAFzm0aZhKVsB+IaKOAGbF0GDei9uLgm51739y8K34sE+FZUH+OKBn/zSvj8S93fXPoQwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a2cfb2a9970fa610fc1cf4ef9153af65"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">430f7629970fa610fc1cf4ef9153af0b</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>24f5d4ca-c7de-4c79-a948-5e96fe45f062</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 07:56:31</sys_created_on>
+        <sys_id>d96d57259743e610fc1cf4ef9153af72</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:00:50</sys_updated_on>
+        <ui_id>50d0f7d0-690f-4968-acbe-3e3e3127b4ba</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy04bMRT9lcjrIbIzee8qokiVKEgBsWnoyGPfgCXPA9sTSKP8e+94PCEFRIPEJiqLiPv0Odc+d35uiZJkSvogKZuwoYhZHPco7Y37LB3GKevJmAMwEpGcZ4CZBkRhJNprrqvasd3SEcgRlpxNVsDP+mP8mfQZOxNpn8J4EDMqeXfh63Y7rJTKlppvbkMD9IgHpaWBnEx/3kWk5AbPcmDIdPsqdCxYzVPQmLpo0b5G7zZlbctCVBnkLlGt8yJUzkKk832GESyq4TAaEXh2kEtAICuuLUQk47nkrjAbMnWmQocBLq9yvdlnPKjcNUQz/mzVbzy5T+u8FSAzEYawN5MwoMa9mnHHr7GzcJXZz6tQAmwzEwkrXml3fuhrEq5Kp4q8KXE81W11oassv2wmQvYNDu6jsggCyppnjbyhtbp+KJ4WLci5yv1IAkVdCK73FnfOqLRyNZwtAQ1+xhkvS5XfJ6Up1soXI5Sse6/R6K508YRnWnWfd7mocXdxqrw7R//Mu2+5UTWJH9gGi3cRsRt7rrm1L1RwhsljVSNpiAUKiZ+CH0HiX0JdLIwq3Tc8ag0B+C4KckgHH70wMXl5UAc9XyTxnNhcJLJym8QZvgb91/8GHt+KYIYJnRuf0FnAYwXWfVoXR6BudXHjX8P7LII03vguDms7l00gCGPwZcIYn5IwAo2TV8a/9EB7H27cg5fkJWAPtGAdd7CsKI3l+BciQrggE1c0ru2yFcKSTJdkbkB2Liop0YyWTQ8fGLB4xAaxEEPGer2RoJSmqWSpHAuJeAY+3d+kT0f6CV6V8e7aUPLINu98n06Qwef2xhG32+6NuQIt7TvX3S4NyHAUDpLm+l8tjhDs3Ibg/qv6ZduDDan/O6Ed8t98XO/+AFRsLkltCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d96d57259743e610fc1cf4ef9153af72"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">430f7629970fa610fc1cf4ef9153af0b</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>24f5d4ca-c7de-4c79-a948-5e96fe45f062</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:52:37</sys_created_on>
+        <sys_id>de01c3ad970fa610fc1cf4ef9153af8e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:00:50</sys_updated_on>
+        <ui_id>4b1344f7-6b00-45e5-89be-947c1ddc9ec4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/iQBT9K808I2kpKvBmZE1MXE3Q+OKaZjpzi5NMp3U+EJbw3/dOO0UWjKuJL2Z5INyPM3PO5Z72YU0EJxMyBB4n4+SEpUmaDuJ4MBom+UmaJwOeUoCE9IiiJWCnBlZpjvGCSucT63V8CvwUIUfjAujRcIRf42GSHLF8GMPoOE1iTvuzBrfZIJILU0u6ug8HYIY9Cck1KDJ5eOyRmmq8y4Imk/Ve6aNkJc1BYuusY7vP3q5qH/OKuRKUzUSXvArIaahEl1OsIMjTSeIegaUFxQGJFFQa6JGSKk5tpVdkYrXDhAbKb5RcbTuehLKt0JIujfiNNw9j31cAKmNhCNswCwNq08WUWnqLJzPr9HZelWBg2plwKKiT9nw31zbc1FZUqoVYmssOXUlXqut2ImR7wM7/4QySgNrr9MxbWcXtU/Uy60heCNWMJEiUFaNyG1Frtcid9XTWBCQ0My5pXQs1z2pdLUQDRiplfy4x6BeyesE7jZirPmWedx+nSvsXmJ826XuqhRfxE49B8KZHzMqcS2rMqxScYfbsPJNWWJCQNVNoRpA1m+DBTIvanuFVCwjEN71gh/z4vQ1j49eF2jnz1RLLzCiWcWdXmdV0AfKv3xqeD00wxYbormmIZvDswNhP++IDrDtf3DXb8LaKYI2D3NUuNrpuC8EYx19mjNF3MkaQ8e2d8S8/xIN3n7g7m9RYwOx4gQrkzoRB2r9cHKf87DK6dfM5Lnj0YwnM+fuis9pLR3YHxvg0/nOe+YCyzjMXAiQ3b0jtDAMlEreQtdL3TBOK0X0obt8oX+ac5CRuPt/IP//Ni+XxD7+F7n5pCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=de01c3ad970fa610fc1cf4ef9153af8e"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=430f7629970fa610fc1cf4ef9153af0b"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=430f7629970fa610fc1cf4ef9153af0b^sys_idNOT IN1e01c3ad970fa610fc1cf4ef9153af8c,5a01c3ad970fa610fc1cf4ef9153af8e,9a01c3ad970fa610fc1cf4ef9153af7d"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1601c3ad970fa610fc1cf4ef9153af8c</block>
+        <comment/>
+        <connected_to>f13674d4-b64d-4a67-be6c-7a73ba7368e1</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">430f7629970fa610fc1cf4ef9153af0b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:52:37</sys_created_on>
+        <sys_id>1e01c3ad970fa610fc1cf4ef9153af8c</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:57:08</sys_updated_on>
+        <ui_id>264cc3ee-8bf7-46bf-a4fb-8d91b549ab48</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lYBnQdCjCVrfjBYBArQNkAS5tIGwIlc2W4pU+bDjGvr3LvWwjSZBgx566o2c5e7OjAbaMxN8F7y7M0vn5EqzxZeHhEkdMTrvmYYW2YJxo4X00uhqABK2ARVigY5Cuk7B7v6I8LVUwuI0rQNLPR4tW+x/K/ldh5WCGhU13nor9YrapaBbk0GTv+M5L4uLssiy4u2bvL4o67wQJSAU9G5ufD+TO/s4IMmLrOM+wt28yVgRaeVZwvDRoxZIqxtQDhPWghbgjd0dEIsgrrU6Amup/ai4hUcnf9Ls4vw8PmyQNPLJjsO1mqyaXTKS43UXCY6Ih1rNFhoVWv151BFNxgaC8icmB0fzsIukI4uJUnO7NtubeeGl1IPAqagMB3W4gScb6uDRxQ+DClsaVLXQdWRO1VmzkUMzcWnTlaJL2iizpaUxKSnwSDwljyC9JPzDAN+DlVHFJxpDzSPNGpzk1ZAqGuctSegHW6ofIRIaBU5SqtENeuC4lZ1f0p4NTqz75GkkT9K437tQR5KpQC4dFfv+a8iyUiyvzm7wG3L/NLCva/oHmc6fy/QzaX45yMUfghytf2WOsyz7H+TTIEtXjYGctA3L/zrHDzG04wY35mYO313EruY/cCzsKACSn0JbY79HCUes/wWoUjw9ywUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5201c3ad970fa610fc1cf4ef9153af8e</block>
+        <comment/>
+        <connected_to>f13674d4-b64d-4a67-be6c-7a73ba7368e1</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">430f7629970fa610fc1cf4ef9153af0b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:52:37</sys_created_on>
+        <sys_id>5a01c3ad970fa610fc1cf4ef9153af8e</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:57:08</sys_updated_on>
+        <ui_id>24f5d4ca-c7de-4c79-a948-5e96fe45f062</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5e01c3ad970fa610fc1cf4ef9153af7c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">430f7629970fa610fc1cf4ef9153af0b</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:52:37</sys_created_on>
+        <sys_id>9a01c3ad970fa610fc1cf4ef9153af7d</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:57:08</sys_updated_on>
+        <ui_id>f13674d4-b64d-4a67-be6c-7a73ba7368e1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UXWvbMBT9K8XPxvijDmvewkahsK2wlr5sxVxL14mYLGmSnDQL+e+78kcS1pSV0se9Sefq3nvO8cG7SHfedN7d64VzYqmi+ffHOBIqYHTeRQpajOYR04oLL7SqeiCO1iC7UKAjF85I2D4cEbYSklscpxmw1OPRRvPdXyW/NVhJqFFS4523Qi2pXXC6NSk02RXLWJHPijxN8w+XWT0r6iznBSAU9G5q/DiRu/jcI/GLrMM+wt20SVseaGVpHOGTR8WRVjcgHcZRC4qD13Z7QCwCv1XyCKyE8oPiFp6c+E2z87IMDxskjWy043CtRqsml7RgeGsCwQHxUMvJQi27Vn0ddASTsYFO+hOTO0fz0ATSgcVIqblb6c23aeG1UL3AsSg1A3m4gScb6s6jCx8GJbY0qGrBGDKnMlavRd9MXNpkKemSNFJvaGlISgIsEE/II0iuCf/Uww9gRVDxhcZQ80CzBidY1aeKxnlLEva9LdWvLhAaBI5SqsENeuCYFcYvaM8aR9b7+HkkT9K427muDiQTjkw4Ku73P7o0Lfji5mJhgiZ8nthXdr1Hqq+gbMosLc+n+nJ2LtVn8vxylPN/RDmY/8okp2n6P8qnURauGiI5auuXvznJjyG2wwY35GZK333AbqZ/cChsKQCCnUIbbX8GCUds/wdUWtLSzQUAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=430f7629970fa610fc1cf4ef9153af0b"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=430f7629970fa610fc1cf4ef9153af0b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>decision</element>
+        <help/>
+        <hint/>
+        <label>Decision</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_430f7629970fa610fc1cf4ef9153af0b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:52:36</sys_created_on>
+        <sys_id>8601c3ad970fa610fc1cf4ef9153af53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Decision</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_430f7629970fa610fc1cf4ef9153af0b_decision_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:52:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>duty_travel_number</element>
+        <help/>
+        <hint/>
+        <label>Duty Travel Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_430f7629970fa610fc1cf4ef9153af0b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:47:10</sys_created_on>
+        <sys_id>aacfb2a9970fa610fc1cf4ef9153af57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Duty Travel Number</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_430f7629970fa610fc1cf4ef9153af0b_duty_travel_number_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:47:10</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_430f7629970fa610fc1cf4ef9153af0b"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_430f7629970fa610fc1cf4ef9153af0b"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=1.2,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This subflow, named "Update Duty Travel Decision", updates the AI decision field in a Duty Travel Request record based on the input decision. It takes two inputs: the Duty Travel Number and the Decision, which can be "AI Approve", "AI Reject", or another value that requires executive approval. The subflow looks up the Duty Travel Request record using the provided number, and then updates the AI decision field accordingly. If the decision is "AI Approve" or "AI Reject", it updates the record with the corresponding value. If the decision is neither, it updates the record with "AI Suggests Executive Approval".</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>update_duty_travel_decision</internal_name>
+        <label_cache>[{"name":"07ed7028-9fea-48ea-9411-cb40e85310da.Record.sys_updated_on","label":"1 - Look Up Record➛Duty Travel Request Record➛Updated","reference":"","reference_display":"Updated","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"sys_updated_on","usedInstances":{"10802ad2-6328-4bc6-ac26-99cf0f946820":["due_date"]}},{"name":"07ed7028-9fea-48ea-9411-cb40e85310da.Record.sys_created_on","label":"1 - Look Up Record➛Duty Travel Request Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"sys_created_on","usedInstances":{}},{"name":"{{static.5137153cc611227c000bbd1bd8cd2005}}","label":"Fred Luddy","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","usedInstances":{"10802ad2-6328-4bc6-ac26-99cf0f946820":["approval_conditions"]}},{"name":"07ed7028-9fea-48ea-9411-cb40e85310da.Record","label":"1 - Look Up Record➛Duty Travel Request Record","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"reference","base_type":"reference","usedInstances":{"f0e4ba4c-9a28-4b5b-92ff-eb824ddc8188":["record"],"8458c87e-e98f-44fa-9c5b-2dcbb5023374":["record"],"4b1344f7-6b00-45e5-89be-947c1ddc9ec4":["record"],"10802ad2-6328-4bc6-ac26-99cf0f946820":["record"],"50d0f7d0-690f-4968-acbe-3e3e3127b4ba":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"07ed7028-9fea-48ea-9411-cb40e85310da.Table","label":"1 - Look Up Record➛Duty Travel Request Table","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"table_name","base_type":"table_name","usedInstances":{"12b3fd4c-b345-4a3d-a6ec-31b7cf432708":["table"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}},{"name":"subflow.duty_travel_number","label":"Input➛Duty Travel Number","type":"string","base_type":"string","usedInstances":{"07ed7028-9fea-48ea-9411-cb40e85310da":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c7b3c2d3-791c-44b5-ac8e-a26afe2cb1e4"}},{"name":"subflow.decision","label":"Input➛Decision","type":"string","base_type":"string","usedInstances":{"f13674d4-b64d-4a67-be6c-7a73ba7368e1":["condition"],"264cc3ee-8bf7-46bf-a4fb-8d91b549ab48":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"f1895dbd-f7b4-4629-94fa-64a6f997da39"}}]</label_cache>
+        <master>true</master>
+        <name>[AI] Update Duty Travel Decision</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="[AI] Update Duty Travel Decision">430f7629970fa610fc1cf4ef9153af0b</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>694183ed970fa610fc1cf4ef9153af22</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:57:10</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=694183ed970fa610fc1cf4ef9153af22"/>
+    <sys_variable_value action="delete_multiple" query="document_key=694183ed970fa610fc1cf4ef9153af22"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=694183ed970fa610fc1cf4ef9153af22"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=694183ed970fa610fc1cf4ef9153af22^sys_idNOT IN254183ed970fa610fc1cf4ef9153af23"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>694183ed970fa610fc1cf4ef9153af22</id>
+        <name>Update Duty Travel Decision</name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:39</sys_created_on>
+        <sys_id>254183ed970fa610fc1cf4ef9153af23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:53:39</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=254183ed970fa610fc1cf4ef9153af23"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=694183ed970fa610fc1cf4ef9153af22^sys_idNOT IN214183ed970fa610fc1cf4ef9153af31,254183ed970fa610fc1cf4ef9153af24"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=c7b3c2d3-791c-44b5-ac8e-a26afe2cb1e4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>duty_travel_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Duty Travel Number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Update Duty Travel Decision">694183ed970fa610fc1cf4ef9153af22</model>
+        <model_id>694183ed970fa610fc1cf4ef9153af22</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_694183ed970fa610fc1cf4ef9153af22</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:39</sys_created_on>
+        <sys_id>214183ed970fa610fc1cf4ef9153af31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:53:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=214183ed970fa610fc1cf4ef9153af31"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f1895dbd-f7b4-4629-94fa-64a6f997da39</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>decision</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Decision</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Update Duty Travel Decision">694183ed970fa610fc1cf4ef9153af22</model>
+        <model_id>694183ed970fa610fc1cf4ef9153af22</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_694183ed970fa610fc1cf4ef9153af22</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:39</sys_created_on>
+        <sys_id>254183ed970fa610fc1cf4ef9153af24</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:53:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=254183ed970fa610fc1cf4ef9153af24"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=694183ed970fa610fc1cf4ef9153af22"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=694183ed970fa610fc1cf4ef9153af22"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=694183ed970fa610fc1cf4ef9153af22"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=694183ed970fa610fc1cf4ef9153af22^sys_idNOT IN2a8ddb259743e610fc1cf4ef9153af17,2d4183ed970fa610fc1cf4ef9153af4d,a54183ed970fa610fc1cf4ef9153af4f,aa8ddb259743e610fc1cf4ef9153af18,ad4183ed970fa610fc1cf4ef9153af4e,ad4183ed970fa610fc1cf4ef9153af4f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f8f2e9920b10030085c083eb37673abd</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">694183ed970fa610fc1cf4ef9153af22</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>24f5d4ca-c7de-4c79-a948-5e96fe45f062</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 07:57:09</sys_created_on>
+        <sys_id>2a8ddb259743e610fc1cf4ef9153af17</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:57:09</sys_updated_on>
+        <ui_id>10802ad2-6328-4bc6-ac26-99cf0f946820</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1YW2/aSBT+K8jPwI7vhreoKFKr3VZK0r6EyBrPHIepjE084zQs4r/vsT2+BBIKK/qQpi+IOZeZ7xy+by7cbgzBjanhB7EFk4lFIpMQm5DAZSSwIbJ9z7cpI8bQSOkSMDIHluUcx480KUrDZkN84D6xgtEkBjpyAvyYOKY5YpFDIHBtk3A6vqrytlvM5EKuErr+pidAC1uIhOeQGtPbu6GxojmupSA3ppsd17FgExpBgqFXDdpd9Gq9Ksc8Y8USUhWKxvi3zpxpz+DjDD2YVMIhQwOeFKQcEEdMEwlDY0lTTlWWr42pygs05ED5lzRZtxELkaq6ziV9kuJfXNi2yrgYsDCme9AOQ92f2hzPqKLXODNTRd62KxMMZN0SDjEtEvWhb6sDvqyUyNI6RdEoabKzpFimn+uGGO0EvZ+jkAgCVmWdJfK6rPh6kf24akBeirTqiC4xyRhN2hFVKhdRoUo4GwMSqFq8pKuVSO/DVZ49iioZoSzH9wkOxnGS/cA1pbhPx5SVuMfYVTq+RPusMn+juSiL+AenweTt0JBr+SGhUnalYA/Dh6JEUhemSwirLtQtKPNYLlbqAld5BI15O9RCiNhBbrGOSvV0nQ6eQpmykBdqHaqcPkLy7HsOD/vMn2HA4KYKGFzBQwFSnSyGIwA3YrjRiHcK0FKohmHle66EKm3wuXZoIZiHhaAtnRJqCr0ghIC8ISHost68En4mAnA828UPP7aJaZkkAC8I2IRQFnie69gdhxAB1kBLflOJc3dyOMM+fwSMhtoXGgfKSON4FaCmu8QfJr3fofp1Y9Q0t06k+esbvum9J6IX4many7Vlr8+/RhHlcl9TgRvqx5JHnhV5ExLwEY9JhPcT2x1RBmQEnumCyz3mmvYvUBExD+3MPHiBpLGApH+3ahz7Yup5ThPVEaj2RHWpYb0GV0uqGr50glT5OyfI+aQVEPKWtPWeblPsINmgd5B8z4o8PaCAcCFkxYxXldCLOE0RR4BsFPGpRrkriF3w/0cP9h89/P56cNyDVOtdzltWsyzlokQse6qod2aQV/AdmJIX6frr7WYjFVWCjfE0803XZswzTcvyGdIhirgZ8YBxixB3u73bV9EZZjxNdUe0on3EFwnIn7VGa6677+mkvu66W6J2au0553rWvzHpvZf3DDvItXjScYsX2CCq+u/6zdyoYc+N6RxxlPqYG8O5UcaFJb20I6Hl2q2rsp7059gYyw6LVZnMsbDttp6ryGm7vP3M1K3O6VpWLskWwJHddXQQU88BzggNiOk5hMQOdX3LiYhjO1HwLCOs5FblWc7gaeDPjXP8WXdE7xudzwoYzOrm7/8czbOtQVt3X+ydrdc6oJrprxvRP2Pds52xzh+Zn+ORFrbPGDxAcZc9o/bv/gMhWMGZ2xYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2a8ddb259743e610fc1cf4ef9153af17"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">694183ed970fa610fc1cf4ef9153af22</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:40</sys_created_on>
+        <sys_id>2d4183ed970fa610fc1cf4ef9153af4d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:53:40</sys_updated_on>
+        <ui_id>07ed7028-9fea-48ea-9411-cb40e85310da</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8Uy7hV6BvqyKklfa2Utvbl72V5cROsc7Yqe3QUsT/fuM4gRykQLRUanVveDy2v5n5vrHDz7XPiH/tk0kwSSeT4TgKgn4/CEajfoLDOO6PkjiI8cDv+AIvKHgaHHMKwyXmuR2/IC0SRHKzQkbhJeX/+a3oE/gSpjOOVz/KJVNw8B4KB++OPuVUG3BK5owTRYV//fNXx8+wgvMMVf71em/qXMAcx5SD60OJeC8As8q2Q1TMOdu3+jLvu5uQilgoQcenL4YKQgFDirmmHX+BBcFGqtXWoigmt4LvDHMmDOzoW+cXzV7h3HFg/VIKUSXUzW2HqMyXM6dTbPC9UXliclW6JnPJEqpdPghNcc7NTd3mHG4zw6RwS1zYbrXk+UJ8d+nwtxtU5QFLrgEEzWygFnkZRno/l893FcoZE0VOykkuE8y3I2yMYnFuLJ61TzldwEZogbOMiUeUKblkxWLAsug+chh0Uy6f4VDNHkUXJxZ4F/KKuzOwTwvzD6yYjeJP2AYWAyDGgSHIlVDLXBWpXKKE57qYUFhot5e/6fh6pW841noXOaQcPeUWt8tDGTFySbNLEsUy8wW2WNIyuE2n0szwKAUnO8olUhBmUeiacES+iKn6O4fFZL3WeWwT0K2Lx3lsNocKarW2pbBOR1UJ66YeVlOopcQObN+aNiglFl5MYoMg+Ewig8M/nsbaq8al4IR0QnKUZGTHJy2VQS6XNe0cKqI1z8+AUPH81jLTi1dvoSppnjLKSdNNMrMTezdJ7/95k3xIkgMgglz1mOBMFM8CAPpe7B8epV4c7vGsoNeO+4UN6+RQA9gz0nttrYQz4FRKuIezvQeHpwFi1e8Lyuz3+spYCqB/MQH0e5cRwHob5jaRDTmvXoK2mpX/q/XH+/5AwdqCcNMksFZnhm3P7G0OBdxvpeA62dzM9A3OXfjJ+IYiO+/ZAuawtDwPOf2iZ0YeqdmdXnkRaZ4x/6dpvmQcqgpVhPcOz8/w6BdQXHt+shQtoHIsg1eyogmQQyOsKEplLggq38c7ItlKpkxpUzofNpo7CvoRngRhemZOvcLb23q3vIhPx1Gl8mvqVYGUp2kPAvGKQLxtIO3CbtO0Bhd8nF66ac0w40U14NMnq5WTKiXVG43rRCGPMOLMrnYmqPCioH6/7TVJoLH9ncD6Kb6jL9+aEorjQQ+Pon4YBkEYkCgYR1E4HsXpCEeDdKdR5P49krBzClSB7VFFjarOwWH/cS21baM5A1VFwakU9uO6FxnPwoL6ehWs08DLhhJLySkWex3lAe6JP2Yl/pKvww/XVT7Fv0o5e9jPtDM15vq93g05+0uwp5x+tRQb06A3DklyNY7C6GqQktHVhODhFZ7Ew6hPaDJIL/kU+PUvbb5LnL8VAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2d4183ed970fa610fc1cf4ef9153af4d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">694183ed970fa610fc1cf4ef9153af22</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>264cc3ee-8bf7-46bf-a4fb-8d91b549ab48</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:40</sys_created_on>
+        <sys_id>a54183ed970fa610fc1cf4ef9153af4f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:53:40</sys_updated_on>
+        <ui_id>8458c87e-e98f-44fa-9c5b-2dcbb5023374</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/iQBT9K2SekbQUFHgzEhMTVxM0vLimuZ251dlMp2VmirCE/7637RRZMS4mvpjlgXA/zsw5l3vahw2Tgk3YAEUQjsNTHoVR1A+C/mgQJqdREvZFBIgh6zINGVKnQZ4bQfESVFklNpvgDMUZQU7GKcLJYERf40EYnvBkEOBoGIWBgN6sxm23hBTSFgrWc38AZfizVMKgZpOHxy4rwNBdDg2bbN6UjiWrIEFFrbOW7Vv2bl1Usch5maF2sWyT1x459ZXO1ZQqBKrohEGX4cqhFkhEUlAWuywDLcDlZs0mzpSUMAjiVqv1ruNZatcIzWBl5W+6eRBUfSmSMu6HsAtjP6AmnU7BwR2dzF1pdvPKJUfbzERgCqVyF/u5puG2cDLXDcRBolp0rspM3zQTYbsD9v6P0hIJLCqdFfNGVnr3nL/MWpKXUtcj8RJVzkHtInDOyKR0FZ0NQ4X1jDMoCqmf4sLkS1mDiUrWe1IU9FKVv9CdVj7pHvCKd4+mCr1Lyk/r9ByMrET8oGMIvO0yu7YXCqx9lUIzjBdlxaQR5iXE9RTqEcT1JlRgbmThzumqJXri2663QzL8aMP4+HWh9s58tcQqtprHonTr2BlYovrrt8HFoQmm1NC5rxs6M1yUaN2nfXEE69YX9/U2vK/CW+Mgd72P7dw0BW+M4ZcZY/SdjOFlfHtn/MsPQf/DJ+7eJtUWsHteAEncubRE+2cZBJE4v6IF/4XcHZrgw97PeeEIxq0XLiUqYd+R0BoBMyLpMG4kvTGDL3bmvrh7U3yZI8LToP58I1/8Ny+Mxz8Np04lQQkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a54183ed970fa610fc1cf4ef9153af4f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">694183ed970fa610fc1cf4ef9153af22</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>24f5d4ca-c7de-4c79-a948-5e96fe45f062</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 07:57:09</sys_created_on>
+        <sys_id>aa8ddb259743e610fc1cf4ef9153af18</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:57:09</sys_updated_on>
+        <ui_id>50d0f7d0-690f-4968-acbe-3e3e3127b4ba</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVy04bMRT9lcjrIbIzee8qokiVKEgBsWnoyGPfgCXPA9sTSKP8e+94PCEFRIPEJiqLiPv0Odc+d35uiZJkSvogKZuwoYhZHPco7Y37LB3GKevJmAMwEpGcZ4CZBkRhJNprrqvasd3SEcgRlpxNVsDP+mP8mfQZOxNpn8J4EDMqeXfh63Y7rJTKlppvbkMD9IgHpaWBnEx/3kWk5AbPcmDIdPsqdCxYzVPQmLpo0b5G7zZlbctCVBnkLlGt8yJUzkKk832GESyq4TAaEXh2kEtAICuuLUQk47nkrjAbMnWmQocBLq9yvdlnPKjcNUQz/mzVbzy5T+u8FSAzEYawN5MwoMa9mnHHr7GzcJXZz6tQAmwzEwkrXml3fuhrEq5Kp4q8KXE81W11oassv2wmQvYNDu6jsggCyppnjbyhtbp+KJ4WLci5yv1IAkVdCK73FnfOqLRyNZwtAQ1+xhkvS5XfJ6Up1soXI5Sse6/R6K508YRnWnWfd7mocXdxqrw7R//Mu2+5UTWJH9gGi3cRsRt7rrm1L1RwhsljVSNpiAUKiZ+CH0HiX0JdLIwq3Tc8ag0B+C4KckgHH70wMXl5UAc9XyTxnNhcJLJym8QZvgb91/8GHt+KYIYJnRuf0FnAYwXWfVoXR6BudXHjX8P7LII03vguDms7l00gCGPwZcIYn5IwAo2TV8a/9EB7H27cg5fkJWAPtGAdd7CsKI3l+BciQrggE1c0ru2yFcKSTJdkbkB2Liop0YyWTQ8fGLB4xAaxEEPGer2RoJSmqWSpHAuJeAY+3d+kT0f6CV6V8e7aUPLINu98n06Qwef2xhG32+6NuQIt7TvX3S4NyHAUDpLm+l8tjhDs3Ibg/qv6ZduDDan/O6Ed8t98XO/+AFRsLkltCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=aa8ddb259743e610fc1cf4ef9153af18"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">694183ed970fa610fc1cf4ef9153af22</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>f13674d4-b64d-4a67-be6c-7a73ba7368e1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:40</sys_created_on>
+        <sys_id>ad4183ed970fa610fc1cf4ef9153af4e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:53:40</sys_updated_on>
+        <ui_id>f0e4ba4c-9a28-4b5b-92ff-eb824ddc8188</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVUU/qMBT+K6TPSDaGCrwRCYmJVxM0vnjNctaeaZOum22Hcgn//Z5tHSAYrya+kMsDoeecr/2+j37bw4pJwcZsgCIIR+EZj8Io6gdBfzgIk7MoCfsiAsSQdZmGDGnSIM+NoPUCVFkVVqvgHMU5QU5GKcLJYEhfo0EYnvBkEODwNAoDAb15jVuvCSmkLRQs7/0GVOHPUgmDmo0fHrusAENnOTRsvNprfZWsggQVjc5btvvs3bKo1iLnZYbaxbItXnnk1Hc6l1PqEKiiEwZdhm8OtUAikoKy2GUZaAEuN0s2dqakgkEQN1otNxPPUrtGaAZvVv6hkwdBNZciKePehM0y9gY15XQKDm5pZ+5Ks/Erlxxt44nAFErlLnZrzcBN4WSuG4iDRLXoXJWZvm4cYZsNdv6P0hIJLCqdFfNGVnr7nL/OW5IzqWtLvESVc1CbFThnZFK6is6KocLa4wyKQuqnuDD5QtZgopL1nhQteqnKX+lMK590D3jFu0euQm9G9WldvgcjKxG/aBsCr7vMLu2FAmu3UsjD+KWsmDTCvIS4dqG2IK5vQgXmRhZuQkct0BNfd30cktPPbhgfbS/Uzp7bSLzFVvNYlG4ZOwMLVO9+G3w5DMGUBjp39UBnji8lWvftXHyBdZuLu/o2fKzCR+OgdrWL7Vw3DR+M0x8LxvCYguFlHH0y/pWHoP/pE3fnJtURsDtZAEncubRE+3cZBJGYXHYmRSUUD1Pw+fD30vAFzm0aZhKVsB+IaKOAGbF0GDei9uLgm51739y8K34sE+FZUH+OKBn/zSvj8S93fXPoQwkAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ad4183ed970fa610fc1cf4ef9153af4e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">694183ed970fa610fc1cf4ef9153af22</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>24f5d4ca-c7de-4c79-a948-5e96fe45f062</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:40</sys_created_on>
+        <sys_id>ad4183ed970fa610fc1cf4ef9153af4f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:49:05</sys_updated_on>
+        <ui_id>4b1344f7-6b00-45e5-89be-947c1ddc9ec4</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/iQBT9K808I2kpKvBmZE1MXE3Q+OKaZjpzi5NMp3U+EJbw3/dOO0UWjKuJL2Z5INyPM3PO5Z72YU0EJxMyBB4n4+SEpUmaDuJ4MBom+UmaJwOeUoCE9IiiJWCnBlZpjvGCSucT63V8CvwUIUfjAujRcIRf42GSHLF8GMPoOE1iTvuzBrfZIJILU0u6ug8HYIY9Cck1KDJ5eOyRmmq8y4Imk/Ve6aNkJc1BYuusY7vP3q5qH/OKuRKUzUSXvArIaahEl1OsIMjTSeIegaUFxQGJFFQa6JGSKk5tpVdkYrXDhAbKb5RcbTuehLKt0JIujfiNNw9j31cAKmNhCNswCwNq08WUWnqLJzPr9HZelWBg2plwKKiT9nw31zbc1FZUqoVYmssOXUlXqut2ImR7wM7/4QySgNrr9MxbWcXtU/Uy60heCNWMJEiUFaNyG1Frtcid9XTWBCQ0My5pXQs1z2pdLUQDRiplfy4x6BeyesE7jZirPmWedx+nSvsXmJ826XuqhRfxE49B8KZHzMqcS2rMqxScYfbsPJNWWJCQNVNoRpA1m+DBTIvanuFVCwjEN71gh/z4vQ1j49eF2jnz1RLLzCiWcWdXmdV0AfKv3xqeD00wxYbormmIZvDswNhP++IDrDtf3DXb8LaKYI2D3NUuNrpuC8EYx19mjNF3MkaQ8e2d8S8/xIN3n7g7m9RYwOx4gQrkzoRB2r9cHKf87DK6dfM5Lnj0YwnM+fuis9pLR3YHxvg0/nOe+YCyzjMXAiQ3b0jtDAMlEreQtdL3TBOK0X0obt8oX+ac5CRuPt/IP//Ni+XxD7+F7n5pCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ad4183ed970fa610fc1cf4ef9153af4f"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=694183ed970fa610fc1cf4ef9153af22"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=694183ed970fa610fc1cf4ef9153af22^sys_idNOT IN2d4183ed970fa610fc1cf4ef9153af49,694183ed970fa610fc1cf4ef9153af4c,e14183ed970fa610fc1cf4ef9153af4b"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5e01c3ad970fa610fc1cf4ef9153af7c</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">694183ed970fa610fc1cf4ef9153af22</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:39</sys_created_on>
+        <sys_id>2d4183ed970fa610fc1cf4ef9153af49</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:57:10</sys_updated_on>
+        <ui_id>f13674d4-b64d-4a67-be6c-7a73ba7368e1</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnwdAjNhrfDAcBAqQN0AS5tIGwIimbKEWqfNhxBf97l6IsG42LJmiPvYmz3N2Z4S7UEe1d65191AtrxUqR+ZfnhAgVMPzuiIKGkzmhWjHhhFZlDyRkA9KHAH4yYVsJu6cjQtdCMsOHai0YzHHckHn3S0gwTKhTqLMrmtEinxV5muYfLrNqVlRZzgrgUGBBCRWXeHV5oHFx1yPJb/m5XRtw64xQq+F8N1R5OIDasMAqSxPCXxxXjCOfGqTlCWlAMXDa7EbEcGD3Sh6BtVAuCm7gxYof2DCfTsPFmqNEOrgxHsvBqQjX1+AAqXjqvBmN04JyG81hvAYv3fIUixfu2yA1pjio5CFbS9+oT9ERMhY4eRhvkQRvg9JAfdBRP6z19vOB5Y1QvStDUGoKcjyBQ+8q7wKfjnDJGyxUNtC26GjZGr0RfTJyaSYriYdJLfUWm4bpmgANxCdoLExuEL/u4ScwIqj4iGUwOdKswApa9pOI5dAmTvYJsTu7lGDtUSS6W373gWKUPIgroz8hhRrRugV23vBBxz55PdgnM9111leB9oRxKiwG9/uvPk0Ltri9WLRBJX8992/Met9uXMG0nmbp9PxuXM7O7caZrXjnQuR/WIjwGm/chzRN/y/EXy+EsGUc40Fb3/wf7sNzGP7Yc/Q6zvBjwG4P/4MQ2OFwCXoKbbX5FkQdsf1PjhVgfVkGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">5201c3ad970fa610fc1cf4ef9153af8e</block>
+        <comment/>
+        <connected_to>f13674d4-b64d-4a67-be6c-7a73ba7368e1</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">694183ed970fa610fc1cf4ef9153af22</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:40</sys_created_on>
+        <sys_id>694183ed970fa610fc1cf4ef9153af4c</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:57:10</sys_updated_on>
+        <ui_id>24f5d4ca-c7de-4c79-a948-5e96fe45f062</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1601c3ad970fa610fc1cf4ef9153af8c</block>
+        <comment/>
+        <connected_to>f13674d4-b64d-4a67-be6c-7a73ba7368e1</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Update Duty Travel Decision">694183ed970fa610fc1cf4ef9153af22</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:40</sys_created_on>
+        <sys_id>e14183ed970fa610fc1cf4ef9153af4b</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:57:10</sys_updated_on>
+        <ui_id>264cc3ee-8bf7-46bf-a4fb-8d91b549ab48</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4XOhmE7bbHlFqQoUKBbgbboZSsMWpITdbLk6SNpZuS/j7JsJ1g7rMN63M16FMn3nki4I9q71jt7rxfWipUi8y+PCREqYPjdEQUNJ3NCtWLCCa3KHkjIBqQPAfxkwrYSdg8HhK6FZIYP1VowmOO4IfPul5BgmFBnUOcfaU5nxfmsyLLiw2lenc+qvGAz4FBgQQkVl3h1OdI4ue6R5Lf83K4NuHVGqNVwvh6q3I2gNiywyrOE8GfHFePIpwZpeUIaUAycNrsJMRzYjZIHYC2Ui4IbeLbiBzYszs7CxZqjRDq4MR3LwakI1xfgAKl46ryZjNOCchvNYbwGL93yGIsXbtogNaY4qOSYraVv1OfoCJkKHD2Mt0iCt0FpoD7oqO/Wens7srwUqndlCEpNQU4ncOhd5V3g0xEueYOFygbaFh0tW6M3ok9GLk26knhIa6m32DRMVwo0EE/RWEgvEb/o4QcwIqj4hGUwOdKswApa9pOI5dAmTvYJsTu7lGDtQSS6W373gWKUPIgroz8hhRrRugV23vBBxz55OdhHM9111leBdso4FRaD+/1Xn2Uztrg6ueVPnLqXY/+2pHfdjPy1zXhlJ/5yHYo/rEN4izduQ5Zl/9fhn9dB2DIO8aCtb/6O2/AYRj/2nLyOI3wfsKvxbxACOxwuQY+hrTbfgqgDtv8JvchPDVcGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=694183ed970fa610fc1cf4ef9153af22"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=694183ed970fa610fc1cf4ef9153af22"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>decision</element>
+        <help/>
+        <hint/>
+        <label>Decision</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_694183ed970fa610fc1cf4ef9153af22</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:39</sys_created_on>
+        <sys_id>a54183ed970fa610fc1cf4ef9153af2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Decision</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_694183ed970fa610fc1cf4ef9153af22_decision_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:53:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>duty_travel_number</element>
+        <help/>
+        <hint/>
+        <label>Duty Travel Number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_694183ed970fa610fc1cf4ef9153af22</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:39</sys_created_on>
+        <sys_id>e94183ed970fa610fc1cf4ef9153af35</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Duty Travel Number</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_694183ed970fa610fc1cf4ef9153af22_duty_travel_number_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:53:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_694183ed970fa610fc1cf4ef9153af22"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_694183ed970fa610fc1cf4ef9153af22"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>430f7629970fa610fc1cf4ef9153af0b</sys_id>
+        <latest_snapshot>694183ed970fa610fc1cf4ef9153af22</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch6-07-17-2025_07-27-2025_1301.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=430f7629970fa610fc1cf4ef9153af0b"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=430f7629970fa610fc1cf4ef9153af0b^sys_idNOT IN254183ed970fa610fc1cf4ef9153af86"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"254183ed970fa610fc1cf4ef9153af86","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="[AI] Update Duty Travel Decision">430f7629970fa610fc1cf4ef9153af0b</plan_id>
+        <snapshot>2a11d37e4747e2105de26ea3a36d4377</snapshot>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:53:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>254183ed970fa610fc1cf4ef9153af86</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 07:57:11</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

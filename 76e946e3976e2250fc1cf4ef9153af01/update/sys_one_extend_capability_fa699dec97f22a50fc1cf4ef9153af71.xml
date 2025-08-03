@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_capability">
+    <sys_one_extend_capability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Summarizes a duty travel case with all the useful information on one screen.</description>
+        <external>true</external>
+        <metadata>{}</metadata>
+        <name>Summarize Duty Travel Case</name>
+        <short_description/>
+        <sys_class_name>sys_one_extend_capability</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:30:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>fa699dec97f22a50fc1cf4ef9153af71</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Summarize Duty Travel Case</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_one_extend_capability_fa699dec97f22a50fc1cf4ef9153af71</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:40:42</sys_updated_on>
+        <type>skill</type>
+    </sys_one_extend_capability>
+    <sys_translated_text action="delete_multiple" query="documentkey=fa699dec97f22a50fc1cf4ef9153af71"/>
+</record_update>

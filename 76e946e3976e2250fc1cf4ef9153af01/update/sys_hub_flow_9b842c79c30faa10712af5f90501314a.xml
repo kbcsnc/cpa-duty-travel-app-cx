@@ -1,0 +1,1092 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,timeFromCreateToActivate=139000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9d916bd7eb702110f2549bf12a522855</copied_from>
+        <copied_from_name>Extract Values Flow Template</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>docintel_extract_values_flow__duty_travel__extract_doc_info__extract_doc</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Document Task Record","reference":"sys_di_task","reference_display":"Document Task","type":"reference","base_type":"reference","attributes":{}},{"name":"76d07b30-a860-43a9-8a9a-022006e43fb0.result","label":"1 - DocIntel - Retrieve Field Values➛Result","reference_display":"Result","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d4583b94-f4d5-463d-939a-d06b59476a0c"}},{"name":"Updated_1.current.source_record","label":"Trigger - Record Updated➛Document Task Record➛Source Record","reference":"","reference_display":"Source Record","type":"document_id","base_type":"document_id","parent_table_name":"sys_di_task","column_name":"source_record","usedInstances":{"c5d397ed-03b2-4d12-a898-dfbec583b553":["conditions"]}},{"name":"c5d397ed-03b2-4d12-a898-dfbec583b553.Record","label":"3 - Look Up Record➛Duty Travel Request Record","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"reference","base_type":"reference","usedInstances":{"418afc55-b0aa-42f0-9416-847441e1d7ed":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>3115a4f9c30faa10712af5f905013109</master_snapshot>
+        <master_snapshot_digest/>
+        <name>DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>5e11c7ad970fa610fc1cf4ef9153af69</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9b842c79c30faa10712af5f90501314a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_hub_flow_9b842c79c30faa10712af5f90501314a</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:47</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=9b842c79c30faa10712af5f90501314a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9b842c79c30faa10712af5f90501314a"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sys_di_task">statusCHANGESTODone^source_table=x_snc_duty_travel_duty_travel_req<item display_value="Done" endquery="false" field="status" goto="false" newquery="false" operator="CHANGESTO" or="false" value="Done"/>
+            <item endquery="false" field="source_table" goto="false" newquery="false" operator="=" or="false" value="x_snc_duty_travel_duty_travel_req"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:52:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5e11c7ad970fa610fc1cf4ef9153af69</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:52:53</sys_updated_on>
+        <table>sys_di_task</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>9b842c79c30faa10712af5f90501314a</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:47</sys_created_on>
+        <sys_id>4215a4f9c30faa10712af5f90501318a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:47</sys_updated_on>
+        <trigger display_value="">5e11c7ad970fa610fc1cf4ef9153af69</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=9b842c79c30faa10712af5f90501314a^sys_idNOT IN4215a4f9c30faa10712af5f90501318a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9b842c79c30faa10712af5f90501314a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9b842c79c30faa10712af5f90501314a^sys_idNOT IN57842c79c30faa10712af5f90501314b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9b842c79c30faa10712af5f90501314a</id>
+        <name>DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc</name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:26</sys_created_on>
+        <sys_id>57842c79c30faa10712af5f90501314b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:07:26</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=57842c79c30faa10712af5f90501314b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9b842c79c30faa10712af5f90501314a^sys_idNOT IN53842c79c30faa10712af5f905013164,db842c79c30faa10712af5f90501315c,db842c79c30faa10712af5f905013160"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">9b842c79c30faa10712af5f90501314a</model>
+        <model_id>9b842c79c30faa10712af5f90501314a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9b842c79c30faa10712af5f90501314a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:26</sys_created_on>
+        <sys_id>53842c79c30faa10712af5f905013164</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:07:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=53842c79c30faa10712af5f905013164"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">9b842c79c30faa10712af5f90501314a</model>
+        <model_id>9b842c79c30faa10712af5f90501314a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9b842c79c30faa10712af5f90501314a</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:26</sys_created_on>
+        <sys_id>db842c79c30faa10712af5f90501315c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=db842c79c30faa10712af5f90501315c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">9b842c79c30faa10712af5f90501314a</model>
+        <model_id>9b842c79c30faa10712af5f90501314a</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_9b842c79c30faa10712af5f90501314a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:26</sys_created_on>
+        <sys_id>db842c79c30faa10712af5f905013160</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=db842c79c30faa10712af5f905013160"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9b842c79c30faa10712af5f90501314a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9b842c79c30faa10712af5f90501314a"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9b842c79c30faa10712af5f90501314a^sys_idNOT INa7842c79c30faa10712af5f905013198"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">9b842c79c30faa10712af5f90501314a</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:26</sys_created_on>
+        <sys_id>a7842c79c30faa10712af5f905013198</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:45</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9b842c79c30faa10712af5f90501314a^sys_idNOT IN23842c79c30faa10712af5f905013198,2b842c79c30faa10712af5f90501318a,a51564f9c30faa10712af5f9050131ae,a51564f9c30faa10712af5f9050131af"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Set Field Values">54b8ab5feb702110f2549bf12a5228b6</action_type>
+        <action_type_parent display_value="DocIntel - Set Field Values">89bcd7d3eb702110f2549bf12a5228fc</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>54b8ab5feb702110f2549bf12a5228b6</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">9b842c79c30faa10712af5f90501314a</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:26</sys_created_on>
+        <sys_id>23842c79c30faa10712af5f905013198</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:45</sys_updated_on>
+        <ui_id>85639730-06d1-40d7-b0ff-6be14681c8ae</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VWUU/bMBD+KyjPTeU4SRv3bRJDYtpAosALQ9HFdlpvqRMcB+iq/vedm7S0iKJRMaa91fb57vu+uy/uzcIDblWpT3VtQXM5ntenwht5SZQwmrFcZkNCg4DkNI5YlgcUYkoTyr2ep1wci7IEsnhPXMYwTsNMYqR8tAZrSZHeQ9HIGk9WP/BosRgOBBlmIfEhGRA/CoH5CTDwCaWEDGQU5hnpG1k3hV0u8aZQdVXA/PrgBHyqCmGk9kY3tz2vAoMgrTTeaPHsyM4rmRaQyQLrfBmfn72B+fra5zX1o+s19f2iuIJ48qMuNa5KIxyqoOdCpRYSS+dQ1LLnzUALsKWZeyNrGtwwEsS5LuabiKnSFlN5LvaxVr8wb0QIcZG5RIZctqebZdrp2m7zaam4PK/cfLQ7FrKiu8PLopnps5aG64jMAcVddwR3mhrzycqBdjA6TPl4Wj5crAueKL3i1x0WJYdiswJrjcoai7JgWxp1uaNMu/662xlZyBlWS2dQVUpP0sqU92pVAQHP+pMCF/28KB8QWa0mut9Ofx+FhP4J7h+vtq/BKEf1G6bBy67YlVZ3jVx5I4tpTsI89Dlhwo84ZT4bBLlPQgoiocMwTiJvuZI1vWscoVagToq0VRMDam5UZT8hhHvZsV72/rIjxdPwWah/7rjwqkIdcBaDPm8M9udFrx1snk3T34B0ffeyhboLvHOK2crb2YW+l11CumuWel6jR9IOwEu+OS5540bwqIO830S7uf6dn7b12zXVdsc+xFlMBnLAae7TkDA/Sqjw2TCKfWAJHwQRZYNo+MxZTj4smSutVvU4VJCpQtn594aQUIiSpw5D2n1qS/OBXozJaxPO6fZIm4m0qZEcR/h1U/brsjE4c23sy8/hn1w6zMVjnCE9eQPBJws7hkcXa4Z7iHemrtdlOkeH7+Xo5P9/ADfa7Lp105kPsaqIcxolMfiMJSH+4QrAzzghfhwwkCEIGeAH/NBH8PY3FHByRJgKAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=23842c79c30faa10712af5f905013198"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Retrieve Field Values">c6c86f5feb702110f2549bf12a52285d</action_type>
+        <action_type_parent display_value="DocIntel - Retrieve Field Values">295a5b53eb702110f2549bf12a522846</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c6c86f5feb702110f2549bf12a52285d</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">9b842c79c30faa10712af5f90501314a</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:26</sys_created_on>
+        <sys_id>2b842c79c30faa10712af5f90501318a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:45</sys_updated_on>
+        <ui_id>76d07b30-a860-43a9-8a9a-022006e43fb0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/5VSyW7bMBD9lYJnW5DkRZZvBYIAAdoGaJZLGggjamgTpUiFixPV8L93KKmG27SHHmd7896beToy4F4afaOdB83xrnc3DduyZbop87oUWBdpnmWpyFfLshZZDqs83+QZmzEZ+1Lgm7VY/aNvnVKfhhap04P7TtEBVIjh8fjQNeCxqbKEB2tR+9OJ6o10nYL+cWqjDN9L1VCdbZ+eZ6wDS3geLdse/yj5vsNKQY2KBr+iQKpw/A+mv2bvR6q/E4/oFNkLXGObyCObMXzzqBukPQKUwxlrQZM6Y3u29TZQwiI0t1r154691H4U2MKbkz8IfJHPLvC3zPWuamQ1EThXqskj6rgyPLRk3YeJMt8byfG2iycdwT3U6j0WNyq0+ssoMLqOAoLyF64HR3uwi6oiz4m0uNub17O111IPBkxFZTiocwTeW1kHjy5eKsj79/6NyU9/uRgqjLKqFrpO6l3VWXOQwy6i3iY7RUEilHkljk7udDJ+cUKeQ3JN+ash/QhWRv2fCYaG48YHLV8CDj9eNussKxDmuCkW86VIxbysi2JelGt6FpFvhODsNBhfvYQobfgFWimklsM+Dh3UUknffwtpumgaw6vIoaKHsMTJ2MHcycZqPApBOm5l5z8S6QNOjp2efwKo/g9ijQMAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2b842c79c30faa10712af5f90501318a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">9b842c79c30faa10712af5f90501314a</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:45</sys_created_on>
+        <sys_id>a51564f9c30faa10712af5f9050131ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:45</sys_updated_on>
+        <ui_id>c5d397ed-03b2-4d12-a898-dfbec583b553</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VY227bOBD9FUHPjlfyTXbeFg0MFNhtgDTtSxoQlEjFRGlSISknjuF/36Eoydf4vm36JpJzOTNzZkTpYeYz4l/7ZBAM0sGg24+CoN0Ogl6vneAwjtu9JA5i3PEbvsBjCpIGx5zCcoJ5btevSIsEkdxMkVF4QvnKs6LPIEuYzjiefi9VbkDAuy8EvDv6nFNtQCgZMU4UFf71w2PDz7ACf4Yq/3q2dmSmGUUcx5SDrXsLx/tisTUODmVFeTM066BaIuFMS0UslqDh01dDBaHgKsVc04Y/xoJgI9W03lEUk1vBFxsjJgxY9K3wq2ZvYL4fWLmUQlgJdWf1EpUJc9vJSLKE3maGSeF2HFB3KHk+Fl9cADbVNMU5N1WqYSfXYI9mFrMFUSJKv47ky13lcMhEEV55yGWCeb3CxigW54ZqWwvK6RgMoTHOMiaeUKbkhBXKgGXcfOKwaKZcvoBTzZ5EEycWeBNShJtD2L8ptr9jxWwU/4IZUAZAjEO1kUu6lrkqsjJBCc91caCw0M6WPy9yhZ5zi9JFXcaHXIpAQCeKZeZvUJjQMpR5o2J7dydFBgtKJFIQZn3qJcrrqUaM/MhBmcxm3zIIjRIUNpNcQTZN06EH7ifAmvl8swGON3Bac3xaRn9o5FuVt6WjbJOVvbJNwou1SScIflOjGJV/vD7Zx3wX8B76h2QnCcii3loqg1zmlvi/SeiTGTpklJOV8X0AuEr51pLNi6fv4S0Jmlofa3O89cfP8TPpmRLk8sIEZ6J43YFBcPOBedvdSY04XONBUf6lqW33sE422Ys9I72306dsUdeKvweArBS/AiLv3qHcAryar5X5krrti1G33TqOukCch1mNvs7algRXtyVbukr+zcrjdXkg0ZJCOH+sqf/pNJ/hsT5b1udab7aPas5lZrmTm3cIduG72C9u4oZ1OALV0h9yzYpeGHmiZuG9kiLSvGD+c9t5ya66h4rwzr7XhTuv/vHSvY6laAx1YhmvrlkaYUVRKnNBUHnNXNDG1i1lSptSeHOG3FGTK+FJaDnPjKhXSHu19CUmywHRVYqfU68Kr8SgPQjPK8Lz6vCOS8Y786hzwbveOfNoiBkvUg+fC9lS7ahSUr0zk/ZUbUf5DxxYB4IKLwrq/Im2je9bJ9serH/Et+e5UyehOO60cC9qh2EQhAGJgn4Uhf1enPZw1EkXjYbcvxIJllMgBphHFRGqqgabo8XNxpN/kMDM/WtYmjgUb6V8I4X9Sm1FxrOAoc5eBXh/SOW8iKXkFIsFPbu/bWB8lH8oObO3vn+2Vej/enM7lyvlyNk3wZ5z+tmSok+DVj8kyVU/CqOrTkp6VwOCu1d4EHejNqFJJz39/fz4H+bZcqBnFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a51564f9c30faa10712af5f9050131ae"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">9b842c79c30faa10712af5f90501314a</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:45</sys_created_on>
+        <sys_id>a51564f9c30faa10712af5f9050131af</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:45</sys_updated_on>
+        <ui_id>418afc55-b0aa-42f0-9416-847441e1d7ed</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WS27bMBC9iqC1rehjJ7a7CmAE6KIJ4ATduIFAkSObKEUpJOXENbzqEXqAXrFH6FCibCdp3SAIUBSoNtaMZua9N3wgPN/4nPkTfwAsjMbRKU2iJInDMB4Nouw0yaKYJQQg8nu+JAVgpQJaKobxiojaJjYbOmTJ+AxYP0yyuD9gUdwno/Goz/IM6HCUZMNhEsyavu0WOxnXlSDrj24AZuiSC6ZA+pP5bc+viEIsA8qfbJ58MusKUkEyENg4LWldgDTe+ynOeKmOrnvWCXkqzGJgzNz0lNskfrJ8orDnw4MByQDhciI09PyCSEZMqdb+xKgaEwoIu5JivatYcmlapQV50PwLzh+Eti4HlEbdFnZh6jbULafkFK4qw0vZZgzJRLe5UtSFvGwl2N1CTmphDnZba5wHlaVsSbQM8+tleT/r8C64bNQ5tqKkROwiYoziWW1A2+MAAc1SClJVXC7SSpUr3jQjlSJYCAyCXJT3iKn5QgaEWt4BLogEF5ifNumPRHEr4gOOweZtIz69qy1uK8MRThvNjeC0OSgs1VTxypzj4BU4mtueM3I2PGYAOt6f98HMvZkfUi1pymqzTo0iKxCP3hXcPbfvFAu8m6bAm8FdDdq82tE3lpN32XJ6qZ5Hzb/R5zz9KOcsPXwzS4/+kqUdo3/M039ychgfvcoOTroxrz5w8X2pPqeyRHmf6jBMWM76LRKw5/49XvxKH0OBEAa8FqT3YkXdgAsOgulfSOyM7ADSlQPY3c9v5uboNGye/9f0m1zTraA2ZxnubWejY7WIaWolPWvP+GxOSwa3jVVp1vzAj+/fvnrnxhC6tKK1h2opaA3My9be/l+CNCAEX9hVBt41gMfAEC6wnkgI2pEnbub8ZIcTn71DqRoveLY7r+12e/sTGfYdKDwJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a51564f9c30faa10712af5f9050131af"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9b842c79c30faa10712af5f90501314a"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9b842c79c30faa10712af5f90501314a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9b842c79c30faa10712af5f90501314a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9b842c79c30faa10712af5f90501314a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9b842c79c30faa10712af5f90501314a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:26</sys_created_on>
+        <sys_id>2f842c79c30faa10712af5f90501317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:07:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9b842c79c30faa10712af5f90501314a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:26</sys_created_on>
+        <sys_id>53842c79c30faa10712af5f905013163</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:07:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9b842c79c30faa10712af5f90501314a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:26</sys_created_on>
+        <sys_id>db842c79c30faa10712af5f90501315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:07:26</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9b842c79c30faa10712af5f90501314a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9b842c79c30faa10712af5f90501314a"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9d916bd7eb702110f2549bf12a522855</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>docintel_extract_values_flow__duty_travel__extract_doc_info__extract_doc</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛Document Task Record","reference":"sys_di_task","reference_display":"Document Task","type":"reference","base_type":"reference","attributes":{}},{"name":"76d07b30-a860-43a9-8a9a-022006e43fb0.result","label":"1 - DocIntel - Retrieve Field Values➛Result","reference_display":"Result","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d4583b94-f4d5-463d-939a-d06b59476a0c"}},{"name":"Updated_1.current.source_record","label":"Trigger - Record Updated➛Document Task Record➛Source Record","reference":"","reference_display":"Source Record","type":"document_id","base_type":"document_id","parent_table_name":"sys_di_task","column_name":"source_record","usedInstances":{"c5d397ed-03b2-4d12-a898-dfbec583b553":["conditions"]}},{"name":"c5d397ed-03b2-4d12-a898-dfbec583b553.Record","label":"3 - Look Up Record➛Duty Travel Request Record","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"reference","base_type":"reference","usedInstances":{"418afc55-b0aa-42f0-9416-847441e1d7ed":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">9b842c79c30faa10712af5f90501314a</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3115a4f9c30faa10712af5f905013109</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:46</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=3115a4f9c30faa10712af5f905013109"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3115a4f9c30faa10712af5f905013109"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3115a4f9c30faa10712af5f905013109"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3115a4f9c30faa10712af5f905013109^sys_idNOT INf915a4f9c30faa10712af5f905013109"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3115a4f9c30faa10712af5f905013109</id>
+        <name>DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc</name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:46</sys_created_on>
+        <sys_id>f915a4f9c30faa10712af5f905013109</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:46</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f915a4f9c30faa10712af5f905013109"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3115a4f9c30faa10712af5f905013109^sys_idNOT IN7515a4f9c30faa10712af5f905013125,7915a4f9c30faa10712af5f90501310a,7d15a4f9c30faa10712af5f90501312c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">3115a4f9c30faa10712af5f905013109</model>
+        <model_id>3115a4f9c30faa10712af5f905013109</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3115a4f9c30faa10712af5f905013109</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:46</sys_created_on>
+        <sys_id>7515a4f9c30faa10712af5f905013125</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7515a4f9c30faa10712af5f905013125"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">3115a4f9c30faa10712af5f905013109</model>
+        <model_id>3115a4f9c30faa10712af5f905013109</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3115a4f9c30faa10712af5f905013109</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:46</sys_created_on>
+        <sys_id>7915a4f9c30faa10712af5f90501310a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7915a4f9c30faa10712af5f90501310a"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">3115a4f9c30faa10712af5f905013109</model>
+        <model_id>3115a4f9c30faa10712af5f905013109</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3115a4f9c30faa10712af5f905013109</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:46</sys_created_on>
+        <sys_id>7d15a4f9c30faa10712af5f90501312c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7d15a4f9c30faa10712af5f90501312c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3115a4f9c30faa10712af5f905013109"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3115a4f9c30faa10712af5f905013109"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3115a4f9c30faa10712af5f905013109^sys_idNOT INf915a4f9c30faa10712af5f905013155"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">3115a4f9c30faa10712af5f905013109</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:47</sys_created_on>
+        <sys_id>f915a4f9c30faa10712af5f905013155</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:47</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3115a4f9c30faa10712af5f905013109^sys_idNOT IN7115a4f9c30faa10712af5f905013152,7515a4f9c30faa10712af5f905013154,7515a4f9c30faa10712af5f905013155,b115a4f9c30faa10712af5f905013153"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Retrieve Field Values">c6c86f5feb702110f2549bf12a52285d</action_type>
+        <action_type_parent display_value="DocIntel - Retrieve Field Values">295a5b53eb702110f2549bf12a522846</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c6c86f5feb702110f2549bf12a52285d</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">3115a4f9c30faa10712af5f905013109</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:47</sys_created_on>
+        <sys_id>7115a4f9c30faa10712af5f905013152</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:47</sys_updated_on>
+        <ui_id>76d07b30-a860-43a9-8a9a-022006e43fb0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41T227bMAz9lUHPTmA797wNDQIU2FZgafvSFQYtUYkwWXZ1SesF+fdRtpFl6wbskeQRec4h9XRiwL2qza1xHgzHXetuBVuzabpc5eVKYrlI8yxLZT6brkqZ5TDL82WesYSpiEuBL+dy9g/cPCWcgQoJ6cF9p+gIOsTwdHpoBHgURTbmwVo0/nymulCu0dA+DjDK8IPSgups/fScsAYs9fNo2fr0R+l/CWkoURP0vmf0Oz/fNjGyKJEacxxSn4Y3X6/ytRWRRpYwfPNoBNJ8CdphwiowJK62LVt7GyhhEcSd0e0FcVDG9/oqeHPqBw2d5MnV3DVzrSuEKgZil0oxWESITc1DRc59GKTIDXjY0UTug73YVyuOrrdIoISg/c11rgfcNfEM+iceSv2eAK91qMyX3i126XW1qeCIHDbRiihuUCp3h/r14ttWmc61oahrDvoKimD5YatQx10OQotuQwkD760qg4/ETyyo+/er6pN/WxZqjE4VFTSNMvuisfVRdUxIWDXeawrGUtevpMCpvRn3/2JMa4TxlvKbLv0IVkV3PlMbehwnPhj1ErD7NSsxz7IFwgiXi8loKlM5WpWLxWixmtNdynwpJWfnJBp7o8G5X2aSiOIlRCu6QyQSUhnVMeDQQKm08u23kKYTIWpeRFYFXZ0llrXtljHYXvRLjEO4VY3/SDKOODh8fv4JF0C2pfEDAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7115a4f9c30faa10712af5f905013152"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">3115a4f9c30faa10712af5f905013109</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:47</sys_created_on>
+        <sys_id>7515a4f9c30faa10712af5f905013154</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:47</sys_updated_on>
+        <ui_id>c5d397ed-03b2-4d12-a898-dfbec583b553</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8Uy7hV6BvpyKklfa2Utvdl92V5cROsc7Yqe3QUsT/fuM4gRykQHRUanVveDy2v5n5vrHDz7XPiH/tk0kwSSeT4TgKgn4/CEajfoLDOO6PkjiI8cDv+AIvKHgaHHMKwyXmuR2/IC0SRHKzQkbhJeX/+q3oE/gSpjOOVz/KJVNw8B4KB++OPuVUG3BK5owTRYV//fN3x8+wgvMMVf71em/qXMAcx5SD60OJeC8As8q2Q1TMOdvX+jLvm5uQilgoQcenL4YKQgFDirmmHX+BBcFGqtXWoigmt4LvDHMmDOzoW+cXzV7h3HFg/VIKUSXUzW2HqMyXM6dTbPC9UXliclW6JnPJEqpdPghNcc7NTd3mHG4zw6RwS1zYbrXk+UJ8c+nwtxtU5QFLrgEEzWygFnkZRno/l893FcoZE0VOykkuE8y3I2yMYnFuLJ61TzldwEZogbOMiUeUKblkxWLAsug+chh0Uy6f4VDNHkUXJxZ4F/KKuzOwTwvzD6yYjeIv2AYWAyDGgSHIlVDLXBWpXKKE57qYUFhot5e/6fh6pW841noXOaQcPeUWt8tDGTFySbNLEsUy8ydssaRlcJtOpZnhUQpOdpRLpCDMotA14QAaxMivHBaT9fp7BsFSgsJukivIr+m6eEBBCZBvszmUUfsNWkrsdHyVxG7qATYFXYrtwPa1aYNSbOHFxDYIgs8kNzj846mtvX5cCk6IKCRHSUZ2fNJSGeRyWVPRoSxa8/wMCBXPby0zvXj1FqqS5imjnDTdKTM7sXen9P6fd8qHJDkAIshVjwnORPFAAKDvxf7hUerF4R7PCnrVbhBrwzo51AD2jPReWyvhDDiVEu7hbO/B4WmAWPX7gjL7vb4ylgLoX0wA/d5lBLDehrlNZEPOqzehrWbl/2r98b4/ULC2INw0CazVmWHbM3ubQwH3Wym4TjY3M32Dcxd+PL6hyM57toA5LC3PQ06/6JmRR2p2p1deRJpnzP9umi8Zh6pCFeG9w0M0PPotFNceoixFC6gcy3j1LtQIK4pSmQuCypfyjki2kilT2pTOh43mjoJ+hCdBmJ6ZU6/w9rbeLS/i03FUqfySelUg5Wnag0C8IhBvG0i7sNs0rcEFH6eXblozzHhRDfgIymrlpEpJ9UbjOlHII4w4s6udCSq8KKj/3vaaJNDY/k5g/RRf1JdvTQnF8aCHR1E/DIMgDEgUjKMoHI/idISjQbrTKHL/I0nYOQWqwPaookZV5+Cw/7iW2rbRnIGqouBUCvuF3YuMZ2FBfb0K1mngZUOJpeQUi72O8gD3xB+zEn/J1+GH6yqf4v+lnD3sZ9qZGnP9Xu+GnH0X7CmnXyzFxjTojUOSXI2jMLoapGR0NSF4eIUn8TDqE5oM0ks+BX7/A+T2UY/JFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7515a4f9c30faa10712af5f905013154"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">3115a4f9c30faa10712af5f905013109</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:47</sys_created_on>
+        <sys_id>7515a4f9c30faa10712af5f905013155</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:47</sys_updated_on>
+        <ui_id>418afc55-b0aa-42f0-9416-847441e1d7ed</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VWS27bMBC9iqC1rehjJ7a7CmIEKJAmgBNk4wYCRY5sohSlkJQT1/CqR+gBesUeoUP97CaBmwDZBPXGnuF83hvOkzzfuJy5E3cAzA/GwTGNgigKfT8cDYLkOEqCkEUEIHB7riQZYKQCmiuG9oqI0jo2Gzpk0fgEWN+PkrA/YEHYJ6PxqM/SBOhwFCXDYeTNqrztFjMZ14Ug69umAHrokgumQLqT+V3PLYjCXgaUO9k8OXotWEESEBg6a9E+RW/WhbVZTssMpIl567xoMqfNifN5iieYZOEEfs+FRwOSAQJJidDQczMiGTG5WrsTo0p0KCDsSop1F7Hk0tREM/Ko+XfsPPBtXArIjDZD6My4GVDtTqfEkGusTE2punnlnIKuZ8IgJaUwZ/u+OuCqMDyXdYohiWizc1Fm8rKeiNsV2LuPUiMIKCxPi7ymlV4v84dZC/Kcy2okDUWRUyI6ixijeFIaC2fjgoBqxhkpCi4XcaHyFa+SEUrmLQQaXiryB+yp+UJ6hFrcHk6VeOfon1buW6K4JfEFy2DytufqtT4TROsdFZxhfF9aJDWxhkJcTaEaQVxtgk2mihfmFFutoAG+7TVySIaHNoyOdwu1V3MnicdYSxqz0qxjo8gKxF+/Fdw/F8EUA5ybKsCZwX0J2rxZF69A3eriptqGl1k00njmu9jPdS7rg0YYw3cTxugjCaOh8eGV8S89+OHBJ+7eJlUS0HtaeMjVt1jmSPhr6fsRS1m/7gTsuQoOB79NDa/A3KrhnINg+gUSrRQgQ5QG4prUEzk0h85tc9i9K95NE8GxX30+kDL+g1dGTbH2Wcy75bXWoVjsiRcjHbvk4cmc5gzuqoWnSfUFv3/9/OGcGkPo0o5BO8gfL0oDc5K1s/trIg0IwRd2uJ5zDeAwMIQLjCcSvLrkUVNzftT1CU8+IVWNLxvW3eB2u737A09gUD4OCgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7515a4f9c30faa10712af5f905013155"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Set Field Values">54b8ab5feb702110f2549bf12a5228b6</action_type>
+        <action_type_parent display_value="DocIntel - Set Field Values">89bcd7d3eb702110f2549bf12a5228fc</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>54b8ab5feb702110f2549bf12a5228b6</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - Duty Travel - Extract Doc Info - Extract Doc">3115a4f9c30faa10712af5f905013109</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:47</sys_created_on>
+        <sys_id>b115a4f9c30faa10712af5f905013153</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:47</sys_updated_on>
+        <ui_id>85639730-06d1-40d7-b0ff-6be14681c8ae</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VWXW/TMBT9K1Oem8pxkjbeG2JMAgGTVtgLoOjGH63BdYLjDEq1/851k3bttMFAZS+8xdfX9jnn3mPnwzoC7nVtX9rWg+Vytmpfiug0KrKC0YopWU0JTRKiaJ6xSiUUckoLyqNRpEMey6oCqvyBvIphnoWlxEz53Ts8S4ryGkwnW5zZfODUej2dCDKtUhJDMSFxlgKLC2AQE0oJmcgsVRUZO9l2xt/c4Eqh28bA6uqvN+ALbYSTNjr98GkUNeAQpJcuOl3fmXosSwOVNJj6Ykvz5GpL82EB/KoJM5/b2g6j18M2r2YXbzFUOxFAJaOwWlohEY0C08pRtAQrwNduFZ1612HASRAX1qx2GQttPW4Vhdzvrf6BR2WEkJCpJBLksp/dDctB1j6szsDDDPfmvnNDKl/UmiP0jTRCKkA9n+/H+oSLJvRUv8RDZbara9Mt7dtejmi3wbaKGOlaBCGbwDRgH4io2aL+drlFea7tRpRh0tQczG4E3jtddT7gWUedfnegcD++o7E0comnlUtoGm3nZePqa705AQEvx3ODg7Ey9TdE1uq5HfeOGaP6MD7H+NkmfAVOB6pvcBtcHA57b/XXTm78VOVUkVSlMSdMxBmnLGaTRMUkpSAKOk3zIotuRlG7ap8baNtbkbA65dcuUOwlG8Qpe33DEu50458hqGs56HAz+se+Frdt7aH9cuDl9w0qg12ejHnnsGL3OvbYFhR7FnzXIzrEN1jttvUP/Xa5Fx9MR49lupQeWg5rjE4rB2D3ue+s5l3oyZOBypGteAjgCVypZhIcX5xraUItB6LlpkIPena/VIfG3S/Wk7iXyUROOFUxTQmLs4KKmE2zPAZW8EmSUTbJpr91b5AbQSht9QYBhwYqbbRffewISYWoeRlQlcNDUbsn9HtOfmUvTvf95ObSl05y9MmvjT9u685hY/e59z/cj1n0ZzfFI6jc3hSBy8nllssDFIe7o8U2tfM7F8dsGxxujfRYt0bxnz7VO5UPPb/T+UkML3JFsyKHmLEixd/JBOKKExLnCQOZgpAJvjjHe64//QS5H2pyiAsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b115a4f9c30faa10712af5f905013153"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3115a4f9c30faa10712af5f905013109"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3115a4f9c30faa10712af5f905013109"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3115a4f9c30faa10712af5f905013109"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3115a4f9c30faa10712af5f905013109"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3115a4f9c30faa10712af5f905013109</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:47</sys_created_on>
+        <sys_id>3915a4f9c30faa10712af5f905013131</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:47</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3115a4f9c30faa10712af5f905013109</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:46</sys_created_on>
+        <sys_id>f115a4f9c30faa10712af5f90501312a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3115a4f9c30faa10712af5f905013109</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:46</sys_created_on>
+        <sys_id>f915a4f9c30faa10712af5f905013122</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3115a4f9c30faa10712af5f905013109"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3115a4f9c30faa10712af5f905013109"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>9b842c79c30faa10712af5f90501314a</sys_id>
+        <latest_snapshot>3115a4f9c30faa10712af5f905013109</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=9b842c79c30faa10712af5f90501314a^sys_idNOT IN8615a4f9c30faa10712af5f90501318a"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan/>
+        <plan_id>9b842c79c30faa10712af5f90501314a</plan_id>
+        <snapshot>3115a4f9c30faa10712af5f905013109</snapshot>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:09:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8615a4f9c30faa10712af5f90501318a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:09:47</sys_updated_on>
+        <trigger display_value="">5e11c7ad970fa610fc1cf4ef9153af69</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=9b842c79c30faa10712af5f90501314a"/>
+</record_update>

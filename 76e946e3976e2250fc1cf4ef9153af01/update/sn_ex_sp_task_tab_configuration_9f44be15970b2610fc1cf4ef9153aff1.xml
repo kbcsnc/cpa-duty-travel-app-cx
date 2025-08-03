@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_task_tab_configuration">
+    <sn_ex_sp_task_tab_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <child_table/>
+        <fields/>
+        <multiline_script><![CDATA[/**    * `answer` should be returned in JSON array in below format    * The `current` object refers to the current Task(extension) record     * returns JSON of following format    * {     selectable: true,     columns: ['column_ref_name'],     lineItemsData: [{       isExpanded: false,       selectable: true,       defaultSelected: true,       sys_id,       rowData: {        column_ref_name: {         label, value, color: (bg - success / bg - info / bg - warning)        },       },       additionalData: [{ label, value }       ]     }],     filterConfig: {      column: 'column_ref_name',      values: [{       label,       value      }]     }    }    **/    (function (current) {         // write your code here      return {};        })(current);]]></multiline_script>
+        <name>Activity</name>
+        <order>100</order>
+        <script>false</script>
+        <source>approval</source>
+        <sys_class_name>sn_ex_sp_task_tab_configuration</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-29 10:19:08</sys_created_on>
+        <sys_id>9f44be15970b2610fc1cf4ef9153aff1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Activity</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_ex_sp_task_tab_configuration_9f44be15970b2610fc1cf4ef9153aff1</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-29 10:19:08</sys_updated_on>
+        <table>x_snc_duty_travel_duty_travel_req</table>
+        <task_configuration display_value="Duty Travel Requests">9bb1fa1d97c72610fc1cf4ef9153af5e</task_configuration>
+        <type>activity</type>
+        <visibility/>
+        <visibility_script><![CDATA[/**
+ * `answer` should be returned with true/false which validates if a tab is visible
+ * The `current` object refers to the current Task(extension) record 
+ **/ 
+(function(current, answer) { 
+
+	// write your code here 
+
+	answer = true; 
+	return answer; 
+ 
+})(current, answer);]]></visibility_script>
+        <widget/>
+        <widget_parameters/>
+    </sn_ex_sp_task_tab_configuration>
+</record_update>

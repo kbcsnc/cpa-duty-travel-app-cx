@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom">
+    <sc_cat_item_user_criteria_no_mtom action="DELETE">
+        <sc_cat_item display_value="">190d960f473a22d0873506f1d16d43c0</sc_cat_item>
+        <sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-22 08:50:28</sys_created_on>
+        <sys_id>9d0d960f473a22d0873506f1d16d43c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test.SNC External</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_9d0d960f473a22d0873506f1d16d43c1</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-22 08:50:28</sys_updated_on>
+        <user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria>
+    </sc_cat_item_user_criteria_no_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>sc_cat_item_user_criteria_no_mtom_9d0d960f473a22d0873506f1d16d43c1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_user_criteria_no_mtom"><sc_cat_item_user_criteria_no_mtom action="INSERT_OR_UPDATE"><sc_cat_item display_value="">190d960f473a22d0873506f1d16d43c0</sc_cat_item><sys_class_name>sc_cat_item_user_criteria_no_mtom</sys_class_name><sys_created_by>kb.cheung</sys_created_by><sys_created_on>2025-07-22 08:50:28</sys_created_on><sys_id>9d0d960f473a22d0873506f1d16d43c1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>test.SNC External</sys_name><sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package><sys_policy/><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_update_name>sc_cat_item_user_criteria_no_mtom_9d0d960f473a22d0873506f1d16d43c1</sys_update_name><sys_updated_by>kb.cheung</sys_updated_by><sys_updated_on>2025-07-22 08:50:28</sys_updated_on><user_criteria display_value="SNC External">66c1b50e730333009508738234f6a7c9</user_criteria></sc_cat_item_user_criteria_no_mtom></record_update>]]></payload>
+        <payload_hash>1094962577</payload_hash>
+        <record_name>test.SNC External</record_name>
+        <reverted_from/>
+        <source>6a474a1147222210873506f1d16d439e</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by/>
+        <sys_created_on>2025-07-04 10:30:27</sys_created_on>
+        <sys_id>4c2e1e8f473a22d0873506f1d16d43ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197d4fccdb80000000</sys_recorded_at>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 12:48:23</sys_updated_on>
+        <type>Catalog Item Not Available for</type>
+        <update_guid>0c2e1e8f153a22d091f6d5e120132dba</update_guid>
+        <update_guid_history>0c2e1e8f153a22d091f6d5e120132dba:1094962577</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">842e1e8f473a22d0873506f1d16d43bb</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-22 08:55:18</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_user_criteria_no_mtom">sc_cat_item_user_criteria_no_mtom</sys_db_object>
+        <sys_id>06a0cbdf19624ef8988a8a0fbf462e90</sys_id>
+        <sys_metadata>9d0d960f473a22d0873506f1d16d43c1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>test.SNC External</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sc_cat_item_user_criteria_no_mtom_9d0d960f473a22d0873506f1d16d43c1</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_user_criteria_no_mtom_9d0d960f473a22d0873506f1d16d43c1">4c2e1e8f473a22d0873506f1d16d43ba</sys_update_version>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-22 08:55:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

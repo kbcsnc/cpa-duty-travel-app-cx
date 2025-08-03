@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_di_key">
+    <sys_di_key action="DELETE">
+        <active>true</active>
+        <additional_details/>
+        <description>What is the justification for visa travel and what is the contact point for this visa travel?</description>
+        <display_name>What is the justification for visa travel and what is the contact point for this visa travel?</display_name>
+        <group_index>0</group_index>
+        <key_config/>
+        <key_group/>
+        <mandatory>true</mandatory>
+        <metadata/>
+        <name>whatisthejustificationforvisatravelandwh</name>
+        <order>0</order>
+        <prediction_method/>
+        <stp_threshold/>
+        <synonym/>
+        <sys_class_name>sys_di_key</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:28:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9c7b3eed97cba610fc1cf4ef9153af62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>What is the justification for visa travel and what is the contact point for this visa travel?</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_di_key_9c7b3eed97cba610fc1cf4ef9153af62</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:28:11</sys_updated_on>
+        <target_field>work_notes</target_field>
+        <target_table>x_snc_duty_travel_duty_travel_req</target_table>
+        <task_definition display_value="Identify visa travel information">15f8fe2997cba610fc1cf4ef9153af67</task_definition>
+        <total_used_positive_samples>0</total_used_positive_samples>
+        <type>Text</type>
+    </sys_di_key>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>sys_di_key_9c7b3eed97cba610fc1cf4ef9153af62</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_di_key"><sys_di_key action="INSERT_OR_UPDATE"><active>true</active><additional_details/><description>What is the justification for visa travel and what is the contact point for this visa travel?</description><display_name>What is the justification for visa travel and what is the contact point for this visa travel?</display_name><group_index>0</group_index><key_config/><key_group/><mandatory>true</mandatory><metadata/><name>whatisthejustificationforvisatravelandwh</name><order>0</order><prediction_method/><stp_threshold/><synonym/><sys_class_name>sys_di_key</sys_class_name><sys_created_by>kb.cheung</sys_created_by><sys_created_on>2025-07-30 05:28:11</sys_created_on><sys_domain>global</sys_domain><sys_id>9c7b3eed97cba610fc1cf4ef9153af62</sys_id><sys_mod_count>0</sys_mod_count><sys_name>What is the justification for visa travel and what is the contact point for this visa travel?</sys_name><sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package><sys_policy/><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_update_name>sys_di_key_9c7b3eed97cba610fc1cf4ef9153af62</sys_update_name><sys_updated_by>kb.cheung</sys_updated_by><sys_updated_on>2025-07-30 05:28:11</sys_updated_on><target_field>work_notes</target_field><target_table>x_snc_duty_travel_duty_travel_req</target_table><task_definition display_value="Identify visa travel information">15f8fe2997cba610fc1cf4ef9153af67</task_definition><total_used_positive_samples>0</total_used_positive_samples><type>Text</type></sys_di_key></record_update>]]></payload>
+        <payload_hash>1689273588</payload_hash>
+        <record_name>What is the justification for visa travel and what is the contact point for this visa travel?</record_name>
+        <reverted_from/>
+        <source>118cadc7477222d0873506f1d16d436a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:28:11</sys_created_on>
+        <sys_id>a07b3eed97cba610fc1cf4ef9153af66</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19859cd6cea0000001</sys_recorded_at>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:28:11</sys_updated_on>
+        <type>Field</type>
+        <update_guid>a47b3eed69cba6100cc03c1c3b290a65</update_guid>
+        <update_guid_history>a47b3eed69cba6100cc03c1c3b290a65:1689273588</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:50:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_di_key">sys_di_key</sys_db_object>
+        <sys_id>398adf390f714a24810890bf5ebe4c10</sys_id>
+        <sys_metadata>9c7b3eed97cba610fc1cf4ef9153af62</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>What is the justification for visa travel and what is the contact point for this visa travel?</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sys_di_key_9c7b3eed97cba610fc1cf4ef9153af62</sys_update_name>
+        <sys_update_version display_value="sys_di_key_9c7b3eed97cba610fc1cf4ef9153af62">a07b3eed97cba610fc1cf4ef9153af66</sys_update_version>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:50:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

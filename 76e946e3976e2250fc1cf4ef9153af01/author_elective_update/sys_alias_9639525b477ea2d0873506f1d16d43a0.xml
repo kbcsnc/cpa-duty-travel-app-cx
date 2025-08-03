@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="DELETE">
+        <configuration_template/>
+        <connection_type>http_connection</connection_type>
+        <id>x_snc_duty_travel.AirLab_BASIC</id>
+        <is_internal>false</is_internal>
+        <multiple_connections>false</multiple_connections>
+        <name>AirLab BASIC</name>
+        <parent/>
+        <retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-23 03:12:39</sys_created_on>
+        <sys_id>9639525b477ea2d0873506f1d16d43a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_duty_travel.AirLab_BASIC</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_alias_9639525b477ea2d0873506f1d16d43a0</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-23 03:12:39</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>sys_alias_9639525b477ea2d0873506f1d16d43a0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias"><sys_alias action="INSERT_OR_UPDATE"><configuration_template/><connection_type>http_connection</connection_type><id>x_snc_duty_travel.AirLab_BASIC</id><is_internal>false</is_internal><multiple_connections>false</multiple_connections><name>AirLab BASIC</name><parent/><retry_policy display_value="Default HTTP Retry Policy">ef751ff07301330025d71afe2ff6a7f9</retry_policy><sys_class_name>sys_alias</sys_class_name><sys_created_by>carmen.man</sys_created_by><sys_created_on>2025-07-23 03:12:39</sys_created_on><sys_id>9639525b477ea2d0873506f1d16d43a0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_snc_duty_travel.AirLab_BASIC</sys_name><sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package><sys_policy/><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_update_name>sys_alias_9639525b477ea2d0873506f1d16d43a0</sys_update_name><sys_updated_by>carmen.man</sys_updated_by><sys_updated_on>2025-07-23 03:12:39</sys_updated_on><type>connection</type></sys_alias></record_update>]]></payload>
+        <payload_hash>-924520281</payload_hash>
+        <record_name>x_snc_duty_travel.AirLab_BASIC</record_name>
+        <reverted_from/>
+        <source>07c846df47baa2d0873506f1d16d43db</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-23 03:12:39</sys_created_on>
+        <sys_id>6a491e1b477ea2d0873506f1d16d434f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1983544d11d0000001</sys_recorded_at>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-23 03:12:39</sys_updated_on>
+        <type>Connection &amp; Credential Aliases</type>
+        <update_guid>6e491e1bc47ea2d0e7d9677b06e8394e</update_guid>
+        <update_guid_history>6e491e1bc47ea2d0e7d9677b06e8394e:-924520281</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-23 03:13:35</sys_created_on>
+        <sys_db_object display_value="" name="sys_alias">sys_alias</sys_db_object>
+        <sys_id>5acbc3eb91f64df2a66b997758b7d409</sys_id>
+        <sys_metadata>9639525b477ea2d0873506f1d16d43a0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_duty_travel.AirLab_BASIC</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sys_alias_9639525b477ea2d0873506f1d16d43a0</sys_update_name>
+        <sys_update_version display_value="sys_alias_9639525b477ea2d0873506f1d16d43a0">6a491e1b477ea2d0873506f1d16d434f</sys_update_version>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-23 03:13:35</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

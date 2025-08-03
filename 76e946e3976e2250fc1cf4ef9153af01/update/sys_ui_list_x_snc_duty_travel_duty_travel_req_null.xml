@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_snc_duty_travel_duty_travel_req" version="2" view="">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_snc_duty_travel_duty_travel_req" element="NULL" name="x_snc_duty_travel_duty_travel_req" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d5b75bd977e6290fc1cf4ef9153af37</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2025-07-18 09:10:51</sys_created_on>
+            <sys_id>595b75bd977e6290fc1cf4ef9153af38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2025-07-18 09:10:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="x_snc_duty_travel_duty_travel_req" element="NULL" name="x_snc_duty_travel_duty_travel_req" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d5b75bd977e6290fc1cf4ef9153af37</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2025-07-18 09:10:51</sys_created_on>
+            <sys_id>5d5b75bd977e6290fc1cf4ef9153af38</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2025-07-18 09:10:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>traveller</element>
+            <list_id display_value="x_snc_duty_travel_duty_travel_req" element="NULL" name="x_snc_duty_travel_duty_travel_req" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d5b75bd977e6290fc1cf4ef9153af37</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2025-07-18 09:10:51</sys_created_on>
+            <sys_id>515b75bd977e6290fc1cf4ef9153af39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2025-07-18 09:10:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>leaving_from</element>
+            <list_id display_value="x_snc_duty_travel_duty_travel_req" element="NULL" name="x_snc_duty_travel_duty_travel_req" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d5b75bd977e6290fc1cf4ef9153af37</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2025-07-18 09:10:51</sys_created_on>
+            <sys_id>555b75bd977e6290fc1cf4ef9153af39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2025-07-18 09:10:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>going_to</element>
+            <list_id display_value="x_snc_duty_travel_duty_travel_req" element="NULL" name="x_snc_duty_travel_duty_travel_req" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d5b75bd977e6290fc1cf4ef9153af37</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2025-07-18 09:10:51</sys_created_on>
+            <sys_id>595b75bd977e6290fc1cf4ef9153af39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2025-07-18 09:10:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>trip_type</element>
+            <list_id display_value="x_snc_duty_travel_duty_travel_req" element="NULL" name="x_snc_duty_travel_duty_travel_req" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d5b75bd977e6290fc1cf4ef9153af37</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2025-07-18 09:10:51</sys_created_on>
+            <sys_id>5d5b75bd977e6290fc1cf4ef9153af39</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2025-07-18 09:10:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>trip_cost_estimation</element>
+            <list_id display_value="x_snc_duty_travel_duty_travel_req" element="NULL" name="x_snc_duty_travel_duty_travel_req" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">1d5b75bd977e6290fc1cf4ef9153af37</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2025-07-18 09:10:51</sys_created_on>
+            <sys_id>515b75bd977e6290fc1cf4ef9153af3a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2025-07-18 09:10:51</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_snc_duty_travel_duty_travel_req</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2025-07-18 09:10:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1d5b75bd977e6290fc1cf4ef9153af37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_snc_duty_travel_duty_travel_req</sys_name>
+            <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+            <sys_update_name>sys_ui_list_x_snc_duty_travel_duty_travel_req_null</sys_update_name>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2025-07-18 09:10:51</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,1299 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=465000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This subflow retrieves travel alerts issued by the HK Security Bureau for a specified destination country. It takes a single input, "Country", which is used to look up the corresponding travel alert record. The subflow then checks if a travel alert record is found. If a record is found, it assigns the travel alert classification, details, and recommendations as outputs. If no record is found, it assigns "No Travel Alerts" as the travel alert classification output.</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>ai_retrieve_travel_alerts</internal_name>
+        <label_cache>[{"name":"subflow.country","label":"Input➛Country","type":"string","base_type":"string","usedInstances":{"e5c03e84-005c-4690-a223-f477b6d2df99":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"06075d4c-3a97-4d13-9e60-810371d64204"}},{"name":"e5c03e84-005c-4690-a223-f477b6d2df99.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"312a9d06-5d48-414e-91e9-d0b9f59b695e":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"e5c03e84-005c-4690-a223-f477b6d2df99.Record.alert.alert","label":"1 - Look Up Record➛Outbound Travel Alert Record➛Alert type➛Alert","reference":"","reference_display":"Alert","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ota_definition","column_name":"alert","usedInstances":{"414f7ee1-f1e5-44ff-93c7-b14180afdd91":["travel_alert_classification-0"]}},{"name":"e5c03e84-005c-4690-a223-f477b6d2df99.Record.alert_description","label":"1 - Look Up Record➛Outbound Travel Alert Record➛Alert description","reference":"","reference_display":"Alert description","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ota","column_name":"alert_description","usedInstances":{"414f7ee1-f1e5-44ff-93c7-b14180afdd91":["travel_alert_details-1"]}},{"name":"e5c03e84-005c-4690-a223-f477b6d2df99.Record.travel_recommendations","label":"1 - Look Up Record➛Outbound Travel Alert Record➛Travel Recommendations","reference":"","reference_display":"Travel Recommendations","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ota","column_name":"travel_recommendations","usedInstances":{"414f7ee1-f1e5-44ff-93c7-b14180afdd91":["travel_alert_recommendations-2"]}}]</label_cache>
+        <master_snapshot>919004bd9787e610fc1cf4ef9153afd3</master_snapshot>
+        <master_snapshot_digest/>
+        <name>[AI] Retrieve Travel Alerts</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:26:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>27cf732d9787e610fc1cf4ef9153afca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>[AI] Retrieve Travel Alerts</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_hub_flow_27cf732d9787e610fc1cf4ef9153afca</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 12:47:43</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=27cf732d9787e610fc1cf4ef9153afca"/>
+    <sys_variable_value action="delete_multiple" query="document_key=27cf732d9787e610fc1cf4ef9153afca"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca^id=27cf732d9787e610fc1cf4ef9153afca"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=27cf732d9787e610fc1cf4ef9153afca"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=27cf732d9787e610fc1cf4ef9153afca^sys_idNOT IN23cf732d9787e610fc1cf4ef9153afcf"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>27cf732d9787e610fc1cf4ef9153afca</id>
+        <name>[AI] Retrieve Travel Alerts</name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:26:52</sys_created_on>
+        <sys_id>23cf732d9787e610fc1cf4ef9153afcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:26:52</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=23cf732d9787e610fc1cf4ef9153afcf"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=27cf732d9787e610fc1cf4ef9153afca^sys_idNOT IN48900c7d9787e610fc1cf4ef9153af37"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=06075d4c-3a97-4d13-9e60-810371d64204</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>country</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Country</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Retrieve Travel Alerts">27cf732d9787e610fc1cf4ef9153afca</model>
+        <model_id>27cf732d9787e610fc1cf4ef9153afca</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_27cf732d9787e610fc1cf4ef9153afca</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+        <sys_id>48900c7d9787e610fc1cf4ef9153af37</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=48900c7d9787e610fc1cf4ef9153af37"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=27cf732d9787e610fc1cf4ef9153afca^sys_idNOT IN5090c0bd9787e610fc1cf4ef9153af88,5490c0bd9787e610fc1cf4ef9153af90,5c90c0bd9787e610fc1cf4ef9153af8c"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=14779c3c-858f-49b6-b263-5af0d6d95614</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>travel_alert_classification</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Travel Alert Classification</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Retrieve Travel Alerts">27cf732d9787e610fc1cf4ef9153afca</model>
+        <model_id>27cf732d9787e610fc1cf4ef9153afca</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+        <sys_id>5090c0bd9787e610fc1cf4ef9153af88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5090c0bd9787e610fc1cf4ef9153af88"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ed4bd4f5-71c8-4925-824e-6d59684ee2ca</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>travel_alert_recommendations</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Travel Alert Recommendations</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Retrieve Travel Alerts">27cf732d9787e610fc1cf4ef9153afca</model>
+        <model_id>27cf732d9787e610fc1cf4ef9153afca</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+        <sys_id>5490c0bd9787e610fc1cf4ef9153af90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5490c0bd9787e610fc1cf4ef9153af90"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=024edc57-1d28-4768-b454-8ba7ae9fdd09</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>travel_alert_details</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Travel Alert Details</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Retrieve Travel Alerts">27cf732d9787e610fc1cf4ef9153afca</model>
+        <model_id>27cf732d9787e610fc1cf4ef9153afca</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+        <sys_id>5c90c0bd9787e610fc1cf4ef9153af8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:11</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5c90c0bd9787e610fc1cf4ef9153af8c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=27cf732d9787e610fc1cf4ef9153afca"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=27cf732d9787e610fc1cf4ef9153afca"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=27cf732d9787e610fc1cf4ef9153afca^sys_idNOT INdc90c0bd9787e610fc1cf4ef9153afa4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Travel Alerts">27cf732d9787e610fc1cf4ef9153afca</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+        <sys_id>dc90c0bd9787e610fc1cf4ef9153afa4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:36:56</sys_updated_on>
+        <ui_id>e5c03e84-005c-4690-a223-f477b6d2df99</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrEhgo0G2AJttLtyAokYqJ0qRKUk4cw/99hyIlG7ZiW1gHSNAjh0Pyzcx7I1I/1iEj4XVIptE0m06Hk3EU9ftRNBr1UxwnSX+UJlGCB2EnFHhBwdPghFMYLjEv7PgZaZEiUpgVMgovKUfSYJgnTOccr757t7vCJLIQJHgonYJPnCoDbumccaKoCK9//OyEOVZwiqEqvF7vTZ0Lk+OEcnB98Dj3YJtVXg9ROedsX3aXBV/dhFTEQok6IX02VBAKGDLMNe2ECywINlKtaouimNwJvjXMmTCwY2idnzV7gXMnkfXLKESVUjdXD5HPmDNnt9jge6OK1BTKu6ZzyVKqXT4IzXDBzc2uzTnc5YZJ4Za4sN1qyYuF+OrSEdYbVAUCS6EBBM1toBa5DyO7n8unbxXKGRNlTvwklynm9Qgbo1hSGItnHVJOF7ARWuA8Z+IR5UouWbkYsCy6jxwG3YzLJzhUs0fRxakF3oW84u4M7Lel+TtWzEbxN2wDiwEQ48AQ5EqoZaHKVC5RygtdTigstNsr3HRCvdI3HGu9jRxSjn4XFrfLg48YuaTZJaliufkEWyypD27TqZQyPErB6ZZyqRSEWRR6Ry4piMCoVdf6/FvAFmS91kVi09D1c5vNoXzOXdZSTqdjqeR0sxtMU4BeWAe2L00beGHFFxPWIIo+krTg8PenrPZacSk4IZiYHCUZ2fJJS2WQy+WOYg7F0JrnZ0CoeH5nmRkkq9dQeZpnjHLS9P2Y2Ym970fvz/x+vEuSAyCCXPWY4EyUlwEA+lbsHx6lXhLv8ayk15b7pQ3r9FADODAyeGmthDPgVEq4h7ODB4enAWLV70vK7Pf6yugF0L+YAPq9ywhgXYdZJ7Ih59X9z1az8n+x/njfHyi4syDeNAms1Zlx2zN7m0MB91speJdsbub2Fc5d+KL4iiI7b9kC5rDUn4ecftETI4/UbE+vvIg0T5j/apr3jENVocrw3uDSGR999yQ7l06WoQVUjuVwN1Y0BXJohBVFmX18IX8r3hLJVjJjShvvfNhovlHQjwgkCDMwcxqU3kHt3fJDfDqOKpWfs6AKxJ+mAwgkKAMJ6kDahd2maQ0ueDm9dNOaYcbLasCDJ98pJ1VKqlca14lCHmHEmV3tTFDxRUH9/7bXJIHG9ncC64d4PV++NaUUJ4MeHo37cRxFcUTG0WQ8jiejJBvh8SDbahS5P0USds6AKrA9qqhR1Tk+7D++2bbrM2eAqhh4K4V9UPfGJrCooLxBheo0bt9PEik5xWKvoTwA8r9m5Rehpuvw3TWVD/ErqWAP+5l2psZcv9W1oWD/CPa7oJ8txSY06k1ikl5NxvH4apCR0dWU4OEVnibDcZ/QdJBd8ibw8z+HoKMYqhUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dc90c0bd9787e610fc1cf4ef9153afa4"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=27cf732d9787e610fc1cf4ef9153afca"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=27cf732d9787e610fc1cf4ef9153afca^sys_idNOT IN1890c0bd9787e610fc1cf4ef9153afaa,5090c0bd9787e610fc1cf4ef9153afa7,9c90c0bd9787e610fc1cf4ef9153afa8,d890c0bd9787e610fc1cf4ef9153afa9"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1090c0bd9787e610fc1cf4ef9153afaa</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Travel Alerts">27cf732d9787e610fc1cf4ef9153afca</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned>travel_alert_classification</outputs_assigned>
+        <parent_ui_id>f5c27f2e-7f73-43ab-8faf-a0c3b0fad356</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+        <sys_id>1890c0bd9787e610fc1cf4ef9153afaa</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:34:37</sys_updated_on>
+        <ui_id>163545cc-2e57-407e-8cf8-59228116397e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41TXW/bMAz8K4Gek8Bevuy8BS0KFNhaYM36MhQGLVGJMFlyJTlpFuS/j7KdNAgwoI86Hsk7kjoy24S6CX5tV96rjWHL30emBFuyWZInPClFvsgWOE8TyVMupyjzdDYBmWVsyAxUSMzgYIe6AI0uFFwDFZKKQ1DWEGkHuomsJztYt8TBKhI9hYTytYbD6/8ZfKu0cBhlvQ1ZDY46BnRsebwJhUONhYYSNRV6CU6ZDaV/1cg58br94O7WyZfsRiFE8mcJ1omoNx0y/AhoBJIkCdrjkFVgBATrDhfEIYhnoz+BrTKBqrFI/vDqL5XOkiSJTIlknmMXvTyLfqYdzLdWcXyuW20tEqDUfQ63uqnMU2cqbgMlNDqct0FI46ke1lF1lNFrki9bu/95bvigTGuwD2rLQV9eEGgMZRPQx401an0znA75frs21FhRx6KCuiakqJ3dqbYLia7GG02PsdR2T+ri0Y6BR4djmiaMHwi/b+FXcCra/UFlKDm2+2XUe4OP8SzS6WKR8wkfZbNMjqZ5OR+V3+aT0QxkIuYin83TKTu1oy3em2iqG1I/jqKbKBE8d6oOK5Kww975iS5Smfivuuvc9Ur6p0CuPAleR+zxiicOdGOKX0N76/5Eq5/Y6R+DyZFZtQMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d090c0bd9787e610fc1cf4ef9153afa6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Travel Alerts">27cf732d9787e610fc1cf4ef9153afca</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+        <sys_id>5090c0bd9787e610fc1cf4ef9153afa7</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:34:37</sys_updated_on>
+        <ui_id>312a9d06-5d48-414e-91e9-d0b9f59b695e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8lUJnWaAk24l9C1oEKNA2QBPk0gbCilzZRClSJSknruF/71IP20gctAh67E2c5e7ODAfaRab1TevdnblyTq50tPz2EEdSB4y+d5GGGqNlxI0W0kujiw6Iow2oNhToU0jXKNjeHxG+lkpYHKY1YKnHo42Wu2clv22wUFCiosZbb6VeUbsUdKoYVOmCpzzP5nnGWHY5Tct5XqaZyAEhp3tj4/uR3LtPHRK/yjrsI9yNm4wVgVbK4gifPGqBtLoC5TCOatACvLHbA2IRxI1WR2Atte8V1/Dk5C+anc1m4WKFpJEPdhyOxWDV6JKRHG+aQLBHPJRqtNCottZfeh3BZKygVf7E5NbRPGwC6cBioFTdrs3j13HhtdSdwKGoDAd1OIEnG8rWowsPgwprGlTU0DRkTtFYs5FdM3Gpk5WiQ1Ip80hLQ1IS4IF4Qh5Bck34hw6+ByuDis80hpp7miU4yYsuVTTOW5Kw72wpfraBUC9wkFL0btAFx61s/BXt2eDAeh+/jORJGnc7nHGW4+V0wtiMT6bzBZtAluWTanpxUc5FJqrFInEefOv2++8tY7lgLzP85jn/IvkLmFWzlNaeTf50fi75ZzL/etyzP8Q9PNBfpp0x9j/up3GXruhjO2jrlr857Q8h2v0G1+dGIJeOiNwF7OP4nw6FLQVA8lPo0dgfQcIR2/8G4V6h4PEFAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9490c0bd9787e610fc1cf4ef9153afa8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Travel Alerts">27cf732d9787e610fc1cf4ef9153afca</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>travel_alert_classification,travel_alert_details,travel_alert_recommendations</outputs_assigned>
+        <parent_ui_id>312a9d06-5d48-414e-91e9-d0b9f59b695e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+        <sys_id>9c90c0bd9787e610fc1cf4ef9153afa8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:34:37</sys_updated_on>
+        <ui_id>414f7ee1-f1e5-44ff-93c7-b14180afdd91</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WTU/jMBT8KyjnunLSfPaGFiEh7S4SdLmsVpFjP1NrnQ8Sp9Ct+t/3OUkLKrQg6IEDl0oeP4/njd9UWTlla6rWNLPytGnUbeFMf68cJZypE9CEcpqJJIojCF0quculDzJxgwmTceyMnILlgJWmZgvQKdNQm5RrhkRScWZUWWDRgunWVq1WEHA6gdgnlAac+GFCCfO8CZF+FGWh8IRMkvEV8LIW446s/12vkUWoptJseXMUMj5XWtRgm/0zcipWYx8Game62tkyywpSzTLQeOe1qVVxi8ffas/m4Kzz5+TU3n/ybdefN5lohWBRs5GAXVm97siBBwOFAJQkmW5g5OSsEMyU9XKL1MDEZaEfgbkqDLI5tvihUf+QOqaU2koJ2DyHfne7TAf7e5jPS8Xhsuq0dYhhmR7O8FK3efGzb8o+HEjWarN5OETaBvmgsqqtjEGTvJ6X91ebC89V0TU4bOqSM71dMYM2ZK2Bxr5Yq2Y75vTI991nAw053pjmrKoQSau6XKjuFhSdj281LsZSl/eozkZhzLjtcIxusvE54mcdfMNqZdv9gTR42F73q1B3LVzYsXBx/BI+4SQOYkn8JAtJ5oUTEjBJRSiSIHR9Z91Zm961tqnepMGOtHcUCxpeq8qcooQFDJ2vR5to8oOzx/dMlQDDlG4+lklrTicNrTlSMp9RHiWfr3v0Yj7PtiYdtnBPIr2vRH6yRFLPB8GDiLjCi4kfhTHJ/MAnccYiBokUgiYfT6R/aNoSumecakxBjhaI7n/+/ckcSHfoPh7PA7xHyejrrr2Y0atntr3N3D2ZnXxl9pNlFoSfCV8GJHI5ZjbxAhJjjEkogiSMfQCPs3dnFmdSFfabt5/PxaBkWArgqkHBM4tdPKkTSxwyxZ9C92X917b6iK3/A3apnXVRCwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d090c0bd9787e610fc1cf4ef9153afa9</block>
+        <comment/>
+        <connected_to>312a9d06-5d48-414e-91e9-d0b9f59b695e</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Travel Alerts">27cf732d9787e610fc1cf4ef9153afca</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+        <sys_id>d890c0bd9787e610fc1cf4ef9153afa9</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:34:37</sys_updated_on>
+        <ui_id>f5c27f2e-7f73-43ab-8faf-a0c3b0fad356</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=27cf732d9787e610fc1cf4ef9153afca"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=27cf732d9787e610fc1cf4ef9153afca"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>country</element>
+        <help/>
+        <hint/>
+        <label>Country</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_27cf732d9787e610fc1cf4ef9153afca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+        <sys_id>c890c0bd9787e610fc1cf4ef9153af5a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Country</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_27cf732d9787e610fc1cf4ef9153afca_country_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_27cf732d9787e610fc1cf4ef9153afca"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>travel_alert_details</element>
+        <help/>
+        <hint/>
+        <label>Travel Alert Details</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+        <sys_id>5490c0bd9787e610fc1cf4ef9153af8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Alert Details</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca_travel_alert_details_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>travel_alert_classification</element>
+        <help/>
+        <hint/>
+        <label>Travel Alert Classification</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+        <sys_id>5c90c0bd9787e610fc1cf4ef9153af8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Alert Classification</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca_travel_alert_classification_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>travel_alert_recommendations</element>
+        <help/>
+        <hint/>
+        <label>Travel Alert Recommendations</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+        <sys_id>5c90c0bd9787e610fc1cf4ef9153af92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Alert Recommendations</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca_travel_alert_recommendations_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:11</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This subflow retrieves travel alerts issued by the HK Security Bureau for a specified destination country. It takes a single input, "Country", which is used to look up the corresponding travel alert record. The subflow then checks if a travel alert record is found. If a record is found, it assigns the travel alert classification, details, and recommendations as outputs. If no record is found, it assigns "No Travel Alerts" as the travel alert classification output.</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>ai_retrieve_travel_alerts</internal_name>
+        <label_cache>[{"name":"subflow.country","label":"Input➛Country","type":"string","base_type":"string","usedInstances":{"e5c03e84-005c-4690-a223-f477b6d2df99":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"06075d4c-3a97-4d13-9e60-810371d64204"}},{"name":"e5c03e84-005c-4690-a223-f477b6d2df99.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"312a9d06-5d48-414e-91e9-d0b9f59b695e":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"e5c03e84-005c-4690-a223-f477b6d2df99.Record.alert.alert","label":"1 - Look Up Record➛Outbound Travel Alert Record➛Alert type➛Alert","reference":"","reference_display":"Alert","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ota_definition","column_name":"alert","usedInstances":{"414f7ee1-f1e5-44ff-93c7-b14180afdd91":["travel_alert_classification-0"]}},{"name":"e5c03e84-005c-4690-a223-f477b6d2df99.Record.alert_description","label":"1 - Look Up Record➛Outbound Travel Alert Record➛Alert description","reference":"","reference_display":"Alert description","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ota","column_name":"alert_description","usedInstances":{"414f7ee1-f1e5-44ff-93c7-b14180afdd91":["travel_alert_details-1"]}},{"name":"e5c03e84-005c-4690-a223-f477b6d2df99.Record.travel_recommendations","label":"1 - Look Up Record➛Outbound Travel Alert Record➛Travel Recommendations","reference":"","reference_display":"Travel Recommendations","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ota","column_name":"travel_recommendations","usedInstances":{"414f7ee1-f1e5-44ff-93c7-b14180afdd91":["travel_alert_recommendations-2"]}}]</label_cache>
+        <master>true</master>
+        <name>[AI] Retrieve Travel Alerts</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="[AI] Retrieve Travel Alerts">27cf732d9787e610fc1cf4ef9153afca</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>919004bd9787e610fc1cf4ef9153afd3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:34:38</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=919004bd9787e610fc1cf4ef9153afd3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=919004bd9787e610fc1cf4ef9153afd3"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_919004bd9787e610fc1cf4ef9153afd3^id=919004bd9787e610fc1cf4ef9153afd3"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=919004bd9787e610fc1cf4ef9153afd3"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=919004bd9787e610fc1cf4ef9153afd3^sys_idNOT IN959004bd9787e610fc1cf4ef9153afd4"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>919004bd9787e610fc1cf4ef9153afd3</id>
+        <name>[AI] Retrieve Travel Alerts</name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:15</sys_created_on>
+        <sys_id>959004bd9787e610fc1cf4ef9153afd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:15</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=959004bd9787e610fc1cf4ef9153afd4"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=919004bd9787e610fc1cf4ef9153afd3^sys_idNOT IN199004bd9787e610fc1cf4ef9153afd5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=06075d4c-3a97-4d13-9e60-810371d64204</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>country</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Country</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Retrieve Travel Alerts">919004bd9787e610fc1cf4ef9153afd3</model>
+        <model_id>919004bd9787e610fc1cf4ef9153afd3</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_919004bd9787e610fc1cf4ef9153afd3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:15</sys_created_on>
+        <sys_id>199004bd9787e610fc1cf4ef9153afd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=199004bd9787e610fc1cf4ef9153afd5"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=919004bd9787e610fc1cf4ef9153afd3^sys_idNOT IN599004bd9787e610fc1cf4ef9153affe,5d9004bd9787e610fc1cf4ef9153afea,919004bd9787e610fc1cf4ef9153afe3"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=ed4bd4f5-71c8-4925-824e-6d59684ee2ca</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>travel_alert_recommendations</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Travel Alert Recommendations</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Retrieve Travel Alerts">919004bd9787e610fc1cf4ef9153afd3</model>
+        <model_id>919004bd9787e610fc1cf4ef9153afd3</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_919004bd9787e610fc1cf4ef9153afd3</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:15</sys_created_on>
+        <sys_id>599004bd9787e610fc1cf4ef9153affe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=599004bd9787e610fc1cf4ef9153affe"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=024edc57-1d28-4768-b454-8ba7ae9fdd09</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>travel_alert_details</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Travel Alert Details</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Retrieve Travel Alerts">919004bd9787e610fc1cf4ef9153afd3</model>
+        <model_id>919004bd9787e610fc1cf4ef9153afd3</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_919004bd9787e610fc1cf4ef9153afd3</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:15</sys_created_on>
+        <sys_id>5d9004bd9787e610fc1cf4ef9153afea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5d9004bd9787e610fc1cf4ef9153afea"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=14779c3c-858f-49b6-b263-5af0d6d95614</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>travel_alert_classification</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Travel Alert Classification</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="[AI] Retrieve Travel Alerts">919004bd9787e610fc1cf4ef9153afd3</model>
+        <model_id>919004bd9787e610fc1cf4ef9153afd3</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_919004bd9787e610fc1cf4ef9153afd3</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:15</sys_created_on>
+        <sys_id>919004bd9787e610fc1cf4ef9153afe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:15</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=919004bd9787e610fc1cf4ef9153afe3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=919004bd9787e610fc1cf4ef9153afd3"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=919004bd9787e610fc1cf4ef9153afd3"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=919004bd9787e610fc1cf4ef9153afd3^sys_idNOT IN959044bd9787e610fc1cf4ef9153af1a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Travel Alerts">919004bd9787e610fc1cf4ef9153afd3</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:16</sys_created_on>
+        <sys_id>959044bd9787e610fc1cf4ef9153af1a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:16</sys_updated_on>
+        <ui_id>e5c03e84-005c-4690-a223-f477b6d2df99</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrEhgo0G2AJttLtyAokYqJ0qRKUk4cw/99hyIlG7ZiW1gHSNAjh0Pyzcx7I1I/1iEj4XVIptE0m06Hk3EU9ftRNBr1UxwnSX+UJlGCB2EnFHhBwdPghFMYLjEv7PgZaZEiUpgVMgovKUfSYJgnTOccr757t7vCJLIQJHgonYJPnCoDbumccaKoCK9//OyEOVZwiqEqvF7vTZ0Lk+OEcnB98Dj3YJtVXg9ROedsX3aXBV/dhFTEQok6IX02VBAKGDLMNe2ECywINlKtaouimNwJvjXMmTCwY2idnzV7gXMnkfXLKESVUjdXD5HPmDNnt9jge6OK1BTKu6ZzyVKqXT4IzXDBzc2uzTnc5YZJ4Za4sN1qyYuF+OrSEdYbVAUCS6EBBM1toBa5DyO7n8unbxXKGRNlTvwklynm9Qgbo1hSGItnHVJOF7ARWuA8Z+IR5UouWbkYsCy6jxwG3YzLJzhUs0fRxakF3oW84u4M7Lel+TtWzEbxN2wDiwEQ48AQ5EqoZaHKVC5RygtdTigstNsr3HRCvdI3HGu9jRxSjn4XFrfLg48YuaTZJaliufkEWyypD27TqZQyPErB6ZZyqRSEWRR6Ry4piMCoVdf6/FvAFmS91kVi09D1c5vNoXzOXdZSTqdjqeR0sxtMU4BeWAe2L00beGHFFxPWIIo+krTg8PenrPZacSk4IZiYHCUZ2fJJS2WQy+WOYg7F0JrnZ0CoeH5nmRkkq9dQeZpnjHLS9P2Y2Ym970fvz/x+vEuSAyCCXPWY4EyUlwEA+lbsHx6lXhLv8ayk15b7pQ3r9FADODAyeGmthDPgVEq4h7ODB4enAWLV70vK7Pf6yugF0L+YAPq9ywhgXYdZJ7Ih59X9z1az8n+x/njfHyi4syDeNAms1Zlx2zN7m0MB91speJdsbub2Fc5d+KL4iiI7b9kC5rDUn4ecftETI4/UbE+vvIg0T5j/apr3jENVocrw3uDSGR999yQ7l06WoQVUjuVwN1Y0BXJohBVFmX18IX8r3hLJVjJjShvvfNhovlHQjwgkCDMwcxqU3kHt3fJDfDqOKpWfs6AKxJ+mAwgkKAMJ6kDahd2maQ0ueDm9dNOaYcbLasCDJ98pJ1VKqlca14lCHmHEmV3tTFDxRUH9/7bXJIHG9ncC64d4PV++NaUUJ4MeHo37cRxFcUTG0WQ8jiejJBvh8SDbahS5P0USds6AKrA9qqhR1Tk+7D++2bbrM2eAqhh4K4V9UPfGJrCooLxBheo0bt9PEik5xWKvoTwA8r9m5Rehpuvw3TWVD/ErqWAP+5l2psZcv9W1oWD/CPa7oJ8txSY06k1ikl5NxvH4apCR0dWU4OEVnibDcZ/QdJBd8ibw8z+HoKMYqhUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=959044bd9787e610fc1cf4ef9153af1a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=919004bd9787e610fc1cf4ef9153afd3"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=919004bd9787e610fc1cf4ef9153afd3^sys_idNOT IN559044bd9787e610fc1cf4ef9153af18,599044bd9787e610fc1cf4ef9153af09,d19044bd9787e610fc1cf4ef9153af19,d59044bd9787e610fc1cf4ef9153af17"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d090c0bd9787e610fc1cf4ef9153afa9</block>
+        <comment/>
+        <connected_to>312a9d06-5d48-414e-91e9-d0b9f59b695e</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Travel Alerts">919004bd9787e610fc1cf4ef9153afd3</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:16</sys_created_on>
+        <sys_id>559044bd9787e610fc1cf4ef9153af18</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:34:38</sys_updated_on>
+        <ui_id>f5c27f2e-7f73-43ab-8faf-a0c3b0fad356</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d090c0bd9787e610fc1cf4ef9153afa6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Travel Alerts">919004bd9787e610fc1cf4ef9153afd3</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:16</sys_created_on>
+        <sys_id>599044bd9787e610fc1cf4ef9153af09</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:34:38</sys_updated_on>
+        <ui_id>312a9d06-5d48-414e-91e9-d0b9f59b695e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V0W6bMBT9lcnPBBkIaZO3KlWlSd0qrVVftgpdbJNYM5hhO2mG8u+7BkKiNtPWbY97w8fce8853CNaop2tnTUP+soYuarI4vNTQGTlMXxuSQWlIAvCdMWllbrKOiAgG1DOX+Ajl6ZWsHs8ImwtFW/E0K2GBmusaMiifXElORYUFIpoziKWxLMkpjS+nEb5LMmjmCcgIMGGCnKh8NXlgca72w4JfsrP7mqPG9vIajWcb4cu9wdQN9yzimhAxLMVFRfIpwBlREBKqDhY3exGpBHA7yp1BNaysr3gEp6N/I4D4zT1LxYCJbLBjfGYDU71cHENFpCKY9Y1o3FaMmF6c7gowCm7PMX6F+5qL7UvsZCrQ7VWrqw+9o6QscHJh3EGSYjaK/XUBx3F/VpvPx1Y3siqc2W4VJqBGk9g0bvcWc+nJUKJEhtlJdQ1OprVjd7Irhi5lOFK4SEslN7iUL9dITBPPERjIbxB/LqDH6GRXsUHbIPFPc0cjGRZt4nYDm0SZB8QszNLBcYcRaK72TfnKfaSB3FZ748vYY2s7RVO3ohBxz54vdgnO922ImU0EZfTCaUpm0xnczqBOE4mxfTiIp/xmBfzeWgsWGf2+y+O0oTT10n44z5vy88c0iKNcMDZ/Exn5/JzJjlvDE38i9D4L/abmaGU/g/NX4dGmqxf9UFbN/wfZubJB6SfOXrNpEFqDx57f/hn+IsdLpdkp9BWN1+9qCO2/wHYFxpMfQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1090c0bd9787e610fc1cf4ef9153afaa</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Travel Alerts">919004bd9787e610fc1cf4ef9153afd3</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned>travel_alert_classification</outputs_assigned>
+        <parent_ui_id>f5c27f2e-7f73-43ab-8faf-a0c3b0fad356</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:16</sys_created_on>
+        <sys_id>d19044bd9787e610fc1cf4ef9153af19</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:34:38</sys_updated_on>
+        <ui_id>163545cc-2e57-407e-8cf8-59228116397e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41T22rjMBD9laDnJNibm5230FIodFvYZvuyFDPWJRGVJVeXpNmQf9+RL0loWeibdXRGc86Z8ZGY4Ovg3dqsnJMbTZZ/jkQysiSzJE9oUrJ8kS34PE0ETamYcpGnswmILCNDoqHiyPQWdlwVoLj1BVWADwlJwUujkbQDFSLr0QzWDXGwikSHV0y6WsHh5f8MupWKWR5lvQ5JDRY7em7JEkVq/NCgHqR+w+Iv5O+aUFByhdTr1oObzy6+ZdUf6khy3kq96c4P3fPPPWgsiwbSIeEfnmvGUacA5fiQVKAZeGMPZ8RyYE9aXYAt2m7dVvDh5F/slyVJEpmCo3fK29vzsehCbmFxCx5QSqA+WN7HZiTlrk2NcQFB+ZtrrCU81Y3LpsRDqfpqo0KlH9t4yPmBfqaIBIcieB2tRu2dEfG8Nftfvco7qZtUuktlKKjzCTxmVwYf9RxJkOtPMbfIl6C54hV2LCqoa0SK2pqdbLqg6Gq8UXgYC2X2qC6u/hhodDjGEcD4DvHbBn4BK6Pdn/gMFsd2v7V8D/w+Llg6XSxyOqGjbJaJ0TQv56Pyx3wymoFI2Jzls3k6JachcQfX7NQlKJxQ8R6izTa2LqCizTiWUCtrv0JRO95lcYp7reP/2k5m12k7D49KhxbWEbu/4rED7q+k19De2Ldo/oKd/gF3yyzLDQQAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">9490c0bd9787e610fc1cf4ef9153afa8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="[AI] Retrieve Travel Alerts">919004bd9787e610fc1cf4ef9153afd3</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned>travel_alert_classification,travel_alert_details,travel_alert_recommendations</outputs_assigned>
+        <parent_ui_id>312a9d06-5d48-414e-91e9-d0b9f59b695e</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:16</sys_created_on>
+        <sys_id>d59044bd9787e610fc1cf4ef9153af17</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:34:38</sys_updated_on>
+        <ui_id>414f7ee1-f1e5-44ff-93c7-b14180afdd91</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1WTU/jMBD9KyjnpnLSfHJDICQkdpGgu5fVqprYY7BwPkicQrfqf99xkhZEocDCXhCXKH4Zj+c9z5t26ZStqVrTTMuDplGXhbP/a+ko4ew7IUsZZ5lI4yTGyGOSe1wGKFMvnIBMEmfkFJAjRZoa5qhnoLE2M66BEknFwaiyoKA56NZGLZcYcjbBJHAZC7kbRClzwfcnrgziOIuEL2Sajs+Rl7UYd8n652pFWYRqKg2Lnx+SjF8pLWq0ZH+PnApq4mGwdvaJekEvBehTVVzTOVvBr5VGQ4aaQqedNnsH9uy9w8favEpAs6hsUGNqVVwO69Mh/cUaJJqWgDdy8M5gIZDqlKAbHDk5FAJMWS82SI0gzgp9D1wR7Z5tDneN+kPnJYwxGymRuHPsv26Ws+E+elgegQEqpeWmrXEtW6k4Nr1qAiW02hw+xPqAs6pj2W0xkOn17lK3efG9l8fZJFhfPyFtQ0VgZana2gci8uKqvD1fV3msik6V4aMuOejNCgxpl7XG1rN0WjV9JHOPbAmNGnM6cZZDVREyq+pyrrpTqOh8fKlpMZa6vKXqrKHGwC3DMV0BjI8JP+rgn1ArS/cbpaHN9rgfhbpp8cQ2mEdNnPIJd5MwkW6QZpGb+dHEDUEyEYk0jLzAWY2cZtF0PXUvFN3Q7Ka1NHvZBoFmvcZ2C69VZQ6oqDkOWqxGa8vznX3Nn+lYgQaUbt7ndStXVxqJ9UGO30r5bt+/rM+Tvj/aCLRbvrc43f9y+mdwOvMDFDyMXU/4iRvEUeJmQRi4SQYxYCqFYOn/cHqwq5NT9kyr1uSunEQR3W/Tvzt+SPoo3fttvyPvu73/smJPev98S7LXCfuWWTD5mgWfYRagCDIRyNCNPU6zIPVDN6Hx4EYiTKMkQPQ5fOAssJ1d2P/+/c3Mh9o2l8dVQxSmFjt5ECcW1MCKP4Ruy/rakr/HVn8Bz9coP1kMAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=919004bd9787e610fc1cf4ef9153afd3"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=919004bd9787e610fc1cf4ef9153afd3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>country</element>
+        <help/>
+        <hint/>
+        <label>Country</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_919004bd9787e610fc1cf4ef9153afd3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:15</sys_created_on>
+        <sys_id>599004bd9787e610fc1cf4ef9153afde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Country</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_919004bd9787e610fc1cf4ef9153afd3_country_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_919004bd9787e610fc1cf4ef9153afd3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>travel_alert_details</element>
+        <help/>
+        <hint/>
+        <label>Travel Alert Details</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_919004bd9787e610fc1cf4ef9153afd3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:15</sys_created_on>
+        <sys_id>199004bd9787e610fc1cf4ef9153afef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Alert Details</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_919004bd9787e610fc1cf4ef9153afd3_travel_alert_details_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>travel_alert_recommendations</element>
+        <help/>
+        <hint/>
+        <label>Travel Alert Recommendations</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_919004bd9787e610fc1cf4ef9153afd3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:16</sys_created_on>
+        <sys_id>559044bd9787e610fc1cf4ef9153af03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Alert Recommendations</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_919004bd9787e610fc1cf4ef9153afd3_travel_alert_recommendations_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>travel_alert_classification</element>
+        <help/>
+        <hint/>
+        <label>Travel Alert Classification</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_919004bd9787e610fc1cf4ef9153afd3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:15</sys_created_on>
+        <sys_id>d19004bd9787e610fc1cf4ef9153afe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Travel Alert Classification</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_919004bd9787e610fc1cf4ef9153afd3_travel_alert_classification_en</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:30:15</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_919004bd9787e610fc1cf4ef9153afd3"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>27cf732d9787e610fc1cf4ef9153afca</sys_id>
+        <latest_snapshot>919004bd9787e610fc1cf4ef9153afd3</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch6-07-17-2025_07-27-2025_1301.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=27cf732d9787e610fc1cf4ef9153afca"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=27cf732d9787e610fc1cf4ef9153afca^sys_idNOT IN1d9044bd9787e610fc1cf4ef9153af25"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"1d9044bd9787e610fc1cf4ef9153af25","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="[AI] Retrieve Travel Alerts">27cf732d9787e610fc1cf4ef9153afca</plan_id>
+        <snapshot>c59097fa4747e2105de26ea3a36d43dd</snapshot>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 10:30:16</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1d9044bd9787e610fc1cf4ef9153af25</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:34:38</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

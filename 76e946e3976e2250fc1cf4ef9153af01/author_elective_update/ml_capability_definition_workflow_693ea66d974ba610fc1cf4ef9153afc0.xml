@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ml_capability_definition_workflow">
+    <ml_capability_definition_workflow action="DELETE">
+        <active>true</active>
+        <capability display_value="Workflow">d12a03f173212010c0bbb63854f6a7b9</capability>
+        <current_solution_version>3</current_solution_version>
+        <dataset_language>en</dataset_language>
+        <description>DocIntel Training workflow</description>
+        <fields/>
+        <filter/>
+        <pretrained>false</pretrained>
+        <request_source>api</request_source>
+        <solution_label>docintel_training_workflow_dd3ea66d974ba610fc1cf4ef9153af9c</solution_label>
+        <solution_name>ml_x_snc_x_snc_duty_travel_global_docintel_training_workflow_dd3ea66d974ba610fc1cf4ef9153af9c</solution_name>
+        <solution_parameters/>
+        <solution_properties>{"description":"DocIntel Training workflow","label":"docintel_training_workflow_dd3ea66d974ba610fc1cf4ef9153af9c","predictPipeline":{},"schedulingInfo":{"useCase":"docintel_training_workflow","overrideCapability":{"name":"docintel_full_trainer","version":"27.1"}},"tags":"docintel,workflow","trainingPipeline":{"pipelineOutput":{"info":{"trainingInfo":"::docintel_training.info"},"models":{"model":"::docintel_training.model","taskIds":"::docintel_training.taskIds","messages":"::docintel_training.messages","metrics":"::docintel_training.metrics"}},"steps":[{"name":"docintel_training","component":"docintel_training","input":{"dataset":"::pipelineInput.datasets.training_input","keys":"::pipelineInput.datasets.keys","key_groups":"::pipelineInput.datasets.key_groups","key_hints":"::pipelineInput.datasets.key_hints","task_ids":"::pipelineInput.config.task_ids","extra_parameters":"::pipelineInput.config.extra_parameters","job_type":"::pipelineInput.config.job_type","training_component_version":"27.1"}}],"pipelineInput":{"config":{},"datasets":{"training_input":{"tableName":"sys_di_training_input","fieldNames":["task_definition","task","data","chunk_number","min_model_version"],"encodedQuery":"min_model_versionISEMPTY^task_definition\u003ddd3ea66d974ba610fc1cf4ef9153af9c","name":"training_input","fetchDisplayValue":false},"keys":{"tableName":"sys_di_key","fieldNames":["name","display_name","key_group","group_index","order","type","synonym","key_config","mandatory"],"encodedQuery":"task_definition\u003ddd3ea66d974ba610fc1cf4ef9153af9c","name":"keys","fetchDisplayValue":false},"key_hints":{"tableName":"sys_di_key_hint","fieldNames":["label","type","synonym_list"],"name":"key_hints","fetchDisplayValue":false},"key_groups":{"tableName":"sys_di_key_group","fieldNames":["is_list","display_name","type"],"encodedQuery":"task_definition\u003ddd3ea66d974ba610fc1cf4ef9153af9c","name":"key_groups","fetchDisplayValue":false}}}},"workflowConfiguration":{"trainingFrequency":"run_once"},"workflowLanguageVersion":"1.0.0"}</solution_properties>
+        <stopwords>a6282a25533333008c5bddeeff7b12c3</stopwords>
+        <sys_class_name>ml_capability_definition_workflow</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 04:30:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>693ea66d974ba610fc1cf4ef9153afc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DocIntel Training workflow</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>ml_capability_definition_workflow_693ea66d974ba610fc1cf4ef9153afc0</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 04:30:22</sys_updated_on>
+        <table/>
+        <tags>docintel,workflow</tags>
+        <training_frequency>run_once</training_frequency>
+        <triggered_source>API</triggered_source>
+        <word_vector_corpus/>
+    </ml_capability_definition_workflow>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>b48a4d13fbf422901feef633beefdc1e</instance_id>
+        <instance_name>cpagenaipov</instance_name>
+        <name>ml_capability_definition_workflow_693ea66d974ba610fc1cf4ef9153afc0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ml_capability_definition_workflow">
+    <ml_capability_definition_workflow action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <capability display_value="Workflow">d12a03f173212010c0bbb63854f6a7b9</capability>
+        <current_solution_version>3</current_solution_version>
+        <dataset_language>en</dataset_language>
+        <description>DocIntel Training workflow</description>
+        <fields/>
+        <filter/>
+        <pretrained>false</pretrained>
+        <request_source>api</request_source>
+        <solution_label>docintel_training_workflow_dd3ea66d974ba610fc1cf4ef9153af9c</solution_label>
+        <solution_name>ml_x_snc_x_snc_duty_travel_global_docintel_training_workflow_dd3ea66d974ba610fc1cf4ef9153af9c</solution_name>
+        <solution_parameters/>
+        <solution_properties>{"description":"DocIntel Training workflow","label":"docintel_training_workflow_dd3ea66d974ba610fc1cf4ef9153af9c","predictPipeline":{},"schedulingInfo":{"useCase":"docintel_training_workflow","overrideCapability":{"name":"docintel_full_trainer","version":"27.1"}},"tags":"docintel,workflow","trainingPipeline":{"pipelineOutput":{"info":{"trainingInfo":"::docintel_training.info"},"models":{"model":"::docintel_training.model","taskIds":"::docintel_training.taskIds","messages":"::docintel_training.messages","metrics":"::docintel_training.metrics"}},"steps":[{"name":"docintel_training","component":"docintel_training","input":{"dataset":"::pipelineInput.datasets.training_input","keys":"::pipelineInput.datasets.keys","key_groups":"::pipelineInput.datasets.key_groups","key_hints":"::pipelineInput.datasets.key_hints","task_ids":"::pipelineInput.config.task_ids","extra_parameters":"::pipelineInput.config.extra_parameters","job_type":"::pipelineInput.config.job_type","training_component_version":"27.1"}}],"pipelineInput":{"config":{},"datasets":{"training_input":{"tableName":"sys_di_training_input","fieldNames":["task_definition","task","data","chunk_number","min_model_version"],"encodedQuery":"min_model_versionISEMPTY^task_definition\u003ddd3ea66d974ba610fc1cf4ef9153af9c","name":"training_input","fetchDisplayValue":false},"keys":{"tableName":"sys_di_key","fieldNames":["name","display_name","key_group","group_index","order","type","synonym","key_config","mandatory"],"encodedQuery":"task_definition\u003ddd3ea66d974ba610fc1cf4ef9153af9c","name":"keys","fetchDisplayValue":false},"key_hints":{"tableName":"sys_di_key_hint","fieldNames":["label","type","synonym_list"],"name":"key_hints","fetchDisplayValue":false},"key_groups":{"tableName":"sys_di_key_group","fieldNames":["is_list","display_name","type"],"encodedQuery":"task_definition\u003ddd3ea66d974ba610fc1cf4ef9153af9c","name":"key_groups","fetchDisplayValue":false}}}},"workflowConfiguration":{"trainingFrequency":"run_once"},"workflowLanguageVersion":"1.0.0"}</solution_properties>
+        <stopwords>a6282a25533333008c5bddeeff7b12c3</stopwords>
+        <sys_class_name>ml_capability_definition_workflow</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 04:30:22</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>693ea66d974ba610fc1cf4ef9153afc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DocIntel Training workflow</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>ml_capability_definition_workflow_693ea66d974ba610fc1cf4ef9153afc0</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 04:30:22</sys_updated_on>
+        <table/>
+        <tags>docintel,workflow</tags>
+        <training_frequency>run_once</training_frequency>
+        <triggered_source>API</triggered_source>
+        <word_vector_corpus/>
+    </ml_capability_definition_workflow>
+</record_update>]]></payload>
+        <payload_hash>-1938073392</payload_hash>
+        <record_name>DocIntel Training workflow</record_name>
+        <reverted_from/>
+        <source>3ecf9875c3cbaa10712af5f905013178</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 12:47:16</sys_created_on>
+        <sys_id>c0ffdcb5c3cbaa10712af5f905013120</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1985b5f68ca0000001</sys_recorded_at>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 12:47:16</sys_updated_on>
+        <type>Workflow Definition</type>
+        <update_guid>ccffdcb5b5cbaa1091bf98c6ac74eb1f</update_guid>
+        <update_guid_history>ccffdcb5b5cbaa1091bf98c6ac74eb1f:0,67de1cfd8d8baa1045f0a449dc805055:778244395,24064cfd8d0f6a10332a7f41cf9d8048:-1938073392</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="DocIntel Training workflow">881368b1c30faa10712af5f905013109</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 13:00:55</sys_created_on>
+        <sys_db_object display_value="" name="ml_capability_definition_workflow">ml_capability_definition_workflow</sys_db_object>
+        <sys_id>2133abb30e3c481c9a8efe2f37d2a931</sys_id>
+        <sys_metadata>693ea66d974ba610fc1cf4ef9153afc0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DocIntel Training workflow</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>ml_capability_definition_workflow_693ea66d974ba610fc1cf4ef9153afc0</sys_update_name>
+        <sys_update_version display_value="ml_capability_definition_workflow_693ea66d974ba610fc1cf4ef9153afc0">c0ffdcb5c3cbaa10712af5f905013120</sys_update_version>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:00:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

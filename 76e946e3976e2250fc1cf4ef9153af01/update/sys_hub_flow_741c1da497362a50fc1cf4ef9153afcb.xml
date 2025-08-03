@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=746378000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>ac2c4eb29726ea10fc1cf4ef9153afd3</copied_from>
+        <copied_from_name>Get Journal Entries</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>get_journal_entries</internal_name>
+        <label_cache>[{"name":"subflow.dt_req_sysid","label":"Input➛Duty Travel Req SYSID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"7956a523-8036-43be-9147-a447fa95f60a":["conditions"],"2c32ffd4-1ec2-451f-a00b-c47bf4c1a856":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8c927174-5375-4c01-928c-804c289e47f5","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.compiled_notes","label":"Flow Variables➛Compiled Notes","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0818e384-38f5-42e9-904e-97667dbe2186":["compiled_notes-0"],"d3b18c5c-880f-48f8-967b-940c041852e3":["notes-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"85fdb7d1-f93b-4f20-8152-910e8cb3cd3c"}},{"name":"2c32ffd4-1ec2-451f-a00b-c47bf4c1a856.Records","label":"2 - Look Up Records➛Journal Entry Records","reference":"sys_journal_field","reference_display":"Journal Entry","type":"records","base_type":"records","usedInstances":{"2d75fc3c-f66f-45d3-98d3-7eb3cfe745f2":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>61dd19a897362a50fc1cf4ef9153afa2</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Get Journal Entries (NASK)</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:41:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>741c1da497362a50fc1cf4ef9153afcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Journal Entries (NASK)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_hub_flow_741c1da497362a50fc1cf4ef9153afcb</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 12:47:47</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=741c1da497362a50fc1cf4ef9153afcb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=741c1da497362a50fc1cf4ef9153afcb"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_741c1da497362a50fc1cf4ef9153afcb^id=741c1da497362a50fc1cf4ef9153afcb"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=741c1da497362a50fc1cf4ef9153afcb"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=741c1da497362a50fc1cf4ef9153afcb^sys_idNOT INb41c1da497362a50fc1cf4ef9153afce"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>741c1da497362a50fc1cf4ef9153afcb</id>
+        <name>Get Journal Entries</name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:41:54</sys_created_on>
+        <sys_id>b41c1da497362a50fc1cf4ef9153afce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:41:54</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b41c1da497362a50fc1cf4ef9153afce"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=741c1da497362a50fc1cf4ef9153afcb^sys_idNOT IN99dd9d2897362a50fc1cf4ef9153af81"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=8c927174-5375-4c01-928c-804c289e47f5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>dt_req_sysid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Duty Travel Req SYSID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Journal Entries (NASK)">741c1da497362a50fc1cf4ef9153afcb</model>
+        <model_id>741c1da497362a50fc1cf4ef9153afcb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_741c1da497362a50fc1cf4ef9153afcb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:34</sys_created_on>
+        <sys_id>99dd9d2897362a50fc1cf4ef9153af81</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:51:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=99dd9d2897362a50fc1cf4ef9153af81"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=741c1da497362a50fc1cf4ef9153afcb^sys_idNOT IN0d1c5da497362a50fc1cf4ef9153af1e"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dde34013-df78-4e39-bd47-ae6f0623c62d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>notes</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Notes</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Journal Entries (NASK)">741c1da497362a50fc1cf4ef9153afcb</model>
+        <model_id>741c1da497362a50fc1cf4ef9153afcb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_741c1da497362a50fc1cf4ef9153afcb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:41:54</sys_created_on>
+        <sys_id>0d1c5da497362a50fc1cf4ef9153af1e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:49:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0d1c5da497362a50fc1cf4ef9153af1e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=741c1da497362a50fc1cf4ef9153afcb"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=741c1da497362a50fc1cf4ef9153afcb"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=741c1da497362a50fc1cf4ef9153afcb^sys_idNOT INc11c5da497362a50fc1cf4ef9153af38,c11c5da497362a50fc1cf4ef9153af3a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Get Journal Entries (NASK)">741c1da497362a50fc1cf4ef9153afcb</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:41:55</sys_created_on>
+        <sys_id>c11c5da497362a50fc1cf4ef9153af38</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:01:41</sys_updated_on>
+        <ui_id>7956a523-8036-43be-9147-a447fa95f60a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8Uy7hV6BvqyKklfa2Utvbl72V5cROsc7Yqe3QUsT/fuM4gRykQLRUanVveDy2v5n5vrHDz7XPiH/tk0kwSSeT4TgKgn4/CEajfoLDOO6PkjiI8cDv+AIvKHgaHHMKwyXmuR2/IC0SRHKzQkbhJeX/+a3oE/gSpjOOVz/KJVNw8B4KB++OPuVUG3BK5owTRYV//fNXx8+wgvMMVf71em/qXMAcx5SD60OJeC8As8q2Q1TMOdu3+jLvu5uQilgoQcenL4YKQgFDirmmHX+BBcFGqtXWoigmt4LvDHMmDOzoW+cXzV7h3HFg/VIKUSXUzW2HqMyXM6dTbPC9UXliclW6JnPJEqpdPghNcc7NTd3mHG4zw6RwS1zYbrXk+UJ8d+nwtxtU5QFLrgEEzWygFnkZRno/l893FcoZE0VOykkuE8y3I2yMYnFuLJ61TzldwEZogbOMiUeUKblkxWLAsug+chh0Uy6f4VDNHkUXJxZ4F/KKuzOwTwvzD6yYjeJP2AYWAyDGgSHIlVDLXBWpXKKE57qYUFhot5e/6fh6pW841noXOaQcPeUWt8tDGTFySbNLEsUy8wW2WNIyuE2n0szwKAUnO8olUhBmUeiacAANYuTvHBaT9VrnsU1AlxirGQSTjGw2h9o5c1VLMZ2OpBLTTT2UpvBKWR3YvjVtUMoqvJisBkHwmYQFh388XbVXikvBCbmE5CjJyI5PWiqDXC5rejnUQmuenwGh4vmtZaYXr95CVdI8ZZSTpttjZif2bo/e//P2+JAkB0AEueoxwZkongIA9L3YPzxKvTjc41lBr9pdYW1YJ4cawJ6R3mtrJZwBp1LCPZztPTg8DRCrfl9QZr/XV8ZSAP2LCaDfu4wA1tswt4lsyHn1+rPVrPxfrT/e9wcK1haEmyaBtTozbHtmb3Mo4H4rBdfJ5mamb3Duws/ENxTZec8WMIel5XnI6Rc9M/JIze70yotI84z5P03zJeNQVagivHd4coZHv3ri2pOTpWgBlWMZvIwVTYAcGmFFUSpzQVD5Jt4RyVYyZUqb0vmw0dxR0I/wJAjTM3PqFd7e1rvlRXw6jiqVX1OvCqQ8TXsQiFcE4m0DaRd2m6Y1uODj9NJNa4YZL6oBnztZrZxUKaneaFwnCnmEEWd2tTNBhRcF9fttr0kCje3vBNZP8e18+daUUBwPengU9cMwCMKARME4isLxKE5HOBqkO40i94+RhJ1ToApsjypqVHUODvuPa6ltG80ZqCoKTqWwn9W9yHgWFtTXq2CdBl42lFhKTrHY6ygPcE/8MSvxl3wdfriu8in+ScrZw36mnakx1+/1bsjZX4I95fSrpdiYBr1xSJKrcRRGV4OUjK4mBA+v8CQeRn1Ck0F6yafAr38BvPMqErMVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c11c5da497362a50fc1cf4ef9153af38"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Get Journal Entries (NASK)">741c1da497362a50fc1cf4ef9153afcb</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:41:55</sys_created_on>
+        <sys_id>c11c5da497362a50fc1cf4ef9153af3a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:01:41</sys_updated_on>
+        <ui_id>2c32ffd4-1ec2-451f-a00b-c47bf4c1a856</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXbW/aMBD+KyifIxQKpV2/TXSVNvVFaqt+6TrLsR3wZpzUdngp4r/vHDshhbQDCaRW+4bvznfPPb4nNo+LgNPgLDhNelGEO8enJ1HU7UZRv98luBPH3T6Jo7gXB2Eg8ZhBpMGxYLCcYJHbtZ5r9DvNlcQCJZwJCj7KdSbw/MGH/HDu1jdp1BzcZMQFVUwGZ49PYZBhBZkNU8HZYs21LTSBYyYg9N5jW4Nq5lm1RIXP2S7r21rXzpEqaqFEYcBmhknKAEOChWZhMMaSYpNCD6VFMUxvpFgZRlwayBjY4JnmL1D3NLJxCYOuCHO+aok8U86cnGOD74zKicmVDyWjlBOmHR+UJTgXZlC3uYCbzPBUui2ubbc7FflYXjs6gipBeTBgyTWAYJlt1CL3bSR3o3R6W6K84LLgxDtFSrCoVtgYxePcWDyLgAk2hkRojLOMyyHKVDrhxWbAMm4PBSzaiUinUFTzoWxjYoG3gVfcvgD7eWF+wIrbLq4gDWwGQFzAhCB3hBrmqaBygojIdeFQWGqXK1iGdigHAmu96hwoR8+5xe148B0jR5rdQhTPzFdIMWG+uWW4lTqOo9XIkVRSblHomkRKUjj9mUMCuljoPLYktKlBij0jgMvpcvnLJnEhM6QlQTQ3c9vahIlXv2HPpsoOVGWfYi2YKsU6qFPVRJ+X7YbtsimBl21nb7KFPj6TcKH4x9Pt7kp0FPxDjuTk3SE7Xs2TTpVBjsu1K4vADBhGbdUNJW34d9PAFvBKDdzYqW3F87cQewkU92rTzXVhHWs319H/eXN9SAEAIOpeRYhLwWXxDAGgh1JG9P7n98vanBXjVdOFtUF7ZFMSLy2TtvDOUtgCTymFOyjeuneAGjCWl0ExM+sXQWn0CujuTQHdo/0oYFG1iS2RL+uk44Lz8ulpj7OMr4hvOqTy0ls2KWynmp1dax4tNxXc3UnCNRDec/565irYe36jviHJ8JDfgBFs9fWQEzCacjpkZlW9jKKpmWLxp8nvJw6VB1W0d4D3bu9d2fY7K4mCUuCdqOHw6g/eThRtfkKccbfvxxZASi6u8Kx1WyFphOe/ISBzNiwOpv4R+V5Z/YT39viU/LD3KBxK9KYAO6Hzfor/iPtTwdNfZLZRtBURAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c11c5da497362a50fc1cf4ef9153af3a"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=741c1da497362a50fc1cf4ef9153afcb"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=741c1da497362a50fc1cf4ef9153afcb^sys_idNOT IN011c5da497362a50fc1cf4ef9153af35,011c5da497362a50fc1cf4ef9153af37,451c5da497362a50fc1cf4ef9153af33,451c5da497362a50fc1cf4ef9153af36"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">956ff2a947eb9e10873506f1d16d4346</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Get Journal Entries (NASK)">741c1da497362a50fc1cf4ef9153afcb</flow>
+        <flow_variables_assigned>compiled_notes</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>2d75fc3c-f66f-45d3-98d3-7eb3cfe745f2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:41:55</sys_created_on>
+        <sys_id>011c5da497362a50fc1cf4ef9153af35</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:01:32</sys_updated_on>
+        <ui_id>c1412728-b061-44c9-bde0-dd15ba1a00a3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4GuTQw7TtYkPRUbChTYWmDNepkLQ5aoRJgsubKUNAvy30v5I20DrNddcrMeRfK9JxLeE+Nd5V29NNd1LVeaLH4/DYnUAcPvPdG0BLIgzJSVVMBzbRzUZEg2VPkQwE8u60rR3eMbwtZScQtdtYpaLOLAksX+JOR2FeSKFqAw8cFZqVeYLjmeilnCEk4n88v0y5hOY8ESJiYg5sk0pYJP8F6f+LUjN7jryP2LdGiHeN03MpYHVvGQwIsDzQEbC6pqGJKSak6dsbsjYoHye63egLXUrtVb0pda/sXSsziOw00BKJF1bhyPeedUb5KRDO4rJ41uEUcL1TtolC/1XasjeAyCeuXeeexrrAdVYB1odJzEw9psf/YNb6RuBHZBZRhVxxN1aEPhgzP4Ll4uT8xpke+njwMKSuyYl7SqEMkrazay6RL8jlYKD5FQZovswkRFlAWFEbpJoxvEvzXwI7UyyP2BZTA5tPul5bOH2/D4s6ngxSVPRmKeFqOJGMejWTIdj+ZJDDNWpIynjBwaa/NnH0S1JnV25K2jeKFmVlbuGilsUJyzHnqsGcaPA4LIZ/dx5u3AQo3vMMh8HKd8IHje6Gr0Yjj6WDHTF4OMZJluBnOB34OLY06e5rkwNgfK1pF0UEbNTh1zMnKVaQvOW911vSKHw+Ep7F7rXbuhzbZ8MvTnTT1v6nlT/8+mcmCyRk+XwcDb/q8aAjucfMneQ1tj/wR2b9jhFXOdppefBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">596ff2a947eb9e10873506f1d16d4347</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Get Journal Entries (NASK)">741c1da497362a50fc1cf4ef9153afcb</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned>notes</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:41:55</sys_created_on>
+        <sys_id>011c5da497362a50fc1cf4ef9153af37</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:01:32</sys_updated_on>
+        <ui_id>d3b18c5c-880f-48f8-967b-940c041852e3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41Ty27bMBD8F55tQbL8iH0LUAQI0CZA4+ZSFMKaXNpEKZIhKTuuoH/vUpKdwKccd/Y1M1y2zDbRNTFs7X0Iam/Y5nfLlGAblouCLwTM16tyOYNFLnnB5RzluliUIAtkE2agRqo0NmKg8Ai6SXHbSm1P1RG8gp3GjNvaKY2i6gu7jkqFCk7D+fXrHfygtPCYCP6ZMAeedkf0bNPepOLZYaVhh5oGv0SvzJ7avyrp0vg0arqRmIZTGC5jrReJQzFh+B7RCKQ1EnTACavBCIjWn6+IRxDPRn8AB2UiTWOp+D2ofzT6Ls/zVCmRBHEcstewGn0bYH6wiuOzi8qaAYnJvTFpdVObp4F+chwlNDpeHCekCTQPXWKdaIyc5MvBnn5eFj4o0wsck9py0NcIItmwa5Iz9AqN2t6YMyDfb58CNda0sarBOUIq5+1R9VuIdJ3tNQVZfw8C00lmwJPCjNyE7IHwbz38Oh7LDxpDzWndL6PeGnxMTy0ElvO8KKdCru6mcyzX052Yr6aAS5kvZyVfzgTremurtyaJGkwa7agGR6kgcK9cvCcKRxyVd3RlyqRfM1zc5WzHUCBXgQhvE/b4qU6c6ZoU/wydrP+bpH5g3X+LAIEhkwMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">556ff2a947eb9e10873506f1d16d4345</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Get Journal Entries (NASK)">741c1da497362a50fc1cf4ef9153afcb</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:41:55</sys_created_on>
+        <sys_id>451c5da497362a50fc1cf4ef9153af33</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:01:32</sys_updated_on>
+        <ui_id>2d75fc3c-f66f-45d3-98d3-7eb3cfe745f2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51SwU7jMBD9F5/bKElDl/aGtELiAEgs4oJQNLHHrbWO7bWdlmyUf2fcpAVx5JTMm5n33nhmYLaLrovh2d6EoHaGbV/fFkyZhNH/wAy0yLZMRWwDW7AD6C7Fw1DyVSmlqJYF8nJZXRVyCXneLHn1q5EVL+D6ap09IbdehHGkVqGC09C//JyB75UWHmeTDjx5i+jZdviWir3DWkODmoRmBupXgsJiI+SmyDckvl6VeV5eV0WzXjVFKVaAYk115867eehvb5DYKfQXXvokF2W+YPge0QgkIQk64IK1YARE63u2jb4jwCOIR6P7S8VemUh0LNW+B/WfuIs8T4USaSKOU/IS1vNDTjDfW8Xx0UVlzYREaPTcw63uWvMw2U8rQAmdjucVENIF4kOXPCcXsyX5Z2+PT2fBW2VO881JbTnoSwQxetV0EUNaA2psiahuwTlldrXz9qBOzeSlzXaagkxqeyTRdG4Z8GQ8oyeC7Jbw3yf4BbxKU9wTDTWPp+nrf13SneaYHdfT0FQQuFcu3hDdAWdz41u614kpTIchkKtAgs8JuztfeUr0tGTFv0JH6/8mq5/Y+AG79aZuLwMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">516ff2a947eb9e10873506f1d16d4347</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Get Journal Entries (NASK)">741c1da497362a50fc1cf4ef9153afcb</flow>
+        <flow_variables_assigned>compiled_notes</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:41:55</sys_created_on>
+        <sys_id>451c5da497362a50fc1cf4ef9153af36</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:01:32</sys_updated_on>
+        <ui_id>0818e384-38f5-42e9-904e-97667dbe2186</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4POiWHnY01yKzYUKLC1wJr1MhSGLFGJMFlSJTlpFuS/j/RHugXYsPt6sx4p8r1HCj4y1yTfpLh21zHqjWWrb08jpi1h+H1kltfAVky42msDsrQuQWQjtuOmocDxqIzblzseNK8MZL8nnk6YKnX0hh8e//2G2GojA/RsPA9IIkFgq+NFKB08lIZXYLDwQwrabvC6lniqFoUoJJ8tr6bvJ3yeK1EINQO1LOZTruQM84aLH3oG7+56cX8STe0Qj0MjFySxykcMXhJYCdhYcRNhxGpuJU8uHM5IAC7vrXkFttomrMYo+SXqH1h6kec5ZSpAiQK66PlY9k52sNg6LeDeJ+1shyTysw8609T2rtNBMwDFG5OGGSDSRKwHnlgTjZ6Teti6/Zeh4Y22rcA+aJzg5nziCW2oGnIG59Lo9YU5HfLpcjhgoMaOZc29R6T0we1024X8zjYGD1m7IRJoIzMuSGGGbvLsBvGPLfzYr89nLIOXqd1Xq58buKXhL+ZKVleyGKvltBrP1CQfL4r5ZLwscliIairkVLBTa2353JCozqTejrJzFBOiCNqna6Swg1756Ym2v+vevZF23/6yNm9v5e2t/L9vRYLQEVmticLt8GehwAF3R4tfob0L30nPK3b6CYZS7O+jBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=741c1da497362a50fc1cf4ef9153afcb"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=741c1da497362a50fc1cf4ef9153afcb^sys_idNOT INb81c1da497362a50fc1cf4ef9153afd4"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=85fdb7d1-f93b-4f20-8152-910e8cb3cd3c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>compiled_notes</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Compiled Notes</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Journal Entries (NASK)">741c1da497362a50fc1cf4ef9153afcb</model>
+        <model_id>741c1da497362a50fc1cf4ef9153afcb</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_741c1da497362a50fc1cf4ef9153afcb</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:41:54</sys_created_on>
+        <sys_id>b81c1da497362a50fc1cf4ef9153afd4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:41:54</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>dt_req_sysid</element>
+        <help/>
+        <hint/>
+        <label>Duty Travel Req SYSID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_741c1da497362a50fc1cf4ef9153afcb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:35</sys_created_on>
+        <sys_id>99dd19a897362a50fc1cf4ef9153af44</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Duty Travel Req SYSID</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_741c1da497362a50fc1cf4ef9153afcb_dt_req_sysid_en</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:51:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_741c1da497362a50fc1cf4ef9153afcb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>notes</element>
+        <help/>
+        <hint/>
+        <label>Notes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_741c1da497362a50fc1cf4ef9153afcb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:41:54</sys_created_on>
+        <sys_id>4d1c5da497362a50fc1cf4ef9153af2e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Notes</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_741c1da497362a50fc1cf4ef9153afcb_notes_en</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:49:35</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_741c1da497362a50fc1cf4ef9153afcb"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=173000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>ac2c4eb29726ea10fc1cf4ef9153afd3</copied_from>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>get_journal_entries</internal_name>
+        <label_cache>[{"name":"subflow.dt_req_sysid","label":"Input➛Duty Travel Req SYSID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"7956a523-8036-43be-9147-a447fa95f60a":["conditions"],"2c32ffd4-1ec2-451f-a00b-c47bf4c1a856":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"8c927174-5375-4c01-928c-804c289e47f5","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"flow_variable.compiled_notes","label":"Flow Variables➛Compiled Notes","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"0818e384-38f5-42e9-904e-97667dbe2186":["compiled_notes-0"],"d3b18c5c-880f-48f8-967b-940c041852e3":["notes-0"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"85fdb7d1-f93b-4f20-8152-910e8cb3cd3c"}},{"name":"2c32ffd4-1ec2-451f-a00b-c47bf4c1a856.Records","label":"2 - Look Up Records➛Journal Entry Records","reference":"sys_journal_field","reference_display":"Journal Entry","type":"records","base_type":"records","usedInstances":{"2d75fc3c-f66f-45d3-98d3-7eb3cfe745f2":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Get Journal Entries (NASK)</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Get Journal Entries (NASK)">741c1da497362a50fc1cf4ef9153afcb</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>61dd19a897362a50fc1cf4ef9153afa2</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:01:34</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=61dd19a897362a50fc1cf4ef9153afa2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=61dd19a897362a50fc1cf4ef9153afa2"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_61dd19a897362a50fc1cf4ef9153afa2^id=61dd19a897362a50fc1cf4ef9153afa2"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=61dd19a897362a50fc1cf4ef9153afa2"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=61dd19a897362a50fc1cf4ef9153afa2^sys_idNOT IN2ddd19a897362a50fc1cf4ef9153afa2"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>61dd19a897362a50fc1cf4ef9153afa2</id>
+        <name>Get Journal Entries</name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_id>2ddd19a897362a50fc1cf4ef9153afa2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:49:36</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=2ddd19a897362a50fc1cf4ef9153afa2"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=61dd19a897362a50fc1cf4ef9153afa2^sys_idNOT IN21dd19a897362a50fc1cf4ef9153afa4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=8c927174-5375-4c01-928c-804c289e47f5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>dt_req_sysid</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Duty Travel Req SYSID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Journal Entries (NASK)">61dd19a897362a50fc1cf4ef9153afa2</model>
+        <model_id>61dd19a897362a50fc1cf4ef9153afa2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_61dd19a897362a50fc1cf4ef9153afa2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_id>21dd19a897362a50fc1cf4ef9153afa4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:51:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=21dd19a897362a50fc1cf4ef9153afa4"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=61dd19a897362a50fc1cf4ef9153afa2^sys_idNOT INe9dd19a897362a50fc1cf4ef9153afb2"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=dde34013-df78-4e39-bd47-ae6f0623c62d</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>notes</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Notes</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Journal Entries (NASK)">61dd19a897362a50fc1cf4ef9153afa2</model>
+        <model_id>61dd19a897362a50fc1cf4ef9153afa2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_61dd19a897362a50fc1cf4ef9153afa2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_id>e9dd19a897362a50fc1cf4ef9153afb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:49:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e9dd19a897362a50fc1cf4ef9153afb2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=61dd19a897362a50fc1cf4ef9153afa2"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=61dd19a897362a50fc1cf4ef9153afa2"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=61dd19a897362a50fc1cf4ef9153afa2^sys_idNOT IN31dd19a897362a50fc1cf4ef9153afcb,b9dd19a897362a50fc1cf4ef9153afd8"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Get Journal Entries (NASK)">61dd19a897362a50fc1cf4ef9153afa2</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_id>31dd19a897362a50fc1cf4ef9153afcb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 10:11:21</sys_updated_on>
+        <ui_id>7956a523-8036-43be-9147-a447fa95f60a</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8Uy7hV6BvqyKklfa2Utvbl72V5cROsc7Yqe3QUsT/fuM4gRykQLRUanVveDy2v5n5vrHDz7XPiH/tk0kwSSeT4TgKgn4/CEajfoLDOO6PkjiI8cDv+AIvKHgaHHMKwyXmuR2/IC0SRHKzQkbhJeX/+a3oE/gSpjOOVz/KJVNw8B4KB++OPuVUG3BK5owTRYV//fNXx8+wgvMMVf71em/qXMAcx5SD60OJeC8As8q2Q1TMOdu3+jLvu5uQilgoQcenL4YKQgFDirmmHX+BBcFGqtXWoigmt4LvDHMmDOzoW+cXzV7h3HFg/VIKUSXUzW2HqMyXM6dTbPC9UXliclW6JnPJEqpdPghNcc7NTd3mHG4zw6RwS1zYbrXk+UJ8d+nwtxtU5QFLrgEEzWygFnkZRno/l893FcoZE0VOykkuE8y3I2yMYnFuLJ61TzldwEZogbOMiUeUKblkxWLAsug+chh0Uy6f4VDNHkUXJxZ4F/KKuzOwTwvzD6yYjeJP2AYWAyDGgSHIlVDLXBWpXKKE57qYUFhot5e/6fh6pW841noXOaQcPeUWt8tDGTFySbNLEsUy8wW2WNIyuE2n0szwKAUnO8olUhBmUeiacAANYuTvHBaT9VrnsU1AlxirGQSTjGw2h9o5c1VLMZ2OpBLTTT2UpvBKWR3YvjVtUMoqvJisBkHwmYQFh388XbVXikvBCbmE5CjJyI5PWiqDXC5rejnUQmuenwGh4vmtZaYXr95CVdI8ZZSTpttjZif2bo/e//P2+JAkB0AEueoxwZkongIA9L3YPzxKvTjc41lBr9pdYW1YJ4cawJ6R3mtrJZwBp1LCPZztPTg8DRCrfl9QZr/XV8ZSAP2LCaDfu4wA1tswt4lsyHn1+rPVrPxfrT/e9wcK1haEmyaBtTozbHtmb3Mo4H4rBdfJ5mamb3Duws/ENxTZec8WMIel5XnI6Rc9M/JIze70yotI84z5P03zJeNQVagivHd4coZHv3ri2pOTpWgBlWMZvIwVTYAcGmFFUSpzQVD5Jt4RyVYyZUqb0vmw0dxR0I/wJAjTM3PqFd7e1rvlRXw6jiqVX1OvCqQ8TXsQiFcE4m0DaRd2m6Y1uODj9NJNa4YZL6oBnztZrZxUKaneaFwnCnmEEWd2tTNBhRcF9fttr0kCje3vBNZP8e18+daUUBwPengU9cMwCMKARME4isLxKE5HOBqkO40i94+RhJ1ToApsjypqVHUODvuPa6ltG80ZqCoKTqWwn9W9yHgWFtTXq2CdBl42lFhKTrHY6ygPcE/8MSvxl3wdfriu8in+ScrZw36mnakx1+/1bsjZX4I95fSrpdiYBr1xSJKrcRRGV4OUjK4mBA+v8CQeRn1Ck0F6yafAr38BvPMqErMVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=31dd19a897362a50fc1cf4ef9153afcb"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>43400a1587003300663ca1bb36cb0b4b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Get Journal Entries (NASK)">61dd19a897362a50fc1cf4ef9153afa2</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_id>b9dd19a897362a50fc1cf4ef9153afd8</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:01:34</sys_updated_on>
+        <ui_id>2c32ffd4-1ec2-451f-a00b-c47bf4c1a856</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VXbW/aMBD+KyifIxQKpV2/TXSVNvVFaqt+6TrLsR3wZpzUdngp4r/vHDshhbQDCaRW+4bvznfPPb4nNo+LgNPgLDhNelGEO8enJ1HU7UZRv98luBPH3T6Jo7gXB2Eg8ZhBpMGxYLCcYJHbtZ5r9DvNlcQCJZwJCj7KdSbw/MGH/HDu1jdp1BzcZMQFVUwGZ49PYZBhBZkNU8HZYs21LTSBYyYg9N5jW4Nq5lm1RIXP2S7r21rXzpEqaqFEYcBmhknKAEOChWZhMMaSYpNCD6VFMUxvpFgZRlwayBjY4JnmL1D3NLJxCYOuCHO+aok8U86cnGOD74zKicmVDyWjlBOmHR+UJTgXZlC3uYCbzPBUui2ubbc7FflYXjs6gipBeTBgyTWAYJlt1CL3bSR3o3R6W6K84LLgxDtFSrCoVtgYxePcWDyLgAk2hkRojLOMyyHKVDrhxWbAMm4PBSzaiUinUFTzoWxjYoG3gVfcvgD7eWF+wIrbLq4gDWwGQFzAhCB3hBrmqaBygojIdeFQWGqXK1iGdigHAmu96hwoR8+5xe148B0jR5rdQhTPzFdIMWG+uWW4lTqOo9XIkVRSblHomkRKUjj9mUMCuljoPLYktKlBij0jgMvpcvnLJnEhM6QlQTQ3c9vahIlXv2HPpsoOVGWfYi2YKsU6qFPVRJ+X7YbtsimBl21nb7KFPj6TcKH4x9Pt7kp0FPxDjuTk3SE7Xs2TTpVBjsu1K4vADBhGbdUNJW34d9PAFvBKDdzYqW3F87cQewkU92rTzXVhHWs319H/eXN9SAEAIOpeRYhLwWXxDAGgh1JG9P7n98vanBXjVdOFtUF7ZFMSLy2TtvDOUtgCTymFOyjeuneAGjCWl0ExM+sXQWn0CujuTQHdo/0oYFG1iS2RL+uk44Lz8ulpj7OMr4hvOqTy0ls2KWynmp1dax4tNxXc3UnCNRDec/565irYe36jviHJ8JDfgBFs9fWQEzCacjpkZlW9jKKpmWLxp8nvJw6VB1W0d4D3bu9d2fY7K4mCUuCdqOHw6g/eThRtfkKccbfvxxZASi6u8Kx1WyFphOe/ISBzNiwOpv4R+V5Z/YT39viU/LD3KBxK9KYAO6Hzfor/iPtTwdNfZLZRtBURAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b9dd19a897362a50fc1cf4ef9153afd8"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=61dd19a897362a50fc1cf4ef9153afa2"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=61dd19a897362a50fc1cf4ef9153afa2^sys_idNOT IN79dd19a897362a50fc1cf4ef9153afc6,7ddd19a897362a50fc1cf4ef9153afc7,b5dd19a897362a50fc1cf4ef9153afc9,f9dd19a897362a50fc1cf4ef9153afc8"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">556ff2a947eb9e10873506f1d16d4345</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Get Journal Entries (NASK)">61dd19a897362a50fc1cf4ef9153afa2</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_id>79dd19a897362a50fc1cf4ef9153afc6</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:01:34</sys_updated_on>
+        <ui_id>2d75fc3c-f66f-45d3-98d3-7eb3cfe745f2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51TwW6jMBD9F58JAkKzTW5Vq0qV2q2UVr2sqmiwx4m1xmZtk5RF/PuOA6FVj3uCeZ55897D9My2oWmDf7U33qu9YZtf7wlTJmL03jMDNbINUwFrzxJ2BN3Guu8LviykFOUiR14syqtcLiDLqgUvf1Sy5DlcX63SLXLrhB8GGhXKNxq6t/9n4AelhcNJZAOOtAV0bNN/O1KCFuRrIdd5tqYtq2WRZcV1mVerZZUXYgkoVkSooUJNrQ+Tu29mQ9fE0o0SJuBxmtnOKD2iiCJLGH4ENAJpvQTtMWE1GAHBuo5tgmsJcAji2ehu7jgoE4iOxd4Pr/7SxjzLYqNEMsRxPJzL3ZTjCMs7CPBC1Dy0bmrlB6s4+jEKgRJaHW6/YmPDcxOUNeNIgEpfpq1ua/NzTILNBJfPRkjrSQQ20WiUPvmQLwd72l5U3itzDmU61JaDnisIwamqDVFPz1BjTUS7GppGmf2ucfaozsOkpU73mopUanuipfGKpsCj8JRyhfSe8Lsz/AZORRdPREPDQ8J85281eP/phULc/WmjktHZ5GE3xhBHuFNNuKEFR5zkDu/x1o/cc6ZceZLwGrGHy78SDzq6QYp/hU7W/Y7iP7HhH/qMdXR1AwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">956ff2a947eb9e10873506f1d16d4346</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Get Journal Entries (NASK)">61dd19a897362a50fc1cf4ef9153afa2</flow>
+        <flow_variables_assigned>compiled_notes</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>2d75fc3c-f66f-45d3-98d3-7eb3cfe745f2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_id>7ddd19a897362a50fc1cf4ef9153afc7</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:01:34</sys_updated_on>
+        <ui_id>c1412728-b061-44c9-bde0-dd15ba1a00a3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1V207jMBD9lcqvtFFC2qUtT6gICWkXpIXlZYMixx631jp28AXoov474yRNgdXuB6x4s4/ncubMjPxCTPBN8O7WnDkn15osf96PidQRw/MLkZwsCRkTTWvAEzN1IxXwUhsPDvFHqgJ0Jly6RtHt3QFhG6m4hT5qQy0G8WDJ8uXDU5ulmmcs43S6OMm/HNNZKljGxBTEIpvlVPApBlS0AoWmq57G6Kqn8Td6fttE3Hkr9bq/f+2D3OxBY3kklY4JPHvQHJCNoMrBmNRUc+qN3Q6IBcqvtToAG6l9V25Nn538jfnmaZpGSwFYIevFGK5lL1QHi3PqKVIJzAc76GYkA9dpw0HQoPzqLdYZXDdeGt25eFqpvbdRodZXnSJkCPCmL8EhCWhiqZF7X4i42Zin73uWF1K3qvSPyjCqhhv1qF0VosbYyyBvP8jcIX8IDQpqzFjWtGkQKRtrHmWbJXYuWSu8JEKZJ2QXpzGhLFaYYAtocoH4eQvfUStjud8wDDrHdD+0fAhwGcdoPhO8OuHZRCzyajIVx+lkns2OJ4sshTmrcsZzRnZj4rZupahzB6GwQ+VDiGV2svUClZ3G0YVZ2fgzJPWILtgz2GPtSL8fPkT+ZY+bY0cWHHZmVIQ0zflI8LKttFUAn5P3EQt9NCpIUeh26Jd4Hh0NPmVelsLYEijbJNJDnbSbOfgU5LTQFnDGdJ/1lOx2u/u4wZ2an/v+ue+f+/7/7zsHJh2qfBslvdz/9PFhi1sl2Vvoydhfkd0B270CtKoh3jMIAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">596ff2a947eb9e10873506f1d16d4347</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Get Journal Entries (NASK)">61dd19a897362a50fc1cf4ef9153afa2</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>6</order>
+        <outputs_assigned>notes</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_id>b5dd19a897362a50fc1cf4ef9153afc9</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:01:34</sys_updated_on>
+        <ui_id>d3b18c5c-880f-48f8-967b-940c041852e3</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41TyW7jMAz9F50Tw46zNL0VLQoU6AJMM70MBgYjUYlQWXK1JM0E+fehbGdBe+lNfCLF9x6pPbMxNDH4hb3xXq0Mu/6zZ0qwa5aLgk8EjOezcjqCSS55weUY5byYlCALZANmoEbKNDagp3ADOqZ4v5fabqsNOAVLjRm3daM0iqpNPBwoVSjfaNi9/byCr5UWDhPBvwPWgKPeAR27JrqGDgb0ozLv9Ni35J/K0bBETanPvZ4v8sKuSaEPTplVHz/2Ja9H0DqRSBUDhp8BjUDqLUF7HLAajIBg3e6EOATxYvQZWJOUTkENn179o35XeZ6nTImkh2N3ewqr3sgOlncQgKhEHqLDoxVWceLfOiFQQtTh9hLrEl6aoKzpSkKaQV9tdazNc2cEOz1wnBsh0RMJbJLUxL0XIl/XdvvryPJemdaV/lJbDvoUQSDvljF5TLOMavHF5g75ZjRqrKljVUPTEFI1zm5U24VI19lKU5C1WyUwLXYGPCnMaASQ3RN+18Jv/co90TNUnNr9Nuoj4kNaGiGwHOdFORRydjUcYzkfLsV4NgScynw6Kvl0JNhhwPzO32rw/mwUTaj6iElmZ1tvUNV5nEq4U024IVIb7L04pF016Td2kzl+h9PwuPIkYZGwh4s8saNNVfwS2lr3nsSfscN/sHpJ2usDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">516ff2a947eb9e10873506f1d16d4347</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Get Journal Entries (NASK)">61dd19a897362a50fc1cf4ef9153afa2</flow>
+        <flow_variables_assigned>compiled_notes</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_id>f9dd19a897362a50fc1cf4ef9153afc8</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:01:34</sys_updated_on>
+        <ui_id>0818e384-38f5-42e9-904e-97667dbe2186</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4POiWHnY01yK1IUKLC1wJr1MhQGLVGJMFlyJTlpFuS/j4qVpO0wYKedcjMfSfHxkYR3zLahaYNf2Gvv1dKw2Y/nHlMmYvS9Y0qwGWM9ZqBG+uK2bpRGURob0BO+Bt1Gx24ntd2Ua3AKKo3Z+8D9nkKF8o2G7dO/Z/CV0sJhYtWAIxIBHZvtPrgOLKtJwQsBo+nV8PMAxrnkBZcjlNNiPAQpRvSghgo1hc5TrU/3qY2/tRe2TcR9cMosk/0lPfJ4BK0TkVTeY/ga0AgkNhK0xx6rwQgI1m1PiEMQD0afgZUyodO4hlevflG9SZ7nMVIidcix857MMgnZwfIGAhCVlofWpVC+soqj77QRKKHVYf4W6wIemqCs6VJCnEHKtrqtzX2nCDs9cJwbIa0nEtjEViP31Ih8XNnNtyPLW2UOqiSnthz0yYJA2lVt1Jhm2arFB5k75A+hUWNNFcsamoaQsnF2rQ5V4uSypSYjO2yVwLjNGfDYYUYjgOyW8JsD/JRW7is9Q8mx3HejXlq8i2s0GUtRXYmiL6fDqj+Sg7w/KcaD/rTIccKrIRdDzvY95rd+rsH7s1A0ofKljW12siWByk7jmMKdasI1kVpj0mL/HG+o43O5uMvFXS7uf1ycQK488VxEUnfHv110bGkvFX8Lbaz7GTs8Y/vfBXmkcTcHAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=61dd19a897362a50fc1cf4ef9153afa2"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=61dd19a897362a50fc1cf4ef9153afa2^sys_idNOT INf1dd19a897362a50fc1cf4ef9153afc0"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=85fdb7d1-f93b-4f20-8152-910e8cb3cd3c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>compiled_notes</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Compiled Notes</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get Journal Entries (NASK)">61dd19a897362a50fc1cf4ef9153afa2</model>
+        <model_id>61dd19a897362a50fc1cf4ef9153afa2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_61dd19a897362a50fc1cf4ef9153afa2</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_id>f1dd19a897362a50fc1cf4ef9153afc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:49:36</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>dt_req_sysid</element>
+        <help/>
+        <hint/>
+        <label>Duty Travel Req SYSID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_61dd19a897362a50fc1cf4ef9153afa2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_id>a1dd19a897362a50fc1cf4ef9153afae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Duty Travel Req SYSID</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_61dd19a897362a50fc1cf4ef9153afa2_dt_req_sysid_en</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:51:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_61dd19a897362a50fc1cf4ef9153afa2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>notes</element>
+        <help/>
+        <hint/>
+        <label>Notes</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_61dd19a897362a50fc1cf4ef9153afa2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_id>e9dd19a897362a50fc1cf4ef9153afb7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Notes</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_61dd19a897362a50fc1cf4ef9153afa2_notes_en</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:49:36</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_61dd19a897362a50fc1cf4ef9153afa2"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>741c1da497362a50fc1cf4ef9153afcb</sys_id>
+        <latest_snapshot>61dd19a897362a50fc1cf4ef9153afa2</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch6-07-17-2025_07-27-2025_1301.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=741c1da497362a50fc1cf4ef9153afcb"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=741c1da497362a50fc1cf4ef9153afcb^sys_idNOT IN7ddd19a897362a50fc1cf4ef9153aff4"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"7ddd19a897362a50fc1cf4ef9153aff4","name":"plan","plan_signature":null}}</plan>
+        <plan_id display_value="Get Journal Entries (NASK)">741c1da497362a50fc1cf4ef9153afcb</plan_id>
+        <snapshot>b49097fa4747e2105de26ea3a36d43b4</snapshot>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:49:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7ddd19a897362a50fc1cf4ef9153aff4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 01:01:34</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

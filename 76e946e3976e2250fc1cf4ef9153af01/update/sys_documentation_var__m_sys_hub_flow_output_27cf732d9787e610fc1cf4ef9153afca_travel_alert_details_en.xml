@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="travel_alert_details" label="Travel Alert Details" language="en" table="var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>travel_alert_details</element>
+            <help/>
+            <hint/>
+            <label>Travel Alert Details</label>
+            <language>en</language>
+            <name>var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2025-07-30 10:30:11</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Travel Alert Details</sys_name>
+            <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_27cf732d9787e610fc1cf4ef9153afca_travel_alert_details_en</sys_update_name>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2025-07-30 10:30:11</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

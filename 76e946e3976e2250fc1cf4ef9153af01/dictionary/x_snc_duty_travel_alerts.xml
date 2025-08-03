@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9e01c888973ee250fc1cf4ef9153afa2" label="Duty Travel Alerts" max_length="40" name="x_snc_duty_travel_alerts" type="collection">
+        <element display="true" label="Outbound Travel Alert" max_length="32" name="ota" reference="x_snc_duty_travel_ota" type="reference"/>
+        <element label="Alert" max_length="4000" name="alert" type="string"/>
+        <element label="Travel Recommendations" max_length="1000" name="travel_recommendations" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Duty Travel Request" max_length="32" name="duty_travel_req" reference="x_snc_duty_travel_duty_travel_req" type="reference"/>
+        <index name="index">
+            <element name="duty_travel_req"/>
+        </index>
+        <index name="index2">
+            <element name="ota"/>
+        </index>
+    </element>
+</database>

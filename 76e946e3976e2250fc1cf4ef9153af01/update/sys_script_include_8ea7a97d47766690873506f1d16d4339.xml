@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_duty_travel.HKOWeatherHandler</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Implements extension point x_snc_duty_travel.HKOWeatherHandler</description>
+        <mobile_callable>false</mobile_callable>
+        <name>HKOWeatherHandler</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var HKOHandler = Class.create();
+HKOHandler.prototype = {
+    initialize: function() {},
+
+    getHKOWeather: function(lang) {
+		let hkoHTML = "";
+		
+		try {
+			var inputs = {};
+			inputs['lang'] = lang;
+			var result = sn_fd.FlowAPI.getRunner().action('x_snc_duty_travel.get_weather_warning_hko').inForeground().withInputs(inputs).run();
+			var outputs = result.getOutputs();
+			var response = outputs['response']; // String
+			var status = outputs['status']; // String
+			var generalsituation = outputs['generalsituation']; // String
+			var tcinfo = outputs['tcinfo']; // String
+			var firedangerwarning = outputs['firedangerwarning']; // String
+			var forecastperiod = outputs['forecastperiod']; // String
+			var forecastdesc = outputs['forecastdesc']; // String
+			var outlook = outputs['outlook']; // String
+			var updatetime = outputs['updatetime']; // String
+
+			var tc_html = '';
+			tcinfo ? tc_html = '<b>]]>🌀<![CDATA[ Tropical Cyclone:</b><p>' + tcinfo + '</p>' : tc_html = '';
+
+			hkoHTML = 	tc_html + 
+						'<b>General Situation:</b>' +
+						'<p>' + generalsituation + '</p>' +
+						'<b>Forecast:</b>' +
+						'<p>' + forecastdesc + '</p>';
+			gs.info('DEBUG: '+hkoHTML);
+			
+		} catch (ex) {
+			var message = ex.getMessage();
+			gs.error(message);
+		}
+
+		return {
+			html: hkoHTML,
+			updatedOn: new GlideDateTime().getDisplayValue()
+		};
+    },
+
+    type: 'HKOHandler'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-18 07:44:55</sys_created_on>
+        <sys_id>8ea7a97d47766690873506f1d16d4339</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>HKOWeatherHandler</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_script_include_8ea7a97d47766690873506f1d16d4339</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-21 05:05:35</sys_updated_on>
+    </sys_script_include>
+</record_update>

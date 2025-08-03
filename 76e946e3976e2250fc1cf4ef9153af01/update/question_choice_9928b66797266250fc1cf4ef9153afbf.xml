@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="Trip type">012a6a6b97a26250fc1cf4ef9153afea</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-11 13:50:38</sys_created_on>
+        <sys_id>9928b66797266250fc1cf4ef9153afbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>One way</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>question_choice_9928b66797266250fc1cf4ef9153afbf</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-11 13:50:38</sys_updated_on>
+        <text>One way</text>
+        <value>one_way</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=9928b66797266250fc1cf4ef9153afbf"/>
+</record_update>

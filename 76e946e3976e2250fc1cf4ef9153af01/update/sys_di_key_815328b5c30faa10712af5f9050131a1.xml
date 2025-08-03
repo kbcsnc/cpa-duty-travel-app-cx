@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_di_key">
+    <sys_di_key action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <additional_details/>
+        <description>The contact point and justification for visa travel.</description>
+        <display_name>Justification</display_name>
+        <group_index>0</group_index>
+        <key_config/>
+        <key_group/>
+        <mandatory>true</mandatory>
+        <metadata/>
+        <name>justification</name>
+        <order>0</order>
+        <prediction_method>e3e501183d051210f877ad8c34c5c40d</prediction_method>
+        <stp_threshold/>
+        <synonym/>
+        <sys_class_name>sys_di_key</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:02:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>815328b5c30faa10712af5f9050131a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Justification</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_di_key_815328b5c30faa10712af5f9050131a1</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:02:05</sys_updated_on>
+        <target_field>docintel</target_field>
+        <target_table>x_snc_duty_travel_duty_travel_req</target_table>
+        <task_definition display_value="Duty Travel - Extract Doc Info">e833ac35c30faa10712af5f905013108</task_definition>
+        <total_used_positive_samples>0</total_used_positive_samples>
+        <type>Text</type>
+    </sys_di_key>
+</record_update>

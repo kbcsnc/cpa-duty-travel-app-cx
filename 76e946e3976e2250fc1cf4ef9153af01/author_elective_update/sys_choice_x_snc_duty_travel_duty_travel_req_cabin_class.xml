@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="cabin_class" table="x_snc_duty_travel_duty_travel_req" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>cabin_class</element>
+            <name>x_snc_duty_travel_duty_travel_req</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>kb.cheung</sys_created_by>
+            <sys_created_on>2025-07-11 12:47:27</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>cabin_class</sys_name>
+            <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+            <sys_update_name>sys_choice_x_snc_duty_travel_duty_travel_req_cabin_class</sys_update_name>
+            <sys_updated_by>kb.cheung</sys_updated_by>
+            <sys_updated_on>2025-07-11 12:47:27</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cabin_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Economy</label>
+            <language>en</language>
+            <name>x_snc_duty_travel_duty_travel_req</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>kb.cheung</sys_created_by>
+            <sys_created_on>2025-07-11 12:47:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>kb.cheung</sys_updated_by>
+            <sys_updated_on>2025-07-12 07:51:30</sys_updated_on>
+            <value>y</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cabin_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Premium Economy</label>
+            <language>en</language>
+            <name>x_snc_duty_travel_duty_travel_req</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>kb.cheung</sys_created_by>
+            <sys_created_on>2025-07-11 12:47:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>kb.cheung</sys_updated_by>
+            <sys_updated_on>2025-07-12 07:51:21</sys_updated_on>
+            <value>w</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cabin_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Business</label>
+            <language>en</language>
+            <name>x_snc_duty_travel_duty_travel_req</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>kb.cheung</sys_created_by>
+            <sys_created_on>2025-07-11 12:47:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>kb.cheung</sys_updated_by>
+            <sys_updated_on>2025-07-12 07:51:24</sys_updated_on>
+            <value>j</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>cabin_class</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>First</label>
+            <language>en</language>
+            <name>x_snc_duty_travel_duty_travel_req</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>kb.cheung</sys_created_by>
+            <sys_created_on>2025-07-11 12:47:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>kb.cheung</sys_updated_by>
+            <sys_updated_on>2025-07-12 07:51:27</sys_updated_on>
+            <value>f</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

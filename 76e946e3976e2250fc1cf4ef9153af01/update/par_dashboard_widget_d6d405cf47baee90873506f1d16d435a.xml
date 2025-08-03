@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="INSERT_OR_UPDATE">
+        <canvas display_value="">62e0fe7f9722e250fc1cf4ef9153af4e</canvas>
+        <component display_value="Filter Group">ba8b5fa922351c2027c524c91a134bf2</component>
+        <component_props>{"groupConfiguration":{"filterId":"group-mddwrbbi","showLabel":false,"label":"Filters","layout":"horizontal","spacing":"l","showSelectedValuesInPill":true,"showBorder":false,"showRoundCorners":false,"bare":false,"showApply":true,"showClear":true,"showReset":true,"combineActions":false,"showSeparator":true,"filterMaxWidth":300,"cascadeScope":"group-mddwrbbi","filters":[{"filterName":"Date","filterId":"mddwrbbi","dateFilterView":"calendar-reldates","defaultSelectedDateRange":{"range":"SN_DYNAMIC_DATERANGE__LAST_3_MONTH","label":"Last 3 months"},"defaultSelectedItems":[],"filterConfigurations":[],"filterComponentType":"date","updated":"1753151396968","targets":[{"type":"table","payload":{"field":"sys_created_on","table":"x_snc_duty_travel_duty_travel_req","primaryKey":"sys_id"}}],"datasource":{}},{"filterName":"Port","filterId":"mddwskbw","dateFilterView":"calendar-reldates","defaultSelectedDateRange":{"range":""},"defaultSelectedItems":[],"filterConfigurations":[],"filterComponentType":"multiselect","updated":"1753151380884","datasource":{"type":"table","payload":{"table":"x_snc_duty_travel_ports","primaryKey":"sys_id"}},"targets":[{"type":"table","payload":{"field":"going_to","table":"x_snc_duty_travel_duty_travel_req","primaryKey":"sys_id"}}]},{"filterName":"Traveller","filterId":"mddx1jd5","dateFilterView":"calendar-reldates","defaultSelectedDateRange":{"range":""},"defaultSelectedItems":[],"filterConfigurations":[],"filterComponentType":"multiselect","updated":"1753151371127","datasource":{"type":"table","payload":{"table":"sys_user","primaryKey":"sys_id"}},"targets":[{"type":"table","payload":{"field":"traveller","table":"x_snc_duty_travel_duty_travel_req","primaryKey":"sys_id"}}]}],"isDashboard":false,"key":1753151516546},"filterConfigurations":"@state.parFilters","isDashboard":true,"id":"groupConfiguration","value":{"filterId":"group-mddwrbbi","showLabel":false,"label":"Filters","layout":"horizontal","spacing":"l","showSelectedValuesInPill":true,"showBorder":false,"showRoundCorners":false,"bare":false,"showApply":true,"showClear":true,"showReset":true,"combineActions":false,"showSeparator":true,"filterMaxWidth":300,"cascadeScope":"group-mddwrbbi","filters":[{"filterName":"Date","filterId":"mddwrbbi","dateFilterView":"calendar-reldates","defaultSelectedDateRange":{"range":"SN_DYNAMIC_DATERANGE__LAST_3_MONTH","label":"Last 3 months"},"defaultSelectedItems":[],"filterConfigurations":[],"filterComponentType":"date","updated":"1753151396968","targets":[{"type":"table","payload":{"field":"sys_created_on","table":"x_snc_duty_travel_duty_travel_req","primaryKey":"sys_id"}}],"datasource":{}},{"filterName":"Port","filterId":"mddwskbw","dateFilterView":"calendar-reldates","defaultSelectedDateRange":{"range":""},"defaultSelectedItems":[],"filterConfigurations":[],"filterComponentType":"multiselect","updated":"1753151380884","datasource":{"type":"table","payload":{"table":"x_snc_duty_travel_ports","primaryKey":"sys_id"}},"targets":[{"type":"table","payload":{"field":"going_to","table":"x_snc_duty_travel_duty_travel_req","primaryKey":"sys_id"}}]},{"filterName":"Traveller","filterId":"mddx1jd5","dateFilterView":"calendar-reldates","defaultSelectedDateRange":{"range":""},"defaultSelectedItems":[],"filterConfigurations":[],"filterComponentType":"multiselect","updated":"1753151371127","datasource":{"type":"table","payload":{"table":"sys_user","primaryKey":"sys_id"}},"targets":[{"type":"table","payload":{"field":"traveller","table":"x_snc_duty_travel_duty_travel_req","primaryKey":"sys_id"}}]}],"isDashboard":false,"key":1753151516546},"propLabel":"Group configuration","metaForCollated":{"isFromScriptedPolicy":false,"isExternalProp":false,"isOverridingPreset":null},"filterComponentType":"multiselect","noDebounce":true,"targets":[{"type":"table","payload":{"field":"traveller","table":"x_snc_duty_travel_duty_travel_req","primaryKey":"sys_id"}}],"datasource":{"type":"table","payload":{"table":"sys_user","primaryKey":"sys_id"}},"defaultSelectedDateRange":{"range":"SN_DYNAMIC_DATERANGE__LAST_3_MONTH","label":"Last 3 months"},"filterName":"Date","showReset":true,"showSeparator":true,"combineActions":false,"showApply":true,"spacing":"l","layout":"horizontal","showBorder":false,"showLabel":false}</component_props>
+        <h>4</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-22 02:25:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d6d405cf47baee90873506f1d16d435a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>par_dashboard_widget_d6d405cf47baee90873506f1d16d435a</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-22 02:32:04</sys_updated_on>
+        <visualization/>
+        <w>48</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+</record_update>

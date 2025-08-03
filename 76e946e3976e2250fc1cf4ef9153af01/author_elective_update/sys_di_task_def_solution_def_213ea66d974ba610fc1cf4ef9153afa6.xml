@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_di_task_def_solution_def">
+    <sys_di_task_def_solution_def action="DELETE">
+        <document_config display_value="DocReader Bounding Box Config">8c3767f407111210e66f1f00ead300d4</document_config>
+        <ml_capability_definition_base display_value="docintel_ocr_workflow_dd3ea66d974ba610fc1cf4ef9153af9c">913ea66d974ba610fc1cf4ef9153afa1</ml_capability_definition_base>
+        <solution_type display_value="OCR">27d0b96cb70a2110cbc68b91ee11a93f</solution_type>
+        <sys_class_name>sys_di_task_def_solution_def</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 04:30:22</sys_created_on>
+        <sys_id>213ea66d974ba610fc1cf4ef9153afa6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_di_task_def_solution_def_213ea66d974ba610fc1cf4ef9153afa6</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 12:48:01</sys_updated_on>
+        <task_definition display_value="Duty Travel - Extract Doc Info">dd3ea66d974ba610fc1cf4ef9153af9c</task_definition>
+    </sys_di_task_def_solution_def>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>b48a4d13fbf422901feef633beefdc1e</instance_id>
+        <instance_name>cpagenaipov</instance_name>
+        <name>sys_di_task_def_solution_def_213ea66d974ba610fc1cf4ef9153afa6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_di_task_def_solution_def"><sys_di_task_def_solution_def action="INSERT_OR_UPDATE"><document_config display_value="DocReader Bounding Box Config">8c3767f407111210e66f1f00ead300d4</document_config><ml_capability_definition_base display_value="docintel_ocr_workflow_dd3ea66d974ba610fc1cf4ef9153af9c">913ea66d974ba610fc1cf4ef9153afa1</ml_capability_definition_base><solution_type display_value="OCR">27d0b96cb70a2110cbc68b91ee11a93f</solution_type><sys_class_name>sys_di_task_def_solution_def</sys_class_name><sys_created_by>kb.cheung</sys_created_by><sys_created_on>2025-07-30 04:30:22</sys_created_on><sys_id>213ea66d974ba610fc1cf4ef9153afa6</sys_id><sys_mod_count>1</sys_mod_count><sys_name/><sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package><sys_policy/><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_update_name>sys_di_task_def_solution_def_213ea66d974ba610fc1cf4ef9153afa6</sys_update_name><sys_updated_by>system</sys_updated_by><sys_updated_on>2025-07-30 12:48:01</sys_updated_on><task_definition display_value="Duty Travel - Extract Doc Info">dd3ea66d974ba610fc1cf4ef9153af9c</task_definition></sys_di_task_def_solution_def></record_update>]]></payload>
+        <payload_hash>1223869649</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>044cb4961b802110a5b96461f54bcb3b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-07-30 12:48:01</sys_created_on>
+        <sys_id>0f1020314747aa105de26ea3a36d4370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1985b6018770000001</sys_recorded_at>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 12:48:01</sys_updated_on>
+        <type>Task Solution Definition</type>
+        <update_guid>03102031f747aa10a5f8047acd4e7e70</update_guid>
+        <update_guid_history>03102031f747aa10a5f8047acd4e7e70:1223869649,2dff50f575cbaa1007a5e2f62f53b2d4:0,e7de1cfd4c8baa109eb7e07f99e7df27:109753795,733604f1e84f6a1039858b9e495c0b3d:-1310639217,a506ccfd8d0f6a10cd517504105a2072:536203711</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2025-07-30 13:00:55</sys_created_on>
+        <sys_db_object display_value="" name="sys_di_task_def_solution_def">sys_di_task_def_solution_def</sys_db_object>
+        <sys_id>9046489edbac4c83988e0fb7378adb79</sys_id>
+        <sys_metadata>213ea66d974ba610fc1cf4ef9153afa6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sys_di_task_def_solution_def_213ea66d974ba610fc1cf4ef9153afa6</sys_update_name>
+        <sys_update_version display_value="sys_di_task_def_solution_def_213ea66d974ba610fc1cf4ef9153afa6">0f1020314747aa105de26ea3a36d4370</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:00:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

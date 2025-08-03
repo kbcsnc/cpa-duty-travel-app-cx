@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">62e0fe7f9722e250fc1cf4ef9153af4e</canvas>
+        <component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component>
+        <component_props>{"filterId":"1j0mgg7ojbes1dfbtg58","filterName":"Date","filterComponentType":"date","datasource":{},"targets":[{"type":"table","payload":{"field":"sys_created_on","table":"x_snc_duty_travel_duty_travel_req","primaryKey":"sys_id"}}],"allowedDateRanges":null,"defaultSelectedItems":[],"cascadingConfig":null,"defaultSelectedDateRange":{"range":"SN_DYNAMIC_DATERANGE__LAST_3_MONTH","label":"Last 3 months"},"defaultDateStart":null,"defaultDateEnd":null,"allowTimeSelection":null,"dateFilterView":"calendar-reldates","defaultBoolean":null,"sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","booleanLabelTrue":null,"booleanLabelFalse":null,"enableResetToDefault":null,"enableClearFilter":true,"primaryActionLabel":"Apply","maxElements":500,"filterConfigurations":"@state.parFilters","filterProperties":null,"cascadeScope":"6ae0fe7f9722e250fc1cf4ef9153af25","isDashboard":true,"isGroup":false,"id":"defaultSelectedDateRange","value":{"range":"SN_DYNAMIC_DATERANGE__LAST_3_MONTH","label":"Last 3 months"},"noDebounce":true,"propLabel":"Default values","metaForCollated":{"isFromScriptedPolicy":false,"isExternalProp":false,"isOverridingPreset":null}}</component_props>
+        <h>5</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-21 12:50:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>da4a86fa47b2ae90873506f1d16d43a7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>par_dashboard_widget_da4a86fa47b2ae90873506f1d16d43a7</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-22 02:30:13</sys_updated_on>
+        <visualization/>
+        <w>18</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>par_dashboard_widget_da4a86fa47b2ae90873506f1d16d43a7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">62e0fe7f9722e250fc1cf4ef9153af4e</canvas><component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component><component_props>{"filterId":"1j0mgg7ojbes1dfbtg58","filterName":"Date","filterComponentType":"date","datasource":{},"targets":[{"type":"table","payload":{"field":"sys_created_on","table":"x_snc_duty_travel_duty_travel_req","primaryKey":"sys_id"}}],"allowedDateRanges":null,"defaultSelectedItems":[],"cascadingConfig":null,"defaultSelectedDateRange":{"range":"SN_DYNAMIC_DATERANGE__LAST_3_MONTH","label":"Last 3 months"},"defaultDateStart":null,"defaultDateEnd":null,"allowTimeSelection":null,"dateFilterView":"calendar-reldates","defaultBoolean":null,"sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","booleanLabelTrue":null,"booleanLabelFalse":null,"enableResetToDefault":null,"enableClearFilter":true,"primaryActionLabel":"Apply","maxElements":500,"filterConfigurations":"@state.parFilters","filterProperties":null,"cascadeScope":"6ae0fe7f9722e250fc1cf4ef9153af25","isDashboard":true,"isGroup":false,"id":"defaultSelectedDateRange","value":{"range":"SN_DYNAMIC_DATERANGE__LAST_3_MONTH","label":"Last 3 months"},"noDebounce":true,"propLabel":"Default values","metaForCollated":{"isFromScriptedPolicy":false,"isExternalProp":false,"isOverridingPreset":null}}</component_props><h>5</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>kb.cheung</sys_created_by><sys_created_on>2025-07-21 12:50:08</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>da4a86fa47b2ae90873506f1d16d43a7</sys_id><sys_mod_count>2</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package><sys_policy/><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_update_name>par_dashboard_widget_da4a86fa47b2ae90873506f1d16d43a7</sys_update_name><sys_updated_by>kb.cheung</sys_updated_by><sys_updated_on>2025-07-22 02:30:13</sys_updated_on><visualization/><w>18</w><widget_props/><x>0</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>494991303</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d8f0a2a497be2a50fc1cf4ef9153afcc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-22 02:30:13</sys_created_on>
+        <sys_id>1bf5050747faee90873506f1d16d43f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1982ff79cb10000001</sys_recorded_at>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-22 02:30:13</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>dff50507f2faee9025028b99591246f2</update_guid>
+        <update_guid_history>dff50507f2faee9025028b99591246f2:494991303,fb8b4ebec2b2ae906fc038f30a1f6d8b:-1911583261,124a86faf7b2ae90278a3ac5c6da9aa9:-114920469</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">af46014747faee90873506f1d16d43af</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-22 02:31:36</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>019ba0e40acf470081ed3d4182653021</sys_id>
+        <sys_metadata>da4a86fa47b2ae90873506f1d16d43a7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_da4a86fa47b2ae90873506f1d16d43a7</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_da4a86fa47b2ae90873506f1d16d43a7">1bf5050747faee90873506f1d16d43f3</sys_update_version>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-22 02:31:36</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

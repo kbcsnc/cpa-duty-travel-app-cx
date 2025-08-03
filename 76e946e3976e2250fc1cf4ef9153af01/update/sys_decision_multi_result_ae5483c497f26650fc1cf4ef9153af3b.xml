@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="INSERT_OR_UPDATE">
+        <decision_table display_value="Duty Travel Decision Table">fb7d7ec897b26650fc1cf4ef9153af11</decision_table>
+        <label>Approval Group: Duty Travel - W Approvers</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-13 04:00:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ae5483c497f26650fc1cf4ef9153af3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Approval Group: Duty Travel - W Approvers</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_decision_multi_result_ae5483c497f26650fc1cf4ef9153af3b</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-13 04:00:32</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="delete_multiple" query="document_key=ae5483c497f26650fc1cf4ef9153af3b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>ae5483c497f26650fc1cf4ef9153af3b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-13 04:00:32</sys_created_on>
+        <sys_id>aa54870897f26650fc1cf4ef9153afa4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-13 04:00:32</sys_updated_on>
+        <value>4db3cb8497f26650fc1cf4ef9153afbb</value>
+        <variable display_value="Approval Group">ea54870897f26650fc1cf4ef9153af50</variable>
+    </sys_variable_value>
+</record_update>

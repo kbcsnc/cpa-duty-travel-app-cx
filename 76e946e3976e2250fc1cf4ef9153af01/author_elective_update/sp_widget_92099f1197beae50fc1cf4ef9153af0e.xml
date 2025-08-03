@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function () {
+  /* widget controller */
+  var c = this;
+
+  c.closeCase = function () {
+    c.server.get({
+      action: "closeCase",
+      sysId: c.data.sysId
+    });
+  };
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Copy of Cancel Request</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+    if (input) {
+        data.sysId = input.sysId;
+
+        if (input.action == 'closeCase') {
+            current.state = 'cancelled'; // Or your cancellation state
+current.work_notes = 'Request cancelled by user.';
+current.update();
+        }
+
+    } else {
+        data.table = $sp.getParameter('table');
+        data.sysId = $sp.getParameter('sys_id');
+    }
+
+    
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-17 02:43:18</sys_created_on>
+        <sys_id>92099f1197beae50fc1cf4ef9153af0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of Cancel Request</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sp_widget_92099f1197beae50fc1cf4ef9153af0e</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-17 02:43:18</sys_updated_on>
+        <template><![CDATA[<div>
+
+  <button ng-if="c.data.canCloseCase" class="btn btn-default" ng-click="c.closeCase()">${Close Inquiry}</button>
+</div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>sp_widget_92099f1197beae50fc1cf4ef9153af0e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller = function () {
+  /* widget controller */
+  var c = this;
+
+  c.closeCase = function () {
+    c.server.get({
+      action: "closeCase",
+      sysId: c.data.sysId
+    });
+  };
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Copy of Cancel Request&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+    if (input) {
+        data.sysId = input.sysId;
+
+        if (input.action == 'closeCase') {
+            current.state = 'cancelled'; // Or your cancellation state
+current.work_notes = 'Request cancelled by user.';
+current.update();
+        }
+
+    } else {
+        data.table = $sp.getParameter('table');
+        data.sysId = $sp.getParameter('sys_id');
+    }
+
+    
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;carmen.man&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-17 02:43:18&lt;/sys_created_on&gt;&lt;sys_id&gt;92099f1197beae50fc1cf4ef9153af0e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Copy of Cancel Request&lt;/sys_name&gt;&lt;sys_package display_value="Duty Travel" source="x_snc_duty_travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_92099f1197beae50fc1cf4ef9153af0e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;carmen.man&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-17 02:43:18&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+
+  &lt;button ng-if="c.data.canCloseCase" class="btn btn-default" ng-click="c.closeCase()"&gt;${Close Inquiry}&lt;/button&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1307285341</payload_hash>
+        <record_name>Copy of Cancel Request</record_name>
+        <reverted_from/>
+        <source>3c197a1597baae50fc1cf4ef9153af03</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-17 02:43:18</sys_created_on>
+        <sys_id>1a099f1197beae50fc1cf4ef9153af10</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1981643ccd30000001</sys_recorded_at>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-17 02:43:18</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>1e099f1102beae5009443a129f60ef0f</update_guid>
+        <update_guid_history>1e099f1102beae5009443a129f60ef0f:-1307285341</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">dc19df1197beae50fc1cf4ef9153af09</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-17 02:43:26</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>ae80ae84e46c4e048be0c91f6cfa8f21</sys_id>
+        <sys_metadata>92099f1197beae50fc1cf4ef9153af0e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of Cancel Request</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sp_widget_92099f1197beae50fc1cf4ef9153af0e</sys_update_name>
+        <sys_update_version display_value="sp_widget_92099f1197beae50fc1cf4ef9153af0e">1a099f1197beae50fc1cf4ef9153af10</sys_update_version>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-17 02:43:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

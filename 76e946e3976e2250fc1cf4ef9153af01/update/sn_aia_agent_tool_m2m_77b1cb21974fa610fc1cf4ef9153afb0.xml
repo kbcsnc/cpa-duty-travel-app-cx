@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Duty Travel Fulfillment Agent">358c9ead9787a610fc1cf4ef9153af7a</agent>
+        <description>This subflow, named "Update Duty Travel Decision", updates the AI decision field in a Duty Travel Request record based on the input decision. It takes two inputs: the Duty Travel Number and the Decision, which can be "AI Approve", "AI Reject", or another value that requires executive approval. The subflow looks up the Duty Travel Request record using the provided number, and then updates the AI decision field accordingly. If the decision is "AI Approve" or "AI Reject", it updates the record with the corresponding value. If the decision is neither, it updates the record with "AI Suggests Executive Approval".</description>
+        <display_output>true</display_output>
+        <document_status/>
+        <execution_mode>copilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Update Duty Travel Decision</name>
+        <output_transformation_strategy>summary</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Updating travel decision</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:55:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>77b1cb21974fa610fc1cf4ef9153afb0</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Update Duty Travel Decision</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_77b1cb21974fa610fc1cf4ef9153afb0</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:55:56</sys_updated_on>
+        <tool display_value="Update Duty Travel Decision">ffb10b21974fa610fc1cf4ef9153afc2</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+</record_update>

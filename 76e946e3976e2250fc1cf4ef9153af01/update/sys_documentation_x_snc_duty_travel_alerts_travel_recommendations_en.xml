@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="travel_recommendations" label="Travel Recommendations" language="en" table="x_snc_duty_travel_alerts">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>travel_recommendations</element>
+            <help/>
+            <hint/>
+            <label>Travel Recommendations</label>
+            <language>en</language>
+            <name>x_snc_duty_travel_alerts</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>carmen.man</sys_created_by>
+            <sys_created_on>2025-07-22 08:32:45</sys_created_on>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_name>Travel Recommendations</sys_name>
+            <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+            <sys_update_name>sys_documentation_x_snc_duty_travel_alerts_travel_recommendations_en</sys_update_name>
+            <sys_updated_by>carmen.man</sys_updated_by>
+            <sys_updated_on>2025-07-22 08:32:58</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

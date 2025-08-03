@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_configuration">
+    <sn_aia_trigger_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_rule/>
+        <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
+        <condition table="x_snc_duty_travel_duty_travel_req">opened_byISNOTEMPTY<item endquery="false" field="opened_by" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+        </condition>
+        <description/>
+        <enable_discovery>false</enable_discovery>
+        <internal_name/>
+        <name>DutyTravel</name>
+        <notification_script/>
+        <objective_template><![CDATA[Fulfill DT ${number}]]></objective_template>
+        <portal/>
+        <profile/>
+        <run_as>assigned_to</run_as>
+        <run_as_script/>
+        <run_dayofmonth/>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start/>
+        <run_time/>
+        <show_notifications>true</show_notifications>
+        <sys_class_name>sn_aia_trigger_configuration</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 06:09:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c1e4cb69974fa610fc1cf4ef9153af3a</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>x_snc_duty_travel_duty_travel_req</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_trigger_configuration_c1e4cb69974fa610fc1cf4ef9153af3a</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 09:44:27</sys_updated_on>
+        <target_table>x_snc_duty_travel_duty_travel_req</target_table>
+        <trigger_flow display_value="Duty Travel Request - Use case: Duty Travel Fulfillment - 0de407a9974fa610fc1cf4ef9153afcd">09e407a9974fa610fc1cf4ef9153afce</trigger_flow>
+        <trigger_flow_definition_type>record_create</trigger_flow_definition_type>
+        <usecase display_value="Duty Travel Fulfillment">f362cbe1974fa610fc1cf4ef9153af6f</usecase>
+        <usecase_discovery>false</usecase_discovery>
+    </sn_aia_trigger_configuration>
+</record_update>

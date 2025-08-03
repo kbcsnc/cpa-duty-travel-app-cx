@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_cabin_class" label="Cabin class" language="en" table="var__m_sys_decision_input_fb7d7ec897b26650fc1cf4ef9153af11">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_cabin_class</element>
+            <help/>
+            <hint/>
+            <label>Cabin class</label>
+            <language>en</language>
+            <name>var__m_sys_decision_input_fb7d7ec897b26650fc1cf4ef9153af11</name>
+            <plural>Cabin class</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>kb.cheung</sys_created_by>
+            <sys_created_on>2025-07-13 04:00:31</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Cabin class</sys_name>
+            <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_decision_input_fb7d7ec897b26650fc1cf4ef9153af11_u_cabin_class_en</sys_update_name>
+            <sys_updated_by>kb.cheung</sys_updated_by>
+            <sys_updated_on>2025-07-13 04:00:31</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Duty Travel - Hide Journal Form Fields</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+
+    if (typeof NOW !== 'undefined' && NOW.workspace && NOW.workspace.name === 'duty-travel') {
+        gForm.setDisplay('comments', false); // Hides the Additional comments field
+    }
+
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-12 13:10:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6bc7333b97eae250fc1cf4ef9153af26</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Duty Travel - Hide Journal Form Fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_script_client_6bc7333b97eae250fc1cf4ef9153af26</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-12 13:12:00</sys_updated_on>
+        <table>x_snc_duty_travel_duty_travel_req</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>sys_script_client_6bc7333b97eae250fc1cf4ef9153af26</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Duty Travel - Hide Journal Form Fields&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+
+    if (typeof NOW !== 'undefined' &amp;&amp; NOW.workspace &amp;&amp; NOW.workspace.name === 'duty-travel') {
+        gForm.setDisplay('comments', false); // Hides the Additional comments field
+    }
+
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-12 13:10:33&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6bc7333b97eae250fc1cf4ef9153af26&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Duty Travel - Hide Journal Form Fields&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Duty Travel" source="x_snc_duty_travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_6bc7333b97eae250fc1cf4ef9153af26&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-12 13:12:00&lt;/sys_updated_on&gt;&lt;table&gt;x_snc_duty_travel_duty_travel_req&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1282310022</payload_hash>
+        <record_name>Duty Travel - Hide Journal Form Fields</record_name>
+        <reverted_from/>
+        <source>36e946e3976e2250fc1cf4ef9153af42</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-12 13:12:00</sys_created_on>
+        <sys_id>43f87ff797eae250fc1cf4ef9153af62</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197fec398c20000001</sys_recorded_at>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-12 13:12:00</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>0bf87ff761eae25006612292f2061861</update_guid>
+        <update_guid_history>0bf87ff761eae25006612292f2061861:1282310022,b9a8fff7fceae2502078c4edd0ff6da7:1097563616</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-12 13:14:47</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>90bbefbdebe94bfc8884f10fd79bd390</sys_id>
+        <sys_metadata>6bc7333b97eae250fc1cf4ef9153af26</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Duty Travel - Hide Journal Form Fields</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent display_value="Duty Travel Request">c3afceaf976e2250fc1cf4ef9153af21</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sys_script_client_6bc7333b97eae250fc1cf4ef9153af26</sys_update_name>
+        <sys_update_version display_value="sys_script_client_6bc7333b97eae250fc1cf4ef9153af26">43f87ff797eae250fc1cf4ef9153af62</sys_update_version>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-12 13:14:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

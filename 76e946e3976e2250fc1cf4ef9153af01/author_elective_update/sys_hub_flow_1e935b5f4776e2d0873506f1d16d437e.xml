@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>intermediateFlowVersion=1.2,labelCacheCleanUpExecuted=true</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview>Get Historical Itinerary</display_name_after_preview>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source>text2flow</generation_source>
+        <internal_name>get_historical_itinerary1a9</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Get Historical Itinerary</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-23 07:27:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1e935b5f4776e2d0873506f1d16d437e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Get Historical Itinerary</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_hub_flow_1e935b5f4776e2d0873506f1d16d437e</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 07:27:40</sys_updated_on>
+        <type>subflow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_variable_value action="DELETE" query="document_key=1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=1e935b5f4776e2d0873506f1d16d437e^sys_idNOT IN96935b5f4776e2d0873506f1d16d437f"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>1e935b5f4776e2d0873506f1d16d437e</id>
+        <name>Get Historical Itinerary1a9</name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-23 07:27:24</sys_created_on>
+        <sys_id>96935b5f4776e2d0873506f1d16d437f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 07:27:24</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=96935b5f4776e2d0873506f1d16d437f"/>
+    <sys_hub_flow_input action="DELETE" query="model=1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_hub_flow_output action="DELETE" query="model=1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=1e935b5f4776e2d0873506f1d16d437e^sys_idNOT INe6935b5f4776e2d0873506f1d16d43c7"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <attributes/>
+        <comment>get duty travel requests where requester is traveller</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Get Historical Itinerary">1e935b5f4776e2d0873506f1d16d437e</flow>
+        <generation_source>text2flow</generation_source>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-23 07:27:25</sys_created_on>
+        <sys_id>e6935b5f4776e2d0873506f1d16d43c7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 07:27:29</sys_updated_on>
+        <ui_id>9e935b5f-7d76-e2d0-819d-f144acf13399</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VX207jMBD9lSrPUZU20BbeVkVIK3GRAPHCspFjO621rh1spxcq/n3HsZNm2wCLtiDQSn2Ix+OZM+NzbPduHQg0o8FxYFDKaRAGc8QLO4ZPwnTO0ep2Y8mRAm9DVXC8DvCUcaKoCI7v7sOAEXCJR9GQ0ugoSuMogt/oEEejmKbxcDCMUTSCEByllIPrjc+3ld6s8nqYlHPOdtZc1rlwE1IRCyUKA7o0VBAKGDLENQ2DGRIEGalWtUVRRC4F3ximTBhX1gwtNXuEvKPI+mUUqsK+5HqY+HY4c3aCDLo2qsCmUN4VTyXDVLt+EJqhgptx0+YcLnPDpHBLXNluteTFTFy4dgR1gEb3Cw0gaG4Ltch9Gdn1VC6uKpSnTJQ98ZNcYsTrETJGsbQwFs86oJzOIFAyQ3nOxCTJlZyzcjFgmXUnHAbdjMsFJNVsIroIW+Bd6CvqnoL9pDTfIsVsFecQBhYDIMaBIYnbQi0LVbZynmBe6HJCIaFdrOApDPRKjznSelM5tDx5KCxu1wdfceKaZpdgxXLzDULMqS/uKayZjKUgzEbXDTor+lBQSE+STKofBbCT/ITMAApSl0RzxmWiBU5IYVYW55xy961kCd1H2dXGvsO/JrTo8CWh9WlDaONmO9pa5CW3YztrC+Al19ub5A6i6CuJDpJ/Ps29XUVM5IXRXdeJVxWlpTKJa9W/3hCHKM6yI9IbDYG3QNzBIMaol6bxAKdRSpo3xKWlWiddbWj7Jw7P24xRTtquilM7sXVV9P/Pq+JTshYAwXFZ7h4TnIny3gegH0Pnkj0bMpc2pPEuqVHHyM7j31B78BK1aZPa15Ctc+MQtICqTuSSA9uncWX0jI73xui4vx9Gr+sy69a1dLm6SOy+VP6P1h9t+wOnGgv6T22K+YCcW4qM3yTJJr3czMkzLNvzI+8ZiYXvqekpLPX5EqfEZMHIhJpN9sqLSLNA/FfbvGdcUm1UWd67PBhBAfD00rApzRdjDx4mu6dBL3Tm1w4DTF56oMVHjcPgHC07V3X6Vkz+QADN0knZ5eaJ8L22eroe7PFx9mkvuWp7WtVU7dKX+Me0P0rf/waVxyZUzw8AAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=e6935b5f4776e2d0873506f1d16d43c7"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=1e935b5f4776e2d0873506f1d16d437e^sys_idNOT IN22935b5f4776e2d0873506f1d16d43cb,66935b5f4776e2d0873506f1d16d43c9"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">6a935b5f4776e2d0873506f1d16d43ca</block>
+        <comment>return duty request</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Get Historical Itinerary">1e935b5f4776e2d0873506f1d16d437e</flow>
+        <flow_variables_assigned/>
+        <generation_source>text2flow</generation_source>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>1e935b5f-4f76-e2d0-a922-ae59c36d949b</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-23 07:27:25</sys_created_on>
+        <sys_id>22935b5f4776e2d0873506f1d16d43cb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 07:27:32</sys_updated_on>
+        <ui_id>16935b5f-9976-e2d0-cd35-c9edcdf1509c</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="DELETE">
+        <attributes/>
+        <block display_value="">6a935b5f4776e2d0873506f1d16d43c8</block>
+        <comment>loop through duty travel requests</comment>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Get Historical Itinerary">1e935b5f4776e2d0873506f1d16d437e</flow>
+        <flow_variables_assigned/>
+        <generation_source>text2flow</generation_source>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-23 07:27:25</sys_created_on>
+        <sys_id>66935b5f4776e2d0873506f1d16d43c9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 07:27:31</sys_updated_on>
+        <ui_id>1e935b5f-4f76-e2d0-a922-ae59c36d949b</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/11SXWvjMBD8L3o2xnaOcMlbaSkU7q7Qlr4cxayldSJOlnT6SOoL+e+3imwn9Mne0e7szLAnZmKwMfg3c+e93Gm2/f1RMKkTRv8npmFAtmUy4OBZwQ6gYqrpV0hvFYzvV8SCo+6Ajm1PjO+lEg5nRkEt9Ub0m7ra8FWzXjVV1Xz/VnfrVVc3YgUo1kShoENFrU/Tvi/rw2hT6ZAbJ2bgxzTzsqD0SSKaqmD4GVALpPU9KI8FG0ALCMaNbBtcJMAhiGetxqVjL3XIhgb49PIfbayrKjX2SIb45HYp2ymJDPcPEOCVqHmIbmrleyM5+hyFwB6iCve3WG54tkEanUcCdGqeNioO+ldOgi0EN8FHTyLQJqNJ+uSjf92b48us8lHqSyjTozIc1FJBCE52MSQ9J4YKByJqB7BW6l1rnTnIyzBpGcqdoqLslTnS0nQ0JfAkvKRcoXwk/OECv4OTycVPoqHhc8H86O8VeH/1QiG2f2NSkp1NHtocQxrhTtpwRwsOOMk9f6Q7zNxLplx6kvCWsKf5etPDSBck+S10NO5PEn/Fzv8B9axcmwcDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_hub_flow_variable action="DELETE" query="model=1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=1e935b5f4776e2d0873506f1d16d437e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>sys_hub_flow_1e935b5f4776e2d0873506f1d16d437e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><attributes>intermediateFlowVersion=1.2,labelCacheCleanUpExecuted=true</attributes><authored_on_release_version>27000</authored_on_release_version><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><display_name_after_preview>Get Historical Itinerary</display_name_after_preview><flow_priority>MEDIUM</flow_priority><generation_source>text2flow</generation_source><internal_name>get_historical_itinerary1a9</internal_name><label_cache>[]</label_cache><latest_snapshot/><master_snapshot/><master_snapshot_digest/><name>Get Historical Itinerary</name><natlang/><outputs/><pre_compiled>false</pre_compiled><remote_trigger_id/><run_as>user</run_as><run_with_roles/><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><substatus/><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>kb.cheung</sys_created_by><sys_created_on>2025-07-23 07:27:24</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1e935b5f4776e2d0873506f1d16d437e</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Get Historical Itinerary</sys_name><sys_overrides/><sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package><sys_policy/><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_update_name>sys_hub_flow_1e935b5f4776e2d0873506f1d16d437e</sys_update_name><sys_updated_by>kb.cheung</sys_updated_by><sys_updated_on>2025-07-23 07:27:40</sys_updated_on><type>subflow</type><updation_source/><version>2</version></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=1e935b5f4776e2d0873506f1d16d437e"/><sys_variable_value action="delete_multiple" query="document_key=1e935b5f4776e2d0873506f1d16d437e"/><sys_hub_flow_stage action="delete_multiple" query="flow=1e935b5f4776e2d0873506f1d16d437e"/><sys_flow_cat_variable_model action="delete_multiple" query="id=1e935b5f4776e2d0873506f1d16d437e^sys_idNOT IN96935b5f4776e2d0873506f1d16d437f"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>1e935b5f4776e2d0873506f1d16d437e</id><name>Get Historical Itinerary1a9</name><sys_created_by>kb.cheung</sys_created_by><sys_created_on>2025-07-23 07:27:24</sys_created_on><sys_id>96935b5f4776e2d0873506f1d16d437f</sys_id><sys_mod_count>0</sys_mod_count><sys_scope/><sys_updated_by>kb.cheung</sys_updated_by><sys_updated_on>2025-07-23 07:27:24</sys_updated_on></sys_flow_cat_variable_model><sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=96935b5f4776e2d0873506f1d16d437f"/><sys_hub_flow_input action="delete_multiple" query="model=1e935b5f4776e2d0873506f1d16d437e"/><sys_hub_flow_output action="delete_multiple" query="model=1e935b5f4776e2d0873506f1d16d437e"/><sys_hub_alias_mapping action="delete_multiple" query="source_id=1e935b5f4776e2d0873506f1d16d437e"/><sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=1e935b5f4776e2d0873506f1d16d437e"/><sys_hub_action_instance_v2 action="delete_multiple" query="flow=1e935b5f4776e2d0873506f1d16d437e^sys_idNOT INe6935b5f4776e2d0873506f1d16d43c7"/><sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"><action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type><action_type_parent/><attributes/><comment>get duty travel requests where requester is traveller</comment><compiled_snapshot/><display_text/><flow display_value="Get Historical Itinerary">1e935b5f4776e2d0873506f1d16d437e</flow><generation_source>text2flow</generation_source><order>1</order><parent_ui_id/><sys_class_name>sys_hub_action_instance_v2</sys_class_name><sys_created_by>kb.cheung</sys_created_by><sys_created_on>2025-07-23 07:27:25</sys_created_on><sys_id>e6935b5f4776e2d0873506f1d16d43c7</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_updated_by>kb.cheung</sys_updated_by><sys_updated_on>2025-07-23 07:27:29</sys_updated_on><ui_id>9e935b5f-7d76-e2d0-819d-f144acf13399</ui_id><updation_source/><values>H4sIAAAAAAAA/+VX207jMBD9lSrPUZU20BbeVkVIK3GRAPHCspFjO621rh1spxcq/n3HsZNm2wCLtiDQSn2Ix+OZM+NzbPduHQg0o8FxYFDKaRAGc8QLO4ZPwnTO0ep2Y8mRAm9DVXC8DvCUcaKoCI7v7sOAEXCJR9GQ0ugoSuMogt/oEEejmKbxcDCMUTSCEByllIPrjc+3ld6s8nqYlHPOdtZc1rlwE1IRCyUKA7o0VBAKGDLENQ2DGRIEGalWtUVRRC4F3ximTBhX1gwtNXuEvKPI+mUUqsK+5HqY+HY4c3aCDLo2qsCmUN4VTyXDVLt+EJqhgptx0+YcLnPDpHBLXNluteTFTFy4dgR1gEb3Cw0gaG4Ltch9Gdn1VC6uKpSnTJQ98ZNcYsTrETJGsbQwFs86oJzOIFAyQ3nOxCTJlZyzcjFgmXUnHAbdjMsFJNVsIroIW+Bd6CvqnoL9pDTfIsVsFecQBhYDIMaBIYnbQi0LVbZynmBe6HJCIaFdrOApDPRKjznSelM5tDx5KCxu1wdfceKaZpdgxXLzDULMqS/uKayZjKUgzEbXDTor+lBQSE+STKofBbCT/ITMAApSl0RzxmWiBU5IYVYW55xy961kCd1H2dXGvsO/JrTo8CWh9WlDaONmO9pa5CW3YztrC+Al19ub5A6i6CuJDpJ/Ps29XUVM5IXRXdeJVxWlpTKJa9W/3hCHKM6yI9IbDYG3QNzBIMaol6bxAKdRSpo3xKWlWiddbWj7Jw7P24xRTtquilM7sXVV9P/Pq+JTshYAwXFZ7h4TnIny3gegH0Pnkj0bMpc2pPEuqVHHyM7j31B78BK1aZPa15Ctc+MQtICqTuSSA9uncWX0jI73xui4vx9Gr+sy69a1dLm6SOy+VP6P1h9t+wOnGgv6T22K+YCcW4qM3yTJJr3czMkzLNvzI+8ZiYXvqekpLPX5EqfEZMHIhJpN9sqLSLNA/FfbvGdcUm1UWd67PBhBAfD00rApzRdjDx4mu6dBL3Tm1w4DTF56oMVHjcPgHC07V3X6Vkz+QADN0knZ5eaJ8L22eroe7PFx9mkvuWp7WtVU7dKX+Me0P0rf/waVxyZUzw8AAA==</values></sys_hub_action_instance_v2><sys_hub_alias_mapping action="delete_multiple" query="source_id=e6935b5f4776e2d0873506f1d16d43c7"/><sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=1e935b5f4776e2d0873506f1d16d437e"/><sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=1e935b5f4776e2d0873506f1d16d437e^sys_idNOT IN22935b5f4776e2d0873506f1d16d43cb,66935b5f4776e2d0873506f1d16d43c9"/><sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"><attributes/><block display_value="">6a935b5f4776e2d0873506f1d16d43ca</block><comment>return duty request</comment><connected_to/><decision_table/><display_text/><flow display_value="Get Historical Itinerary">1e935b5f4776e2d0873506f1d16d437e</flow><flow_variables_assigned/><generation_source>text2flow</generation_source><logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition><order>3</order><outputs_assigned/><parent_ui_id>1e935b5f-4f76-e2d0-a922-ae59c36d949b</parent_ui_id><sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name><sys_created_by>kb.cheung</sys_created_by><sys_created_on>2025-07-23 07:27:25</sys_created_on><sys_id>22935b5f4776e2d0873506f1d16d43cb</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_updated_by>kb.cheung</sys_updated_by><sys_updated_on>2025-07-23 07:27:32</sys_updated_on><ui_id>16935b5f-9976-e2d0-cd35-c9edcdf1509c</ui_id><updation_source/><values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values><workflow_reference/></sys_hub_flow_logic_instance_v2><sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE"><attributes/><block display_value="">6a935b5f4776e2d0873506f1d16d43c8</block><comment>loop through duty travel requests</comment><connected_to/><decision_table/><display_text/><flow display_value="Get Historical Itinerary">1e935b5f4776e2d0873506f1d16d437e</flow><flow_variables_assigned/><generation_source>text2flow</generation_source><logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition><order>2</order><outputs_assigned/><parent_ui_id/><sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name><sys_created_by>kb.cheung</sys_created_by><sys_created_on>2025-07-23 07:27:25</sys_created_on><sys_id>66935b5f4776e2d0873506f1d16d43c9</sys_id><sys_mod_count>2</sys_mod_count><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_updated_by>kb.cheung</sys_updated_by><sys_updated_on>2025-07-23 07:27:31</sys_updated_on><ui_id>1e935b5f-4f76-e2d0-a922-ae59c36d949b</ui_id><updation_source/><values>H4sIAAAAAAAA/11SXWvjMBD8L3o2xnaOcMlbaSkU7q7Qlr4cxayldSJOlnT6SOoL+e+3imwn9Mne0e7szLAnZmKwMfg3c+e93Gm2/f1RMKkTRv8npmFAtmUy4OBZwQ6gYqrpV0hvFYzvV8SCo+6Ajm1PjO+lEg5nRkEt9Ub0m7ra8FWzXjVV1Xz/VnfrVVc3YgUo1kShoENFrU/Tvi/rw2hT6ZAbJ2bgxzTzsqD0SSKaqmD4GVALpPU9KI8FG0ALCMaNbBtcJMAhiGetxqVjL3XIhgb49PIfbayrKjX2SIb45HYp2ymJDPcPEOCVqHmIbmrleyM5+hyFwB6iCve3WG54tkEanUcCdGqeNioO+ldOgi0EN8FHTyLQJqNJ+uSjf92b48us8lHqSyjTozIc1FJBCE52MSQ9J4YKByJqB7BW6l1rnTnIyzBpGcqdoqLslTnS0nQ0JfAkvKRcoXwk/OECv4OTycVPoqHhc8H86O8VeH/1QiG2f2NSkp1NHtocQxrhTtpwRwsOOMk9f6Q7zNxLplx6kvCWsKf5etPDSBck+S10NO5PEn/Fzv8B9axcmwcDAAA=</values><workflow_reference/></sys_hub_flow_logic_instance_v2><sys_hub_pill_compound action="delete_multiple" query="attached_to=1e935b5f4776e2d0873506f1d16d437e"/><sys_hub_flow_variable action="delete_multiple" query="model=1e935b5f4776e2d0873506f1d16d437e"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_1e935b5f4776e2d0873506f1d16d437e"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_1e935b5f4776e2d0873506f1d16d437e"/><sys_flow_trigger_plan action="delete_multiple" query="plan_id=1e935b5f4776e2d0873506f1d16d437e"/><sys_flow_subflow_plan action="delete_multiple" query="plan_id=1e935b5f4776e2d0873506f1d16d437e"/></record_update>]]></payload>
+        <payload_hash>2029903458</payload_hash>
+        <record_name>Get Historical Itinerary</record_name>
+        <reverted_from/>
+        <source>118cadc7477222d0873506f1d16d436a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-23 07:27:40</sys_created_on>
+        <sys_id>86a35f5f4776e2d0873506f1d16d4332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198362e4adb0000001</sys_recorded_at>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 07:27:40</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>0ea35f5fc576e2d0801058e2bfbcd931</update_guid>
+        <update_guid_history>0ea35f5fc576e2d0801058e2bfbcd931:2029903458,6f93db5f9e76e2d0ca0f04d9ae31b361:-273631527,2e935b5fc876e2d052e596cc8da97ce0:-2059380276,56935b5f5576e2d0504aeb0bb8741282:1249619541</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-23 07:28:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>97d2d035d1814072be536306111a33c4</sys_id>
+        <sys_metadata>1e935b5f4776e2d0873506f1d16d437e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Get Historical Itinerary</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_1e935b5f4776e2d0873506f1d16d437e</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_1e935b5f4776e2d0873506f1d16d437e">86a35f5f4776e2d0873506f1d16d4332</sys_update_version>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-23 07:28:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

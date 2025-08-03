@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_team_member">
+    <sn_aia_team_member action="INSERT_OR_UPDATE">
+        <agent display_value="Historical Itinerary Agent">382800ff47fe66d0873506f1d16d4358</agent>
+        <sys_class_name>sn_aia_team_member</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-24 06:00:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c6694c734732a6d0873506f1d16d43f4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_team_member_c6694c734732a6d0873506f1d16d43f4</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-24 06:00:58</sys_updated_on>
+        <team display_value="Default VA Workflow">046db51eff942210d09effffffffffdb</team>
+    </sn_aia_team_member>
+</record_update>

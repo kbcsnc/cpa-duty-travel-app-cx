@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=46000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>e0b9ab9feb702110f2549bf12a5228e6</copied_from>
+        <copied_from_name>Task Processing Flow Template</copied_from_name>
+        <description>DocDataExtractor Flow Template for processing a task</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>docintel_task_processing_flow__duty_travel__extract_doc_info__process_doc</internal_name>
+        <label_cache>[{"name":"6e1fa36a-f09d-4993-afc2-b4d3ade21307.task_id","label":"1 - DocIntel - Create a Document Task➛Task ID","reference_display":"Task ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7335496-1038-4dd2-8efb-a38349d0513f"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id"},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master_snapshot>3fa4a0b9c30faa10712af5f905013144</master_snapshot>
+        <master_snapshot_digest/>
+        <name>DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>dcab044097bee250fc1cf4ef9153afd5</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a8842879c30faa10712af5f9050131f1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_hub_flow_a8842879c30faa10712af5f9050131f1</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:08:01</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=a8842879c30faa10712af5f9050131f1"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a8842879c30faa10712af5f9050131f1"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_snc_duty_travel_duty_travel_req">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-12 14:33:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dcab044097bee250fc1cf4ef9153afd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-12 14:33:27</sys_updated_on>
+        <table>x_snc_duty_travel_duty_travel_req</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>a8842879c30faa10712af5f9050131f1</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:08:01</sys_created_on>
+        <sys_id>00b4a0b9c30faa10712af5f90501318a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:08:01</sys_updated_on>
+        <trigger display_value="">dcab044097bee250fc1cf4ef9153afd5</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=a8842879c30faa10712af5f9050131f1^sys_idNOT IN00b4a0b9c30faa10712af5f90501318a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=a8842879c30faa10712af5f9050131f1"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=a8842879c30faa10712af5f9050131f1^sys_idNOT IN28846879c30faa10712af5f90501310b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a8842879c30faa10712af5f9050131f1</id>
+        <name>DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc</name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:14</sys_created_on>
+        <sys_id>28846879c30faa10712af5f90501310b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:07:14</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=28846879c30faa10712af5f90501310b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=a8842879c30faa10712af5f9050131f1^sys_idNOT IN60846879c30faa10712af5f905013111,64846879c30faa10712af5f905013117"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc">a8842879c30faa10712af5f9050131f1</model>
+        <model_id>a8842879c30faa10712af5f9050131f1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a8842879c30faa10712af5f9050131f1</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:14</sys_created_on>
+        <sys_id>60846879c30faa10712af5f905013111</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:07:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=60846879c30faa10712af5f905013111"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc">a8842879c30faa10712af5f9050131f1</model>
+        <model_id>a8842879c30faa10712af5f9050131f1</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_a8842879c30faa10712af5f9050131f1</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:14</sys_created_on>
+        <sys_id>64846879c30faa10712af5f905013117</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:07:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=64846879c30faa10712af5f905013117"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=a8842879c30faa10712af5f9050131f1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a8842879c30faa10712af5f9050131f1"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=a8842879c30faa10712af5f9050131f1^sys_idNOT IN28846879c30faa10712af5f905013149"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc">a8842879c30faa10712af5f9050131f1</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:14</sys_created_on>
+        <sys_id>28846879c30faa10712af5f905013149</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:08:00</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VY2W7jNhT9FUFPLeACWmwrytvUyaAG0qR1PO1DkBKURNpCacojUUo8g/x7L7VF1uJ4STp28hJEJH15z+G5C3n3XRWhP5uRcMwjgblLblfR2FPPVc20vCEdmMRxNEPXNWoM+rZDdQMPDOOsr6k9lWGHMFg6xQ4j8O1zQUKO2XS1JDAs5DDieCHnFph7WAThSj0XYUx6Kg2DxZQslgwLWEwxi2AwCD0Squd6T01/ltuAnyeYxfL7EUXcRV4sVkiEOCFs7f+QfIW1nh+B1dVf+U/G3PU9wgXMLHEIZoXc4rvqzn3mhYSr53f3PVWAz2gNkHKdee5LNlzqYtsgmmvqpmFoGjCgO0PT0Q3PxERrY6OGQLSQ8gyXPArCPeKVTDT4Cgn2bjhblSvmQDcYTLl9jPxvYP1Mk+soAVQuyebKT5TTkg2788B3yc1S+AHPRjI/s8mAxQt+nfkvCSUUx0wUhMJIHIE9spQuSydyj+jtPHiYFBt+9nmKLp9kgYtZ+YUFyM6JBYnkUVCfwaGgjJsoiMPU+8nl6GZygf7+NB39djlBk8vb6WQ8ml5eqE8pLvQ1lhYzD3NfUAbnqVTBZ58weYA8XjjgTU+N3NBfik+u8JNCd0+914iCUcA9P+WzEQluMRVVfa2Io3LaBZebwkPTSnm5lV2LIPnn8s9mGGSD20bAqOpxGgHDIcYewR0R4NAOJlrcFC2kVJFtioV8ZJtg6GvaDwqHPMHtGw2LwCPsoqqSTJvI58tYSLYeMBcREgHCnocqPMql4NNL4ZFhe3rDWAhjDluh8iSbEZESXjJ/5UcA9A4yQcFq6gzM06vc5CTmSgBHDn8UNw6BVKEU4UPHCzzLz4L+UUg8JTPXX4JDhBYoWkVoHjtojVFk2We2PuyStuWuMZgGGZi+U9X7J3nKhBFXVNRKv0TVr9/9KPL5rEJviTE9rAbEEh2oXikYzKBGp4X1/pDE1pRQUpNGLcFtEsjWaa+QZZrydJ1Sh1BDsyRTumaC2DVLG2DqmZrmGhsF3wlD1CLgTVLfbokvSmOPbRFp9TMonJe6ZrvIOFmPgdyOITWT59fREbpWqxPmToWi1G02fLG9fF+53cJeIvO6t229ePNSQVnwAPlpjzLhYPffWRjE3KsnUmlT8bnyvEL5KWf+59NKo9WSQYOQbMa7vuJ0UB5cLJ5FVAQw5qtmmcgG9ysIJtUdm/SJBnXAhBLgDGzbcbFBqTW0iKF3yrrVzZMoBC+EUdIWh12Zt1WiSZuydygHP97Bg4pCrtHWkpDNvffk/zAnHAHIEDGZ3hs1YMZ8jxRzh6WIxlbJ8x2uliZ2yBFXudsSOz2z3YFuWa4F2RIyBO0TB+t9Y4Bta2ieDV7CvslZ0cLH/3JvlsVBOtKRPb5kU8f1pHScMo+IELLm7d7ocLhEpL/BmXuV6i8PVEnTVxAq1wH/Zfy8TrklUGXTZ5cT6gWqHc82oKUClXeF2gnEvNHhAdJfYXwNqbzCdJz5R3stqEVYsk5ly2vBPoTu+ZJA+mcDm5rtZYHam3NFN8ajbyG3zE1JZ5Zra9W2jf2kNYWUrVu9+dtDDTWN5abNF9rWj0vKQa1yEcidzyf7OPsh2o60izyk95DeEhTQakm6CBSYUGATxadK7i3xFGeliDmBw2Bwm4INFbn7idWiailuIi9D7V3jzm6fjQ4EhpX8MnBCwF6nuajF0cZ3pha+9usdiGfhwcDsuFLa9UenNkdfwHH0XcTOqSZpy1wbq+Zudus2W+tm5eTXlbJlm/COUb/Zk1mLF0da4e//A+7Di357JQAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=a8842879c30faa10712af5f9050131f1^sys_idNOT INa0846879c30faa10712af5f905013149,e4846879c30faa10712af5f905013147"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Process a Document Task">1ca82b5feb702110f2549bf12a522896</action_type>
+        <action_type_parent display_value="DocIntel - Process a Document Task">5fe85713eb702110f2549bf12a522824</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>1ca82b5feb702110f2549bf12a522896</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc">a8842879c30faa10712af5f9050131f1</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:14</sys_created_on>
+        <sys_id>a0846879c30faa10712af5f905013149</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:11:45</sys_updated_on>
+        <ui_id>62bbfafa-512d-49be-b197-e341f1b0c8cb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41TXW+bMBT9K5WfIQJC0iRvU6NIkbZVWrq+dBW62NeJNWOobdKyKP9914CyaO2kPXJ8ru/5ME8nBtyr2myN82A47jq3FWzF5jPkWTZPsMzTLE0Tmc3yZSnTDGZZtshmLGIq8PgCOWD2Dx5y4hmokJge3M+CZiJ2BN0G5HSaYyphOodYJksR58vlNAbJs7jMxRQEZuk0uZ2Mg+czjQrlGg3d43gDIfygtLBo2OrpOWINWNrm0bLV6a+j/5WroURN1Adae7Ndf2TAd00ALEqk6zmO0Odx8tsVXlsRxKQRwzePRiCpkKAdRqwCI8DXtmMrb1sCLIK4N7q7MA7K+MFlBW9O/aKl0yy62rtirnOFUEXQxq5OijEoYqxr3lZo/M3DwJFr8LCjjdy39hJirTi6ISiBElrt766xgXDfhKcyjHgo9XsBvNZtZb4OgbHLXVd9tY7EYROiCOZGp3J3qF8vuW2U6VMbD3XNQV9RESw/bBTq0OhotOhLihh4b1XZ+iD8xFr18L6qAfyoLNQYkioqaBpl9kVj66PqlZCxarLX9DGRun4lB07tzWT4dyZUI0w2hK97+BGsCul8oWtoOGz8btRLi/2fNeM8XywSGSe3EuKc5zJe5FzEKEBKmS/zkgt2jkKwdxqc+xMmmShe2hDF8BYpXGVUr4BDA6XSync/2iSZClHzIqgq6NVZUlnbvowx9mIoMSzhVjX+E9k44pjw+fk30s9jHBUEAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a0846879c30faa10712af5f905013149"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Create a Document Task">dc85af9beb702110f2549bf12a5228d6</action_type>
+        <action_type_parent display_value="DocIntel - Create a Document Task">bea253dbeb302110f2549bf12a522840</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>dc85af9beb702110f2549bf12a5228d6</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc">a8842879c30faa10712af5f9050131f1</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:14</sys_created_on>
+        <sys_id>e4846879c30faa10712af5f905013147</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2025-08-03 04:04:56</sys_updated_on>
+        <ui_id>6e1fa36a-f09d-4993-afc2-b4d3ade21307</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e4846879c30faa10712af5f905013147"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=a8842879c30faa10712af5f9050131f1"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=a8842879c30faa10712af5f9050131f1"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a8842879c30faa10712af5f9050131f1"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=a8842879c30faa10712af5f9050131f1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a8842879c30faa10712af5f9050131f1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:14</sys_created_on>
+        <sys_id>2c846879c30faa10712af5f905013119</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:07:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_a8842879c30faa10712af5f9050131f1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:07:14</sys_created_on>
+        <sys_id>64846879c30faa10712af5f905013116</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:07:14</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a8842879c30faa10712af5f9050131f1"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a8842879c30faa10712af5f9050131f1"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=31170232000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>e0b9ab9feb702110f2549bf12a5228e6</copied_from>
+        <copied_from_name/>
+        <description>DocDataExtractor Flow Template for processing a task</description>
+        <flow_priority/>
+        <internal_name>docintel_task_processing_flow__duty_travel__extract_doc_info__process_doc</internal_name>
+        <label_cache>[{"name":"6e1fa36a-f09d-4993-afc2-b4d3ade21307.task_id","label":"1 - DocIntel - Create a Document Task➛Task ID","reference_display":"Task ID","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"a7335496-1038-4dd2-8efb-a38349d0513f"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Incident Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"incident","column_name":"sys_id"},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Incident Table","reference":"incident","reference_display":"Incident","type":"table_name","base_type":"table_name","attributes":{"test_input_hidden":"true"}}]</label_cache>
+        <master>true</master>
+        <name>DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc">a8842879c30faa10712af5f9050131f1</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:08:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3fa4a0b9c30faa10712af5f905013144</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:08:00</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=3fa4a0b9c30faa10712af5f905013144"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3fa4a0b9c30faa10712af5f905013144"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=3fa4a0b9c30faa10712af5f905013144"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=3fa4a0b9c30faa10712af5f905013144^sys_idNOT IN7fa4a0b9c30faa10712af5f905013145"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>3fa4a0b9c30faa10712af5f905013144</id>
+        <name>DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc</name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:08:00</sys_created_on>
+        <sys_id>7fa4a0b9c30faa10712af5f905013145</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:08:00</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7fa4a0b9c30faa10712af5f905013145"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=3fa4a0b9c30faa10712af5f905013144^sys_idNOT IN77a4a0b9c30faa10712af5f90501316b,bba4a0b9c30faa10712af5f90501315f"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc">3fa4a0b9c30faa10712af5f905013144</model>
+        <model_id>3fa4a0b9c30faa10712af5f905013144</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3fa4a0b9c30faa10712af5f905013144</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:08:00</sys_created_on>
+        <sys_id>77a4a0b9c30faa10712af5f90501316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:08:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=77a4a0b9c30faa10712af5f90501316b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc">3fa4a0b9c30faa10712af5f905013144</model>
+        <model_id>3fa4a0b9c30faa10712af5f905013144</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_3fa4a0b9c30faa10712af5f905013144</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:08:00</sys_created_on>
+        <sys_id>bba4a0b9c30faa10712af5f90501315f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:08:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bba4a0b9c30faa10712af5f90501315f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=3fa4a0b9c30faa10712af5f905013144"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3fa4a0b9c30faa10712af5f905013144"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=3fa4a0b9c30faa10712af5f905013144^sys_idNOT IN00b4a0b9c30faa10712af5f905013179"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc">3fa4a0b9c30faa10712af5f905013144</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:08:01</sys_created_on>
+        <sys_id>00b4a0b9c30faa10712af5f905013179</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:08:01</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VY2W7jNhT9FUFPLeACWmwrytvUyaAG0qR1PO1DkBKURNpCacojUUo8g/x7L7VF1uJ4STp28hJEJH15z+G5C3n3XRWhP5uRcMwjgblLblfR2FPPVc20vCEdmMRxNEPXNWoM+rZDdQMPDOOsr6k9lWGHMFg6xQ4j8O1zQUKO2XS1JDAs5DDieCHnFph7WAThSj0XYUx6Kg2DxZQslgwLWEwxi2AwCD0Squd6T01/ltuAnyeYxfL7EUXcRV4sVkiEOCFs7f+QfIW1nh+B1dVf+U/G3PU9wgXMLHEIZoXc4rvqzn3mhYSr53f3PVWAz2gNkHKdee5LNlzqYtsgmmvqpmFoGjCgO0PT0Q3PxERrY6OGQLSQ8gyXPArCPeKVTDT4Cgn2bjhblSvmQDcYTLl9jPxvYP1Mk+soAVQuyebKT5TTkg2788B3yc1S+AHPRjI/s8mAxQt+nfkvCSUUx0wUhMJIHIE9spQuSydyj+jtPHiYFBt+9nmKLp9kgYtZ+YUFyM6JBYnkUVCfwaGgjJsoiMPU+8nl6GZygf7+NB39djlBk8vb6WQ8ml5eqE8pLvQ1lhYzD3NfUAbnqVTBZ58weYA8XjjgTU+N3NBfik+u8JNCd0+914iCUcA9P+WzEQluMRVVfa2Io3LaBZebwkPTSnm5lV2LIPnn8s9mGGSD20bAqOpxGgHDIcYewR0R4NAOJlrcFC2kVJFtioV8ZJtg6GvaDwqHPMHtGw2LwCPsoqqSTJvI58tYSLYeMBcREgHCnocqPMql4NNL4ZFhe3rDWAhjDluh8iSbEZESXjJ/5UcA9A4yQcFq6gzM06vc5CTmSgBHDn8UNw6BVKEU4UPHCzzLz4L+UUg8JTPXX4JDhBYoWkVoHjtojVFk2We2PuyStuWuMZgGGZi+U9X7J3nKhBFXVNRKv0TVr9/9KPL5rEJviTE9rAbEEh2oXikYzKBGp4X1/pDE1pRQUpNGLcFtEsjWaa+QZZrydJ1Sh1BDsyRTumaC2DVLG2DqmZrmGhsF3wlD1CLgTVLfbokvSmOPbRFp9TMonJe6ZrvIOFmPgdyOITWT59fREbpWqxPmToWi1G02fLG9fF+53cJeIvO6t229ePNSQVnwAPlpjzLhYPffWRjE3KsnUmlT8bnyvEL5KWf+59NKo9WSQYOQbMa7vuJ0UB5cLJ5FVAQw5qtmmcgG9ysIJtUdm/SJBnXAhBLgDGzbcbFBqTW0iKF3yrrVzZMoBC+EUdIWh12Zt1WiSZuydygHP97Bg4pCrtHWkpDNvffk/zAnHAHIEDGZ3hs1YMZ8jxRzh6WIxlbJ8x2uliZ2yBFXudsSOz2z3YFuWa4F2RIyBO0TB+t9Y4Bta2ieDV7CvslZ0cLH/3JvlsVBOtKRPb5kU8f1pHScMo+IELLm7d7ocLhEpL/BmXuV6i8PVEnTVxAq1wH/Zfy8TrklUGXTZ5cT6gWqHc82oKUClXeF2gnEvNHhAdJfYXwNqbzCdJz5R3stqEVYsk5ly2vBPoTu+ZJA+mcDm5rtZYHam3NFN8ajbyG3zE1JZ5Zra9W2jf2kNYWUrVu9+dtDDTWN5abNF9rWj0vKQa1yEcidzyf7OPsh2o60izyk95DeEhTQakm6CBSYUGATxadK7i3xFGeliDmBw2Bwm4INFbn7idWiailuIi9D7V3jzm6fjQ4EhpX8MnBCwF6nuajF0cZ3pha+9usdiGfhwcDsuFLa9UenNkdfwHH0XcTOqSZpy1wbq+Zudus2W+tm5eTXlbJlm/COUb/Zk1mLF0da4e//A+7Di357JQAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=3fa4a0b9c30faa10712af5f905013144^sys_idNOT IN88b4a0b9c30faa10712af5f905013177,88b4a0b9c30faa10712af5f905013178"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Create a Document Task">dc85af9beb702110f2549bf12a5228d6</action_type>
+        <action_type_parent display_value="DocIntel - Create a Document Task">bea253dbeb302110f2549bf12a522840</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>dc85af9beb702110f2549bf12a5228d6</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc">3fa4a0b9c30faa10712af5f905013144</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:08:01</sys_created_on>
+        <sys_id>88b4a0b9c30faa10712af5f905013177</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:08:01</sys_updated_on>
+        <ui_id>6e1fa36a-f09d-4993-afc2-b4d3ade21307</ui_id>
+        <updation_source/>
+        <values>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</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=88b4a0b9c30faa10712af5f905013177"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="DocIntel - Process a Document Task">1ca82b5feb702110f2549bf12a522896</action_type>
+        <action_type_parent display_value="DocIntel - Process a Document Task">5fe85713eb702110f2549bf12a522824</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>1ca82b5feb702110f2549bf12a522896</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Task Processing Flow - Duty Travel - Extract Doc Info - Process Doc">3fa4a0b9c30faa10712af5f905013144</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:08:01</sys_created_on>
+        <sys_id>88b4a0b9c30faa10712af5f905013178</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:08:01</sys_updated_on>
+        <ui_id>62bbfafa-512d-49be-b197-e341f1b0c8cb</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/41TXW+bMBT9K5WfIQJC0iRvU6NIkbZVWrq+dBW62NeJNWOobdKyKP9914CyaO2kPXJ8ru/5ME8nBtyr2myN82A47jq3FWzF5jPkWTZPsMzTLE0Tmc3yZSnTDGZZtshmLGIq8PgCOWD2Dx5y4hmokJge3M+CZiJ2BN0G5HSaYyphOodYJksR58vlNAbJs7jMxRQEZuk0uZ2Mg+czjQrlGg3d43gDIfygtLBo2OrpOWINWNrm0bLV6a+j/5WroURN1Adae7Ndf2TAd00ALEqk6zmO0Odx8tsVXlsRxKQRwzePRiCpkKAdRqwCI8DXtmMrb1sCLIK4N7q7MA7K+MFlBW9O/aKl0yy62rtirnOFUEXQxq5OijEoYqxr3lZo/M3DwJFr8LCjjdy39hJirTi6ISiBElrt766xgXDfhKcyjHgo9XsBvNZtZb4OgbHLXVd9tY7EYROiCOZGp3J3qF8vuW2U6VMbD3XNQV9RESw/bBTq0OhotOhLihh4b1XZ+iD8xFr18L6qAfyoLNQYkioqaBpl9kVj66PqlZCxarLX9DGRun4lB07tzWT4dyZUI0w2hK97+BGsCul8oWtoOGz8btRLi/2fNeM8XywSGSe3EuKc5zJe5FzEKEBKmS/zkgt2jkKwdxqc+xMmmShe2hDF8BYpXGVUr4BDA6XSync/2iSZClHzIqgq6NVZUlnbvowx9mIoMSzhVjX+E9k44pjw+fk30s9jHBUEAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=88b4a0b9c30faa10712af5f905013178"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=3fa4a0b9c30faa10712af5f905013144"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=3fa4a0b9c30faa10712af5f905013144"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3fa4a0b9c30faa10712af5f905013144"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=3fa4a0b9c30faa10712af5f905013144"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3fa4a0b9c30faa10712af5f905013144</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:08:00</sys_created_on>
+        <sys_id>fba4a0b9c30faa10712af5f905013168</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:08:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_3fa4a0b9c30faa10712af5f905013144</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:08:01</sys_created_on>
+        <sys_id>ffa4a0b9c30faa10712af5f90501316f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:08:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_3fa4a0b9c30faa10712af5f905013144"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_3fa4a0b9c30faa10712af5f905013144"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>a8842879c30faa10712af5f9050131f1</sys_id>
+        <latest_snapshot>3fa4a0b9c30faa10712af5f905013144</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch6-07-17-2025_07-27-2025_1301.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=a8842879c30faa10712af5f9050131f1^sys_idNOT IN48b4a0b9c30faa10712af5f90501318a"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"48b4a0b9c30faa10712af5f90501318a","name":"plan","plan_signature":null}}</plan>
+        <plan_id>a8842879c30faa10712af5f9050131f1</plan_id>
+        <snapshot>f3be4fb64747e2105de26ea3a36d43b3</snapshot>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 13:08:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>48b4a0b9c30faa10712af5f90501318a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 13:08:01</sys_updated_on>
+        <trigger display_value="">dcab044097bee250fc1cf4ef9153afd5</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=a8842879c30faa10712af5f9050131f1"/>
+</record_update>

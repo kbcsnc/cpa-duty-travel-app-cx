@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_snc_duty_travel.HKOWeatherHandler</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description>Implements extension point x_snc_duty_travel.HKOWeatherHandler</description>
+        <mobile_callable>false</mobile_callable>
+        <name>HKOWeatherHandler</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var HKOHandler = Class.create();
+HKOHandler.prototype = {
+    initialize: function() {},
+
+	handles: function (tableName) {
+		return tableName === 'x_snc_duty_travel_duty_travel_req';
+	},
+
+    getHKOWeather: function(lang) {
+		let hkoHTML = "";
+		
+		try {
+			/*var inputs = {};
+			inputs['lang'] = lang;
+			var result = sn_fd.FlowAPI.getRunner().action('x_snc_duty_travel.get_weather_warning_hko').inForeground().withInputs(inputs).run();
+			var outputs = result.getOutputs();
+			var response = outputs['response'];
+			var status = outputs['status'];
+			var generalsituation = outputs['generalsituation'];
+			hkoHTML = generalsituation;*/
+			hkoHTML = "HelloWorld";
+			gs.info('DEBUG: '+hkoHTML);
+			
+		} catch (ex) {
+			var message = ex.getMessage();
+			gs.error(message);
+		}
+
+		return {
+			html: hkoHTML,
+			updatedOn: new GlideDateTime()
+		};
+    },
+
+    type: 'HKOHandler'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-18 07:04:33</sys_created_on>
+        <sys_id>b66ed97947366690873506f1d16d43f7</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>HKOWeatherHandler</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_script_include_b66ed97947366690873506f1d16d43f7</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-18 07:36:50</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>sys_script_include_b66ed97947366690873506f1d16d43f7</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_snc_duty_travel.HKOWeatherHandler&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description&gt;Implements extension point x_snc_duty_travel.HKOWeatherHandler&lt;/description&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;HKOWeatherHandler&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var HKOHandler = Class.create();
+HKOHandler.prototype = {
+    initialize: function() {},
+
+	handles: function (tableName) {
+		return tableName === 'x_snc_duty_travel_duty_travel_req';
+	},
+
+    getHKOWeather: function(lang) {
+		let hkoHTML = "";
+		
+		try {
+			/*var inputs = {};
+			inputs['lang'] = lang;
+			var result = sn_fd.FlowAPI.getRunner().action('x_snc_duty_travel.get_weather_warning_hko').inForeground().withInputs(inputs).run();
+			var outputs = result.getOutputs();
+			var response = outputs['response'];
+			var status = outputs['status'];
+			var generalsituation = outputs['generalsituation'];
+			hkoHTML = generalsituation;*/
+			hkoHTML = "HelloWorld";
+			gs.info('DEBUG: '+hkoHTML);
+			
+		} catch (ex) {
+			var message = ex.getMessage();
+			gs.error(message);
+		}
+
+		return {
+			html: hkoHTML,
+			updatedOn: new GlideDateTime()
+		};
+    },
+
+    type: 'HKOHandler'
+};]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-18 07:04:33&lt;/sys_created_on&gt;&lt;sys_id&gt;b66ed97947366690873506f1d16d43f7&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;HKOWeatherHandler&lt;/sys_name&gt;&lt;sys_package display_value="Duty Travel" source="x_snc_duty_travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_b66ed97947366690873506f1d16d43f7&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-18 07:36:50&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>833039935</payload_hash>
+        <record_name>HKOWeatherHandler</record_name>
+        <reverted_from/>
+        <source>d8f0a2a497be2a50fc1cf4ef9153afcc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-18 07:36:50</sys_created_on>
+        <sys_id>b7c521f947766690873506f1d16d43c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1981c76e5db0000001</sys_recorded_at>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-18 07:36:50</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>3fc521f9797666905ddd9b3f662bf5bf</update_guid>
+        <update_guid_history>3fc521f9797666905ddd9b3f662bf5bf:833039935,8ad3a1319476669087e3f6b47dd00c20:1976056861,fba3a935b07666900ab2cb312df4e65a:-1205262547,1cc2adfd09366690393158633ee12363:-1938121383,ad1f5db9f736669094b8c943f3336a71:2060057916,3e6ed979cc36669033f3d305e072a3fa:-1108226907</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-18 07:44:18</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>37b0b0a38d4a4c00b8ab4957b5240000</sys_id>
+        <sys_metadata>b66ed97947366690873506f1d16d43f7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HKOWeatherHandler</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sys_script_include_b66ed97947366690873506f1d16d43f7</sys_update_name>
+        <sys_update_version display_value="sys_script_include_b66ed97947366690873506f1d16d43f7">b7c521f947766690873506f1d16d43c0</sys_update_version>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-18 07:44:18</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

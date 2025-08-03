@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_snc_duty_travel_duty_travel_req</collection>
+        <condition>current.going_to == current.leaving_from</condition>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Duty Travel - Easter Egg</name>
+        <order>9999</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	current.work_notes = 	'[code]]]>🎉<![CDATA[ <b>“The Infinite Loop” Easter Egg</b> ]]>🎉<![CDATA[<br/><br/>'+
+							'✈️ <i>“You’ve just booked a round trip to nowhere… but hey, sometimes the best journeys are the ones that bring you right back to where you started!”<br/>'+
+							']]>🌀<![CDATA[ “Enjoy your metaphysical voyage. No passport required.”<br/>'+
+							']]>🧳<![CDATA[ “Packing tip: bring everything and nothing.”</i>[/code]';
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 10:17:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7ebcb7e19787e610fc1cf4ef9153afba</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Duty Travel - Easter Egg</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_script_7ebcb7e19787e610fc1cf4ef9153afba</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:35:39</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=7ebcb7e19787e610fc1cf4ef9153afba"/>
+</record_update>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="41d992e397ee2250fc1cf4ef9153af7b" label="Airline" max_length="40" name="x_snc_duty_travel_airline" text_index="true" type="collection">
+        <element display="true" label="Airline" max_length="80" name="airline" type="string"/>
+        <element label="ICAO" max_length="3" name="icao" type="string"/>
+        <element label="IATA" max_length="2" name="iata" type="string"/>
+    </element>
+</database>

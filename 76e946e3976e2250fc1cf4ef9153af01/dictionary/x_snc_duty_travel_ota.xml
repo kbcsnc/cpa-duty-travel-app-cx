@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="05123ab39762e250fc1cf4ef9153afc6" label="Outbound Travel Alert" max_length="40" name="x_snc_duty_travel_ota" type="collection">
+        <element label="Alert description" max_length="4000" name="alert_description" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Travel Recommendations" max_length="2000" name="travel_recommendations" type="string"/>
+        <element label="Country" max_length="32" name="country" reference="core_country" type="reference"/>
+        <element label="Alert type" max_length="32" name="alert" reference="x_snc_duty_travel_ota_definition" type="reference"/>
+        <element label="Additional information" max_length="4000" name="additional_info" type="string"/>
+        <index name="index">
+            <element name="alert"/>
+        </index>
+        <index name="index2">
+            <element name="country"/>
+        </index>
+    </element>
+</database>

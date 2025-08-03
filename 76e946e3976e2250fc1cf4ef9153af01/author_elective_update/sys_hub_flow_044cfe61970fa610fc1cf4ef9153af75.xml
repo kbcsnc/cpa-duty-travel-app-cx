@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes/>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from>9d916bd7eb702110f2549bf12a522855</copied_from>
+        <copied_from_name>Extract Values Flow Template</copied_from_name>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>docintel_extract_values_flow__identify_visa_travel_information__duty_travel__extract_doc_task</internal_name>
+        <label_cache>[{"name":"Updated_1.current.source_record","label":"Trigger - Record Updated➛Document Task Record➛Source Record","reference":"","reference_display":"Source Record","type":"document_id","base_type":"document_id","parent_table_name":"sys_di_task","column_name":"source_record"},{"name":"76d07b30-a860-43a9-8a9a-022006e43fb0.result","label":"1 - Retrieve Extracted Values➛Result","reference_display":"Result","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d4583b94-f4d5-463d-939a-d06b59476a0c"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Document Task Record","reference":"sys_di_task","reference_display":"Document Task","type":"reference","base_type":"reference","attributes":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:31:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>044cfe61970fa610fc1cf4ef9153af75</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_hub_flow_044cfe61970fa610fc1cf4ef9153af75</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:31:43</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=044cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_variable_value action="DELETE" query="document_key=044cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=044cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=044cfe61970fa610fc1cf4ef9153af75^sys_idNOT INcc4cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>044cfe61970fa610fc1cf4ef9153af75</id>
+        <name>DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task</name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:31:43</sys_created_on>
+        <sys_id>cc4cfe61970fa610fc1cf4ef9153af75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:31:43</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=cc4cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_hub_flow_input action="DELETE" query="model=044cfe61970fa610fc1cf4ef9153af75^sys_idNOT IN404cfe61970fa610fc1cf4ef9153af7b,804cfe61970fa610fc1cf4ef9153af7f,c44cfe61970fa610fc1cf4ef9153af82"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task">044cfe61970fa610fc1cf4ef9153af75</model>
+        <model_id>044cfe61970fa610fc1cf4ef9153af75</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:31:43</sys_created_on>
+        <sys_id>404cfe61970fa610fc1cf4ef9153af7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:31:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=404cfe61970fa610fc1cf4ef9153af7b"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task">044cfe61970fa610fc1cf4ef9153af75</model>
+        <model_id>044cfe61970fa610fc1cf4ef9153af75</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:31:43</sys_created_on>
+        <sys_id>804cfe61970fa610fc1cf4ef9153af7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:31:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=804cfe61970fa610fc1cf4ef9153af7f"/>
+    <sys_hub_flow_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task">044cfe61970fa610fc1cf4ef9153af75</model>
+        <model_id>044cfe61970fa610fc1cf4ef9153af75</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:31:43</sys_created_on>
+        <sys_id>c44cfe61970fa610fc1cf4ef9153af82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:31:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=c44cfe61970fa610fc1cf4ef9153af82"/>
+    <sys_hub_flow_output action="DELETE" query="model=044cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=044cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_hub_trigger_instance_v2 action="DELETE" query="flow=044cfe61970fa610fc1cf4ef9153af75^sys_idNOT IN044cfe61970fa610fc1cf4ef9153af9d"/>
+    <sys_hub_trigger_instance_v2 action="DELETE">
+        <comment/>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task">044cfe61970fa610fc1cf4ef9153af75</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:31:43</sys_created_on>
+        <sys_id>044cfe61970fa610fc1cf4ef9153af9d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:31:43</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>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</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="DELETE" query="flow=044cfe61970fa610fc1cf4ef9153af75^sys_idNOT IN8c4cfe61970fa610fc1cf4ef9153af9c,c84cfe61970fa610fc1cf4ef9153af9b"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="DocIntel - Set Field Values">54b8ab5feb702110f2549bf12a5228b6</action_type>
+        <action_type_parent display_value="DocIntel - Set Field Values">89bcd7d3eb702110f2549bf12a5228fc</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>54b8ab5feb702110f2549bf12a5228b6</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task">044cfe61970fa610fc1cf4ef9153af75</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:31:43</sys_created_on>
+        <sys_id>8c4cfe61970fa610fc1cf4ef9153af9c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:31:43</sys_updated_on>
+        <ui_id>85639730-06d1-40d7-b0ff-6be14681c8ae</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VWTW/bOBD9K4HOlkFRki3mtmg2QBe7DRC3uXQLYcQPm7u0pJJUWq+R/96hRTt24TZFG+SyN3M4M3rzZt7Q77cJcK+79nXrPLRcLjbutUguk6qoGG2Yks2c0CwjipYFa1RGoaS0ojyZJDr4yc/eYgYp6nswg3Rob2Etz9/sfuDVdjufCTJvcpJCNSNpkQNLK2CQEkoJmckiVw2ZWukG4x8eMFJo1xvY3P10gh4swvLSJpfbhK+0EVa2yeX7D7EOVjQVNOU36m0YpjDQSIOuv+8Lu7h7umS/6cPNP65r4+nPmOaPxc0bNHVWBFDZJETLVkhEo8A4OUnW0Arwnd0kl94OaLASxE1rNgePlW49pkqC72en/8NPFYSQ4KkkFsjleHs41pHI0ayuwMMCc3M/2OjKV53mCH1HjZAKkMFXx7bR4aYPUzOGeGjMProzw7p9M9KRHBLs+4aWwSEI2YdKA/ZYiFqsuk+3e5TXut2REi9Nx8EcTuC91c3gA55tMui3JwyP5684lkau8Wv1Gvpet8u6t9293n0BAa+nS4OHqTLdJ0Tm9LKdjpqYIvswvUb71c58B1aHUv/CNBgcPvau1R8HuVNMU1JFcpWnnDCRFpyylM0ylZKcgqjoPC+rInmYJG7jXhlw7pEk7E79cQgljpRFcuqR3xDCre79bwjqXkYeHia/qlwP7t/H0Y2nR4W+67F6nORsygeLXTmrw18XljgS1ttziKKAHgf6VEW3R/YoJfpcUsrpqZCwc6ifOgI7p6mrjg9h0i5iKc8ssFMAL6A1tZBg+epaSxN6GQutdx36phKPW3Uqx+NmvYgmmczkjFOV0pywtKioSNm8KFNgFZ9lBWWzYv6kJgPdCELpVu8QcOih0Ub7zd8DIbkQHa8Dqjqu/86+qIrtUvraSo7TfyyeU/N3dD113WBxikff86/tjwQ9tQhK8r1FwOnJIgjoL26fKCquBodT2C6/2guLvTEuhfy5lkL1P31fDyyfSvrA84voWZSKFlUJKWNVjv/6MkgbTkhaZgxkDkJm+KA83xv74QtYr1B/HwsAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=8c4cfe61970fa610fc1cf4ef9153af9c"/>
+    <sys_hub_action_instance_v2 action="DELETE">
+        <action_type display_value="DocIntel - Retrieve Field Values">c6c86f5feb702110f2549bf12a52285d</action_type>
+        <action_type_parent display_value="DocIntel - Retrieve Field Values">295a5b53eb702110f2549bf12a522846</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c6c86f5feb702110f2549bf12a52285d</compiled_snapshot>
+        <display_text/>
+        <flow display_value="DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task">044cfe61970fa610fc1cf4ef9153af75</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:31:43</sys_created_on>
+        <sys_id>c84cfe61970fa610fc1cf4ef9153af9b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:31:43</sys_updated_on>
+        <ui_id>76d07b30-a860-43a9-8a9a-022006e43fb0</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/3VTyW7bMBD9lYJn25AU77cigYEAbQPUSS5JIIzIoU2UohQuTlTD/96hRDgGkt40w8eZt1BPRwbcq8bcGufBcNx27lawNZtmy1VRrSRWi6zI80wWs+mqknkBs6JYFjkbMRVxHtwf+jZQ40d1AB1ieTw+tAI8ijKf8GAtGn860blQrtXQPSYYdVqwNMGjZesj43ulBYHZ+uklrcmAL+dy9h8684xGaKhQE/T+K0a+a2NlUSIN5phaP9Kd3xf9xopIIx8xfPdoBNJ+CdrhiNVgSE5jO7b2NlDDIog7o7szYq+MHxTV8O7UX1p6VYwu9q6Z61wpVJmInU/KZAohbhoeavLqW5Iib8DDljZyH2wyjO8bxdENFgmUELS/vuwNgLs2hjtc8VDpzwR4o0Ntfg1usfOsi2yCI3LYRiuiuKRUbvfN29m3jTK9a+lQNxz0BRTB8v1GoY5ZJqFln9CIgfdWVcFH4kcW1P3nqIbmV2GhxuhUWUPbKrMrW9scVM+EhNWTnaZiInXzRgqc2pnJ8NonFCNMNtS/6duPYFV05yeNoctx44NRrwH7f2El5nm+QBjjcnE1nspMjlfVYjFerOb0LmWxlJKz0ygae63BuQ8zSUT5GqIV/UMkElIZ1TPg0EKltPLdc8iyKyEaXkZWJb06Sywb24eRbC+HEOMSblXrv5OMAyaHTy//AKrXx8THAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=c84cfe61970fa610fc1cf4ef9153af9b"/>
+    <sys_hub_sub_flow_instance_v2 action="DELETE" query="flow=044cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_hub_flow_logic_instance_v2 action="DELETE" query="flow=044cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=044cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_hub_flow_variable action="DELETE" query="model=044cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_documentation action="DELETE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:31:43</sys_created_on>
+        <sys_id>804cfe61970fa610fc1cf4ef9153af7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:31:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:31:43</sys_created_on>
+        <sys_id>884cfe61970fa610fc1cf4ef9153af91</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:31:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:31:43</sys_created_on>
+        <sys_id>c44cfe61970fa610fc1cf4ef9153af81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:31:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_044cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=044cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=044cfe61970fa610fc1cf4ef9153af75"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>sys_hub_flow_044cfe61970fa610fc1cf4ef9153af75</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_flow"&gt;&lt;sys_hub_flow action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;active&gt;false&lt;/active&gt;&lt;annotation/&gt;&lt;attributes/&gt;&lt;authored_on_release_version&gt;27000&lt;/authored_on_release_version&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;compiler_build/&gt;&lt;copied_from&gt;9d916bd7eb702110f2549bf12a522855&lt;/copied_from&gt;&lt;copied_from_name&gt;Extract Values Flow Template&lt;/copied_from_name&gt;&lt;description/&gt;&lt;display_name_after_preview/&gt;&lt;flow_priority/&gt;&lt;generation_source/&gt;&lt;internal_name&gt;docintel_extract_values_flow__identify_visa_travel_information__duty_travel__extract_doc_task&lt;/internal_name&gt;&lt;label_cache&gt;[{"name":"Updated_1.current.source_record","label":"Trigger - Record Updated➛Document Task Record➛Source Record","reference":"","reference_display":"Source Record","type":"document_id","base_type":"document_id","parent_table_name":"sys_di_task","column_name":"source_record"},{"name":"76d07b30-a860-43a9-8a9a-022006e43fb0.result","label":"1 - Retrieve Extracted Values➛Result","reference_display":"Result","type":"json","base_type":"json","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"d4583b94-f4d5-463d-939a-d06b59476a0c"}},{"name":"Updated_1.current","label":"Trigger - Record Updated➛Document Task Record","reference":"sys_di_task","reference_display":"Document Task","type":"reference","base_type":"reference","attributes":{}}]&lt;/label_cache&gt;&lt;latest_snapshot/&gt;&lt;master_snapshot/&gt;&lt;master_snapshot_digest/&gt;&lt;name&gt;DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;pre_compiled&gt;false&lt;/pre_compiled&gt;&lt;remote_trigger_id/&gt;&lt;run_as&gt;system&lt;/run_as&gt;&lt;run_with_roles/&gt;&lt;sc_callable&gt;false&lt;/sc_callable&gt;&lt;show_draft_actions&gt;false&lt;/show_draft_actions&gt;&lt;show_triggered_flows&gt;false&lt;/show_triggered_flows&gt;&lt;status&gt;draft&lt;/status&gt;&lt;substatus/&gt;&lt;sys_class_name&gt;sys_hub_flow&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-30 05:31:43&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;044cfe61970fa610fc1cf4ef9153af75&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Duty Travel" source="x_snc_duty_travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_flow_044cfe61970fa610fc1cf4ef9153af75&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-30 05:31:43&lt;/sys_updated_on&gt;&lt;type&gt;flow&lt;/type&gt;&lt;updation_source/&gt;&lt;version&gt;2&lt;/version&gt;&lt;/sys_hub_flow&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=044cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=044cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_hub_flow_stage action="delete_multiple" query="flow=044cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_flow_cat_variable_model action="delete_multiple" query="id=044cfe61970fa610fc1cf4ef9153af75^sys_idNOT INcc4cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_flow_cat_variable_model action="INSERT_OR_UPDATE"&gt;&lt;id&gt;044cfe61970fa610fc1cf4ef9153af75&lt;/id&gt;&lt;name&gt;DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task&lt;/name&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-30 05:31:43&lt;/sys_created_on&gt;&lt;sys_id&gt;cc4cfe61970fa610fc1cf4ef9153af75&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-30 05:31:43&lt;/sys_updated_on&gt;&lt;/sys_flow_cat_variable_model&gt;&lt;sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=cc4cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_hub_flow_input action="delete_multiple" query="model=044cfe61970fa610fc1cf4ef9153af75^sys_idNOT IN404cfe61970fa610fc1cf4ef9153af7b,804cfe61970fa610fc1cf4ef9153af7f,c44cfe61970fa610fc1cf4ef9153af82"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;table_name&lt;/internal_type&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task"&gt;044cfe61970fa610fc1cf4ef9153af75&lt;/model&gt;&lt;model_id&gt;044cfe61970fa610fc1cf4ef9153af75&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;101&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-30 05:31:43&lt;/sys_created_on&gt;&lt;sys_id&gt;404cfe61970fa610fc1cf4ef9153af7b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-30 05:31:43&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=404cfe61970fa610fc1cf4ef9153af7b"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent&gt;table_name&lt;/dependent&gt;&lt;dependent_on_field&gt;table_name&lt;/dependent_on_field&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;current&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value=""&gt;document_id&lt;/internal_type&gt;&lt;label&gt;Record&lt;/label&gt;&lt;mandatory&gt;true&lt;/mandatory&gt;&lt;max_length&gt;200&lt;/max_length&gt;&lt;model display_value="DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task"&gt;044cfe61970fa610fc1cf4ef9153af75&lt;/model&gt;&lt;model_id&gt;044cfe61970fa610fc1cf4ef9153af75&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-30 05:31:43&lt;/sys_created_on&gt;&lt;sys_id&gt;804cfe61970fa610fc1cf4ef9153af7f&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-30 05:31:43&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;true&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=804cfe61970fa610fc1cf4ef9153af7f"/&gt;&lt;sys_hub_flow_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;4000&lt;/max_length&gt;&lt;model display_value="DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task"&gt;044cfe61970fa610fc1cf4ef9153af75&lt;/model&gt;&lt;model_id&gt;044cfe61970fa610fc1cf4ef9153af75&lt;/model_id&gt;&lt;model_table&gt;sys_hub_flow&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_flow_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-30 05:31:43&lt;/sys_created_on&gt;&lt;sys_id&gt;c44cfe61970fa610fc1cf4ef9153af82&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-30 05:31:43&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_flow_input&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c44cfe61970fa610fc1cf4ef9153af82"/&gt;&lt;sys_hub_flow_output action="delete_multiple" query="model=044cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=044cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=044cfe61970fa610fc1cf4ef9153af75^sys_idNOT IN044cfe61970fa610fc1cf4ef9153af9d"/&gt;&lt;sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;comment/&gt;&lt;display_text/&gt;&lt;flow display_value="DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task"&gt;044cfe61970fa610fc1cf4ef9153af75&lt;/flow&gt;&lt;generation_source/&gt;&lt;name&gt;Updated&lt;/name&gt;&lt;published_version/&gt;&lt;remote_sys_id/&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-30 05:31:43&lt;/sys_created_on&gt;&lt;sys_id&gt;044cfe61970fa610fc1cf4ef9153af9d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_scope/&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-30 05:31:43&lt;/sys_updated_on&gt;&lt;trigger_definition display_value="Updated"&gt;bb695e60c31322002841b63b12d3aea5&lt;/trigger_definition&gt;&lt;trigger_inputs&gt;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&lt;/trigger_inputs&gt;&lt;trigger_outputs/&gt;&lt;trigger_type&gt;record_update&lt;/trigger_type&gt;&lt;updation_source/&gt;&lt;/sys_hub_trigger_instance_v2&gt;&lt;sys_hub_action_instance_v2 action="delete_multiple" query="flow=044cfe61970fa610fc1cf4ef9153af75^sys_idNOT IN8c4cfe61970fa610fc1cf4ef9153af9c,c84cfe61970fa610fc1cf4ef9153af9b"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="DocIntel - Set Field Values"&gt;54b8ab5feb702110f2549bf12a5228b6&lt;/action_type&gt;&lt;action_type_parent display_value="DocIntel - Set Field Values"&gt;89bcd7d3eb702110f2549bf12a5228fc&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;54b8ab5feb702110f2549bf12a5228b6&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task"&gt;044cfe61970fa610fc1cf4ef9153af75&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;2&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-30 05:31:43&lt;/sys_created_on&gt;&lt;sys_id&gt;8c4cfe61970fa610fc1cf4ef9153af9c&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-30 05:31:43&lt;/sys_updated_on&gt;&lt;ui_id&gt;85639730-06d1-40d7-b0ff-6be14681c8ae&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/+VWTW/bOBD9K4HOlkFRki3mtmg2QBe7DRC3uXQLYcQPm7u0pJJUWq+R/96hRTt24TZFG+SyN3M4M3rzZt7Q77cJcK+79nXrPLRcLjbutUguk6qoGG2Yks2c0CwjipYFa1RGoaS0ojyZJDr4yc/eYgYp6nswg3Rob2Etz9/sfuDVdjufCTJvcpJCNSNpkQNLK2CQEkoJmckiVw2ZWukG4x8eMFJo1xvY3P10gh4swvLSJpfbhK+0EVa2yeX7D7EOVjQVNOU36m0YpjDQSIOuv+8Lu7h7umS/6cPNP65r4+nPmOaPxc0bNHVWBFDZJETLVkhEo8A4OUnW0Arwnd0kl94OaLASxE1rNgePlW49pkqC72en/8NPFYSQ4KkkFsjleHs41pHI0ayuwMMCc3M/2OjKV53mCH1HjZAKkMFXx7bR4aYPUzOGeGjMProzw7p9M9KRHBLs+4aWwSEI2YdKA/ZYiFqsuk+3e5TXut2REi9Nx8EcTuC91c3gA55tMui3JwyP5684lkau8Wv1Gvpet8u6t9293n0BAa+nS4OHqTLdJ0Tm9LKdjpqYIvswvUb71c58B1aHUv/CNBgcPvau1R8HuVNMU1JFcpWnnDCRFpyylM0ylZKcgqjoPC+rInmYJG7jXhlw7pEk7E79cQgljpRFcuqR3xDCre79bwjqXkYeHia/qlwP7t/H0Y2nR4W+67F6nORsygeLXTmrw18XljgS1ttziKKAHgf6VEW3R/YoJfpcUsrpqZCwc6ifOgI7p6mrjg9h0i5iKc8ssFMAL6A1tZBg+epaSxN6GQutdx36phKPW3Uqx+NmvYgmmczkjFOV0pywtKioSNm8KFNgFZ9lBWWzYv6kJgPdCELpVu8QcOih0Ub7zd8DIbkQHa8Dqjqu/86+qIrtUvraSo7TfyyeU/N3dD113WBxikff86/tjwQ9tQhK8r1FwOnJIgjoL26fKCquBodT2C6/2guLvTEuhfy5lkL1P31fDyyfSvrA84voWZSKFlUJKWNVjv/6MkgbTkhaZgxkDkJm+KA83xv74QtYr1B/HwsAAA==&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=8c4cfe61970fa610fc1cf4ef9153af9c"/&gt;&lt;sys_hub_action_instance_v2 action="INSERT_OR_UPDATE"&gt;&lt;action_type display_value="DocIntel - Retrieve Field Values"&gt;c6c86f5feb702110f2549bf12a52285d&lt;/action_type&gt;&lt;action_type_parent display_value="DocIntel - Retrieve Field Values"&gt;295a5b53eb702110f2549bf12a522846&lt;/action_type_parent&gt;&lt;attributes/&gt;&lt;comment/&gt;&lt;compiled_snapshot&gt;c6c86f5feb702110f2549bf12a52285d&lt;/compiled_snapshot&gt;&lt;display_text/&gt;&lt;flow display_value="DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task"&gt;044cfe61970fa610fc1cf4ef9153af75&lt;/flow&gt;&lt;generation_source/&gt;&lt;order&gt;1&lt;/order&gt;&lt;parent_ui_id/&gt;&lt;sys_class_name&gt;sys_hub_action_instance_v2&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-30 05:31:43&lt;/sys_created_on&gt;&lt;sys_id&gt;c84cfe61970fa610fc1cf4ef9153af9b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-30 05:31:43&lt;/sys_updated_on&gt;&lt;ui_id&gt;76d07b30-a860-43a9-8a9a-022006e43fb0&lt;/ui_id&gt;&lt;updation_source/&gt;&lt;values&gt;H4sIAAAAAAAA/3VTyW7bMBD9lYJn25AU77cigYEAbQPUSS5JIIzIoU2UohQuTlTD/96hRDgGkt40w8eZt1BPRwbcq8bcGufBcNx27lawNZtmy1VRrSRWi6zI80wWs+mqknkBs6JYFjkbMRVxHtwf+jZQ40d1AB1ieTw+tAI8ijKf8GAtGn860blQrtXQPSYYdVqwNMGjZesj43ulBYHZ+uklrcmAL+dy9h8684xGaKhQE/T+K0a+a2NlUSIN5phaP9Kd3xf9xopIIx8xfPdoBNJ+CdrhiNVgSE5jO7b2NlDDIog7o7szYq+MHxTV8O7UX1p6VYwu9q6Z61wpVJmInU/KZAohbhoeavLqW5Iib8DDljZyH2wyjO8bxdENFgmUELS/vuwNgLs2hjtc8VDpzwR4o0Ntfg1usfOsi2yCI3LYRiuiuKRUbvfN29m3jTK9a+lQNxz0BRTB8v1GoY5ZJqFln9CIgfdWVcFH4kcW1P3nqIbmV2GhxuhUWUPbKrMrW9scVM+EhNWTnaZiInXzRgqc2pnJ8NonFCNMNtS/6duPYFV05yeNoctx44NRrwH7f2El5nm+QBjjcnE1nspMjlfVYjFerOb0LmWxlJKz0ygae63BuQ8zSUT5GqIV/UMkElIZ1TPg0EKltPLdc8iyKyEaXkZWJb06Sywb24eRbC+HEOMSblXrv5OMAyaHTy//AKrXx8THAwAA&lt;/values&gt;&lt;/sys_hub_action_instance_v2&gt;&lt;sys_hub_alias_mapping action="delete_multiple" query="source_id=c84cfe61970fa610fc1cf4ef9153af9b"/&gt;&lt;sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=044cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=044cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=044cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_hub_flow_variable action="delete_multiple" query="model=044cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;table_name&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Table Name&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-30 05:31:43&lt;/sys_created_on&gt;&lt;sys_id&gt;804cfe61970fa610fc1cf4ef9153af7e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Duty Travel" source="x_snc_duty_travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-30 05:31:43&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;changed_fields&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Changed Fields&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-30 05:31:43&lt;/sys_created_on&gt;&lt;sys_id&gt;884cfe61970fa610fc1cf4ef9153af91&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Duty Travel" source="x_snc_duty_travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-30 05:31:43&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;current&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Record&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-30 05:31:43&lt;/sys_created_on&gt;&lt;sys_id&gt;c44cfe61970fa610fc1cf4ef9153af81&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Duty Travel" source="x_snc_duty_travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-30 05:31:43&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_044cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_044cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_flow_trigger_plan action="delete_multiple" query="plan_id=044cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;sys_flow_subflow_plan action="delete_multiple" query="plan_id=044cfe61970fa610fc1cf4ef9153af75"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>885666544</payload_hash>
+        <record_name>DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task</record_name>
+        <reverted_from/>
+        <source>118cadc7477222d0873506f1d16d436a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:31:43</sys_created_on>
+        <sys_id>d44cfe61970fa610fc1cf4ef9153afb5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19859d0a8d10000001</sys_recorded_at>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:31:43</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>4c4cfe613c0fa610987be666224ebfb4</update_guid>
+        <update_guid_history>4c4cfe613c0fa610987be666224ebfb4:885666544,8c4cfe61c60fa6105431464d7a19ad78:528993688</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:51:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>0588ef48953f42bb9a4b9be5ea574e89</sys_id>
+        <sys_metadata>044cfe61970fa610fc1cf4ef9153af75</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DocIntel Extract Values Flow - Identify visa travel information - Duty Travel - Extract Doc Task</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_044cfe61970fa610fc1cf4ef9153af75</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_044cfe61970fa610fc1cf4ef9153af75">d44cfe61970fa610fc1cf4ef9153afb5</sys_update_version>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:51:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

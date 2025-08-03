@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_one_extend_definition_config">
+    <sys_one_extend_definition_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <capability display_value="741c1da497362a50fc1cf4ef9153afcb_Get Jou">468ed5e897362a50fc1cf4ef9153afa6</capability>
+        <default>true</default>
+        <definition display_value="741c1da497362a50fc1cf4ef9153afcb_Get Journal Entries">428ed12c97362a50fc1cf4ef9153afbc</definition>
+        <enable_large_input_support>false</enable_large_input_support>
+        <sys_class_name>sys_one_extend_definition_config</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 09:52:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>968ed12c97362a50fc1cf4ef9153afbd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_one_extend_definition_config_968ed12c97362a50fc1cf4ef9153afbd</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-14 09:52:38</sys_updated_on>
+    </sys_one_extend_definition_config>
+</record_update>

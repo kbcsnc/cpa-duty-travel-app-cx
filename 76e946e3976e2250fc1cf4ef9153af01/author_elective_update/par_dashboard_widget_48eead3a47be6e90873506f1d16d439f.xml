@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">62e0fe7f9722e250fc1cf4ef9153af4e</canvas>
+        <component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component>
+        <component_props>{"filterId":"1j0m9m8s2u2knaa47aog","filterName":"Label","filterComponentType":"singleselect","datasource":null,"targets":null,"allowedDateRanges":null,"defaultSelectedItems":[],"cascadingConfig":null,"defaultSelectedDateRange":{"range":""},"defaultDateStart":null,"defaultDateEnd":null,"allowTimeSelection":null,"dateFilterView":"calendar-reldates","defaultBoolean":null,"sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","booleanLabelTrue":null,"booleanLabelFalse":null,"enableResetToDefault":null,"enableClearFilter":true,"primaryActionLabel":"Apply","maxElements":500,"filterConfigurations":"@state.parFilters","filterProperties":null,"cascadeScope":"6ae0fe7f9722e250fc1cf4ef9153af25","isDashboard":true,"isGroup":false,"id":"isShowSelectedValueInPill","value":true,"noDebounce":true,"propLabel":"Show values in pill","metaForCollated":{"isFromScriptedPolicy":true,"isExternalProp":false,"isOverridingPreset":null}}</component_props>
+        <h>4</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-21 10:50:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>48eead3a47be6e90873506f1d16d439f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>par_dashboard_widget_48eead3a47be6e90873506f1d16d439f</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-21 10:50:23</sys_updated_on>
+        <visualization/>
+        <w>7</w>
+        <widget_props/>
+        <x>19</x>
+        <y>50</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>par_dashboard_widget_48eead3a47be6e90873506f1d16d439f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">62e0fe7f9722e250fc1cf4ef9153af4e</canvas><component display_value="Filter">226449101138d0dff1abe0e1566c8b2a</component><component_props>{"filterId":"1j0m9m8s2u2knaa47aog","filterName":"Label","filterComponentType":"singleselect","datasource":null,"targets":null,"allowedDateRanges":null,"defaultSelectedItems":[],"cascadingConfig":null,"defaultSelectedDateRange":{"range":""},"defaultDateStart":null,"defaultDateEnd":null,"allowTimeSelection":null,"dateFilterView":"calendar-reldates","defaultBoolean":null,"sort":"ASC","filterElementType":"pill","isShowSelectedValueInPill":true,"filterElementLayout":"vertical","booleanLabelTrue":null,"booleanLabelFalse":null,"enableResetToDefault":null,"enableClearFilter":true,"primaryActionLabel":"Apply","maxElements":500,"filterConfigurations":"@state.parFilters","filterProperties":null,"cascadeScope":"6ae0fe7f9722e250fc1cf4ef9153af25","isDashboard":true,"isGroup":false,"id":"isShowSelectedValueInPill","value":true,"noDebounce":true,"propLabel":"Show values in pill","metaForCollated":{"isFromScriptedPolicy":true,"isExternalProp":false,"isOverridingPreset":null}}</component_props><h>4</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>kb.cheung</sys_created_by><sys_created_on>2025-07-21 10:50:23</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>48eead3a47be6e90873506f1d16d439f</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package><sys_policy/><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_update_name>par_dashboard_widget_48eead3a47be6e90873506f1d16d439f</sys_update_name><sys_updated_by>kb.cheung</sys_updated_by><sys_updated_on>2025-07-21 10:50:23</sys_updated_on><visualization/><w>7</w><widget_props/><x>19</x><y>50</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-1672590093</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d8f0a2a497be2a50fc1cf4ef9153afcc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-21 10:50:23</sys_created_on>
+        <sys_id>4ceead3a47be6e90873506f1d16d43a1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1982c9b2ac30000001</sys_recorded_at>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-21 10:50:23</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>40eead3a2fbe6e909cb8683f43e750a1</update_guid>
+        <update_guid_history>40eead3a2fbe6e909cb8683f43e750a1:-1672590093</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">040fa57a47be6e90873506f1d16d43c4</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-21 10:50:55</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>1cca0723f83949588984febd51143710</sys_id>
+        <sys_metadata>48eead3a47be6e90873506f1d16d439f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_48eead3a47be6e90873506f1d16d439f</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_48eead3a47be6e90873506f1d16d439f">4ceead3a47be6e90873506f1d16d43a1</sys_update_version>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-21 10:50:55</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

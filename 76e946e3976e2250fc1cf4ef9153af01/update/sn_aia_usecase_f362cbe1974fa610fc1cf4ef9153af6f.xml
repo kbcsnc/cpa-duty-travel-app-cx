@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_usecase">
+    <sn_aia_usecase action="INSERT_OR_UPDATE">
+        <applicability_script/>
+        <base_plan>This agentic workflow specializes in evaluating and processing duty travel requests efficiently and accurately.
+1. Review submitted duty travel details for completeness and accuracy.
+2. Check destination for current travel alerts or advisories.
+3. Analyze the traveler's historical travel request approval status.
+4. Align request information with company travel policies and guidelines, resolution steps should be within 50 words. 
+5. Make an AI-driven decision to approve, reject, or escalate the request for executive approval.</base_plan>
+        <description>This workflow automates the review and decision-making process for duty travel requests. It is designed for travel coordinators and approvers, ensuring requests comply with company policies and safety alerts while considering the traveler's history.</description>
+        <execution_mode>copilot</execution_mode>
+        <internal_name>global.x_snc_duty_travel.Duty Travel Fulfillment</internal_name>
+        <name>Duty Travel Fulfillment</name>
+        <parent/>
+        <record_type>custom</record_type>
+        <source_id/>
+        <strategy display_value="ReActive Planner">b264c470ff1022106c36ffffffffff67</strategy>
+        <sys_class_name>sn_aia_usecase</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 06:07:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>f362cbe1974fa610fc1cf4ef9153af6f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Duty Travel Fulfillment</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_usecase_f362cbe1974fa610fc1cf4ef9153af6f</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 10:03:21</sys_updated_on>
+        <team display_value="Duty Travel Fulfillment">7f748369974fa610fc1cf4ef9153af44</team>
+    </sn_aia_usecase>
+</record_update>

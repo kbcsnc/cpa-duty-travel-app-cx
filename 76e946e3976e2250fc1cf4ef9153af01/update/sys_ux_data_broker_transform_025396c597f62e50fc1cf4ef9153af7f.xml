@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_snc_duty_travel.Get AI Summary for Record</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description/>
+        <mutates_server_data>true</mutates_server_data>
+        <name>Get AI Summary for Record</name>
+        <output_schema>{&#13;
+ "html": "The customer is experiencing issues with logging into the server, with a priority level of 3 and a state of 1.",&#13;
+ "updatedOn": "2025-07-07 01:08:34"&#13;
+}</output_schema>
+        <private>false</private>
+        <props>[{&#13;
+  "name": "table",&#13;
+  "label": "Table",&#13;
+  "fieldType": "string",&#13;
+  "mandatory": true&#13;
+},&#13;
+{&#13;
+  "name": "sysId",&#13;
+  "label": "Sys ID",&#13;
+  "fieldType": "string",&#13;
+  "mandatory": true&#13;
+}]</props>
+        <required_translations>[ {
+  "message" : "Sys ID",
+  "comment" : ""
+}, {
+  "message" : "Table",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+	var sysId = input.sysId;
+	var table = input.table;
+
+	var result = {};
+
+	try {
+		var eps = new GlideScriptedExtensionPoint().getExtensions("NowAssistSummaryHandler");
+		eps.some(function (ePoint) {
+			if (ePoint.handles(table)) {
+				result = ePoint.getSummaryFor(table, sysId);
+			}
+		});
+	} catch (ex) {
+		gs.error("Error running NowAssistSummaryHandler extension points");
+	}
+
+	return result;
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-16 03:01:28</sys_created_on>
+        <sys_id>025396c597f62e50fc1cf4ef9153af7f</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Get AI Summary for Record</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_025396c597f62e50fc1cf4ef9153af7f</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-20 09:24:08</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=025396c597f62e50fc1cf4ef9153af7f"/>
+</record_update>

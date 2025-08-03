@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_usecase">
+    <sn_aia_usecase action="INSERT_OR_UPDATE">
+        <applicability_script/>
+        <base_plan>This agentic workflow specializes in automating and optimizing employee duty travel requests.
+1. Check if a destination port is provided in the travel request.
+2. If no destination is provided, analyse the traveller’s past itineraries to identify the top three most frequently requested destinations by volume, then select and present only the single most requested destination as the justified recommendation for this duty travel request, without disclosing the full list or any additional data.
+3. Prompt the traveller to confirm if they want to proceed with the suggested destination.
+4. If a destination is provided, check for any outbound travel alerts related to that location and present them to the traveller.
+5. If travel alerts are present, do not repeat any prior step that presents alert details and never display the alert content; instead, pause and explicitly ask the traveller to confirm whether they still wish to proceed with using the destination port, and only continue if confirmation is received.
+6. Check historical itinerary for the traveller and identify travel configurations for cabin class, business justification, departure location, trip type, and airline.
+7. You will use the information gathered in step 6 as a suggestive duty travel booking configuration based on the patterns discovered. 
+8. You will present the suggested booking configuration from step 7 in a summary back to the traveller and confirm if the trip type suggested is OK, based on the trip type, ask for the departure and return dates where necessary as you would not use historical itineraries to determine these dates.
+9. Always prompt the traveller to confirm whether the request is ready for submission, and never auto-submit under any circumstance; only proceed with submission after explicit confirmation, then present a summary of the submitted request to the traveller.
+10. Separately and only when step 9 is done and submitted, ask the traveller if they wish to send the travel request for approval as a next step after the submission.
+11. Once the approval request is sent, present the summary to traveller and complete the workflow.</base_plan>
+        <description>This workflow streamlines the process of requesting duty travel for employees. It intelligently suggests destinations based on travel history, checks for travel alerts, books travel, and manages approval requests. Designed for employees needing to arrange official travel efficiently.</description>
+        <execution_mode>copilot</execution_mode>
+        <internal_name>global.x_snc_duty_travel.Duty Travel Request</internal_name>
+        <name>Duty Travel Request</name>
+        <parent/>
+        <record_type>custom</record_type>
+        <source_id/>
+        <strategy display_value="ReActive Planner">b264c470ff1022106c36ffffffffff67</strategy>
+        <sys_class_name>sn_aia_usecase</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-22 07:26:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e039028f477622d0873506f1d16d431f</sys_id>
+        <sys_mod_count>47</sys_mod_count>
+        <sys_name>Duty Travel Request</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_usecase_e039028f477622d0873506f1d16d431f</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-29 12:39:33</sys_updated_on>
+        <team display_value="Duty Travel Request">d2e90a8f477622d0873506f1d16d434f</team>
+    </sn_aia_usecase>
+</record_update>

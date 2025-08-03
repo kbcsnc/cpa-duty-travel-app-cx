@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="51235a6797ae2250fc1cf4ef9153af44" label="Ports" max_length="40" name="x_snc_duty_travel_ports" text_index="true" type="collection">
+        <element calculation="var city = current.city.toString();&#10;var iata = current.iata.toString();&#10;&#10;if (city &amp;&amp; iata) {&#10;&#9;current.port = city + ', (' + iata + ')';&#10;} else {&#10;&#9;current.port = '';&#10;}" display="true" label="Port" max_length="100" name="port" read_only="true" type="string"/>
+        <element label="Country" max_length="32" name="country" reference="core_country" type="reference"/>
+        <element label="Location" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element label="IATA" max_length="3" name="iata" type="string"/>
+        <element label="City" max_length="80" name="city" type="string"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+        <index name="index2">
+            <element name="location"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="Task table schema" source="com.glide.task">7068bc961b002110a5b96461f54bcbec</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-11 10:53:24</sys_created_on>
+        <sys_id>f3df14b5c3cbaa10712af5f9050131d8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-11 10:53:24</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

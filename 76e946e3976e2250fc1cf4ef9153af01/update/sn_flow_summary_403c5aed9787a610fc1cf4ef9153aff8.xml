@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_flow_summary">
+    <sn_flow_summary action="INSERT_OR_UPDATE">
+        <document>d55a35299783a610fc1cf4ef9153af3b</document>
+        <document_table>sys_hub_flow</document_table>
+        <domain>global</domain>
+        <generation_source/>
+        <summary>This subflow, named "[AI] Retrieve Traveller Request and Approval Trends", is designed to retrieve and analyze duty travel requests for a specified traveller. 
+
+It takes a single input, the traveller, as a reference to a user record. 
+
+The subflow looks up all approved and rejected duty travel requests for the specified traveller and counts the number of requests in each state. It then lists all the approved and rejected countries for the traveller and counts the number of requests for each country. 
+
+The subflow outputs the count of approved and rejected requests, as well as the approved and rejected countries in JSON format, with each country and its corresponding request count. 
+
+The purpose of this subflow is to provide insights into the traveller's request and approval trends, which can be useful for analysis and reporting purposes.</summary>
+        <sys_class_name>sn_flow_summary</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 03:11:38</sys_created_on>
+        <sys_id>403c5aed9787a610fc1cf4ef9153aff8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>This subflow, named "[AI] Retrieve Traveller Request and Approval Trends", is designed to retrieve and analyze duty travel requests for a specified traveller. 
+
+It takes a single input, the traveller, as a reference to a user record. 
+
+The subflow looks u</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_flow_summary_403c5aed9787a610fc1cf4ef9153aff8</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:11:38</sys_updated_on>
+        <updation_source/>
+    </sn_flow_summary>
+    <sys_translated_text action="delete_multiple" query="documentkey=403c5aed9787a610fc1cf4ef9153aff8"/>
+</record_update>

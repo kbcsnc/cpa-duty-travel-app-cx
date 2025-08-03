@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Duty Travel Request Record Page">2de07e7f9722e250fc1cf4ef9153af5b</macroponent>
+        <name>label_value_stacked_2/items</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+  var leaving_from = api.data.dt_req.result.leaving_from.displayValue;
+  var going_to = api.data.dt_req.result.going_to.displayValue;
+  var trip_type = api.data.dt_req.result.trip_type.displayValue;
+  var cabin = api.data.dt_req.result.cabin_class.displayValue;
+
+  return [
+  {
+    "label": "Leaving from",
+    "value": {
+      "type": "string",
+      "value": leaving_from
+    }
+  },
+  {
+    "label": "Going to",
+    "value": {
+      "type": "string",
+      "value": going_to
+    }
+  },
+  {
+    "label": "Trip type",
+    "value": {
+      "type": "string",
+      "value": trip_type
+    }
+  },
+  {
+    "label": "Cabin class",
+    "value": {
+      "type": "string",
+      "value": cabin
+    }
+  }];
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-14 14:10:15</sys_created_on>
+        <sys_id>9d129a68973e2a50fc1cf4ef9153af69</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>label_value_stacked_2/items</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_ux_client_script_9d129a68973e2a50fc1cf4ef9153af69</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-15 06:18:50</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

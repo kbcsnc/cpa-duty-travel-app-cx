@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_di_key">
+    <sys_di_key action="DELETE">
+        <active>true</active>
+        <additional_details/>
+        <description>The address this visa application is from.</description>
+        <display_name>Address</display_name>
+        <group_index>0</group_index>
+        <key_config/>
+        <key_group/>
+        <mandatory>true</mandatory>
+        <metadata/>
+        <name>address</name>
+        <order>0</order>
+        <prediction_method>e3e501183d051210f877ad8c34c5c40d</prediction_method>
+        <stp_threshold/>
+        <synonym/>
+        <sys_class_name>sys_di_key</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 04:43:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5b113aa1978ba610fc1cf4ef9153af07</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Address</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_di_key_5b113aa1978ba610fc1cf4ef9153af07</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:10:36</sys_updated_on>
+        <target_field>business_justification</target_field>
+        <target_table>x_snc_duty_travel_duty_travel_req</target_table>
+        <task_definition display_value="Extract Document Information">dd3ea66d974ba610fc1cf4ef9153af9c</task_definition>
+        <total_used_positive_samples>0</total_used_positive_samples>
+        <type>Text</type>
+    </sys_di_key>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>62cb0508db73f41052cec59705961900</instance_id>
+        <instance_name>demon</instance_name>
+        <name>sys_di_key_5b113aa1978ba610fc1cf4ef9153af07</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_di_key"><sys_di_key action="INSERT_OR_UPDATE"><active>true</active><additional_details/><description>The address this visa application is from.</description><display_name>Address</display_name><group_index>0</group_index><key_config/><key_group/><mandatory>true</mandatory><metadata/><name>address</name><order>0</order><prediction_method>e3e501183d051210f877ad8c34c5c40d</prediction_method><stp_threshold/><synonym/><sys_class_name>sys_di_key</sys_class_name><sys_created_by>kb.cheung</sys_created_by><sys_created_on>2025-07-30 04:43:03</sys_created_on><sys_domain>global</sys_domain><sys_id>5b113aa1978ba610fc1cf4ef9153af07</sys_id><sys_mod_count>5</sys_mod_count><sys_name>Address</sys_name><sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package><sys_policy/><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_update_name>sys_di_key_5b113aa1978ba610fc1cf4ef9153af07</sys_update_name><sys_updated_by>kb.cheung</sys_updated_by><sys_updated_on>2025-07-30 05:10:36</sys_updated_on><target_field>business_justification</target_field><target_table>x_snc_duty_travel_duty_travel_req</target_table><task_definition display_value="Extract Document Information">dd3ea66d974ba610fc1cf4ef9153af9c</task_definition><total_used_positive_samples>0</total_used_positive_samples><type>Text</type></sys_di_key></record_update>]]></payload>
+        <payload_hash>1096834294</payload_hash>
+        <record_name>Address</record_name>
+        <reverted_from/>
+        <source>118cadc7477222d0873506f1d16d436a</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:10:36</sys_created_on>
+        <sys_id>f26732a597cba610fc1cf4ef9153af25</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19859bd51a00000001</sys_recorded_at>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:10:36</sys_updated_on>
+        <type>Field</type>
+        <update_guid>7a6732a504cba61037ea2ff6d26ade24</update_guid>
+        <update_guid_history>7a6732a504cba61037ea2ff6d26ade24:1096834294,95d6362539cba6103addba43141d1214:-1586873451,fd9676e1eecba6103746be1608d1805a:1992021111,e306fe21a0cba610173ffdb74c8cc062:-1399808741,bb61fe25a38ba61088a6d960a0618908:11926422,db11b625378ba610f17bac9d3ca9ac85:257630085</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 05:48:49</sys_created_on>
+        <sys_db_object display_value="" name="sys_di_key">sys_di_key</sys_db_object>
+        <sys_id>00d6dc276a99434894ce85eacaf60510</sys_id>
+        <sys_metadata>5b113aa1978ba610fc1cf4ef9153af07</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Address</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sys_di_key_5b113aa1978ba610fc1cf4ef9153af07</sys_update_name>
+        <sys_update_version display_value="sys_di_key_5b113aa1978ba610fc1cf4ef9153af07">f26732a597cba610fc1cf4ef9153af25</sys_update_version>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:48:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

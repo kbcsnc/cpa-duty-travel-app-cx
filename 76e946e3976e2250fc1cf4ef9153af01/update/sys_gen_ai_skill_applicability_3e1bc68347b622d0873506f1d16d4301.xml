@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill_applicability">
+    <sys_gen_ai_skill_applicability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <condition_mode>simple</condition_mode>
+        <condition_script><![CDATA[(function executeCondition(/* glide record */ current) {   
+	// customize condition logic here, return true or false   
+	return false;
+})(current);]]></condition_script>
+        <context_profile/>
+        <roles>now_assist_panel_user</roles>
+        <skill_id display_value="This workflow streamlines the process of requesting duty travel for employees. It intelligently suggests destinations based on travel history, checks for travel alerts, books travel, and manages approval requests. Designed for employees needing to arrange official travel efficiently.">ca1b828347b622d0873506f1d16d437d</skill_id>
+        <sys_class_name>sys_gen_ai_skill_applicability</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-22 07:32:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3e1bc68347b622d0873506f1d16d4301</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>ca1b828347b622d0873506f1d16d437d</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_gen_ai_skill_applicability_3e1bc68347b622d0873506f1d16d4301</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-24 06:03:02</sys_updated_on>
+    </sys_gen_ai_skill_applicability>
+</record_update>

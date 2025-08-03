@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_notification_va_content">
+    <sys_notification_va_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <consumer_account_contexts>e31471d9531121103296ddeeff7b1231</consumer_account_contexts>
+        <customize_header>false</customize_header>
+        <delivery_channels>004a8122eb832010ad88ca5d235228bb,37263ba673b210104049dec2c4f6a77d,51cdaa4c53a710105893ddeeff7b129c,711ec1fc532302103579c47e20e5e6df,805a8122eb832010ad88ca5d235228e1,8ca0544053d110102f40ddeeff7b12be,b023fcb3537321106167ddeeff7b12a8,d257e4e9c3d310106c9a5230d840ddd2,e8638a9ca3e382106a24d78446fcdab4,ea0cb816732110104a905ee515f6a7b5,f8725fff737b5210563be3d29f148b6a,a9267f50ff1d2210d635ffffffffffb5</delivery_channels>
+        <fields>duty_travel_req,alert,travel_recommendations</fields>
+        <header_customization_script><![CDATA[(function getRecordCardCustomization(
+    /*GlideRecord of record changed to cause notification*/ target,
+    /*GlideRecord of event triggered to cause notification*/ event,
+    /*Recipient Table Name*/ recipientTable,
+    /*Recipient Sys Id*/ recipientSysId) {
+    
+    return { cardHeading: '', cardLinkText: '', cardLinkUrl: '' };
+    
+})(target, event, recipientTable, recipientSysId);]]></header_customization_script>
+        <image_alt_text/>
+        <image_source>upload_image</image_source>
+        <image_url/>
+        <is_default>false</is_default>
+        <message><![CDATA[Outbound Travel Alert Type: ${ota.alert.alert_description}
+
+Outbound Travel Alert Alert description: ${ota.alert_description}
+
+Outbound Travel Alert Travel Recommendations: ${ota.travel_recommendations}]]></message>
+        <message_heading><![CDATA[Your Duty Travel Request ${duty_travel_req} Destination Alert!
+]]></message_heading>
+        <name>Duty Travel Alerts and Recommendations</name>
+        <notification display_value="Duty Travel Alerts and Recommendations">f0ad128397b6ea90fc1cf4ef9153af18</notification>
+        <notification_image/>
+        <script><![CDATA[(function getNotificationHeadingAndMessage(
+    /*GlideRecord of record changed to cause notification*/ target,
+    /*GlideRecord of event triggered to cause notification*/ event,
+    /*Recipient Table Name*/ recipientTable,
+    /*Recipient Sys Id*/ recipientSysId,
+    /* VANotificationRuntimeContext */ vaNotificationRuntimeContext) {
+    
+    // var arrayEventParam = event.parm1.split(',');
+    // var jsonEventParam = JSON.parse(event.parm2);
+    //
+    // var recipient = new GlideRecord(recipientTable);
+    // recipient.get(recipientSysId);
+    // var messageContent = 'Dear ' + recipient.first_name + ', \r\n';
+    // messageContent += 'Use markdown in message content for ***formatted message***.';
+    //
+    // var notificationSysId = vaNotificationRuntimeContext.notificationSysId;
+    // var destinationTypeSysId = vaNotificationRuntimeContext.destinationTypeSysId;
+    //
+    // Return object using the below format (messageHeading is optional and messageContent is required)
+    
+    return { messageHeading: 'formattedMessageHeading', messageContent: 'formattedMessageContent' };
+    
+})(target, event, recipientTable, recipientSysId, vaNotificationRuntimeContext);]]></script>
+        <send_link>true</send_link>
+        <sys_class_name>sys_notification_va_content</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-22 12:45:24</sys_created_on>
+        <sys_id>d9a1570b973eea90fc1cf4ef9153afb3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Duty Travel Alerts and Recommendations</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_notification_va_content_d9a1570b973eea90fc1cf4ef9153afb3</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-22 13:33:48</sys_updated_on>
+        <type>record_card</type>
+    </sys_notification_va_content>
+</record_update>

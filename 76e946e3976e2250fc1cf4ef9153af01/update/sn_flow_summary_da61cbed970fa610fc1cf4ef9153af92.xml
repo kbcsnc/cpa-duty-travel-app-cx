@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_flow_summary">
+    <sn_flow_summary action="INSERT_OR_UPDATE">
+        <document>430f7629970fa610fc1cf4ef9153af0b</document>
+        <document_table>sys_hub_flow</document_table>
+        <domain>global</domain>
+        <generation_source/>
+        <summary>This subflow, named "Update Duty Travel Decision", updates the AI decision field in a Duty Travel Request record based on the input decision. It takes two inputs: the Duty Travel Number and the Decision, which can be "AI Approve", "AI Reject", or another value that requires executive approval. The subflow looks up the Duty Travel Request record using the provided number, and then updates the AI decision field accordingly. If the decision is "AI Approve" or "AI Reject", it updates the record with the corresponding value. If the decision is neither, it updates the record with "AI Requires Executive Approval".</summary>
+        <sys_class_name>sn_flow_summary</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-30 05:54:15</sys_created_on>
+        <sys_id>da61cbed970fa610fc1cf4ef9153af92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>This subflow, named "Update Duty Travel Decision", updates the AI decision field in a Duty Travel Request record based on the input decision. It takes two inputs: the Duty Travel Number and the Decision, which can be "AI Approve", "AI Reject", or another </sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_flow_summary_da61cbed970fa610fc1cf4ef9153af92</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-30 05:54:15</sys_updated_on>
+        <updation_source/>
+    </sn_flow_summary>
+    <sys_translated_text action="delete_multiple" query="documentkey=da61cbed970fa610fc1cf4ef9153af92"/>
+</record_update>

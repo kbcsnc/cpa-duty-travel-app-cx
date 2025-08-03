@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_task_configuration">
+    <sn_ex_sp_task_configuration action="INSERT_OR_UPDATE">
+        <action_group_record display_value="Approvals action group">07a847e753e70110cca8ddeeff7b12b1</action_group_record>
+        <active>true</active>
+        <additional_conditions table="sysapproval_approver">source_table=x_snc_duty_travel_duty_travel_req<item endquery="false" field="source_table" goto="false" newquery="false" operator="=" or="false" value="x_snc_duty_travel_duty_travel_req"/>
+        </additional_conditions>
+        <common_info_fields>sysapproval.number,sysapproval.opened_by,sys_created_on,state</common_info_fields>
+        <external>false</external>
+        <fields/>
+        <fields_reference>trip_type,cabin_class,estimated_travel_cost_hkd,business_justification,leaving_from,going_to,travel_duration,returning_on,departing_on</fields_reference>
+        <info_custom_fields/>
+        <info_fields_type>fields</info_fields_type>
+        <internal_link/>
+        <link_to_task>true</link_to_task>
+        <name>Duty Travel Requests</name>
+        <page_parameters/>
+        <reference_column>sysapproval</reference_column>
+        <reference_conditions/>
+        <reference_table>x_snc_duty_travel_duty_travel_req</reference_table>
+        <sys_class_name>sn_ex_sp_task_configuration</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-07-29 10:07:19</sys_created_on>
+        <sys_id>9bb1fa1d97c72610fc1cf4ef9153af5e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Duty Travel Requests</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_ex_sp_task_configuration_9bb1fa1d97c72610fc1cf4ef9153af5e</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-07-29 10:23:19</sys_updated_on>
+        <table>sysapproval_approver</table>
+        <title>sysapproval.short_description</title>
+        <title_custom>Approval request for Duty Travel {reference_table.number}</title_custom>
+        <title_type>field</title_type>
+        <to_do_configuration display_value="Approvals">23fb71a8731023002ceb31d7caf6a7b6</to_do_configuration>
+        <url/>
+        <url_custom/>
+        <url_source>page</url_source>
+        <widget>false</widget>
+        <widget_parameters/>
+        <widget_record/>
+    </sn_ex_sp_task_configuration>
+</record_update>

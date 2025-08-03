@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill_applicability">
+    <sys_gen_ai_skill_applicability action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <condition_mode>advanced</condition_mode>
+        <condition_script><![CDATA[(function executeCondition(/* glide record */ current) {   
+	// customize condition logic here, return true or false   
+	return true;
+})(current);]]></condition_script>
+        <context_profile/>
+        <roles/>
+        <skill_id display_value="This agent specializes in checking outbound travel alerts for specific destination ports. It is designed to assist users by providing relevant travel warnings, enabling informed decision-making for safe travel.">f1e97e8b473e22d0873506f1d16d4360</skill_id>
+        <sys_class_name>sys_gen_ai_skill_applicability</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-22 10:56:43</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2ee9364f473e22d0873506f1d16d436f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>f1e97e8b473e22d0873506f1d16d4360</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_gen_ai_skill_applicability_2ee9364f473e22d0873506f1d16d436f</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:57:11</sys_updated_on>
+    </sys_gen_ai_skill_applicability>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_snc_duty_travel.admin" name="x_snc_duty_travel.admin">8be946e3976e2250fc1cf4ef9153af47</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-11 10:28:16</sys_created_on>
+        <sys_id>47e946e3976e2250fc1cf4ef9153af4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>8be946e3976e2250fc1cf4ef9153af47</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_embedded_help_role_47e946e3976e2250fc1cf4ef9153af4b</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-11 10:28:16</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
