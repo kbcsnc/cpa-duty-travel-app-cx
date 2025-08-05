@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_agent_usecase_m2m">
+    <sn_aia_trigger_agent_usecase_m2m action="DELETE">
+        <objective_template><![CDATA[Get me travel alerts for ${number}]]></objective_template>
+        <related_resource_record>36a43a43473e22d0873506f1d16d4314</related_resource_record>
+        <related_resource_table>sn_aia_agent</related_resource_table>
+        <sys_class_name>sn_aia_trigger_agent_usecase_m2m</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-07-30 03:56:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>fb866ae5970ba610fc1cf4ef9153af20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_trigger_agent_usecase_m2m_fb866ae5970ba610fc1cf4ef9153af20</sys_update_name>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-07-30 03:56:56</sys_updated_on>
+        <trigger_configuration display_value="x_snc_duty_travel_duty_travel_req">3f866ae5970ba610fc1cf4ef9153af1b</trigger_configuration>
+    </sn_aia_trigger_agent_usecase_m2m>
+<sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>b48a4d13fbf422901feef633beefdc1e</instance_id>
+        <instance_name>cpagenaipov</instance_name>
+        <name>sn_aia_trigger_agent_usecase_m2m_fb866ae5970ba610fc1cf4ef9153af20</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_trigger_agent_usecase_m2m"&gt;
+    &lt;sn_aia_trigger_agent_usecase_m2m action="INSERT_OR_UPDATE"&gt;
+        &lt;objective_template&gt;&lt;![CDATA[Get me travel alerts for ${number}]]&gt;&lt;/objective_template&gt;
+        &lt;related_resource_record&gt;36a43a43473e22d0873506f1d16d4314&lt;/related_resource_record&gt;
+        &lt;related_resource_table&gt;sn_aia_agent&lt;/related_resource_table&gt;
+        &lt;sys_class_name&gt;sn_aia_trigger_agent_usecase_m2m&lt;/sys_class_name&gt;
+        &lt;sys_created_by&gt;kb.cheung&lt;/sys_created_by&gt;
+        &lt;sys_created_on&gt;2025-07-30 03:56:56&lt;/sys_created_on&gt;
+        &lt;sys_domain&gt;global&lt;/sys_domain&gt;
+        &lt;sys_id&gt;fb866ae5970ba610fc1cf4ef9153af20&lt;/sys_id&gt;
+        &lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;
+        &lt;sys_name/&gt;
+        &lt;sys_overrides/&gt;
+        &lt;sys_package display_value="Duty Travel" source="x_snc_duty_travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_package&gt;
+        &lt;sys_policy/&gt;
+        &lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;
+        &lt;sys_update_name&gt;sn_aia_trigger_agent_usecase_m2m_fb866ae5970ba610fc1cf4ef9153af20&lt;/sys_update_name&gt;
+        &lt;sys_updated_by&gt;kb.cheung&lt;/sys_updated_by&gt;
+        &lt;sys_updated_on&gt;2025-07-30 03:56:56&lt;/sys_updated_on&gt;
+        &lt;trigger_configuration display_value="x_snc_duty_travel_duty_travel_req"&gt;3f866ae5970ba610fc1cf4ef9153af1b&lt;/trigger_configuration&gt;
+    &lt;/sn_aia_trigger_agent_usecase_m2m&gt;
+&lt;/record_update&gt;</payload>
+        <payload_hash>1407889595</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>3ecf9875c3cbaa10712af5f905013178</source>
+        <source_table>sys_upgrade_history</source_table>
+        <state>previous</state>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-07-30 12:47:20</sys_created_on>
+        <sys_id>05ff50f5c3cbaa10712af5f905013109</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1985b5f785e0000001</sys_recorded_at>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-07-30 12:47:20</sys_updated_on>
+        <type>Trigger M2M</type>
+        <update_guid>01ff50f5b9cbaa1050dec77da2780509</update_guid>
+        <update_guid_history>01ff50f5b9cbaa1050dec77da2780509:0,a45fdcf150cbaa10300ffd534052c69b:-873814222,fefe50710ecbaa1053cd6d24d690be07:0,59068cfd600f6a10ec936b6a88eff8c0:1407889595</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">2e9218c3470726105de26ea3a36d4328</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kb.cheung</sys_created_by>
+        <sys_created_on>2025-08-03 09:01:24</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_trigger_agent_usecase_m2m">sn_aia_trigger_agent_usecase_m2m</sys_db_object>
+        <sys_id>5d9601766f844b32a4fa24d010f155e4</sys_id>
+        <sys_metadata>fb866ae5970ba610fc1cf4ef9153af20</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sn_aia_trigger_agent_usecase_m2m_fb866ae5970ba610fc1cf4ef9153af20</sys_update_name>
+        <sys_update_version display_value="sn_aia_trigger_agent_usecase_m2m_fb866ae5970ba610fc1cf4ef9153af20">05ff50f5c3cbaa10712af5f905013109</sys_update_version>
+        <sys_updated_by>kb.cheung</sys_updated_by>
+        <sys_updated_on>2025-08-03 09:01:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

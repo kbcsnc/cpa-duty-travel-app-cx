@@ -7,13 +7,14 @@
         </condition>
         <description/>
         <enable_discovery>false</enable_discovery>
-        <internal_name/>
-        <name>Duty Travel Request is Created</name>
-        <notification_script/>
-        <objective_template><![CDATA[Get me travel alerts for ${going_to}]]></objective_template>
-        <portal display_value="">306eec7947b65290873506f1d16d43c0</portal>
+        <internal_name>global.x_snc_duty_travel.Duty Travel Created</internal_name>
+        <name>Duty Travel Created</name>
+        <notification_script display_value="Show AIA notification - x_snc_duty_trave">353e1807478726105de26ea3a36d43b3</notification_script>
+        <objective_template><![CDATA[Get outbound travel alerts for 
+Going to: ${going_to}]]></objective_template>
+        <portal display_value="Service Portal: Employee Center">315a3256474dae105de26ea3a36d43d3</portal>
         <profile display_value="Now Assist in Virtual Agent (default)">fa46d11b772131101b53c5ed3c5a99c5</profile>
-        <run_as>traveller</run_as>
+        <run_as>opened_by</run_as>
         <run_as_script/>
         <run_dayofmonth/>
         <run_dayofweek/>
@@ -22,21 +23,21 @@
         <run_time/>
         <show_notifications>true</show_notifications>
         <sys_class_name>sn_aia_trigger_configuration</sys_class_name>
-        <sys_created_by>kb.cheung</sys_created_by>
-        <sys_created_on>2025-07-30 03:56:56</sys_created_on>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-03 09:52:04</sys_created_on>
         <sys_domain>global</sys_domain>
-        <sys_id>3f866ae5970ba610fc1cf4ef9153af1b</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_id>fc3e9407478726105de26ea3a36d43f3</sys_id>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>x_snc_duty_travel_duty_travel_req</sys_name>
         <sys_overrides/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sn_aia_trigger_configuration_3f866ae5970ba610fc1cf4ef9153af1b</sys_update_name>
-        <sys_updated_by>kb.cheung</sys_updated_by>
-        <sys_updated_on>2025-07-30 04:05:12</sys_updated_on>
+        <sys_update_name>sn_aia_trigger_configuration_fc3e9407478726105de26ea3a36d43f3</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-03 10:02:43</sys_updated_on>
         <target_table>x_snc_duty_travel_duty_travel_req</target_table>
-        <trigger_flow display_value="Duty Travel Request - AI Agent: Outbound Travel Alert Agent - 7386eae5970ba610fc1cf4ef9153af2c">3b86eae5970ba610fc1cf4ef9153af2c</trigger_flow>
+        <trigger_flow display_value="Duty Travel Request - AI Agent: Outbound Travel Alert Agent - 093ed407478726105de26ea3a36d4330">c53ed407478726105de26ea3a36d4331</trigger_flow>
         <trigger_flow_definition_type>record_create</trigger_flow_definition_type>
         <usecase display_value="">undefined</usecase>
         <usecase_discovery>false</usecase_discovery>

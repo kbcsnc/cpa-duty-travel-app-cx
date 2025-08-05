@@ -80,7 +80,7 @@
         <internal_name>global.x_snc_duty_travel.Outbound Travel Alert Agent</internal_name>
         <name>Outbound Travel Alert Agent</name>
         <parent/>
-        <processing_message>Process DT {$number}</processing_message>
+        <processing_message>Checking travel alerts for {$going_to}</processing_message>
         <proficiency>- Expertly identifies and retrieves outbound travel alerts based on user-provided destination port information, ensuring users receive accurate, timely, and concise travel warnings and recommendations relevant to their travel plans.
 - Converts user-provided free-text port information into a standardized port name format ('City Name, (Port Code)'), ensuring accurate downstream processing for travel alert retrieval.
 - Identifies the country corresponding to a given port, enabling the agent to map user-specified destination ports to the appropriate country for travel alert searches.
@@ -98,13 +98,13 @@
         <sys_created_on>2025-07-22 10:38:57</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>36a43a43473e22d0873506f1d16d4314</sys_id>
-        <sys_mod_count>39</sys_mod_count>
+        <sys_mod_count>41</sys_mod_count>
         <sys_name>Outbound Travel Alert Agent</sys_name>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
         <sys_update_name>sn_aia_agent_36a43a43473e22d0873506f1d16d4314</sys_update_name>
-        <sys_updated_by>carmen.man</sys_updated_by>
-        <sys_updated_on>2025-07-30 04:19:08</sys_updated_on>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-03 09:53:31</sys_updated_on>
     </sn_aia_agent>
 </record_update>

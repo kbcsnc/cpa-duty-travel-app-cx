@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>kb_get_airport_long_and_lat</internal_name>
+        <label_cache>[{"name":"92064397-e2a3-4434-95dc-d64ccd8bf1c5.Records","label":"1 - Look Up Records➛Ports Records","reference":"x_snc_duty_travel_ports","reference_display":"Ports Records","type":"records","base_type":"records","usedInstances":{"c34fb90e-290c-4198-beb7-94c9ca669cf9":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c34fb90e-290c-4198-beb7-94c9ca669cf9.item.iata","label":"2 - For Each➛Ports Record➛IATA","reference":"","reference_display":"IATA","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ports","column_name":"iata","usedInstances":{"ec1b1a5e-504f-4a4c-a0ea-6f7eaa257b77":["iata"],"956c7cef-3de0-49d1-a338-f81d135251ed":["name"],"78e4b8d5-0399-4e60-bd60-c98b4797e3f8":["iata"],"46e14dce-5154-4182-83ea-42ae6551e488":["name"]}},{"name":"ec1b1a5e-504f-4a4c-a0ea-6f7eaa257b77.airport_info","label":"3 - (KB Clone) Worldwide Airport Database API➛airport info","reference_display":"airport info","type":"array.object","base_type":"array.object","usedInstances":{"87df3c6b-a7e6-4615-ba4a-e227f70494c9":["items"]},"attributes":{"sourceId":"86bf6385-5745-440d-bc8d-20fed587b4c0","child_name":"response_object","uiUniqueId":"75f94920-2ab2-4e0a-b4f9-b10ffb5a7d8c","uiTypeLabel":"Array.Object","co_type_name":"FD41251c1f67cfa6108b737164dc512f12","child_label":"response_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"c25edc28-ab4e-47da-8c83-3c9c71f98549","uiType":"array.object","child_type":"object","child_uiUniqueId":"50820bc8-f5d4-40d6-b5ef-c11f94566620"}},{"name":"c34fb90e-290c-4198-beb7-94c9ca669cf9.item.city","label":"2 - For Each➛Ports Record➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ports","column_name":"city","usedInstances":{"956c7cef-3de0-49d1-a338-f81d135251ed":["city"],"46e14dce-5154-4182-83ea-42ae6551e488":["city"]}},{"name":"87df3c6b-a7e6-4615-ba4a-e227f70494c9.item.lng","label":"4 - For Each➛response_object➛lng","reference":"","reference_display":"lng","type":"string","base_type":"string","usedInstances":{"956c7cef-3de0-49d1-a338-f81d135251ed":["longitude"],"46e14dce-5154-4182-83ea-42ae6551e488":["longitude"]},"attributes":{}},{"name":"87df3c6b-a7e6-4615-ba4a-e227f70494c9.item.lat","label":"4 - For Each➛response_object➛lat","reference":"","reference_display":"lat","type":"string","base_type":"string","usedInstances":{"956c7cef-3de0-49d1-a338-f81d135251ed":["latitude"],"46e14dce-5154-4182-83ea-42ae6551e488":["latitude"]},"attributes":{}},{"name":"c34fb90e-290c-4198-beb7-94c9ca669cf9.item","label":"2 - For Each➛Ports Record","reference":"x_snc_duty_travel_ports","reference_display":"Ports","type":"reference","base_type":"reference","usedInstances":{"bd1ba2f1-b30c-4ac1-a7df-355b4cb34823":["record"],"4a98e4dd-02fa-43b9-9bed-ba5e399c31dc":["record"]},"attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"78e4b8d5-0399-4e60-bd60-c98b4797e3f8.airport_info","label":"3 - Worldwide Airport Database API➛airport info","reference_display":"airport info","type":"array.object","base_type":"array.object","usedInstances":{"87df3c6b-a7e6-4615-ba4a-e227f70494c9":["items"]},"attributes":{"sourceId":"86bf6385-5745-440d-bc8d-20fed587b4c0","child_name":"response_object","uiUniqueId":"75f94920-2ab2-4e0a-b4f9-b10ffb5a7d8c","uiTypeLabel":"Array.Object","co_type_name":"FD9201089f574fa6105510246d7becd76b","child_label":"response_object","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"c25edc28-ab4e-47da-8c83-3c9c71f98549","uiType":"array.object","child_type":"object","child_uiUniqueId":"50820bc8-f5d4-40d6-b5ef-c11f94566620"}},{"name":"46e14dce-5154-4182-83ea-42ae6551e488.record","label":"5 - Create Record➛Location Record","reference":"cmn_location","reference_display":"Location","type":"reference","base_type":"reference","usedInstances":{"4a98e4dd-02fa-43b9-9bed-ba5e399c31dc":["location"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>(KB Clone) Get Airport Longitude and Latitude</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-04 03:55:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6a269cdfc3cfa610712af5f905013199</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>(KB Clone) Get Airport Longitude and Latitude</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_hub_flow_6a269cdfc3cfa610712af5f905013199</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-04 05:28:15</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=6a269cdfc3cfa610712af5f905013199"/>
+    <sys_variable_value action="delete_multiple" query="document_key=6a269cdfc3cfa610712af5f905013199"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=6a269cdfc3cfa610712af5f905013199"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=6a269cdfc3cfa610712af5f905013199^sys_idNOT IN6a269cdfc3cfa610712af5f90501319a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>6a269cdfc3cfa610712af5f905013199</id>
+        <name>(KB) Get Airport Long and Lat</name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-04 03:55:26</sys_created_on>
+        <sys_id>6a269cdfc3cfa610712af5f90501319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-04 03:55:26</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6a269cdfc3cfa610712af5f90501319a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=6a269cdfc3cfa610712af5f905013199"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=6a269cdfc3cfa610712af5f905013199"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6a269cdfc3cfa610712af5f905013199"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=6a269cdfc3cfa610712af5f905013199^sys_idNOT IN3de9641bc3c3e610712af5f905013190"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="(KB Clone) Get Airport Longitude and Latitude">6a269cdfc3cfa610712af5f905013199</flow>
+        <generation_source/>
+        <name>Run Once</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-04 05:21:41</sys_created_on>
+        <sys_id>3de9641bc3c3e610712af5f905013190</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-04 05:22:41</sys_updated_on>
+        <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/3VSXWvcMBD8K0HPF6PzXcvFb4Vy0IcmkIS8hGDW0vpuQV+RpUvckP/ele0cJaHGLzu7Ozsz6PFNGOjQiEbcZnfhnVgJcgmjA3M/BmT8YEhjqyFhm8giD1hwXPo4iibFjCvRR2/v0QbDQ6LpwQwM+qgximYt5UqcwGS8G4dfmgmZwYEt1DG7lsrJqc9ALetvl3J3KbcX620jJf/cVUcyOqITzePTSgSIvJ0K99unFhX6qxp6pa+2alPzJ2W9266775tuXesNIO6Y8Ivlz3rS/6z/awpfEzqN+uz4Sy4RQd84M54njpztnICF14H+4EIVsUd2oXBunstW08CpjjOsjp4U3oRELHpCEnRm2VHeZOuuZyNca+whm/SwJMtIHpgPQ9FcVCyS+rujf7n9OLgnNxlcmsYrMOcKUorU5YRDiR4NWiZqLYRA7tCG6E80LbMWW03ZVb3xL3x0oIOrQBXhFUcE1Z7xnxP8AJGKi99Mw8vvk/v2OZe7s49FcTub5oEllD2hWd7ToCKF9IMPnD4e4PvTXy70PnDcAgAA</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>run_once</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=6a269cdfc3cfa610712af5f905013199^sys_idNOT IN4a6be81fc3c3e610712af5f905013183,4a6be81fc3c3e610712af5f905013184,b1e9641bc3c3e610712af5f905013192,c66be81fc3c3e610712af5f905013180"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="(KB Clone) Get Airport Longitude and Latitude">6a269cdfc3cfa610712af5f905013199</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>87df3c6b-a7e6-4615-ba4a-e227f70494c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-04 05:28:15</sys_created_on>
+        <sys_id>4a6be81fc3c3e610712af5f905013183</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-04 05:28:15</sys_updated_on>
+        <ui_id>46e14dce-5154-4182-83ea-42ae6551e488</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VV227TQBD9lWqfbWsdu06cNySUJ2glQH0pxRrvjpOV1mtjr9OGyP/OrC9pKUQqFRJC5G3ncs6Ziye3R6YkW7MkRH6ZhomIwihacL5YxWGeRHm4kBEgxsxjBkqkSAu5xmx4eGwPunNGUZpMVwKsqgyZpWprDYebyfvu0SN2SssGDVvf3nmshoZwLDZsfXzmsocaMw05agL45DgvrkbOl+r9IfmMfsfy3FY10gniHsMHi0Yi8RWgW/RYCUaCrZoDW9umI0ODIK+NPpwidspYAmQu9qFV3wh9xV1cgVSawNF3emZTp0az2FVK4HU99GqwDMImZ6W70lyNRbgeYwGdtnOPydK1hIe1k+xETIqKj7vq/sNMuFFmqG5yupnp0wusbVTeWWzdPFBjSUBZCXWtzDarm2qvhmTSUgZbTY+g0NU9kbZqawIQTnhAHYJgQ/a3g/kGGuWqeE8wlNwP1WdfO8c71jEpzsaiKaAVjartG4Lb4ySu9+ZFlcjTs4MP88dBD7vZPl1SZQ+fO84jeTyKKC7ylKO/SLnw4zBd+TnmSz+NRSogSVJRpIGyWAYuq++/6Mpsle0kzgirpSwikeQ+LDHx4yS89HOIwcfFYlkseeyQRgRttg6APoFX5oOlfFfV76tXNIy+//mT/K978cojhCV10OLF2EPvxfs4A2wUatn+YkHnKzQRZPuJYLpE4Z+6RGHCh9/fuUejzn/sHD35ZzhzmO6+Ay7S/9lDBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4a6be81fc3c3e610712af5f905013183"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="(KB Clone) Get Airport Longitude and Latitude">6a269cdfc3cfa610712af5f905013199</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>87df3c6b-a7e6-4615-ba4a-e227f70494c9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-04 05:28:15</sys_created_on>
+        <sys_id>4a6be81fc3c3e610712af5f905013184</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-04 05:28:15</sys_updated_on>
+        <ui_id>4a98e4dd-02fa-43b9-9bed-ba5e399c31dc</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW/bMAz9K4HPseGveHZuA4IAO6wduqGXrjBkiU4EyLIny2myIP99lC2nadd1QRdgGDDfSIt871FPvNs7nDlzJwbmB1mQ0CiIotD3wzQOiiQqgpBFBCBwpo4kFeBJBbRWDOMNEZ1J7Pc0issi88ENM5+6cZClbgHFOzeLaUZJkmS0zDyuoTocsI7xthFkd2vLMUPXXDAF0pnf3U+dhihE0qCc+f7ZL71rIBekAIGFi5p2FUg9+bDAHueqGKtvRhnPZRkMjJntnnOTxF+GT+BPHdhqkAwQriSihalTEcmIrtXOmWvVYUIBYddS7I4n1lzqQWlFti3/jv1j35wrAaVRO4VjmNsJjcOpOYXrRvNaDhlNCjFOrhZdJa8GCWa2UJJO6JPZdi32g8ZQNiQGhuXndf1wM+ItuezVWbaipkQcI6K14kWnoTXXAQL6oVSkabhc5Y2qN7wvRiqVtxIYeKWoHxCz5SvpEWp4ezgg4i0xv+jTt0RxI+IjtsHiQy8+/9YZ3EGGJZz3mnvBeX9ReLSlijf6PTbegKV5mFobF7PXDECzx/s+6flo5W3eSpqzTu9yrcgGRN7USrc/m/aTTb/NuV8M9uRqwD6X95PiX+iw3n2Ss9adXcy66V+yrmX0j3n3d471w1dX1slN9yZtT9xqxBqGXzvfj9h+HycQxIyCOwtmMa7hNHTTCIgbhwSS2SyAOE29Yc+9tIj/tN0b3wJUSELDZKAxPXsqY4MlB8HaF8Y0PgYLkG8swHGXX+xFBInff/9X+gVX+v0P4biJoZsIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4a6be81fc3c3e610712af5f905013184"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="(KB Clone) Get Airport Longitude and Latitude">6a269cdfc3cfa610712af5f905013199</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-04 05:21:41</sys_created_on>
+        <sys_id>b1e9641bc3c3e610712af5f905013192</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-04 05:22:41</sys_updated_on>
+        <ui_id>92064397-e2a3-4434-95dc-d64ccd8bf1c5</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VX3U/bMBD/V6o8R1VCSmG8TSCkPQAToL0gZDmO01pz7cx2+gHif985ttPSBihdt8Gjz/fxu7vfXZy7x4gV0Ul0XA6SBKeHx0dJkmVJMhxmBKd5ng1JnuSDPIojgScUNA3OOYXjFPPanudIC4KK2iyQUXhKOaqkMho0CqYrjhc/vOJ3LyZjxgtFRXRydx9HFVbg11AVnTyuXZlFRRHHOeVgfWvD9i4thnhryM+MN1OwAcIRCedaqsJiSeKIzg0VBYVQJeaaxtEEiwIbqRatRFFcXAm+FIyZMOAxsspzzR7A/XFi9UoKaRHq7toj8iVyYjKWjNCryjApnMQBdZeS1xNx6RKwxaUlrrkJxQVJrcEfrSxmC8IjKm/GcnYdAp4z0aTnL7kkmLcnbIxieW2otr2gnE7AEZrgqmJihColp6wxBiyT/ojDoV9yOYOgmo1EHxMLvA8lwv1zkJ814h9YMZvFBbgBYwDEOHQbuaJrWaumKlNEeK2bC4WFdr6ip6ZW6FdtUbqsfX7IlQgUNFGsMl/BYEp9Kk/xVqw+TJaUIFIUzMbUK9Te5PDO9D1d9b8ttk7jLsCeyM9knsjp3ogMcP8TlY2qPx6T3+KmS/gNgpKjV0lwuOy3hu2JXOVWGEqYWWyy1Et3Y+o5o7x4tmi3ABmMryzpevniJdyeqKWNsbZxDz79xv2QNAVABXL1ZoIz0XzwAOh++Ju8vsS+rPGgaf+SvY0Ma7LJYNwzsvew+7Zt+hr4uwXIYHgDiHq3DmUH8LBng3tP3Wxv1M0O3kddIM7dY4u+rVpHgcO7xrYu6D9YfbyuD+xaMUif7lvqn+4WM31vzAMbc202s3cN5yqz3M3ZCwTb86vphWGL/+Z0j8HUx0NuWNGMFSNqltGDViHNDPOfXfeeXe0MNen98Qts8OrsDdPlnMEMIEU1tGr1CZbCo2NzPaSxE++2Hb4JQ0dN8baFGCwv8Lx33WLsBO5XBGtjeE4P9vgO+xeft1D4zukJ9f8Uvxy7Uvj+N0om640cDwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b1e9641bc3c3e610712af5f905013192"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Worldwide Airport Database API">4201089f474fa6105de26ea3a36d432c</action_type>
+        <action_type_parent display_value="Worldwide Airport Database API">3fcc7347474fa6105de26ea3a36d43c2</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="(KB Clone) Get Airport Longitude and Latitude">6a269cdfc3cfa610712af5f905013199</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>c34fb90e-290c-4198-beb7-94c9ca669cf9</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-04 05:28:15</sys_created_on>
+        <sys_id>c66be81fc3c3e610712af5f905013180</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-04 05:28:15</sys_updated_on>
+        <ui_id>78e4b8d5-0399-4e60-bd60-c98b4797e3f8</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VRwW7bMAz9F51tQ45lJ85twFBgwLYC69ZLURi0RCUCZNmV5bRZkH8fFTvB2tOAHflIPr73+HRiRrEtKyue802txVpoqHJeKlxVCAUUlRLFSrOEOeiQJg0EoOoAdorl6SQLoduaY7qquUxFXm/SFtt1WgtZS6iqWuo6MwG7LK6ez7SszDhYOD7+D4fcG6s8OrZ9ek7YAJ7kBfRse/rQCscBGwstWjr1ELxxO1r/V9fXxcX2+xAiNVXjlbT3KirIE4ZvAZ1COqLBjpiwDpyC0Psj2wY/EeAR1L2zx9vE3rhAZCzOvo3mNzFvOOdxUiO5kTh3b2WzxDjDct8bifdDML2bkQCtXXZkb6fOfZ/FxweghsmG6wMImUbiwyGKjjIWTfph37/+uB68M+7ib2naXoK9VRAohXYKOMYXTOYnZfP1Y+posSP+poNhIKQZfH8wF06S2GU7S0Wmbf9KWkazcxnI6Cej6CC7I/zzBX4Eb6K5b0RDy8ly7u9XTOaXMy8Tfol/FoArLmtModQiFUVZpu1mrVLJ1yoXKlcltOx8ibZ5maKpOaQljmZOlAZG6c0QPpGoAy7Oz89/AGPjPF1EAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c66be81fc3c3e610712af5f905013180"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=6a269cdfc3cfa610712af5f905013199"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=6a269cdfc3cfa610712af5f905013199^sys_idNOT IN71e9641bc3c3e610712af5f905013193,f1e9641bc3c3e610712af5f905013195"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">79e9641bc3c3e610712af5f905013192</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="(KB Clone) Get Airport Longitude and Latitude">6a269cdfc3cfa610712af5f905013199</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-04 05:21:41</sys_created_on>
+        <sys_id>71e9641bc3c3e610712af5f905013193</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-04 05:28:15</sys_updated_on>
+        <ui_id>c34fb90e-290c-4198-beb7-94c9ca669cf9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/51STW/bMAz9Lzonhr/q1bkVGAr00Bboil6GwqAlOhEmS5okJ/UM//dRsZMOPe5k85F8fE/kxMwQ7BD8q7nzXu412/183zCpI0b/E9PQI9sxGbD3bMOOoIYYT1Odp1VZ1N+2mEOxLcui3NY3gm9FVXIubtsu4zfJC3LjhJ9nahXSWwXj2/8z8INUwuEq0oIjbQEd201fUmG02ChoUdGglYH6paAwq0VXZ2nNi7wq8jTNb8usrYo2y0UBKCqqu3Q+rKa/vEFkp9BdeekTVeTphuFHQC2QBnWgPG5YD1pAMG5ku+AGAhyCeNZqvFYcpA5Ex2Lth5d/iDtL01jYITniuCSvYbM+5ALzg5Ecn22QRi9IgFatPdyooddPi/y4AuxgUOGyAkIGT3xoo+aoYpXU/TiY08tl4L3UZ39rUhkO6hpBCE62Q0Af14AKeyJqerBW6n1jnTnKczNp6ZO9oiDplDnR0HhuCfAoPKEnguSe8O9n+A2cjC4eiYaa57P75vcQ5y4+VsXNYpoKPHfShjuiO+Iqbn6P97ow+eUwBHLpaeBrxB4uVx4TIy1Z8n+hk3G/otRPbP4Lb2yMCy8DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f9e9641bc3c3e610712af5f905013194</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="(KB Clone) Get Airport Longitude and Latitude">6a269cdfc3cfa610712af5f905013199</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>c34fb90e-290c-4198-beb7-94c9ca669cf9</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-04 05:21:41</sys_created_on>
+        <sys_id>f1e9641bc3c3e610712af5f905013195</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-04 05:28:15</sys_updated_on>
+        <ui_id>87df3c6b-a7e6-4615-ba4a-e227f70494c9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6VSTW/bMAz9Lzonhj+yxM6twFCgh7ZAV/QyFIYs0QkxWdIkOaln+L+Pip106HWXOHwkH98TOTLTB9sH/2ruvMeDZvuf7yuGOmL0f2Sad8D2DAN0nq3Yias+xuO4K2HTlPLbOi2qar2BbbpuJP2Iqmw2u2oHRVsmHJ01LtSoWzNN1C/RW8WHt/+kEUdU0sEi13JHKgM4th+/pMJgoVa8AUXTXkAYJ6MNlBRmlWyrLK1EkW+LPE3zcpM126LJcllwkFuqu3Y+LPa/vEZkp9DdeOkTVeTpisFHAC2BBrVceVixjmvJg3ED2wfXE+CAy2ethlvFEXUgOhZrPzz+Ie4sTWNhC+RIwJy8hfXymjMsjgYFPNuARs9I4I1aeoRRfaefZvlxD9DyXoXrHgjpPfGBjZqjikVS++Nozi/XgfeoL/6WpDKCq1vEQ3DY9AF8XAMo6Iio7ri1qA+1deaEl2bS0iUHRUHSKnOmofHwEi6i8ISeiCf3hH+/wG/cYXTxSDTUPF3c17/7OHf2sSiuZ9NU4IVDG+6I7gSLuOk9Xu7M5OfDkCDQ08DXiD1c7z0mBloyin+hs3G/otRPbPoLjnQvFTkDAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=6a269cdfc3cfa610712af5f905013199"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=6a269cdfc3cfa610712af5f905013199"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_6a269cdfc3cfa610712af5f905013199"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_6a269cdfc3cfa610712af5f905013199"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=6a269cdfc3cfa610712af5f905013199"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=6a269cdfc3cfa610712af5f905013199"/>
+</record_update>
