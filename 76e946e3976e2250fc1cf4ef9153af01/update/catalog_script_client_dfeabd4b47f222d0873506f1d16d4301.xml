@@ -19,30 +19,30 @@
         <order/>
         <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-	if (isLoading || newValue == '') {
-		return;
-	}
+    if (isLoading || newValue == '') {
+        return;
+    }
 
     var today = new Date();
     var selectedDate = new Date(newValue);
-	selectedDate.setHours(0, 0, 0, 0);
-  	today.setHours(0, 0, 0, 0);
-	var departingOn = new Date(g_form.getValue('departing_on'));
-	departingOn.setHours(0, 0, 0, 0);
+    selectedDate.setHours(0, 0, 0, 0);
+    today.setHours(0, 0, 0, 0);
+    var departingOn = new Date(g_form.getValue('departing_on'));
+    departingOn.setHours(0, 0, 0, 0);
 
     if (selectedDate < today) {
-       //alert('You cannot select past date');
-	   g_form.setValue('returning_on', '');
-	   g_form.showFieldMsg('returning_on', 'Please enter a date in the future.', 'error');
-	   //g_form.clearValue('returning_on');
-	   return;
+        //alert('You cannot select past date');
+        g_form.setValue('returning_on', '');
+        g_form.showFieldMsg('returning_on', 'Please enter a date in the future.', 'error');
+        //g_form.clearValue('returning_on');
+        return;
     }
-	
-	if (selectedDate < departingOn) {
-	   g_form.setValue('returning_on', '');
-	   g_form.showFieldMsg('returning_on', 'Please enter a date that falls after the departure date.', 'error');
-	   return;
-	}
+
+    if (selectedDate < departingOn) {
+        g_form.setValue('returning_on', '');
+        g_form.showFieldMsg('returning_on', 'Please enter a date that falls after the departure date.', 'error');
+        return;
+    }
 
 }]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
@@ -51,15 +51,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>dfeabd4b47f222d0873506f1d16d4301</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>Returning on = future date</sys_name>
         <sys_overrides/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
         <sys_update_name>catalog_script_client_dfeabd4b47f222d0873506f1d16d4301</sys_update_name>
-        <sys_updated_by>kb.cheung</sys_updated_by>
-        <sys_updated_on>2025-07-22 07:10:34</sys_updated_on>
+        <sys_updated_by>haranath.jivvi</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:45:06</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

@@ -7,9 +7,9 @@
         </condition>
         <description/>
         <enable_discovery>false</enable_discovery>
-        <internal_name/>
+        <internal_name>global.x_snc_duty_travel.DutyTravel</internal_name>
         <name>DutyTravel</name>
-        <notification_script/>
+        <notification_script display_value="Show AIA notification - x_snc_duty_trave">dc2d5767c30f2e10712af5f90501316e</notification_script>
         <objective_template><![CDATA[Fulfill DT ${number}]]></objective_template>
         <portal/>
         <profile/>
@@ -26,7 +26,7 @@
         <sys_created_on>2025-07-30 06:09:28</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>c1e4cb69974fa610fc1cf4ef9153af3a</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>x_snc_duty_travel_duty_travel_req</sys_name>
         <sys_overrides/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
@@ -34,7 +34,7 @@
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
         <sys_update_name>sn_aia_trigger_configuration_c1e4cb69974fa610fc1cf4ef9153af3a</sys_update_name>
         <sys_updated_by>carmen.man</sys_updated_by>
-        <sys_updated_on>2025-07-30 09:44:27</sys_updated_on>
+        <sys_updated_on>2025-08-05 13:03:13</sys_updated_on>
         <target_table>x_snc_duty_travel_duty_travel_req</target_table>
         <trigger_flow display_value="Duty Travel Request - Use case: Duty Travel Fulfillment - 0de407a9974fa610fc1cf4ef9153afcd">09e407a9974fa610fc1cf4ef9153afce</trigger_flow>
         <trigger_flow_definition_type>record_create</trigger_flow_definition_type>

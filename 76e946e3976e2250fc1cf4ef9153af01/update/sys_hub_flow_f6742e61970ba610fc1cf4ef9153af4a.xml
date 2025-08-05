@@ -4,18 +4,18 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=1.2,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=25461000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,intermediateFlowVersion=1.2,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=551963000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>27000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
         <copied_from/>
         <copied_from_name/>
-        <description>This subflow retrieves duty travel request details based on a provided duty travel number. It takes a single input, the duty travel number, and returns various outputs including trip type, leaving from location, cabin class, departure and return dates, travel alert classification, details, and recommendations, as well as destination city and country, and the traveller's details. The subflow looks up the duty travel request record using the provided number and then looks up the outbound travel alert record based on the destination country, assigning the retrieved values to the subflow outputs.</description>
+        <description>This subflow retrieves duty travel request details based on a provided duty travel number. It takes a single input, the duty travel number, and returns various outputs including traveller sysid, trip type, leaving from location, destination city, destination country, cabin class, departure and return dates, and the traveller's name, employee job grade.</description>
         <display_name_after_preview>[AI] Retrieve Duty Travel Request</display_name_after_preview>
         <flow_priority>MEDIUM</flow_priority>
         <generation_source>text2flow</generation_source>
         <internal_name>ai_retrieve_duty_travel_requestf27</internal_name>
-        <label_cache>[{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record","label":"1 - Look Up Record➛Duty Travel Request Record","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"reference","base_type":"reference","usedInstances":{"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["destination_city-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.traveller.name","label":"1 - Look Up Record➛Duty Travel Request Record➛Traveller➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["traveller_name-11"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["traveller_name-8"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.departing_on","label":"1 - Look Up Record➛Duty Travel Request Record➛Departing on","reference":"","reference_display":"Departing on","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"departing_on","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["departing_on-8"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["departing_on-5"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.cabin_class","label":"1 - Look Up Record➛Duty Travel Request Record➛Cabin class","reference":"","reference_display":"Cabin class","type":"choice","base_type":"choice","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"cabin_class","choices":[{"used":false,"label":"Economy","image":"","rawLabel":"Economy","selected":false,"missing":false,"reference":false,"value":"y","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"label":"Premium Economy","image":"","rawLabel":"Premium Economy","selected":false,"missing":false,"reference":false,"value":"w","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"label":"Business","image":"","rawLabel":"Business","selected":false,"missing":false,"reference":false,"value":"j","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"label":"First","image":"","rawLabel":"First","selected":false,"missing":false,"reference":false,"value":"f","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}}],"usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["cabin_class-7"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["cabin_class-4"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.leaving_from.city","label":"1 - Look Up Record➛Duty Travel Request Record➛Leaving from➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ports","column_name":"city","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["leaving_from-6"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["leaving_from-3"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.traveller","label":"1 - Look Up Record➛Duty Travel Request Record➛Traveller","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"traveller","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["traveller-2"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["traveller-2"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.going_to.country.name","label":"1 - Look Up Record➛Duty Travel Request Record➛Going to➛Country➛Name","reference":"","reference_display":"Name","type":"translated_field","base_type":"translated_field","parent_table_name":"core_country","column_name":"name","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["destination_country-1"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["destination_country-1"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.going_to.city","label":"1 - Look Up Record➛Duty Travel Request Record➛Going to➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ports","column_name":"city","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["destination_city-0"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["destination_city-0"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.going_to.country","label":"1 - Look Up Record➛Duty Travel Request Record➛Going to➛Country","reference":"core_country","reference_display":"Country","type":"reference","base_type":"reference","parent_table_name":"x_snc_duty_travel_ports","column_name":"country","usedInstances":{"e1a2090c-19a7-4eac-8f0f-48476f35d140":["conditions"]}},{"name":"subflow.duty_travel_number","label":"Input➛Duty Travel Number","type":"string","base_type":"string","usedInstances":{"fcff3bfa-e867-4e63-adbf-806c0ef56cc0":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c6040e3e-d1a1-44b4-9dd9-0a3eeb34c4db"}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.returning_on","label":"1 - Look Up Record➛Duty Travel Request Record➛Returning on","reference":"","reference_display":"Returning on","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"returning_on","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["returning_on-9"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["returning_on-6"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.trip_type","label":"1 - Look Up Record➛Duty Travel Request Record➛Trip type","reference":"","reference_display":"Trip type","type":"choice","base_type":"choice","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"trip_type","choices":[{"used":false,"label":"Return","image":"","rawLabel":"Return","selected":false,"missing":false,"reference":false,"value":"return","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"label":"One way","image":"","rawLabel":"One way","selected":false,"missing":false,"reference":false,"value":"one_way","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}}],"usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["trip_type-10"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["trip_type-7"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.travel_duration","label":"1 - Look Up Record➛Duty Travel Request Record➛Travel Duration","reference":"","reference_display":"Travel Duration","type":"integer","base_type":"integer","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"travel_duration","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["trip_duration-13"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["trip_duration-10"]}}]</label_cache>
+        <label_cache>[{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.travel_duration","label":"1 - Look Up Record➛Duty Travel Request Record➛Travel Duration","reference":"","reference_display":"Travel Duration","type":"integer","base_type":"integer","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"travel_duration","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["trip_duration-13"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["trip_duration-10"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.trip_type","label":"1 - Look Up Record➛Duty Travel Request Record➛Trip type","reference":"","reference_display":"Trip type","type":"choice","base_type":"choice","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"trip_type","choices":[{"used":false,"image":"","label":"Return","reference":false,"rawLabel":"Return","selected":false,"missing":false,"value":"return","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"image":"","label":"One way","reference":false,"rawLabel":"One way","selected":false,"missing":false,"value":"one_way","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}}],"usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["trip_type-10"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["trip_type-7"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.returning_on","label":"1 - Look Up Record➛Duty Travel Request Record➛Returning on","reference":"","reference_display":"Returning on","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"returning_on","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["returning_on-9"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["returning_on-6"]}},{"name":"subflow.duty_travel_number","label":"Input➛Duty Travel Number","type":"string","base_type":"string","usedInstances":{"fcff3bfa-e867-4e63-adbf-806c0ef56cc0":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c6040e3e-d1a1-44b4-9dd9-0a3eeb34c4db"}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.going_to.country","label":"1 - Look Up Record➛Duty Travel Request Record➛Going to➛Country","reference":"core_country","reference_display":"Country","type":"reference","base_type":"reference","parent_table_name":"x_snc_duty_travel_ports","column_name":"country","usedInstances":{"e1a2090c-19a7-4eac-8f0f-48476f35d140":["conditions"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.going_to.city","label":"1 - Look Up Record➛Duty Travel Request Record➛Going to➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ports","column_name":"city","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["destination_city-0"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["destination_city-0"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.going_to.country.name","label":"1 - Look Up Record➛Duty Travel Request Record➛Going to➛Country➛Name","reference":"","reference_display":"Name","type":"translated_field","base_type":"translated_field","parent_table_name":"core_country","column_name":"name","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["destination_country-1"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["destination_country-1"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.traveller","label":"1 - Look Up Record➛Duty Travel Request Record➛Traveller","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"traveller","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["traveller-2"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["traveller-2"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.leaving_from.city","label":"1 - Look Up Record➛Duty Travel Request Record➛Leaving from➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ports","column_name":"city","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["leaving_from-6"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["leaving_from-3"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.cabin_class","label":"1 - Look Up Record➛Duty Travel Request Record➛Cabin class","reference":"","reference_display":"Cabin class","type":"choice","base_type":"choice","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"cabin_class","choices":[{"used":false,"image":"","label":"Economy","reference":false,"rawLabel":"Economy","selected":false,"missing":false,"value":"y","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"image":"","label":"Premium Economy","reference":false,"rawLabel":"Premium Economy","selected":false,"missing":false,"value":"w","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"image":"","label":"Business","reference":false,"rawLabel":"Business","selected":false,"missing":false,"value":"j","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"image":"","label":"First","reference":false,"rawLabel":"First","selected":false,"missing":false,"value":"f","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}}],"usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["cabin_class-7"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["cabin_class-4"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.departing_on","label":"1 - Look Up Record➛Duty Travel Request Record➛Departing on","reference":"","reference_display":"Departing on","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"departing_on","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["departing_on-8"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["departing_on-5"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.traveller.name","label":"1 - Look Up Record➛Duty Travel Request Record➛Traveller➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["traveller_name-11"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["traveller_name-8"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record","label":"1 - Look Up Record➛Duty Travel Request Record","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"reference","base_type":"reference","usedInstances":{"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["destination_city-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>779aa6e1974ba610fc1cf4ef9153af24</master_snapshot>
         <master_snapshot_digest/>
         <name>[AI] Retrieve Duty Travel Request</name>
@@ -36,15 +36,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f6742e61970ba610fc1cf4ef9153af4a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>[AI] Retrieve Duty Travel Request</sys_name>
         <sys_overrides/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
         <sys_update_name>sys_hub_flow_f6742e61970ba610fc1cf4ef9153af4a</sys_update_name>
-        <sys_updated_by>kinbon</sys_updated_by>
-        <sys_updated_on>2025-07-30 12:48:04</sys_updated_on>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-05 13:07:16</sys_updated_on>
         <type>subflow</type>
         <updation_source/>
         <version>2</version>
@@ -1360,10 +1360,10 @@
         <sys_created_by>carmen.man</sys_created_by>
         <sys_created_on>2025-07-30 03:50:09</sys_created_on>
         <sys_id>58056ee1970ba610fc1cf4ef9153afea</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>15</sys_mod_count>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2025-07-30 10:54:02</sys_updated_on>
+        <sys_updated_on>2025-08-05 13:12:46</sys_updated_on>
         <ui_id>fcff3bfa-e867-4e63-adbf-806c0ef56cc0</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+VY32/iOBD+V6I8Uy7hV6BvqyKklfa2Utvbl72V5cROsc7Yqe3QUsT/fuM4gRykQLRUanVveDy2v5n5vrHDz7XPiH/tk0kwSSeT4TgKgn4/CEajfoLDOO6PkjiI8cDv+AIvKHgaHHMKwyXmuR2/IC0SRHKzQkbhJeX/+a3oE/gSpjOOVz/KJVNw8B4KB++OPuVUG3BK5owTRYV//fNXx8+wgvMMVf71em/qXMAcx5SD60OJeC8As8q2Q1TMOdu3+jLvu5uQilgoQcenL4YKQgFDirmmHX+BBcFGqtXWoigmt4LvDHMmDOzoW+cXzV7h3HFg/VIKUSXUzW2HqMyXM6dTbPC9UXliclW6JnPJEqpdPghNcc7NTd3mHG4zw6RwS1zYbrXk+UJ8d+nwtxtU5QFLrgEEzWygFnkZRno/l893FcoZE0VOykkuE8y3I2yMYnFuLJ61TzldwEZogbOMiUeUKblkxWLAsug+chh0Uy6f4VDNHkUXJxZ4F/KKuzOwTwvzD6yYjeJP2AYWAyDGgSHIlVDLXBWpXKKE57qYUFhot5e/6fh6pW841noXOaQcPeUWt8tDGTFySbNLEsUy8wW2WNIyuE2n0szwKAUnO8olUhBmUeiacES+iKn6O4fFZL3WeWwT0K2Lx3lsNocKarW2pbBOR1UJ66YeVlOopcQObN+aNiglFl5MYoMg+Ewig8M/nsbaq8al4IR0QnKUZGTHJy2VQS6XNe0cKqI1z8+AUPH81jLTi1dvoSppnjLKSdNNMrMTezdJ7/95k3xIkgMgglz1mOBMFM8CAPpe7B8epV4c7vGsoNeO+4UN6+RQA9gz0nttrYQz4FRKuIezvQeHpwFi1e8Lyuz3+spYCqB/MQH0e5cRwHob5jaRDTmvXoK2mpX/q/XH+/5AwdqCcNMksFZnhm3P7G0OBdxvpeA62dzM9A3OXfjJ+IYiO+/ZAuawtDwPOf2iZ0YeqdmdXnkRaZ4x/6dpvmQcqgpVhPcOz8/w6BdQXHt+shQtoHIsg1eyogmQQyOsKEplLggq38c7ItlKpkxpUzofNpo7CvoRngRhemZOvcLb23q3vIhPx1Gl8mvqVYGUp2kPAvGKQLxtIO3CbtO0Bhd8nF66ac0w40U14NMnq5WTKiXVG43rRCGPMOLMrnYmqPCioH6/7TVJoLH9ncD6Kb6jL9+aEorjQQ+Pon4YBkEYkCgYR1E4HsXpCEeDdKdR5P49krBzClSB7VFFjarOwWH/cS21baM5A1VFwakU9uO6FxnPwoL6ehWs08DLhhJLySkWex3lAe6JP2Yl/pKvww/XVT7Fv0o5e9jPtDM15vq93g05+0uwp5x+tRQb06A3DklyNY7C6GqQktHVhODhFZ7Ew6hPaDJIL/kU+PUvbb5LnL8VAAA=</values>
@@ -1373,7 +1373,7 @@
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f6742e61970ba610fc1cf4ef9153af4a^sys_idNOT IN4b533f699707e610fc1cf4ef9153af46"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">43533f699707e610fc1cf4ef9153af46</block>
+        <block display_value="">430e1fe7c30f2e10712af5f905013113</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -1389,10 +1389,10 @@
         <sys_created_by>carmen.man</sys_created_by>
         <sys_created_on>2025-07-30 09:32:29</sys_created_on>
         <sys_id>4b533f699707e610fc1cf4ef9153af46</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
         <sys_updated_by>carmen.man</sys_updated_by>
-        <sys_updated_on>2025-07-30 10:52:12</sys_updated_on>
+        <sys_updated_on>2025-08-05 13:07:14</sys_updated_on>
         <ui_id>7d79be39-bc6a-4c53-834e-0d2fdee94f33</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+2aUW/bNhDHv4rh59CgRIqi8lY06NCha4Em7cswGEfylGiTJVeS02ZBvvtIS7Zlx3IMS+sywI8ixePdn/czeZQfx/mimi+q8iZ/U5bJbTa+/P1xnJjx5dhIGghELwqpAuHRWHs65hhHXsAg1sH4YpzBDN2bWFZJBlWSZ1OdVA+25x7Shet6fIx1HDMVA0EpQsJRMAJGxURSoSnGgdCaTj6jzgszuc2T7HZa5RNn5enJ2jFJOU/h4etA5vRdkpoCXZR/XIznUNgAKizGl487XdXDHKcpKEztrNdVYQ3Z4cfqshp4tRFm9LYWplsyN6XtKVeT2QicZ55/McYfFWYG7ewxpCVejGeQGajy4mHdUiCYT1m6abhLssqaG7uXf5TJ39a2pJS6N2O0cWqse9eP00brulnf5YnGT3PnYd1SgUqbMTpPF7PsYx2KWyWMYZFWq1WyLYvS2sO589q50fgUX9/l3z+vJnyXZMsIm84015Cun6CyOqhFhaVbnEVys6NO3fJhd4UwxZmdcTqD+dwt/rzI75PlLNbp2eQ2tQ+TOM2/W+9cuk9AuwgnVk2YvLPtV8vmr1AkLtzfrBk72E33JUu+LfC9ywAWMWNiVITHnBPuUSCAviaKg82KIPRjiMZPS2mn3xYuqFqkRo5prah9odRFMq/eWBfusYn86WKFHz2YZtCRS/kiq4ohCKwNTdwcQ5K4a3YQIl+Wai+Ra60OCtnFJTtz+dq4FDJAqg3xQw2EcxA2GQNFpEDNqfGo5HF/LvWhZEO6SaeqgHtM06Wfp9G4trCPwJPhWS/0mp+XQ1qNvWnFtCfMhpWiNcMKFz4YLszfhqV8KKc2r4sOaL7UXd3gtMb/dwC1JdtmqL1cPwUjRBAoeEA4cLvHYQREcs8jofS4xzE0EllvjBiXUghh9uec18IoRbh3scZFPjuZpLaRgU6X+00OsZ8doc1q4IfaidG7Wpz9knXsYMF5A3tlG1gg/JCB3bGEBEueZySRAURESi8MlWKRBtmbPHU4u1p1nQaV2JNQCmV5MngtG/2R2zU2BGxHyLEa+NZNP3rb6LFXpA7UxBm1V4aaYRI87ivi+2DTTlJFImCC8IhLHWnD7ImoN2oCUPoCOnLLD9ulh83eykVrDZ/KWtvIoCfGK6jWh8UjYtoUW40/o09ZZ6gNMctVnZp6ooYaORg1/P/OzJY829w0i/NTqIlQ2F0IPMLAA3fzIYkKUJHAo0oLiYERvDc1vjiUYRQ3qVRgtSiyntS0jfxr1BwR06Y8a/zZomYn1APUhGdqXhk1lHooVcxJJI2tqnxBiWIhI8yWVlypUNlzRm9qwAtt2eYuIPmeDJO8XbAn8+kygU6/l2gs9D/SbZsa4kB3hBCb24xkPrqpldgjTsdhbribjPNhbhjA7PIa6vlAGLM7EqehJKBij0Scxb5t8gJf96+bQgHxslDQ+37C9138TZcNvW//BrqE32NvkALqZV2e3R6OPtbCdAnWQd75yv21kUfRgwj8mFALnC2jwB4IQ+YuDNEEAQ+Qs/6fwpgINQP3i07j5xnGzb5E+jNX09sCTBu/a8ySvBhdz1EnkCZl9Zyofa8McqX3cgjPIfk1V6NfmhgOBtiBy/nL8WvDxdPKj9BoYuLIEB54igD1JUFjmJGGhkz3Pwl6EeN+6EdRKBk+y7VA7Rx2zKJYfvLsuU+t7QxaQ73PKrxd6nhsaFtnu6tNbB0hN+gk63lW36vOVdSKnI022+hs1uansON7yHyfGcJUwAjXoEkkAEgQSc0jqiIJ5mR2bN4lmfsfVJ2D940nzaOxu0FpHb5xbe9b75kHm1aJbjd9z4u/XKibtqd/AICgPARlJQAA</values>
@@ -1413,11 +1413,11 @@
         <sys_created_on>2025-07-30 03:50:09</sys_created_on>
         <sys_id>9c056ee1970ba610fc1cf4ef9153afbd</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Duty Travel Number</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_f6742e61970ba610fc1cf4ef9153af4a_duty_travel_number_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 03:50:09</sys_updated_on>
         <url/>
@@ -1437,11 +1437,11 @@
         <sys_created_on>2025-07-30 03:50:09</sys_created_on>
         <sys_id>18056ee1970ba610fc1cf4ef9153afe4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Traveller</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_traveller_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 03:50:09</sys_updated_on>
         <url/>
@@ -1460,11 +1460,11 @@
         <sys_created_on>2025-07-30 08:26:18</sys_created_on>
         <sys_id>253427299783e610fc1cf4ef9153af61</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Trip Duration</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_trip_duration_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 08:26:18</sys_updated_on>
         <url/>
@@ -1483,11 +1483,11 @@
         <sys_created_on>2025-07-30 04:02:00</sys_created_on>
         <sys_id>31b722e9970ba610fc1cf4ef9153af3e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Travel Alert Recommendations</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_travel_alert_recommendations_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:02:00</sys_updated_on>
         <url/>
@@ -1506,11 +1506,11 @@
         <sys_created_on>2025-07-30 05:32:43</sys_created_on>
         <sys_id>3a7c3aa1970fa610fc1cf4ef9153af51</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Traveller Job Grade</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_traveller_job_grade_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 05:32:43</sys_updated_on>
         <url/>
@@ -1529,11 +1529,11 @@
         <sys_created_on>2025-07-30 04:14:00</sys_created_on>
         <sys_id>6d7a6ea1974ba610fc1cf4ef9153af87</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Trip Type</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_trip_type_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:14:00</sys_updated_on>
         <url/>
@@ -1552,11 +1552,11 @@
         <sys_created_on>2025-07-30 04:07:14</sys_created_on>
         <sys_id>6ee826ad970ba610fc1cf4ef9153af10</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Returning On</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_returning_on_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:07:14</sys_updated_on>
         <url/>
@@ -1575,11 +1575,11 @@
         <sys_created_on>2025-07-30 04:02:00</sys_created_on>
         <sys_id>79b722e9970ba610fc1cf4ef9153af3a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Travel Alert Details</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_travel_alert_details_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:02:00</sys_updated_on>
         <url/>
@@ -1598,11 +1598,11 @@
         <sys_created_on>2025-07-30 04:05:28</sys_created_on>
         <sys_id>7c88666d970ba610fc1cf4ef9153af17</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Cabin Class</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_cabin_class_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:05:28</sys_updated_on>
         <url/>
@@ -1621,11 +1621,11 @@
         <sys_created_on>2025-07-30 03:50:09</sys_created_on>
         <sys_id>98056ee1970ba610fc1cf4ef9153afcc</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Destination Country</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_destination_country_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 03:50:09</sys_updated_on>
         <url/>
@@ -1644,11 +1644,11 @@
         <sys_created_on>2025-07-30 04:07:14</sys_created_on>
         <sys_id>a2e826ad970ba610fc1cf4ef9153af2a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Departing On</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_departing_on_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:07:14</sys_updated_on>
         <url/>
@@ -1667,11 +1667,11 @@
         <sys_created_on>2025-07-30 04:02:00</sys_created_on>
         <sys_id>b1b722e9970ba610fc1cf4ef9153af37</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Travel Alert Classification</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_travel_alert_classification_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:02:00</sys_updated_on>
         <url/>
@@ -1690,11 +1690,11 @@
         <sys_created_on>2025-07-30 04:05:28</sys_created_on>
         <sys_id>b488666d970ba610fc1cf4ef9153af14</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Leaving From</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_leaving_from_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:05:28</sys_updated_on>
         <url/>
@@ -1713,11 +1713,11 @@
         <sys_created_on>2025-07-30 03:50:09</sys_created_on>
         <sys_id>d0056ee1970ba610fc1cf4ef9153afc9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Destination City</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_destination_city_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 03:50:09</sys_updated_on>
         <url/>
@@ -1736,11 +1736,11 @@
         <sys_created_on>2025-07-30 05:23:47</sys_created_on>
         <sys_id>ff6af66d97cba610fc1cf4ef9153af04</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Traveller Name</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_f6742e61970ba610fc1cf4ef9153af4a_traveller_name_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 05:23:47</sys_updated_on>
         <url/>
@@ -1758,10 +1758,10 @@
         <category/>
         <copied_from/>
         <copied_from_name/>
-        <description>This subflow retrieves duty travel request details based on a provided duty travel number. It takes a single input, the duty travel number, and returns various outputs including trip type, leaving from location, cabin class, departure and return dates, travel alert classification, details, and recommendations, as well as destination city and country, and the traveller's details. The subflow looks up the duty travel request record using the provided number and then looks up the outbound travel alert record based on the destination country, assigning the retrieved values to the subflow outputs.</description>
+        <description>This subflow retrieves duty travel request details based on a provided duty travel number. It takes a single input, the duty travel number, and returns various outputs including traveller sysid, trip type, leaving from location, destination city, destination country, cabin class, departure and return dates, and the traveller's name, employee job grade.</description>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>ai_retrieve_duty_travel_request</internal_name>
-        <label_cache>[{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record","label":"1 - Look Up Record➛Duty Travel Request Record","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"reference","base_type":"reference","usedInstances":{"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["destination_city-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.traveller.name","label":"1 - Look Up Record➛Duty Travel Request Record➛Traveller➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["traveller_name-11"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["traveller_name-8"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.departing_on","label":"1 - Look Up Record➛Duty Travel Request Record➛Departing on","reference":"","reference_display":"Departing on","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"departing_on","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["departing_on-8"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["departing_on-5"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.cabin_class","label":"1 - Look Up Record➛Duty Travel Request Record➛Cabin class","reference":"","reference_display":"Cabin class","type":"choice","base_type":"choice","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"cabin_class","choices":[{"used":false,"label":"Economy","image":"","rawLabel":"Economy","selected":false,"missing":false,"reference":false,"value":"y","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"label":"Premium Economy","image":"","rawLabel":"Premium Economy","selected":false,"missing":false,"reference":false,"value":"w","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"label":"Business","image":"","rawLabel":"Business","selected":false,"missing":false,"reference":false,"value":"j","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"label":"First","image":"","rawLabel":"First","selected":false,"missing":false,"reference":false,"value":"f","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}}],"usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["cabin_class-7"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["cabin_class-4"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.leaving_from.city","label":"1 - Look Up Record➛Duty Travel Request Record➛Leaving from➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ports","column_name":"city","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["leaving_from-6"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["leaving_from-3"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.traveller","label":"1 - Look Up Record➛Duty Travel Request Record➛Traveller","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"traveller","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["traveller-2"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["traveller-2"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.going_to.country.name","label":"1 - Look Up Record➛Duty Travel Request Record➛Going to➛Country➛Name","reference":"","reference_display":"Name","type":"translated_field","base_type":"translated_field","parent_table_name":"core_country","column_name":"name","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["destination_country-1"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["destination_country-1"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.going_to.city","label":"1 - Look Up Record➛Duty Travel Request Record➛Going to➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ports","column_name":"city","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["destination_city-0"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["destination_city-0"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.going_to.country","label":"1 - Look Up Record➛Duty Travel Request Record➛Going to➛Country","reference":"core_country","reference_display":"Country","type":"reference","base_type":"reference","parent_table_name":"x_snc_duty_travel_ports","column_name":"country","usedInstances":{"e1a2090c-19a7-4eac-8f0f-48476f35d140":["conditions"]}},{"name":"subflow.duty_travel_number","label":"Input➛Duty Travel Number","type":"string","base_type":"string","usedInstances":{"fcff3bfa-e867-4e63-adbf-806c0ef56cc0":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c6040e3e-d1a1-44b4-9dd9-0a3eeb34c4db"}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.returning_on","label":"1 - Look Up Record➛Duty Travel Request Record➛Returning on","reference":"","reference_display":"Returning on","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"returning_on","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["returning_on-9"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["returning_on-6"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.trip_type","label":"1 - Look Up Record➛Duty Travel Request Record➛Trip type","reference":"","reference_display":"Trip type","type":"choice","base_type":"choice","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"trip_type","choices":[{"used":false,"label":"Return","image":"","rawLabel":"Return","selected":false,"missing":false,"reference":false,"value":"return","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"label":"One way","image":"","rawLabel":"One way","selected":false,"missing":false,"reference":false,"value":"one_way","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}}],"usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["trip_type-10"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["trip_type-7"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.travel_duration","label":"1 - Look Up Record➛Duty Travel Request Record➛Travel Duration","reference":"","reference_display":"Travel Duration","type":"integer","base_type":"integer","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"travel_duration","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["trip_duration-13"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["trip_duration-10"]}}]</label_cache>
+        <label_cache>[{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.travel_duration","label":"1 - Look Up Record➛Duty Travel Request Record➛Travel Duration","reference":"","reference_display":"Travel Duration","type":"integer","base_type":"integer","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"travel_duration","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["trip_duration-13"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["trip_duration-10"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.trip_type","label":"1 - Look Up Record➛Duty Travel Request Record➛Trip type","reference":"","reference_display":"Trip type","type":"choice","base_type":"choice","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"trip_type","choices":[{"used":false,"image":"","label":"Return","reference":false,"rawLabel":"Return","selected":false,"missing":false,"value":"return","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"image":"","label":"One way","reference":false,"rawLabel":"One way","selected":false,"missing":false,"value":"one_way","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}}],"usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["trip_type-10"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["trip_type-7"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.returning_on","label":"1 - Look Up Record➛Duty Travel Request Record➛Returning on","reference":"","reference_display":"Returning on","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"returning_on","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["returning_on-9"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["returning_on-6"]}},{"name":"subflow.duty_travel_number","label":"Input➛Duty Travel Number","type":"string","base_type":"string","usedInstances":{"fcff3bfa-e867-4e63-adbf-806c0ef56cc0":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"c6040e3e-d1a1-44b4-9dd9-0a3eeb34c4db"}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.going_to.country","label":"1 - Look Up Record➛Duty Travel Request Record➛Going to➛Country","reference":"core_country","reference_display":"Country","type":"reference","base_type":"reference","parent_table_name":"x_snc_duty_travel_ports","column_name":"country","usedInstances":{"e1a2090c-19a7-4eac-8f0f-48476f35d140":["conditions"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.going_to.city","label":"1 - Look Up Record➛Duty Travel Request Record➛Going to➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ports","column_name":"city","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["destination_city-0"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["destination_city-0"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.going_to.country.name","label":"1 - Look Up Record➛Duty Travel Request Record➛Going to➛Country➛Name","reference":"","reference_display":"Name","type":"translated_field","base_type":"translated_field","parent_table_name":"core_country","column_name":"name","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["destination_country-1"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["destination_country-1"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.traveller","label":"1 - Look Up Record➛Duty Travel Request Record➛Traveller","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"traveller","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["traveller-2"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["traveller-2"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.leaving_from.city","label":"1 - Look Up Record➛Duty Travel Request Record➛Leaving from➛City","reference":"","reference_display":"City","type":"string","base_type":"string","parent_table_name":"x_snc_duty_travel_ports","column_name":"city","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["leaving_from-6"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["leaving_from-3"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.cabin_class","label":"1 - Look Up Record➛Duty Travel Request Record➛Cabin class","reference":"","reference_display":"Cabin class","type":"choice","base_type":"choice","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"cabin_class","choices":[{"used":false,"image":"","label":"Economy","reference":false,"rawLabel":"Economy","selected":false,"missing":false,"value":"y","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"image":"","label":"Premium Economy","reference":false,"rawLabel":"Premium Economy","selected":false,"missing":false,"value":"w","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"image":"","label":"Business","reference":false,"rawLabel":"Business","selected":false,"missing":false,"value":"j","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}},{"used":false,"image":"","label":"First","reference":false,"rawLabel":"First","selected":false,"missing":false,"value":"f","parameters":{"name":"x_snc_duty_travel_duty_travel_req","dependent_values":[""]}}],"usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["cabin_class-7"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["cabin_class-4"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.departing_on","label":"1 - Look Up Record➛Duty Travel Request Record➛Departing on","reference":"","reference_display":"Departing on","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_snc_duty_travel_duty_travel_req","column_name":"departing_on","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["departing_on-8"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["departing_on-5"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record.traveller.name","label":"1 - Look Up Record➛Duty Travel Request Record➛Traveller➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name","usedInstances":{"33f7fd98-19b7-46b6-8476-035cfe4fd011":["traveller_name-11"],"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["traveller_name-8"]}},{"name":"fcff3bfa-e867-4e63-adbf-806c0ef56cc0.Record","label":"1 - Look Up Record➛Duty Travel Request Record","reference":"x_snc_duty_travel_duty_travel_req","reference_display":"Duty Travel Request","type":"reference","base_type":"reference","usedInstances":{"7d79be39-bc6a-4c53-834e-0d2fdee94f33":["destination_city-0"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master>true</master>
         <name>[AI] Retrieve Duty Travel Request</name>
         <natlang/>
@@ -1778,7 +1778,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>779aa6e1974ba610fc1cf4ef9153af24</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1786,7 +1786,7 @@
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
         <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
-        <sys_updated_on>2025-07-30 10:52:14</sys_updated_on>
+        <sys_updated_on>2025-08-05 13:07:16</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -3114,7 +3114,7 @@
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=779aa6e1974ba610fc1cf4ef9153af24^sys_idNOT IN0831ccfd9787e610fc1cf4ef9153af86"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
-        <block display_value="">43533f699707e610fc1cf4ef9153af46</block>
+        <block display_value="">430e1fe7c30f2e10712af5f905013113</block>
         <comment/>
         <connected_to/>
         <decision_table/>
@@ -3130,10 +3130,10 @@
         <sys_created_by>carmen.man</sys_created_by>
         <sys_created_on>2025-07-30 10:32:55</sys_created_on>
         <sys_id>0831ccfd9787e610fc1cf4ef9153af86</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
         <sys_updated_by>carmen.man</sys_updated_by>
-        <sys_updated_on>2025-07-30 10:52:14</sys_updated_on>
+        <sys_updated_on>2025-08-05 13:07:16</sys_updated_on>
         <ui_id>7d79be39-bc6a-4c53-834e-0d2fdee94f33</ui_id>
         <updation_source/>
         <values>H4sIAAAAAAAA/+2aUW/bNhDHv4qh59CgREqi+lYkyNCha4Em7cswGEfymGiVJVeS02ZBvvtIS7blWE7i2M6AzG/RSTre/Xm/8Ej5zium9WRaV5fF+6pKr3Lv3Z93Xqq9d54WNIwQ/SSmEiKfGuUrw9EkfsjAqNA78XIYo3sSqzrNoU6LfKTS+tbeuYFs6m7d3RllDJMGCIooJhwjRkBLQwSNFEUTRkrR4RdURamHV0WaX43qYui83N9bPzqtJhncftuTO3WdZrpEl+VfJ94ESptAjaX3zuac2z9yyD6m+Xc70trDz9UkA4mZffRsKcrgtBFls1z17cTdqerSRtxef2wdXcyNNiUXqh+cePirxlyjDclAVuGJN4ZcQ12UtwtLiaA/59nScG0zbBIbw68q/ccOKCil7kmDNk2Fzd3F5agVvzGbM6jBxjJV9bTEuUJFqrBqBNJoYJrVp11b88Dnicu1eaUGmc3fLrLpOP/UiOItHMzn2lqmlQ0CJy5VF3ubiLm4Ln5+mUd5nuYzWdqbWaEgW1xBbcWT09rFc+dN08sHOjeWNaUxw7EdcTSGycSV0KQsbtLZKDbo8fAqsxdDkxU/bXQOmiEol+HQTgEMz639bGb+BmXq0v3DurEvu+G+5umPKX5wtcQSprVBSbjhnHCfAgEMFJEcbH2FcWAg8e5PvOq2Os2gqpZC2Rka/Zi6NBvZWoFGjcbuFVWmk/q9DeoGWy3uT+ZY00dLGDbUaTHN63IfZDeOhm6MfRL+0O3OpD8tUy/pC50eFXEr3tmR9zfBeyRCpEqTIFZAOIfIlnQoiYhQcap9Krg5BO/qsUJGuizVuoQbzLJZ5C+jfOGhj+x9QPl0LnMoLzvJ9OTXArhEYZXBLx37HEO+NwxZsAqhnfGRLf1yA4xfm1t7BrIz6CuAaS4QSnV9nmLmJnI2Ixtx7c7KKrHdeXkVaBEhwoiHhAO3KzUmQAT3fRILn/scYy2QHQBaxoWIokj3F7rfgTZDuHHZm7IYv5jbrpM99d79Lnf9B/AMXeb/AD42AQzOG2H65dpmHQ6Py/BbWIbDKIgZ2HU3EmCJ9rUgIoSECOHHsZQsUSAOQLR8vHI7u2kFMrW9ohv7xUB3fOyO8kNnu0L8DCnmEJ+6oQenrRa9Am2DcHRE+C0grJkAnweSBAHY4hVUkgRYRHjChUqUZrZJPADCEaAIIthQt0Hc3fRZKmqXv3X8Uoa7Tg7UTz8jo+Umt41m8DnfmGjL4myWR3ZKH7bVZ42ppVHsjUb+v2RxReZVHluhX4XGBCO7aoJPGPjgzrEEkSFKEvpUqkhgqCN+ABqD6LHapbgs0hLtXOc70th1ciAan5FRttgHtdGs0Pgg0e1ojI80vgUaKfVRSMNJIrTdtQYRJZLFjDC7deVSxtJ2WAegEfzYbpTdwTXvqV3Bu6cw6WQ0K82XnzK1HnZvbVdd7QrwM0RYHk+lk8Flo0KPMNs0tfs7lzo2tf9hU2sLRVM/AMKYXUE5jQUBaXyScGYCa/LDQB1iXxpHYGabMdW36PQdD4/a07sdz4j39Amox9/OG9SnNVk7Zh58akTZJNY2RB8/+LwJoin6kEBgCLUg220q2MY4Zu4AGXUY8hA5O8QHXhbFioFbhahZr16u+4r070KOrkrQXawvME+LcnAxQZVCllb1Oql9j+x8xPt0+Ovw/V7IwW9t/I8mtw2Gx99ZvAkMfSWDBLUi2iSa8NCXBGggCGrNtNA0ZuoQHbGfMB7EQZLEguFaHYfyQeOnp+XsRwI7rqsLPwfaoz4jq5UW92yZ1oZsWyLd6FeLT7PzSvmwsM6/wh53qTsRuZR5Fcml0K/CZOAjCwKmCZMhI1yBIkkEQMJEKJ5QmQjQe2TSVW/ufuXYzM1NG9ti+lRa2RQune1D5zl9a2s2VV3Tz6L87pJf2u7/BYPiCJRDKQAA</values>
@@ -3154,11 +3154,11 @@
         <sys_created_on>2025-07-30 04:14:41</sys_created_on>
         <sys_id>f79aa6e1974ba610fc1cf4ef9153af3b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Duty Travel Number</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_779aa6e1974ba610fc1cf4ef9153af24_duty_travel_number_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:14:41</sys_updated_on>
         <url/>
@@ -3178,11 +3178,11 @@
         <sys_created_on>2025-07-30 04:14:42</sys_created_on>
         <sys_id>04aaa6e1974ba610fc1cf4ef9153afdd</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Travel Alert Recommendations</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_travel_alert_recommendations_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:14:42</sys_updated_on>
         <url/>
@@ -3201,11 +3201,11 @@
         <sys_created_on>2025-07-30 05:32:49</sys_created_on>
         <sys_id>088c7aa1970fa610fc1cf4ef9153affe</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Traveller Job Grade</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_traveller_job_grade_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 05:32:49</sys_updated_on>
         <url/>
@@ -3224,11 +3224,11 @@
         <sys_created_on>2025-07-30 04:14:41</sys_created_on>
         <sys_id>339aa6e1974ba610fc1cf4ef9153af45</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Trip Type</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_trip_type_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:14:41</sys_updated_on>
         <url/>
@@ -3247,11 +3247,11 @@
         <sys_created_on>2025-07-30 04:14:41</sys_created_on>
         <sys_id>379aa6e1974ba610fc1cf4ef9153af4c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Leaving From</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_leaving_from_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:14:41</sys_updated_on>
         <url/>
@@ -3270,11 +3270,11 @@
         <sys_created_on>2025-07-30 04:14:42</sys_created_on>
         <sys_id>3f9aa6e1974ba610fc1cf4ef9153af73</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Returning On</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_returning_on_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:14:42</sys_updated_on>
         <url/>
@@ -3293,11 +3293,11 @@
         <sys_created_on>2025-07-30 08:26:20</sys_created_on>
         <sys_id>463467299783e610fc1cf4ef9153af57</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Trip Duration</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_trip_duration_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 08:26:20</sys_updated_on>
         <url/>
@@ -3316,11 +3316,11 @@
         <sys_created_on>2025-07-30 04:14:42</sys_created_on>
         <sys_id>739aa6e1974ba610fc1cf4ef9153af94</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Departing On</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_departing_on_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:14:42</sys_updated_on>
         <url/>
@@ -3339,11 +3339,11 @@
         <sys_created_on>2025-07-30 04:14:41</sys_created_on>
         <sys_id>7b9aa6e1974ba610fc1cf4ef9153af53</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Cabin Class</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_cabin_class_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:14:41</sys_updated_on>
         <url/>
@@ -3362,11 +3362,11 @@
         <sys_created_on>2025-07-30 04:14:42</sys_created_on>
         <sys_id>7b9aa6e1974ba610fc1cf4ef9153af9b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Travel Alert Classification</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_travel_alert_classification_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:14:42</sys_updated_on>
         <url/>
@@ -3385,11 +3385,11 @@
         <sys_created_on>2025-07-30 04:14:42</sys_created_on>
         <sys_id>80aaa6e1974ba610fc1cf4ef9153aff9</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Destination Country</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_destination_country_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:14:42</sys_updated_on>
         <url/>
@@ -3408,11 +3408,11 @@
         <sys_created_on>2025-07-30 04:14:42</sys_created_on>
         <sys_id>bb9aa6e1974ba610fc1cf4ef9153afd5</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Travel Alert Details</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_travel_alert_details_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:14:42</sys_updated_on>
         <url/>
@@ -3431,11 +3431,11 @@
         <sys_created_on>2025-07-30 04:14:42</sys_created_on>
         <sys_id>c0aae6e1974ba610fc1cf4ef9153af11</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Traveller</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_traveller_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:14:42</sys_updated_on>
         <url/>
@@ -3454,11 +3454,11 @@
         <sys_created_on>2025-07-30 05:23:52</sys_created_on>
         <sys_id>c57a3a6d97cba610fc1cf4ef9153af8e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Traveller Name</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_traveller_name_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 05:23:52</sys_updated_on>
         <url/>
@@ -3477,11 +3477,11 @@
         <sys_created_on>2025-07-30 04:14:42</sys_created_on>
         <sys_id>ccaaa6e1974ba610fc1cf4ef9153afe4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Destination City</sys_name>
+        <sys_name/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
-        <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_779aa6e1974ba610fc1cf4ef9153af24_destination_city_en</sys_update_name>
+        <sys_update_name/>
         <sys_updated_by>carmen.man</sys_updated_by>
         <sys_updated_on>2025-07-30 04:14:42</sys_updated_on>
         <url/>
@@ -3498,16 +3498,16 @@
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"04aae6e1974ba610fc1cf4ef9153af34","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="[AI] Retrieve Duty Travel Request">f6742e61970ba610fc1cf4ef9153af4a</plan_id>
-        <snapshot>89ce03f64747e2105de26ea3a36d4345</snapshot>
+        <snapshot>5c5f9babc30f2e10712af5f90501311d</snapshot>
         <sys_created_by>carmen.man</sys_created_by>
         <sys_created_on>2025-07-30 04:14:43</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>04aae6e1974ba610fc1cf4ef9153af34</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>carmen.man</sys_updated_by>
-        <sys_updated_on>2025-07-30 10:52:14</sys_updated_on>
+        <sys_updated_on>2025-08-05 13:07:16</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>

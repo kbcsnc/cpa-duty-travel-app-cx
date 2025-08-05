@@ -19,20 +19,20 @@
         <order/>
         <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-	if (isLoading || newValue == '') {
-		return;
-	}
+    if (isLoading || newValue == '') {
+        return;
+    }
 
     var today = new Date();
     var selectedDate = new Date(newValue);
-	selectedDate.setHours(0, 0, 0, 0);
-  	today.setHours(0, 0, 0, 0);
+    selectedDate.setHours(0, 0, 0, 0);
+    today.setHours(0, 0, 0, 0);
 
     if (selectedDate < today) {
-       //alert('You cannot select past date');
-	   g_form.setValue('departing_on', '');
-	   g_form.showFieldMsg('departing_on', 'Please enter a date in the future.', 'error');
-	   //g_form.clearValue('departing_on');
+        //alert('You cannot select past date');
+        g_form.setValue('departing_on', '');
+        g_form.showFieldMsg('departing_on', 'Please enter a date in the future.', 'error');
+        //g_form.clearValue('departing_on');
     }
 
 }]]></script>
@@ -42,15 +42,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>05afb983473622d0873506f1d16d43c0</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>Departing on = future date</sys_name>
         <sys_overrides/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
         <sys_update_name>catalog_script_client_05afb983473622d0873506f1d16d43c0</sys_update_name>
-        <sys_updated_by>kb.cheung</sys_updated_by>
-        <sys_updated_on>2025-07-22 06:52:22</sys_updated_on>
+        <sys_updated_by>haranath.jivvi</sys_updated_by>
+        <sys_updated_on>2025-08-04 14:44:51</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

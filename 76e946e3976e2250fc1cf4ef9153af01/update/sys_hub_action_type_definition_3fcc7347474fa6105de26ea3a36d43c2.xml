@@ -1,0 +1,2543 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Get the longitute and latitude info from https://airlabs.co/api/v9</description>
+        <flow_priority/>
+        <ih_action>true</ih_action>
+        <internal_name>worldwide_airport_database_api</internal_name>
+        <label_cache>[{"name":"{{action.iata}}","label":"action➛iata","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8696fc5f-1dea-4125-94fd-ff49048f590d].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[86bf6385-5745-440d-bc8d-20fed587b4c0].root.response}}","label":"step➛JSON Parser step➛root➛response","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>4201089f474fa6105de26ea3a36d432c</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Worldwide Airport Database API</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:04:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3fcc7347474fa6105de26ea3a36d43c2</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Worldwide Airport Database API</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_3fcc7347474fa6105de26ea3a36d43c2</sys_update_name>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:09</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=3fcc7347474fa6105de26ea3a36d43c2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3fcc7347474fa6105de26ea3a36d43c2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>3fcc7347474fa6105de26ea3a36d43c2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:21:30</sys_created_on>
+        <sys_id>1ea0005f474fa6105de26ea3a36d432a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:22:39</sys_updated_on>
+        <value/>
+        <variable display_value="airport info">96a0cc1f474fa6105de26ea3a36d43cd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>3fcc7347474fa6105de26ea3a36d43c2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:05:04</sys_created_on>
+        <sys_id>31ec7b47474fa6105de26ea3a36d4342</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:05:04</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <variable display_value="Action Status">25ec7b47474fa6105de26ea3a36d4330</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>3fcc7347474fa6105de26ea3a36d43c2</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:05:04</sys_created_on>
+        <sys_id>39ec7b47474fa6105de26ea3a36d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:05:04</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">21ec7b47474fa6105de26ea3a36d4336</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=3fcc7347474fa6105de26ea3a36d43c2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>airport_info</field>
+        <id>3fcc7347474fa6105de26ea3a36d43c2</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:21:30</sys_created_on>
+        <sys_id>9aa0005f474fa6105de26ea3a36d432a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:22:39</sys_updated_on>
+        <table>var__m_sys_hub_action_output_3fcc7347474fa6105de26ea3a36d43c2</table>
+        <value>{{step[86bf6385-5745-440d-bc8d-20fed587b4c0].root.response}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>3fcc7347474fa6105de26ea3a36d43c2</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:05:04</sys_created_on>
+        <sys_id>b5ec7b47474fa6105de26ea3a36d4341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:05:04</sys_updated_on>
+        <table>var__m_sys_hub_action_output_3fcc7347474fa6105de26ea3a36d43c2</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>3fcc7347474fa6105de26ea3a36d43c2</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:05:04</sys_created_on>
+        <sys_id>fdec7b47474fa6105de26ea3a36d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:05:04</sys_updated_on>
+        <table>var__m_sys_hub_action_output_3fcc7347474fa6105de26ea3a36d43c2</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=3fcc7347474fa6105de26ea3a36d43c2^sys_idNOT INc33d3787474fa6105de26ea3a36d43eb,f470c41f474fa6105de26ea3a36d43f8"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Worldwide Airport Database API">3fcc7347474fa6105de26ea3a36d43c2</action>
+        <cid>8696fc5f-1dea-4125-94fd-ff49048f590d</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:31</sys_created_on>
+        <sys_id>c33d3787474fa6105de26ea3a36d43eb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:18:52</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c33d3787474fa6105de26ea3a36d43eb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c33d3787474fa6105de26ea3a36d43eb</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>073d7787474fa6105de26ea3a36d4307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c33d3787474fa6105de26ea3a36d43eb</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>0b3d7787474fa6105de26ea3a36d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <value>/airports</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c33d3787474fa6105de26ea3a36d43eb</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>433d7787474fa6105de26ea3a36d4307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <value>https://airlabs.co/api/v9</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c33d3787474fa6105de26ea3a36d43eb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>473d7787474fa6105de26ea3a36d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c33d3787474fa6105de26ea3a36d43eb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>833d7787474fa6105de26ea3a36d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c33d3787474fa6105de26ea3a36d43eb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>8b3d7787474fa6105de26ea3a36d4307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c33d3787474fa6105de26ea3a36d43eb</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>8f3d7787474fa6105de26ea3a36d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c33d3787474fa6105de26ea3a36d43eb</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>c73d7787474fa6105de26ea3a36d4307</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:55</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c33d3787474fa6105de26ea3a36d43eb</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>cb3d7787474fa6105de26ea3a36d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c33d3787474fa6105de26ea3a36d43eb</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:18:52</sys_created_on>
+        <sys_id>f70088db474fa6105de26ea3a36d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:18:52</sys_updated_on>
+        <value>6d9d5ed347bea2d0873506f1d16d435c</value>
+        <variable display_value="Credential Alias">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>c33d3787474fa6105de26ea3a36d43eb</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:55</sys_created_on>
+        <sys_id>fc5d3b87474fa6105de26ea3a36d4376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:55</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"User-Agent","value":"XXXXXX"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_c33d3787474fa6105de26ea3a36d43eb^id=c33d3787474fa6105de26ea3a36d43eb"/>
+    <sys_element_mapping action="delete_multiple" query="id=c33d3787474fa6105de26ea3a36d43eb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>c33d3787474fa6105de26ea3a36d43eb</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>8b3d7787474fa6105de26ea3a36d4305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>c33d3787474fa6105de26ea3a36d43eb</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>c73d7787474fa6105de26ea3a36d4305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>c33d3787474fa6105de26ea3a36d43eb</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>073d7787474fa6105de26ea3a36d4305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>c33d3787474fa6105de26ea3a36d43eb</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>433d7787474fa6105de26ea3a36d4305</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>c33d3787474fa6105de26ea3a36d43eb</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>033d7787474fa6105de26ea3a36d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>c33d3787474fa6105de26ea3a36d43eb</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:18:52</sys_created_on>
+        <sys_id>770088db474fa6105de26ea3a36d43aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:18:52</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>c33d3787474fa6105de26ea3a36d43eb</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:55</sys_created_on>
+        <sys_id>345d3b87474fa6105de26ea3a36d4376</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:55</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>c33d3787474fa6105de26ea3a36d43eb</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>0b3d7787474fa6105de26ea3a36d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>c33d3787474fa6105de26ea3a36d43eb</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>cb3d7787474fa6105de26ea3a36d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>c33d3787474fa6105de26ea3a36d43eb</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>4f3d7787474fa6105de26ea3a36d4305</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:55</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"api_key","value":"24283a50-ed20-451a-908d-6f7ba2cc79c4","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"iata_code","value":"{{action.iata}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>c33d3787474fa6105de26ea3a36d43eb</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:06:32</sys_created_on>
+        <sys_id>8f3d7787474fa6105de26ea3a36d4304</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:06:32</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=c33d3787474fa6105de26ea3a36d43eb"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=c33d3787474fa6105de26ea3a36d43eb^sys_idNOT INa30088db474fa6105de26ea3a36d439a"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=d3ebef13-d0e1-4f84-a565-adf7bcccc1b8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">c33d3787474fa6105de26ea3a36d43eb</model>
+        <model_id>c33d3787474fa6105de26ea3a36d43eb</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_c33d3787474fa6105de26ea3a36d43eb</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:18:51</sys_created_on>
+        <sys_id>a30088db474fa6105de26ea3a36d439a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:20:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c33d3787474fa6105de26ea3a36d43eb"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_c33d3787474fa6105de26ea3a36d43eb</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:18:52</sys_created_on>
+        <sys_id>f30088db474fa6105de26ea3a36d439e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:18:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Worldwide Airport Database API">3fcc7347474fa6105de26ea3a36d43c2</action>
+        <cid>86bf6385-5745-440d-bc8d-20fed587b4c0</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:20:34</sys_created_on>
+        <sys_id>f470c41f474fa6105de26ea3a36d43f8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:20:35</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f470c41f474fa6105de26ea3a36d43f8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f470c41f474fa6105de26ea3a36d43f8</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:20:35</sys_created_on>
+        <sys_id>3470081f474fa6105de26ea3a36d430e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:20:35</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f470c41f474fa6105de26ea3a36d43f8</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:20:35</sys_created_on>
+        <sys_id>3870081f474fa6105de26ea3a36d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:20:35</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"request","children":[{"name":"lang","children":[],"type":"string","jpath":"$.request.lang","previewValue":"en"},{"name":"currency","children":[],"type":"string","jpath":"$.request.currency","previewValue":"USD"},{"name":"time","children":[],"type":"string","jpath":"$.request.time","previewValue":"1"},{"name":"id","children":[],"type":"string","jpath":"$.request.id","previewValue":"p127j2iz70w"},{"name":"server","children":[],"type":"string","jpath":"$.request.server","previewValue":"b"},{"name":"host","children":[],"type":"string","jpath":"$.request.host","previewValue":"airlabs.co"},{"name":"pid","children":[],"type":"string","jpath":"$.request.pid","previewValue":"833264"},{"name":"key","children":[{"name":"id","children":[],"type":"string","jpath":"$.request.key.id","previewValue":"21862"},{"name":"api_key","children":[],"type":"string","jpath":"$.request.key.api_key","previewValue":"24283a50-ed20-451a-908d-6f7ba2cc79c4"},{"name":"type","children":[],"type":"string","jpath":"$.request.key.type","previewValue":"free"},{"name":"expired","children":[],"type":"string","jpath":"$.request.key.expired","previewValue":"2025-08-23T00:00:00.000Z"},{"name":"registered","children":[],"type":"string","jpath":"$.request.key.registered","previewValue":"2023-01-09T12:48:17.000Z"},{"name":"upgraded","children":[],"type":"string","jpath":"$.request.key.upgraded","previewValue":""},{"name":"limits_by_hour","children":[],"type":"string","jpath":"$.request.key.limits_by_hour","previewValue":"2500"},{"name":"limits_by_minute","children":[],"type":"string","jpath":"$.request.key.limits_by_minute","previewValue":"250"},{"name":"limits_by_month","children":[],"type":"string","jpath":"$.request.key.limits_by_month","previewValue":"1000"},{"name":"limits_total","children":[],"type":"string","jpath":"$.request.key.limits_total","previewValue":"990"}],"type":"object","jpath":"$.request.key","previewValue":""},{"name":"params","children":[{"name":"iata_code","children":[],"type":"string","jpath":"$.request.params.iata_code","previewValue":"ADL"},{"name":"lang","children":[],"type":"string","jpath":"$.request.params.lang","previewValue":"en"}],"type":"object","jpath":"$.request.params","previewValue":""},{"name":"version","children":[],"type":"string","jpath":"$.request.version","previewValue":"9"},{"name":"method","children":[],"type":"string","jpath":"$.request.method","previewValue":"airports"},{"name":"client","children":[{"name":"ip","children":[],"type":"string","jpath":"$.request.client.ip","previewValue":"149.96.221.12"},{"name":"geo","children":[{"name":"country_code","children":[],"type":"string","jpath":"$.request.client.geo.country_code","previewValue":"US"},{"name":"country","children":[],"type":"string","jpath":"$.request.client.geo.country","previewValue":"United States"},{"name":"continent","children":[],"type":"string","jpath":"$.request.client.geo.continent","previewValue":"North America"},{"name":"city","children":[],"type":"string","jpath":"$.request.client.geo.city","previewValue":"San Diego"},{"name":"lat","children":[],"type":"string","jpath":"$.request.client.geo.lat","previewValue":"32.7203"},{"name":"lng","children":[],"type":"string","jpath":"$.request.client.geo.lng","previewValue":"-117.1552"},{"name":"timezone","children":[],"type":"string","jpath":"$.request.client.geo.timezone","previewValue":"America/Los_Angeles"}],"type":"object","jpath":"$.request.client.geo","previewValue":""},{"name":"connection","children":[{"name":"type","children":[],"type":"string","jpath":"$.request.client.connection.type","previewValue":"corporate"}],"type":"object","jpath":"$.request.client.connection","previewValue":""},{"name":"device","children":[],"type":"object","jpath":"$.request.client.device","previewValue":""},{"name":"agent","children":[],"type":"object","jpath":"$.request.client.agent","previewValue":""},{"name":"karma","children":[{"name":"is_blocked","children":[],"type":"string","jpath":"$.request.client.karma.is_blocked","previewValue":"false"},{"name":"is_crawler","children":[],"type":"string","jpath":"$.request.client.karma.is_crawler","previewValue":"false"},{"name":"is_bot","children":[],"type":"string","jpath":"$.request.client.karma.is_bot","previewValue":"false"},{"name":"is_friend","children":[],"type":"string","jpath":"$.request.client.karma.is_friend","previewValue":"false"},{"name":"is_regular","children":[],"type":"string","jpath":"$.request.client.karma.is_regular","previewValue":"true"}],"type":"object","jpath":"$.request.client.karma","previewValue":""}],"type":"object","jpath":"$.request.client","previewValue":""}],"type":"object","jpath":"$.request","previewValue":""},{"name":"response","children":[{"name":"response_object","children":[{"name":"name","children":[],"type":"string","jpath":"$.response[*].name","previewValue":"Adelaide Airport"},{"name":"iata_code","children":[],"type":"string","jpath":"$.response[*].iata_code","previewValue":"ADL"},{"name":"icao_code","children":[],"type":"string","jpath":"$.response[*].icao_code","previewValue":"YPAD"},{"name":"lat","children":[],"type":"string","jpath":"$.response[*].lat","previewValue":"-34.945"},{"name":"lng","children":[],"type":"string","jpath":"$.response[*].lng","previewValue":"138.53056"},{"name":"country_code","children":[],"type":"string","jpath":"$.response[*].country_code","previewValue":"AU"}],"type":"object","jpath":"$.response[*]","previewValue":""}],"type":"array.object","jpath":"$.response[*]","previewValue":""},{"name":"terms","children":[],"type":"string","jpath":"$.terms","previewValue":"Unauthorized access is prohibited and punishable by law. \nReselling data 'As Is' without AirLabs.Co permission is strictly prohibited. \nFull terms on https://airlabs.co/. \nContact us info@airlabs.co"}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f470c41f474fa6105de26ea3a36d43f8</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:20:35</sys_created_on>
+        <sys_id>7070081f474fa6105de26ea3a36d430e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:20:35</sys_updated_on>
+        <value>{"request":{"lang":"en","currency":"USD","time":1,"id":"p127j2iz70w","server":"b","host":"airlabs.co","pid":833264,"key":{"id":21862,"api_key":"24283a50-ed20-451a-908d-6f7ba2cc79c4","type":"free","expired":"2025-08-23T00:00:00.000Z","registered":"2023-01-09T12:48:17.000Z","upgraded":null,"limits_by_hour":2500,"limits_by_minute":250,"limits_by_month":1000,"limits_total":990},"params":{"iata_code":"ADL","lang":"en"},"version":9,"method":"airports","client":{"ip":"149.96.221.12","geo":{"country_code":"US","country":"United States","continent":"North America","city":"San Diego","lat":32.7203,"lng":-117.1552,"timezone":"America/Los_Angeles"},"connection":{"type":"corporate"},"device":{},"agent":{},"karma":{"is_blocked":false,"is_crawler":false,"is_bot":false,"is_friend":false,"is_regular":true}}},"response":[{"name":"Adelaide Airport","iata_code":"ADL","icao_code":"YPAD","lat":-34.945,"lng":138.53056,"country_code":"AU"}],"terms":"Unauthorized access is prohibited and punishable by law. \nReselling data 'As Is' without AirLabs.Co permission is strictly prohibited. \nFull terms on https://airlabs.co/. \nContact us info@airlabs.co"}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_f470c41f474fa6105de26ea3a36d43f8^id=f470c41f474fa6105de26ea3a36d43f8"/>
+    <sys_element_mapping action="delete_multiple" query="id=f470c41f474fa6105de26ea3a36d43f8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>f470c41f474fa6105de26ea3a36d43f8</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:20:35</sys_created_on>
+        <sys_id>f070081f474fa6105de26ea3a36d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:20:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>f470c41f474fa6105de26ea3a36d43f8</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:20:35</sys_created_on>
+        <sys_id>b470081f474fa6105de26ea3a36d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:20:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>f470c41f474fa6105de26ea3a36d43f8</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:20:35</sys_created_on>
+        <sys_id>3070081f474fa6105de26ea3a36d430d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:20:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[8696fc5f-1dea-4125-94fd-ff49048f590d].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>f470c41f474fa6105de26ea3a36d43f8</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:20:35</sys_created_on>
+        <sys_id>3870081f474fa6105de26ea3a36d430c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:20:35</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f470c41f474fa6105de26ea3a36d43f8"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=f470c41f474fa6105de26ea3a36d43f8^sys_idNOT IN3070c41f474fa6105de26ea3a36d43ff"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD0be0809fe54fa610e713b24a49da532c</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>76e946e3976e2250fc1cf4ef9153af01</scope_name>
+        <serialized_content>{"FlowDesigner:FD0be0809fe54fa610e713b24a49da532c":{"request":{"server":"String","server.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"server\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"72c9e6f0-5ccc-4747-b12a-40c6c7c4a441\"}"},"method":"String","method.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"method\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"b0de2e2f-2700-4db0-983f-a2366a1d396a\"}"},"host":"String","host.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"host\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"138b87bd-0c80-46f1-bdc2-dc5776131fd0\"}"},"client":{"geo":{"continent":"String","continent.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"continent\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"c0c019d7-ef37-471c-88f2-e1cf55484cdd\"}"},"country":"String","country.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"b1771607-add2-4b09-aab1-9c2cd99a5637\"}"},"country_code":"String","country_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country_code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"2df4a57b-d014-4a5d-85af-da0e5c1cd338\"}"},"lng":"String","lng.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lng\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"ebb5f748-468b-4afb-b122-5d0fea041104\"}"},"city":"String","city.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"city\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"afebab3d-bea0-4b6f-ab8c-97552f59436d\"}"},"timezone":"String","timezone.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"timezone\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"e5f43d5a-179b-44e7-8233-d9ace5567403\"}"},"lat":"String","lat.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lat\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"ba06dacd-72a2-4b64-b52d-2cae1353374b\"}"}},"geo.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"geo\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"3213af6c-3659-4fd5-8abb-abbc2cce7fe9\"}"},"karma":{"is_blocked":"String","is_blocked.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"is_blocked\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"2945100a-88df-4efc-8fbd-e469333e5115\"}"},"is_crawler":"String","is_crawler.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"is_crawler\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"72102fe0-16c3-4b6a-884d-ea6f09d08017\"}"},"is_regular":"String","is_regular.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"is_regular\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"a4929f52-3009-4170-82eb-b408f9d5a341\"}"},"is_bot":"String","is_bot.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"is_bot\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"1d0ed80f-218a-407f-81c1-ee0a7c52421e\"}"},"is_friend":"String","is_friend.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"is_friend\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"7f3ed2ee-a158-4c88-88e9-68a377e52da5\"}"}},"karma.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"karma\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"ccf1ab50-84be-4e84-8057-cac58950a8eb\"}"},"agent":"Any","agent.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"agent\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"a7278b7b-00c5-4b42-b725-1f4f31e7ec0f\"}"},"ip":"String","ip.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"ip\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"bf05d06e-0580-49e7-9011-c8c45163e7cc\"}"},"connection":{"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"726538fb-adbf-49ff-a2b4-1c4c0aa5bd37\"}"}},"connection.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"connection\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"c8713cb7-3e12-41d8-b7f3-5ada4d31e12a\"}"},"device":"Any","device.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"device\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"66c7f9fd-f47d-4f89-a8aa-403ad87dc075\"}"}},"client.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"client\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"6aaea462-5655-4976-9639-19aa5705f7d5\"}"},"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"20ee3cad-ce24-4da8-b8d9-9a58f63a19fd\"}"},"pid":"String","pid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pid\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"6fac5688-2ef5-42d1-9659-28a6269cc106\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"16a8c7b0-f823-4379-9846-b98bbe75223f\"}"},"time":"String","time.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"time\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"6bf0bf04-a1f0-40c3-9165-8a5a14577658\"}"},"lang":"String","lang.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lang\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"d072d419-f9a8-40e8-9276-e8ced3ee22d9\"}"},"params":{"iata_code":"String","iata_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"iata_code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"064a568d-ef23-4ec3-bfa4-12cceb8b2976\"}"},"lang":"String","lang.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lang\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"dc78d65e-175b-446a-8a0c-4dcd786401e0\"}"}},"params.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"params\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"371b6099-2136-45fe-a7ed-0366d27932c0\"}"},"version":"String","version.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"version\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"ff1c2d96-5535-4e0c-97ce-3095ab6ae958\"}"},"key":{"limits_total":"String","limits_total.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"limits_total\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"76ed1f86-6ca5-4505-8955-a9178729139f\"}"},"upgraded":"String","upgraded.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"upgraded\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"a157266b-400a-4d3b-8230-4298ccdf1fbf\"}"},"expired":"String","expired.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"expired\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"2a0b4994-ea9a-4bd8-820b-3a58539d2399\"}"},"api_key":"String","api_key.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"api_key\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"ec5a4d63-e5fb-4b76-8f01-4b914eab67f3\"}"},"limits_by_month":"String","limits_by_month.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"limits_by_month\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"0a019a6a-800e-42ab-b319-75d320bfa18c\"}"},"limits_by_minute":"String","limits_by_minute.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"limits_by_minute\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"3e2de09c-6230-468f-9278-5ae86eddeb76\"}"},"limits_by_hour":"String","limits_by_hour.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"limits_by_hour\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"1ba313ec-1702-44e2-9b2c-4685008ac86a\"}"},"registered":"String","registered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"registered\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"280aaa60-bb86-4cc5-92b1-122f2cbf19ce\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"b46ab4d5-ecf8-47dc-8482-47006a5180ea\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"5d4f8252-83b4-436f-847e-edcbc728a803\"}"}},"key.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"key\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"6520bd32-1bc0-4e6a-94b2-3bc72b48d06e\"}"}},"request.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"request\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"5f9634a5-a1c0-473d-9cb8-c8defd391a25\"}"},"terms":"String","terms.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"terms\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"1406e2e3-9af3-460b-a827-877691f4375e\"}"},"response":[{"$7_response":{"country_code":"String","country_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country_code\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"40760a1a-8c92-42cd-bbe9-2ab33222e51c\"}"},"icao_code":"String","icao_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"icao_code\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"1d25634a-9d2d-44dc-b455-1267a41a6847\"}"},"iata_code":"String","iata_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"iata_code\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8350db01-d73f-4da7-bed4-39b00b7ce87e\"}"},"lng":"String","lng.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lng\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"6f3013af-374e-4a0e-9729-b973b48f32bf\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"89ba4002-3e32-41d8-9abe-3e6f7655adaa\"}"},"lat":"String","lat.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lat\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"87fae70d-0464-46e7-b74c-385f77e992f2\"}"}}}],"response.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"response\",\"mandatory\":\"false\",\"child_name\":\"response_object\",\"uiUniqueId\":\"c25edc28-ab4e-47da-8c83-3c9c71f98549\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"response_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"50820bc8-f5d4-40d6-b5ef-c11f94566620\"}"}},"FlowDesigner:FD0be0809fe54fa610e713b24a49da532c.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"6c1fb5f4-60bf-41b7-a146-024295a49649\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD0be0809fe54fa610e713b24a49da532c\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:22:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cbe0809f474fa6105de26ea3a36d432c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:06</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD0be0809fe54fa610e713b24a49da532c,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=6c1fb5f4-60bf-41b7-a146-024295a49649</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">f470c41f474fa6105de26ea3a36d43f8</model>
+        <model_id>f470c41f474fa6105de26ea3a36d43f8</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f470c41f474fa6105de26ea3a36d43f8</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:20:34</sys_created_on>
+        <sys_id>3070c41f474fa6105de26ea3a36d43ff</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:22:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f470c41f474fa6105de26ea3a36d43f8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_f470c41f474fa6105de26ea3a36d43f8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:20:34</sys_created_on>
+        <sys_id>3070081f474fa6105de26ea3a36d4306</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:20:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=3fcc7347474fa6105de26ea3a36d43c2^sys_idNOT INe1ecf747474fa6105de26ea3a36d4340"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4ae20c9e-a5f4-4355-b87d-c07d14d1d5ab</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>iata</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>iata</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Worldwide Airport Database API">3fcc7347474fa6105de26ea3a36d43c2</model>
+        <model_id>3fcc7347474fa6105de26ea3a36d43c2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_3fcc7347474fa6105de26ea3a36d43c2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:05:04</sys_created_on>
+        <sys_id>e1ecf747474fa6105de26ea3a36d4340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:05:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e1ecf747474fa6105de26ea3a36d4340"/>
+    <sys_hub_action_output action="delete_multiple" query="model=3fcc7347474fa6105de26ea3a36d43c2^sys_idNOT IN21ec7b47474fa6105de26ea3a36d4336,25ec7b47474fa6105de26ea3a36d4330,96a0cc1f474fa6105de26ea3a36d43cd"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=e9a41392-ccb4-41be-bc42-67b2d065c2a9,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Worldwide Airport Database API">3fcc7347474fa6105de26ea3a36d43c2</model>
+        <model_id>3fcc7347474fa6105de26ea3a36d43c2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_3fcc7347474fa6105de26ea3a36d43c2</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:05:04</sys_created_on>
+        <sys_id>21ec7b47474fa6105de26ea3a36d4336</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:07</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=21ec7b47474fa6105de26ea3a36d4336"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=21ec7b47474fa6105de26ea3a36d4336"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=1bfe5a0a-920a-40db-b7e7-5e435e3583be</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Worldwide Airport Database API">3fcc7347474fa6105de26ea3a36d43c2</model>
+        <model_id>3fcc7347474fa6105de26ea3a36d43c2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_3fcc7347474fa6105de26ea3a36d43c2</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:05:04</sys_created_on>
+        <sys_id>25ec7b47474fa6105de26ea3a36d4330</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:21:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=25ec7b47474fa6105de26ea3a36d4330"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=25ec7b47474fa6105de26ea3a36d4330"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD96a0cc1fa84fa6106638ab7f323441cc</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>76e946e3976e2250fc1cf4ef9153af01</scope_name>
+        <serialized_content>{"FlowDesigner:FD96a0cc1fa84fa6106638ab7f323441cc":{"$COCollectionField":[{"response_object":{"country_code":"String","country_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country_code\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"40760a1a-8c92-42cd-bbe9-2ab33222e51c\"}"},"icao_code":"String","icao_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"icao_code\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"1d25634a-9d2d-44dc-b455-1267a41a6847\"}"},"iata_code":"String","iata_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"iata_code\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8350db01-d73f-4da7-bed4-39b00b7ce87e\"}"},"lng":"String","lng.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lng\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"6f3013af-374e-4a0e-9729-b973b48f32bf\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"89ba4002-3e32-41d8-9abe-3e6f7655adaa\"}"},"lat":"String","lat.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lat\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"87fae70d-0464-46e7-b74c-385f77e992f2\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"86bf6385-5745-440d-bc8d-20fed587b4c0\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"airport info\",\"mandatory\":\"false\",\"child_name\":\"response_object\",\"uiUniqueId\":\"75f94920-2ab2-4e0a-b4f9-b10ffb5a7d8c\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD96a0cc1fa84fa6106638ab7f323441cc\",\"child_label\":\"response_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"c25edc28-ab4e-47da-8c83-3c9c71f98549\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"50820bc8-f5d4-40d6-b5ef-c11f94566620\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD96a0cc1fa84fa6106638ab7f323441cc.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"86bf6385-5745-440d-bc8d-20fed587b4c0\",\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"airport info\",\"mandatory\":\"false\",\"child_name\":\"response_object\",\"uiUniqueId\":\"75f94920-2ab2-4e0a-b4f9-b10ffb5a7d8c\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD96a0cc1fa84fa6106638ab7f323441cc\",\"child_label\":\"response_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"c25edc28-ab4e-47da-8c83-3c9c71f98549\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"50820bc8-f5d4-40d6-b5ef-c11f94566620\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:21:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5aa0cc1f474fa6105de26ea3a36d43cc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:06</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=response_object,child_name=response_object,child_type=object,child_type_label=Object,child_uiUniqueId=50820bc8-f5d4-40d6-b5ef-c11f94566620,co_type_name=FD96a0cc1fa84fa6106638ab7f323441cc,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=86bf6385-5745-440d-bc8d-20fed587b4c0,sourceType=step,sourceUiUniqueId=c25edc28-ab4e-47da-8c83-3c9c71f98549,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=75f94920-2ab2-4e0a-b4f9-b10ffb5a7d8c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>airport_info</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>airport info</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Worldwide Airport Database API">3fcc7347474fa6105de26ea3a36d43c2</model>
+        <model_id>3fcc7347474fa6105de26ea3a36d43c2</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_3fcc7347474fa6105de26ea3a36d43c2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:21:30</sys_created_on>
+        <sys_id>96a0cc1f474fa6105de26ea3a36d43cd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:22:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=96a0cc1f474fa6105de26ea3a36d43cd"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=96a0cc1f474fa6105de26ea3a36d43cd"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=3fcc7347474fa6105de26ea3a36d43c2"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=3fcc7347474fa6105de26ea3a36d43c2^sys_idNOT IN39ec7b47474fa6105de26ea3a36d4343"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Worldwide Airport Database API">3fcc7347474fa6105de26ea3a36d43c2</action_type_id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:05:04</sys_created_on>
+        <sys_id>39ec7b47474fa6105de26ea3a36d4343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:05:04</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=39ec7b47474fa6105de26ea3a36d4343"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>iata</element>
+        <help/>
+        <hint/>
+        <label>iata</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_3fcc7347474fa6105de26ea3a36d43c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:05:04</sys_created_on>
+        <sys_id>69ec7b47474fa6105de26ea3a36d430b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:05:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_3fcc7347474fa6105de26ea3a36d43c2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_3fcc7347474fa6105de26ea3a36d43c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:05:04</sys_created_on>
+        <sys_id>21ec7b47474fa6105de26ea3a36d4335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:05:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_3fcc7347474fa6105de26ea3a36d43c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:05:04</sys_created_on>
+        <sys_id>adec7b47474fa6105de26ea3a36d433c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:05:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>airport_info</element>
+        <help/>
+        <hint/>
+        <label>airport info</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_3fcc7347474fa6105de26ea3a36d43c2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:21:30</sys_created_on>
+        <sys_id>d6a0005f474fa6105de26ea3a36d4310</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:21:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_3fcc7347474fa6105de26ea3a36d43c2"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=3fcc7347474fa6105de26ea3a36d43c2^sys_idNOT IN3201089f474fa6105de26ea3a36d43c2"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Worldwide Airport Database API">3fcc7347474fa6105de26ea3a36d43c2</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"3201089f474fa6105de26ea3a36d43c2","name":"plan","plan_signature":null}}</plan>
+        <snapshot>e201089f474fa6105de26ea3a36d4384</snapshot>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3201089f474fa6105de26ea3a36d43c2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:10</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Get the longitute and latitude info from https://airlabs.co/api/v9</description>
+        <flow_priority/>
+        <internal_name>worldwide_airport_database_api</internal_name>
+        <label_cache>[{"name":"{{action.iata}}","label":"action➛iata","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8696fc5f-1dea-4125-94fd-ff49048f590d].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[86bf6385-5745-440d-bc8d-20fed587b4c0].root.response}}","label":"step➛JSON Parser step➛root➛response","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Worldwide Airport Database API</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Worldwide Airport Database API">3fcc7347474fa6105de26ea3a36d43c2</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4201089f474fa6105de26ea3a36d432c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:07</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=4201089f474fa6105de26ea3a36d432c"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4201089f474fa6105de26ea3a36d432c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>4201089f474fa6105de26ea3a36d432c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:09</sys_created_on>
+        <sys_id>6601089f474fa6105de26ea3a36d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:09</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"mapped\":\"{}\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"1cf572eb-c590-4a34-a138-40c1e56409e2\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}}</value>
+        <variable display_value="Action Status">da01089f474fa6105de26ea3a36d4371</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>4201089f474fa6105de26ea3a36d432c</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:09</sys_created_on>
+        <sys_id>a201089f474fa6105de26ea3a36d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:09</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">d201089f474fa6105de26ea3a36d4376</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4201089f474fa6105de26ea3a36d432c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>airport_info</field>
+        <id>4201089f474fa6105de26ea3a36d432c</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:09</sys_created_on>
+        <sys_id>aa01089f474fa6105de26ea3a36d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:09</sys_updated_on>
+        <table>var__m_sys_hub_action_output_4201089f474fa6105de26ea3a36d432c</table>
+        <value>{{step[86bf6385-5745-440d-bc8d-20fed587b4c0].root.response}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>4201089f474fa6105de26ea3a36d432c</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:09</sys_created_on>
+        <sys_id>2201089f474fa6105de26ea3a36d4381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:09</sys_updated_on>
+        <table>var__m_sys_hub_action_output_4201089f474fa6105de26ea3a36d432c</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>4201089f474fa6105de26ea3a36d432c</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:09</sys_created_on>
+        <sys_id>6e01089f474fa6105de26ea3a36d4380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:09</sys_updated_on>
+        <table>var__m_sys_hub_action_output_4201089f474fa6105de26ea3a36d432c</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=4201089f474fa6105de26ea3a36d432c^sys_idNOT IN1201089f474fa6105de26ea3a36d435b,5601089f474fa6105de26ea3a36d4339"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Worldwide Airport Database API">4201089f474fa6105de26ea3a36d432c</action>
+        <cid>86bf6385-5745-440d-bc8d-20fed587b4c0</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>1201089f474fa6105de26ea3a36d435b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1201089f474fa6105de26ea3a36d435b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1201089f474fa6105de26ea3a36d435b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>1601089f474fa6105de26ea3a36d4368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"request","children":[{"name":"lang","children":[],"type":"string","jpath":"$.request.lang","previewValue":"en"},{"name":"currency","children":[],"type":"string","jpath":"$.request.currency","previewValue":"USD"},{"name":"time","children":[],"type":"string","jpath":"$.request.time","previewValue":"1"},{"name":"id","children":[],"type":"string","jpath":"$.request.id","previewValue":"p127j2iz70w"},{"name":"server","children":[],"type":"string","jpath":"$.request.server","previewValue":"b"},{"name":"host","children":[],"type":"string","jpath":"$.request.host","previewValue":"airlabs.co"},{"name":"pid","children":[],"type":"string","jpath":"$.request.pid","previewValue":"833264"},{"name":"key","children":[{"name":"id","children":[],"type":"string","jpath":"$.request.key.id","previewValue":"21862"},{"name":"api_key","children":[],"type":"string","jpath":"$.request.key.api_key","previewValue":"24283a50-ed20-451a-908d-6f7ba2cc79c4"},{"name":"type","children":[],"type":"string","jpath":"$.request.key.type","previewValue":"free"},{"name":"expired","children":[],"type":"string","jpath":"$.request.key.expired","previewValue":"2025-08-23T00:00:00.000Z"},{"name":"registered","children":[],"type":"string","jpath":"$.request.key.registered","previewValue":"2023-01-09T12:48:17.000Z"},{"name":"upgraded","children":[],"type":"string","jpath":"$.request.key.upgraded","previewValue":""},{"name":"limits_by_hour","children":[],"type":"string","jpath":"$.request.key.limits_by_hour","previewValue":"2500"},{"name":"limits_by_minute","children":[],"type":"string","jpath":"$.request.key.limits_by_minute","previewValue":"250"},{"name":"limits_by_month","children":[],"type":"string","jpath":"$.request.key.limits_by_month","previewValue":"1000"},{"name":"limits_total","children":[],"type":"string","jpath":"$.request.key.limits_total","previewValue":"990"}],"type":"object","jpath":"$.request.key","previewValue":""},{"name":"params","children":[{"name":"iata_code","children":[],"type":"string","jpath":"$.request.params.iata_code","previewValue":"ADL"},{"name":"lang","children":[],"type":"string","jpath":"$.request.params.lang","previewValue":"en"}],"type":"object","jpath":"$.request.params","previewValue":""},{"name":"version","children":[],"type":"string","jpath":"$.request.version","previewValue":"9"},{"name":"method","children":[],"type":"string","jpath":"$.request.method","previewValue":"airports"},{"name":"client","children":[{"name":"ip","children":[],"type":"string","jpath":"$.request.client.ip","previewValue":"149.96.221.12"},{"name":"geo","children":[{"name":"country_code","children":[],"type":"string","jpath":"$.request.client.geo.country_code","previewValue":"US"},{"name":"country","children":[],"type":"string","jpath":"$.request.client.geo.country","previewValue":"United States"},{"name":"continent","children":[],"type":"string","jpath":"$.request.client.geo.continent","previewValue":"North America"},{"name":"city","children":[],"type":"string","jpath":"$.request.client.geo.city","previewValue":"San Diego"},{"name":"lat","children":[],"type":"string","jpath":"$.request.client.geo.lat","previewValue":"32.7203"},{"name":"lng","children":[],"type":"string","jpath":"$.request.client.geo.lng","previewValue":"-117.1552"},{"name":"timezone","children":[],"type":"string","jpath":"$.request.client.geo.timezone","previewValue":"America/Los_Angeles"}],"type":"object","jpath":"$.request.client.geo","previewValue":""},{"name":"connection","children":[{"name":"type","children":[],"type":"string","jpath":"$.request.client.connection.type","previewValue":"corporate"}],"type":"object","jpath":"$.request.client.connection","previewValue":""},{"name":"device","children":[],"type":"object","jpath":"$.request.client.device","previewValue":""},{"name":"agent","children":[],"type":"object","jpath":"$.request.client.agent","previewValue":""},{"name":"karma","children":[{"name":"is_blocked","children":[],"type":"string","jpath":"$.request.client.karma.is_blocked","previewValue":"false"},{"name":"is_crawler","children":[],"type":"string","jpath":"$.request.client.karma.is_crawler","previewValue":"false"},{"name":"is_bot","children":[],"type":"string","jpath":"$.request.client.karma.is_bot","previewValue":"false"},{"name":"is_friend","children":[],"type":"string","jpath":"$.request.client.karma.is_friend","previewValue":"false"},{"name":"is_regular","children":[],"type":"string","jpath":"$.request.client.karma.is_regular","previewValue":"true"}],"type":"object","jpath":"$.request.client.karma","previewValue":""}],"type":"object","jpath":"$.request.client","previewValue":""}],"type":"object","jpath":"$.request","previewValue":""},{"name":"response","children":[{"name":"response_object","children":[{"name":"name","children":[],"type":"string","jpath":"$.response[*].name","previewValue":"Adelaide Airport"},{"name":"iata_code","children":[],"type":"string","jpath":"$.response[*].iata_code","previewValue":"ADL"},{"name":"icao_code","children":[],"type":"string","jpath":"$.response[*].icao_code","previewValue":"YPAD"},{"name":"lat","children":[],"type":"string","jpath":"$.response[*].lat","previewValue":"-34.945"},{"name":"lng","children":[],"type":"string","jpath":"$.response[*].lng","previewValue":"138.53056"},{"name":"country_code","children":[],"type":"string","jpath":"$.response[*].country_code","previewValue":"AU"}],"type":"object","jpath":"$.response[*]","previewValue":""}],"type":"array.object","jpath":"$.response[*]","previewValue":""},{"name":"terms","children":[],"type":"string","jpath":"$.terms","previewValue":"Unauthorized access is prohibited and punishable by law. \nReselling data 'As Is' without AirLabs.Co permission is strictly prohibited. \nFull terms on https://airlabs.co/. \nContact us info@airlabs.co"}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1201089f474fa6105de26ea3a36d435b</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>9a01089f474fa6105de26ea3a36d4368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value>structured</value>
+        <variable display_value="Payload view">95d4280787523300f917e55936cb0bfe</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>1201089f474fa6105de26ea3a36d435b</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>d601089f474fa6105de26ea3a36d4368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value>{"request":{"lang":"en","currency":"USD","time":1,"id":"p127j2iz70w","server":"b","host":"airlabs.co","pid":833264,"key":{"id":21862,"api_key":"24283a50-ed20-451a-908d-6f7ba2cc79c4","type":"free","expired":"2025-08-23T00:00:00.000Z","registered":"2023-01-09T12:48:17.000Z","upgraded":null,"limits_by_hour":2500,"limits_by_minute":250,"limits_by_month":1000,"limits_total":990},"params":{"iata_code":"ADL","lang":"en"},"version":9,"method":"airports","client":{"ip":"149.96.221.12","geo":{"country_code":"US","country":"United States","continent":"North America","city":"San Diego","lat":32.7203,"lng":-117.1552,"timezone":"America/Los_Angeles"},"connection":{"type":"corporate"},"device":{},"agent":{},"karma":{"is_blocked":false,"is_crawler":false,"is_bot":false,"is_friend":false,"is_regular":true}}},"response":[{"name":"Adelaide Airport","iata_code":"ADL","icao_code":"YPAD","lat":-34.945,"lng":138.53056,"country_code":"AU"}],"terms":"Unauthorized access is prohibited and punishable by law. \nReselling data 'As Is' without AirLabs.Co permission is strictly prohibited. \nFull terms on https://airlabs.co/. \nContact us info@airlabs.co"}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_1201089f474fa6105de26ea3a36d435b^id=1201089f474fa6105de26ea3a36d435b"/>
+    <sys_element_mapping action="delete_multiple" query="id=1201089f474fa6105de26ea3a36d435b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>payload_view</field>
+        <id>1201089f474fa6105de26ea3a36d435b</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>de01089f474fa6105de26ea3a36d4367</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>1201089f474fa6105de26ea3a36d435b</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>9201089f474fa6105de26ea3a36d4368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>1201089f474fa6105de26ea3a36d435b</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>1e01089f474fa6105de26ea3a36d4367</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[8696fc5f-1dea-4125-94fd-ff49048f590d].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>1201089f474fa6105de26ea3a36d435b</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>5a01089f474fa6105de26ea3a36d4367</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=1201089f474fa6105de26ea3a36d435b"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=1201089f474fa6105de26ea3a36d435b^sys_idNOT IN1201089f474fa6105de26ea3a36d435f"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDde01089f334fa6102d6553a09f92ae5d</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>76e946e3976e2250fc1cf4ef9153af01</scope_name>
+        <serialized_content>{"FlowDesigner:FDde01089f334fa6102d6553a09f92ae5d":{"request":{"server":"String","server.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"server\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"72c9e6f0-5ccc-4747-b12a-40c6c7c4a441\"}"},"method":"String","method.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"method\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"b0de2e2f-2700-4db0-983f-a2366a1d396a\"}"},"host":"String","host.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"host\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"138b87bd-0c80-46f1-bdc2-dc5776131fd0\"}"},"client":{"geo":{"continent":"String","continent.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"continent\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"c0c019d7-ef37-471c-88f2-e1cf55484cdd\"}"},"country":"String","country.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"b1771607-add2-4b09-aab1-9c2cd99a5637\"}"},"country_code":"String","country_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country_code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"2df4a57b-d014-4a5d-85af-da0e5c1cd338\"}"},"lng":"String","lng.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lng\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"ebb5f748-468b-4afb-b122-5d0fea041104\"}"},"city":"String","city.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"city\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"afebab3d-bea0-4b6f-ab8c-97552f59436d\"}"},"timezone":"String","timezone.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"timezone\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"e5f43d5a-179b-44e7-8233-d9ace5567403\"}"},"lat":"String","lat.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lat\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"ba06dacd-72a2-4b64-b52d-2cae1353374b\"}"}},"geo.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"geo\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"3213af6c-3659-4fd5-8abb-abbc2cce7fe9\"}"},"karma":{"is_blocked":"String","is_blocked.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"is_blocked\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"2945100a-88df-4efc-8fbd-e469333e5115\"}"},"is_crawler":"String","is_crawler.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"is_crawler\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"72102fe0-16c3-4b6a-884d-ea6f09d08017\"}"},"is_regular":"String","is_regular.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"is_regular\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"a4929f52-3009-4170-82eb-b408f9d5a341\"}"},"is_bot":"String","is_bot.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"is_bot\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"1d0ed80f-218a-407f-81c1-ee0a7c52421e\"}"},"is_friend":"String","is_friend.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"is_friend\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"7f3ed2ee-a158-4c88-88e9-68a377e52da5\"}"}},"karma.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"karma\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"ccf1ab50-84be-4e84-8057-cac58950a8eb\"}"},"agent":"Any","agent.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"agent\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"a7278b7b-00c5-4b42-b725-1f4f31e7ec0f\"}"},"ip":"String","ip.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"ip\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"bf05d06e-0580-49e7-9011-c8c45163e7cc\"}"},"connection":{"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"726538fb-adbf-49ff-a2b4-1c4c0aa5bd37\"}"}},"connection.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"connection\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"c8713cb7-3e12-41d8-b7f3-5ada4d31e12a\"}"},"device":"Any","device.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"device\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"66c7f9fd-f47d-4f89-a8aa-403ad87dc075\"}"}},"client.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"client\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"6aaea462-5655-4976-9639-19aa5705f7d5\"}"},"currency":"String","currency.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"currency\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"20ee3cad-ce24-4da8-b8d9-9a58f63a19fd\"}"},"pid":"String","pid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"pid\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"6fac5688-2ef5-42d1-9659-28a6269cc106\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"16a8c7b0-f823-4379-9846-b98bbe75223f\"}"},"time":"String","time.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"time\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"6bf0bf04-a1f0-40c3-9165-8a5a14577658\"}"},"lang":"String","lang.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lang\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"d072d419-f9a8-40e8-9276-e8ced3ee22d9\"}"},"params":{"iata_code":"String","iata_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"iata_code\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"064a568d-ef23-4ec3-bfa4-12cceb8b2976\"}"},"lang":"String","lang.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lang\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"dc78d65e-175b-446a-8a0c-4dcd786401e0\"}"}},"params.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"params\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"371b6099-2136-45fe-a7ed-0366d27932c0\"}"},"version":"String","version.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"version\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"ff1c2d96-5535-4e0c-97ce-3095ab6ae958\"}"},"key":{"limits_total":"String","limits_total.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"limits_total\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"76ed1f86-6ca5-4505-8955-a9178729139f\"}"},"upgraded":"String","upgraded.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"upgraded\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"a157266b-400a-4d3b-8230-4298ccdf1fbf\"}"},"expired":"String","expired.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"expired\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"2a0b4994-ea9a-4bd8-820b-3a58539d2399\"}"},"api_key":"String","api_key.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"api_key\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"ec5a4d63-e5fb-4b76-8f01-4b914eab67f3\"}"},"limits_by_month":"String","limits_by_month.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"limits_by_month\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"0a019a6a-800e-42ab-b319-75d320bfa18c\"}"},"limits_by_minute":"String","limits_by_minute.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"limits_by_minute\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"3e2de09c-6230-468f-9278-5ae86eddeb76\"}"},"limits_by_hour":"String","limits_by_hour.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"limits_by_hour\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"1ba313ec-1702-44e2-9b2c-4685008ac86a\"}"},"registered":"String","registered.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"registered\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"280aaa60-bb86-4cc5-92b1-122f2cbf19ce\"}"},"id":"String","id.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"id\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"b46ab4d5-ecf8-47dc-8482-47006a5180ea\"}"},"type":"String","type.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"type\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"5d4f8252-83b4-436f-847e-edcbc728a803\"}"}},"key.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"key\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"6520bd32-1bc0-4e6a-94b2-3bc72b48d06e\"}"}},"request.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"request\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"5f9634a5-a1c0-473d-9cb8-c8defd391a25\"}"},"terms":"String","terms.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"terms\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"1406e2e3-9af3-460b-a827-877691f4375e\"}"},"response":[{"$7_response":{"country_code":"String","country_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country_code\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"40760a1a-8c92-42cd-bbe9-2ab33222e51c\"}"},"icao_code":"String","icao_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"icao_code\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"1d25634a-9d2d-44dc-b455-1267a41a6847\"}"},"iata_code":"String","iata_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"iata_code\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8350db01-d73f-4da7-bed4-39b00b7ce87e\"}"},"lng":"String","lng.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lng\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"6f3013af-374e-4a0e-9729-b973b48f32bf\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"89ba4002-3e32-41d8-9abe-3e6f7655adaa\"}"},"lat":"String","lat.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lat\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"87fae70d-0464-46e7-b74c-385f77e992f2\"}"}}}],"response.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"response\",\"mandatory\":\"false\",\"child_name\":\"response_object\",\"uiUniqueId\":\"c25edc28-ab4e-47da-8c83-3c9c71f98549\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"response_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"2\",\"max_length\":\"0\",\"child_uiUniqueId\":\"50820bc8-f5d4-40d6-b5ef-c11f94566620\"}"}},"FlowDesigner:FDde01089f334fa6102d6553a09f92ae5d.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"6c1fb5f4-60bf-41b7-a146-024295a49649\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDde01089f334fa6102d6553a09f92ae5d\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9201089f474fa6105de26ea3a36d435e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDde01089f334fa6102d6553a09f92ae5d,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=6c1fb5f4-60bf-41b7-a146-024295a49649</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">1201089f474fa6105de26ea3a36d435b</model>
+        <model_id>1201089f474fa6105de26ea3a36d435b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_1201089f474fa6105de26ea3a36d435b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>1201089f474fa6105de26ea3a36d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1201089f474fa6105de26ea3a36d435b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_1201089f474fa6105de26ea3a36d435b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>1a01089f474fa6105de26ea3a36d4362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Worldwide Airport Database API">4201089f474fa6105de26ea3a36d432c</action>
+        <cid>8696fc5f-1dea-4125-94fd-ff49048f590d</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>5601089f474fa6105de26ea3a36d4339</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=5601089f474fa6105de26ea3a36d4339"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5601089f474fa6105de26ea3a36d4339</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>1201089f474fa6105de26ea3a36d4356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5601089f474fa6105de26ea3a36d4339</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>1601089f474fa6105de26ea3a36d4355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5601089f474fa6105de26ea3a36d4339</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>1a01089f474fa6105de26ea3a36d4354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5601089f474fa6105de26ea3a36d4339</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>5201089f474fa6105de26ea3a36d4355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{"mandatory":false,"omit_if_empty":false},"name":"User-Agent","value":"XXXXXX"}]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5601089f474fa6105de26ea3a36d4339</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>5601089f474fa6105de26ea3a36d4354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5601089f474fa6105de26ea3a36d4339</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>5e01089f474fa6105de26ea3a36d4355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5601089f474fa6105de26ea3a36d4339</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>9a01089f474fa6105de26ea3a36d4355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value>6d9d5ed347bea2d0873506f1d16d435c</value>
+        <variable display_value="Credential Alias">445c2a72b3701300176b051a16a8dcc2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5601089f474fa6105de26ea3a36d4339</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>9e01089f474fa6105de26ea3a36d4354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value>define_connection_inline</value>
+        <variable display_value="Connection">91e207d03b50030057a4a2e334efc4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5601089f474fa6105de26ea3a36d4339</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>d201089f474fa6105de26ea3a36d4356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5601089f474fa6105de26ea3a36d4339</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>d601089f474fa6105de26ea3a36d4355</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value>https://airlabs.co/api/v9</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>5601089f474fa6105de26ea3a36d4339</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>da01089f474fa6105de26ea3a36d4354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <value>/airports</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_5601089f474fa6105de26ea3a36d4339^id=5601089f474fa6105de26ea3a36d4339"/>
+    <sys_element_mapping action="delete_multiple" query="id=5601089f474fa6105de26ea3a36d4339"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>5601089f474fa6105de26ea3a36d4339</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>5e01089f474fa6105de26ea3a36d4353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>5601089f474fa6105de26ea3a36d4339</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>d601089f474fa6105de26ea3a36d4353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>5601089f474fa6105de26ea3a36d4339</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>1601089f474fa6105de26ea3a36d4353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection</field>
+        <id>5601089f474fa6105de26ea3a36d4339</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>9e01089f474fa6105de26ea3a36d4352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>5601089f474fa6105de26ea3a36d4339</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>d201089f474fa6105de26ea3a36d4354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>5601089f474fa6105de26ea3a36d4339</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>9a01089f474fa6105de26ea3a36d4353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>5601089f474fa6105de26ea3a36d4339</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>5201089f474fa6105de26ea3a36d4353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>5601089f474fa6105de26ea3a36d4339</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>5601089f474fa6105de26ea3a36d4352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>5601089f474fa6105de26ea3a36d4339</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>1a01089f474fa6105de26ea3a36d4352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>5601089f474fa6105de26ea3a36d4339</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>1201089f474fa6105de26ea3a36d4354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"api_key","value":"24283a50-ed20-451a-908d-6f7ba2cc79c4","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"iata_code","value":"{{action.iata}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>5601089f474fa6105de26ea3a36d4339</id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>da01089f474fa6105de26ea3a36d4352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=5601089f474fa6105de26ea3a36d4339"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=5601089f474fa6105de26ea3a36d4339^sys_idNOT IN5601089f474fa6105de26ea3a36d4343"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=d3ebef13-d0e1-4f84-a565-adf7bcccc1b8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">5601089f474fa6105de26ea3a36d4339</model>
+        <model_id>5601089f474fa6105de26ea3a36d4339</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_5601089f474fa6105de26ea3a36d4339</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>5601089f474fa6105de26ea3a36d4343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5601089f474fa6105de26ea3a36d4339"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_5601089f474fa6105de26ea3a36d4339</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>9e01089f474fa6105de26ea3a36d4346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=4201089f474fa6105de26ea3a36d432c^sys_idNOT IN5601089f474fa6105de26ea3a36d432f"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=4ae20c9e-a5f4-4355-b87d-c07d14d1d5ab</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>iata</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>iata</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Worldwide Airport Database API">4201089f474fa6105de26ea3a36d432c</model>
+        <model_id>4201089f474fa6105de26ea3a36d432c</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_4201089f474fa6105de26ea3a36d432c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>5601089f474fa6105de26ea3a36d432f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5601089f474fa6105de26ea3a36d432f"/>
+    <sys_hub_action_output action="delete_multiple" query="model=4201089f474fa6105de26ea3a36d432c^sys_idNOT INd201089f474fa6105de26ea3a36d436c,d201089f474fa6105de26ea3a36d4376,da01089f474fa6105de26ea3a36d4371"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD9201089f574fa6105510246d7becd76b</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>76e946e3976e2250fc1cf4ef9153af01</scope_name>
+        <serialized_content>{"FlowDesigner:FD9201089f574fa6105510246d7becd76b":{"$COCollectionField":[{"response_object":{"country_code":"String","country_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"country_code\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"40760a1a-8c92-42cd-bbe9-2ab33222e51c\"}"},"icao_code":"String","icao_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"icao_code\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"1d25634a-9d2d-44dc-b455-1267a41a6847\"}"},"iata_code":"String","iata_code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"iata_code\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"8350db01-d73f-4da7-bed4-39b00b7ce87e\"}"},"lng":"String","lng.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lng\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"6f3013af-374e-4a0e-9729-b973b48f32bf\"}"},"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"89ba4002-3e32-41d8-9abe-3e6f7655adaa\"}"},"lat":"String","lat.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lat\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"87fae70d-0464-46e7-b74c-385f77e992f2\"}"}}}],"$COCollectionField.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"86bf6385-5745-440d-bc8d-20fed587b4c0\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"airport info\",\"mandatory\":\"false\",\"child_name\":\"response_object\",\"uiUniqueId\":\"75f94920-2ab2-4e0a-b4f9-b10ffb5a7d8c\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD9201089f574fa6105510246d7becd76b\",\"child_label\":\"response_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"c25edc28-ab4e-47da-8c83-3c9c71f98549\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"50820bc8-f5d4-40d6-b5ef-c11f94566620\"}"},"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD9201089f574fa6105510246d7becd76b.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"86bf6385-5745-440d-bc8d-20fed587b4c0\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"airport info\",\"mandatory\":\"false\",\"child_name\":\"response_object\",\"uiUniqueId\":\"75f94920-2ab2-4e0a-b4f9-b10ffb5a7d8c\",\"uiTypeLabel\":\"Array.Object\",\"co_type_name\":\"FD9201089f574fa6105510246d7becd76b\",\"child_label\":\"response_object\",\"child_type_label\":\"Object\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"c25edc28-ab4e-47da-8c83-3c9c71f98549\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"50820bc8-f5d4-40d6-b5ef-c11f94566620\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5601089f474fa6105de26ea3a36d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=response_object,child_name=response_object,child_type=object,child_type_label=Object,child_uiUniqueId=50820bc8-f5d4-40d6-b5ef-c11f94566620,co_type_name=FD9201089f574fa6105510246d7becd76b,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=86bf6385-5745-440d-bc8d-20fed587b4c0,sourceType=step,sourceUiUniqueId=c25edc28-ab4e-47da-8c83-3c9c71f98549,uiType=array.object,uiTypeLabel=Array.Object,uiUniqueId=75f94920-2ab2-4e0a-b4f9-b10ffb5a7d8c</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>airport_info</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>airport info</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Worldwide Airport Database API">4201089f474fa6105de26ea3a36d432c</model>
+        <model_id>4201089f474fa6105de26ea3a36d432c</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_4201089f474fa6105de26ea3a36d432c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>d201089f474fa6105de26ea3a36d436c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d201089f474fa6105de26ea3a36d436c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d201089f474fa6105de26ea3a36d436c"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=e9a41392-ccb4-41be-bc42-67b2d065c2a9,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Worldwide Airport Database API">4201089f474fa6105de26ea3a36d432c</model>
+        <model_id>4201089f474fa6105de26ea3a36d432c</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_4201089f474fa6105de26ea3a36d432c</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>d201089f474fa6105de26ea3a36d4376</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:09</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d201089f474fa6105de26ea3a36d4376"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d201089f474fa6105de26ea3a36d4376"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=1bfe5a0a-920a-40db-b7e7-5e435e3583be</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Worldwide Airport Database API">4201089f474fa6105de26ea3a36d432c</model>
+        <model_id>4201089f474fa6105de26ea3a36d432c</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_4201089f474fa6105de26ea3a36d432c</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>da01089f474fa6105de26ea3a36d4371</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=da01089f474fa6105de26ea3a36d4371"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=da01089f474fa6105de26ea3a36d4371"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4201089f474fa6105de26ea3a36d432c"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=4201089f474fa6105de26ea3a36d432c^sys_idNOT INaa01089f474fa6105de26ea3a36d4383"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Worldwide Airport Database API">4201089f474fa6105de26ea3a36d432c</action_type_id>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:09</sys_created_on>
+        <sys_id>aa01089f474fa6105de26ea3a36d4383</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:09</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=aa01089f474fa6105de26ea3a36d4383"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>iata</element>
+        <help/>
+        <hint/>
+        <label>iata</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_4201089f474fa6105de26ea3a36d432c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>d601089f474fa6105de26ea3a36d4333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_4201089f474fa6105de26ea3a36d432c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_4201089f474fa6105de26ea3a36d432c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:09</sys_created_on>
+        <sys_id>6e01089f474fa6105de26ea3a36d437b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:09</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_4201089f474fa6105de26ea3a36d432c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>d201089f474fa6105de26ea3a36d4375</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>airport_info</element>
+        <help/>
+        <hint/>
+        <label>airport info</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_4201089f474fa6105de26ea3a36d432c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>carmen.man</sys_created_by>
+        <sys_created_on>2025-08-04 02:23:08</sys_created_on>
+        <sys_id>da01089f474fa6105de26ea3a36d4370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>carmen.man</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:23:08</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_4201089f474fa6105de26ea3a36d432c"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>3fcc7347474fa6105de26ea3a36d43c2</sys_id>
+        <latest_snapshot>4201089f474fa6105de26ea3a36d432c</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch6-07-17-2025_07-27-2025_1301.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>
