@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_usecase">
+    <sn_aia_usecase action="INSERT_OR_UPDATE">
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <base_plan>1. Efficiently categorize an incident and update the field.
+- DO NOT DECOMPOSE this step further.
+
+2. Check for Major Incidents/Outages &amp; Link to Incident
+- If a Link major incident AI agent agent exists, check for ongoing major incidents that might be related.
+- If a major incident is found, link the current incident accordingly and end the conversation.
+
+3. Check for Related Problems &amp; Link Incident
+- Look for any known problems associated with the issue.
+- If a related problem exists, link the incident to it to ensure proper tracking and resolution.</base_plan>
+        <description>This agentic workflow enables fulfillers to identify the category, subcategory and configuration items for an incident automatically, and link associated major incidents or known problems.</description>
+        <execution_mode>copilot</execution_mode>
+        <internal_name>global.x_snc_duty_travel.Triage and categorize ITSM incidents (Copy 2)</internal_name>
+        <name>Triage and categorize ITSM incidents (Copy 2)</name>
+        <parent/>
+        <record_type>custom</record_type>
+        <source_id display_value="Triage and categorize ITSM incidents (Copy)">478153aec3deea54712af5f905013143</source_id>
+        <strategy display_value="Base Planner">a43ada98ff1422106c36ffffffffff46</strategy>
+        <sys_class_name>sn_aia_usecase</sys_class_name>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 02:12:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>628eb783c30fa610712af5f9050131c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Triage and categorize ITSM incidents (Copy 2)</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_usecase_628eb783c30fa610712af5f9050131c5</sys_update_name>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:13:30</sys_updated_on>
+        <team display_value="Triage and categorize ITSM incidents (Copy 2)">568eb783c30fa610712af5f9050131c1</team>
+    </sn_aia_usecase>
+</record_update>

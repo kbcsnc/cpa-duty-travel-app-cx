@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_configuration">
+    <sn_aia_trigger_configuration action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_rule/>
+        <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
+        <condition table="incident">stateCHANGESTO2^assigned_toISNOTEMPTY^EQ<item display_value="In Progress" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
+            <item endquery="false" field="assigned_to" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <enable_discovery>false</enable_discovery>
+        <internal_name>global.x_snc_duty_travel.Investigate and resolve ITSM incidents (Copy 2)</internal_name>
+        <name>Investigate and resolve ITSM incidents (Copy 2)</name>
+        <notification_script display_value="Show AIA notification - incident">080486e0472e2e105de26ea3a36d43fc</notification_script>
+        <objective_template><![CDATA[Help me resolve ${number}]]></objective_template>
+        <portal display_value="">undefined</portal>
+        <profile display_value="">undefined</profile>
+        <run_as>assigned_to</run_as>
+        <run_as_script/>
+        <run_dayofmonth/>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start/>
+        <run_time/>
+        <show_notifications>true</show_notifications>
+        <sys_class_name>sn_aia_trigger_configuration</sys_class_name>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 02:27:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a9f1881fc30fa610712af5f905013114</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_trigger_configuration_a9f1881fc30fa610712af5f905013114</sys_update_name>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:52:16</sys_updated_on>
+        <target_table>incident</target_table>
+        <trigger_flow display_value="Incident - Use case: Investigate and resolve ITSM incidents (Copy 2) - edf14c13478fa6105de26ea3a36d43f8">e5f14c13478fa6105de26ea3a36d43f9</trigger_flow>
+        <trigger_flow_definition_type>record_update</trigger_flow_definition_type>
+        <usecase display_value="Investigate and resolve ITSM incidents (Copy 2)">29f1481fc30fa610712af5f9050131f1</usecase>
+        <usecase_discovery>false</usecase_discovery>
+    </sn_aia_trigger_configuration>
+</record_update>

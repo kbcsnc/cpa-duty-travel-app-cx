@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_nowassist_skill_config_var_set">
+    <sn_nowassist_skill_config_var_set action="INSERT_OR_UPDATE">
+        <config_type display_value="General details">38372887436882106b5f90cfd7b8f25d</config_type>
+        <description/>
+        <hide_step>false</hide_step>
+        <name>General details</name>
+        <order>100</order>
+        <parent/>
+        <screen_id>b42e0753433442106b5f90cfd7b8f2f8</screen_id>
+        <screen_table>sys_ux_macroponent</screen_table>
+        <skill_config display_value="Incident summarization (copy)">2595549fc3cfa610712af5f9050131e6</skill_config>
+        <step_completed>false</step_completed>
+        <sys_class_name>sn_nowassist_skill_config_var_set</sys_class_name>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 03:52:56</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>3995949fc3cfa610712af5f90501316a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>General details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_nowassist_skill_config_var_set_3995949fc3cfa610712af5f90501316a</sys_update_name>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 03:52:56</sys_updated_on>
+        <title/>
+        <vars/>
+    </sn_nowassist_skill_config_var_set>
+    <sys_translated_text action="delete_multiple" query="documentkey=3995949fc3cfa610712af5f90501316a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=3995949fc3cfa610712af5f90501316a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sn_nowassist_skill_config_var_set</document>
+        <document_key>3995949fc3cfa610712af5f90501316a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 03:52:56</sys_created_on>
+        <sys_id>bd95949fc3cfa610712af5f90501316a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 03:52:56</sys_updated_on>
+        <value>short_description</value>
+        <variable display_value="Fields">09d5ad7d779012103f075cea5b5a99f2</variable>
+    </sys_variable_value>
+</record_update>

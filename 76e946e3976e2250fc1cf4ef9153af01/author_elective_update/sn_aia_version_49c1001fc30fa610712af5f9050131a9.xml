@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="DELETE">
+        <condition/>
+        <instructions>Here's a structured approach to resolving incidents based on your context-gathering steps:
+
+### **Incident Resolution Process**
+
+#### **Context-Gathering Steps (Run Each Step Only Once)**
+
+## Follow these instructions step-by-step:
+
+Step 1. **Check for Related Catalog Items**
+- Determine if the incident is related to an existing catalog item (e.g., a request for service or hardware).
+- 'Find catalog item AI agent' can help with this.
+
+Step 2. **Check for Similar Incidents &amp; Knowledge Articles**
+- Look for past incidents that are similar but not classified as major.
+- Retrieve relevant knowledge base articles that might provide solutions.
+- 'ITSM incident resolution investigation AI agent' can help with this.</instructions>
+        <state>published</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 02:26:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>49c1001fc30fa610712af5f9050131a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_version_49c1001fc30fa610712af5f9050131a9</sys_update_name>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:26:19</sys_updated_on>
+        <target_id>41c1001fc30fa610712af5f9050131a7</target_id>
+        <target_table>sn_aia_usecase</target_table>
+        <version_name>V1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>b48a4d13fbf422901feef633beefdc1e</instance_id>
+        <instance_name>cpagenaipov</instance_name>
+        <name>sn_aia_version_49c1001fc30fa610712af5f9050131a9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version"><sn_aia_version action="INSERT_OR_UPDATE"><condition/><instructions>Here's a structured approach to resolving incidents based on your context-gathering steps:
+
+### **Incident Resolution Process**
+
+#### **Context-Gathering Steps (Run Each Step Only Once)**
+
+## Follow these instructions step-by-step:
+
+Step 1. **Check for Related Catalog Items**
+- Determine if the incident is related to an existing catalog item (e.g., a request for service or hardware).
+- 'Find catalog item AI agent' can help with this.
+
+Step 2. **Check for Similar Incidents &amp; Knowledge Articles**
+- Look for past incidents that are similar but not classified as major.
+- Retrieve relevant knowledge base articles that might provide solutions.
+- 'ITSM incident resolution investigation AI agent' can help with this.</instructions><state>published</state><sys_class_name>sn_aia_version</sys_class_name><sys_created_by>vincent_sutanto</sys_created_by><sys_created_on>2025-08-04 02:26:19</sys_created_on><sys_domain>global</sys_domain><sys_id>49c1001fc30fa610712af5f9050131a9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>V1</sys_name><sys_overrides/><sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package><sys_policy/><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_update_name>sn_aia_version_49c1001fc30fa610712af5f9050131a9</sys_update_name><sys_updated_by>vincent_sutanto</sys_updated_by><sys_updated_on>2025-08-04 02:26:19</sys_updated_on><target_id>41c1001fc30fa610712af5f9050131a7</target_id><target_table>sn_aia_usecase</target_table><version_name>V1</version_name><version_number>1</version_number></sn_aia_version></record_update>]]></payload>
+        <payload_hash>-936327773</payload_hash>
+        <record_name>V1</record_name>
+        <reverted_from/>
+        <source>d95efb43c30fa610712af5f905013132</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 02:26:19</sys_created_on>
+        <sys_id>01c1001fc30fa610712af5f9050131b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19872e6b6e20000001</sys_recorded_at>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:26:19</sys_updated_on>
+        <type>AIA Version</type>
+        <update_guid>81c1001f2d0fa610bd2da2011143f7b1</update_guid>
+        <update_guid_history>81c1001f2d0fa610bd2da2011143f7b1:-936327773</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="V1">7f615893c3cfa610712af5f90501315e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 03:34:47</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_version">sn_aia_version</sys_db_object>
+        <sys_id>16110f9b293f461aa94f849f0513d5f9</sys_id>
+        <sys_metadata>49c1001fc30fa610712af5f9050131a9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sn_aia_version_49c1001fc30fa610712af5f9050131a9</sys_update_name>
+        <sys_update_version display_value="sn_aia_version_49c1001fc30fa610712af5f9050131a9">01c1001fc30fa610712af5f9050131b2</sys_update_version>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 03:34:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

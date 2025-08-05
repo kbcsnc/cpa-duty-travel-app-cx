@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_gen_ai_skill">
+    <sys_gen_ai_skill action="INSERT_OR_UPDATE">
+        <enable_followup>false</enable_followup>
+        <skill_description>This agentic workflow enables fulfillers to identify the category, subcategory and configuration items for an incident automatically, and link associated major incidents or known problems.</skill_description>
+        <skill_document>1751849bc30fa610712af5f9050131cd</skill_document>
+        <skill_name>Triage and categorize ITSM incidents (Copy 2)</skill_name>
+        <skill_table>sn_aia_skill_metadata</skill_table>
+        <sys_class_name>sys_gen_ai_skill</sys_class_name>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 02:24:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>5f51089bc30fa610712af5f90501316b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sys_gen_ai_skill_5f51089bc30fa610712af5f90501316b</sys_update_name>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:24:36</sys_updated_on>
+    </sys_gen_ai_skill>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_usecase">
+    <sn_aia_usecase action="INSERT_OR_UPDATE">
+        <applicability_script><![CDATA[/** 
+ * Function to process inputs related to ServiceNow change request operations 
+ * 
+ * @param {Object} inputs - The input parameters object 
+ * @param {string} inputs.objective - The purpose or goal of the operation 
+ * @param {string} inputs.execution_plan_id - Unique identifier for the execution plan 
+ * @param {Object} inputs.context - Context information about the ServiceNow change request 
+ * @param {string} inputs.context.url - The URL of the change request in Service Operations Workspace 
+ * @param {string} inputs.context.table - The ServiceNow table name (e.g., 'change_request') 
+ * @param {string} inputs.context.record_sys_id - The sys ID of the record 
+ * @param {string} inputs.context.route - The route type (e.g., 'record') 
+ * @param {string} inputs.context.additional_context - Additional contextual information in JSON format 
+ * @param {string} inputs.context.experience - The UI experience name (e.g., 'Service Operations Workspace') 
+ * @param {string} inputs.context.number - The request number 
+ * @param {string} inputs.context.portal - The portal ID 
+ * 
+ * @returns {boolean} Returns true/false 
+ */
+(function(inputs) {
+    /** const { objective, execution_plan_id, context } = inputs; 
+    return context.table == 'incident' ; */
+    return false;
+})(inputs);]]></applicability_script>
+        <base_plan>Here's a structured approach to resolving incidents based on your context-gathering steps:
+
+### **Incident Resolution Process**
+
+#### **Context-Gathering Steps (Run Each Step Only Once)**
+
+## Follow these instructions step-by-step:
+
+Step 1. **Check for Related Catalog Items**
+- Determine if the incident is related to an existing catalog item (e.g., a request for service or hardware).
+- 'Find catalog item AI agent' can help with this.
+
+Step 2. **Check for Similar Incidents &amp; Knowledge Articles**
+- Look for past incidents that are similar but not classified as major.
+- Retrieve relevant knowledge base articles that might provide solutions.
+- 'ITSM incident resolution investigation AI agent' can help with this.</base_plan>
+        <description>This agentic workflow enables fulfillers to investigate and resolve ITSM incidents. The workflow will check for related catalog items, knowledge articles, and similar resolved incidents to generate resolution steps for the incident.</description>
+        <execution_mode>copilot</execution_mode>
+        <internal_name>global.x_snc_duty_travel.Investigate and resolve ITSM incidents (Copy 2)</internal_name>
+        <name>Investigate and resolve ITSM incidents (Copy 2)</name>
+        <parent/>
+        <record_type>custom</record_type>
+        <source_id display_value="Investigate and resolve ITSM incidents">23edd004ffc822506e06fd137c4fd9e6</source_id>
+        <strategy display_value="ReActive Planner">b264c470ff1022106c36ffffffffff67</strategy>
+        <sys_class_name>sn_aia_usecase</sys_class_name>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 02:27:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>29f1481fc30fa610712af5f9050131f1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Investigate and resolve ITSM incidents (Copy 2)</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_usecase_29f1481fc30fa610712af5f9050131f1</sys_update_name>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:27:10</sys_updated_on>
+        <team display_value="Investigate and resolve ITSM incidents (Copy 2)">69f1841fc30fa610712af5f905013118</team>
+    </sn_aia_usecase>
+</record_update>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_team_member">
+    <sn_aia_team_member action="DELETE">
+        <agent display_value="Find catalog item AI agent">ae1e78c8eb4822101163f306cad0cdb0</agent>
+        <sys_class_name>sn_aia_team_member</sys_class_name>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 02:26:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>05c1001fc30fa610712af5f9050131cb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_team_member_05c1001fc30fa610712af5f9050131cb</sys_update_name>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:26:19</sys_updated_on>
+        <team display_value="Investigate and resolve ITSM incidents (Copy)">3cc1001fc30fa610712af5f9050131a3</team>
+    </sn_aia_team_member>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>b48a4d13fbf422901feef633beefdc1e</instance_id>
+        <instance_name>cpagenaipov</instance_name>
+        <name>sn_aia_team_member_05c1001fc30fa610712af5f9050131cb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_team_member"><sn_aia_team_member action="INSERT_OR_UPDATE"><agent display_value="Find catalog item AI agent">ae1e78c8eb4822101163f306cad0cdb0</agent><sys_class_name>sn_aia_team_member</sys_class_name><sys_created_by>vincent_sutanto</sys_created_by><sys_created_on>2025-08-04 02:26:19</sys_created_on><sys_domain>global</sys_domain><sys_id>05c1001fc30fa610712af5f9050131cb</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package><sys_policy/><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_update_name>sn_aia_team_member_05c1001fc30fa610712af5f9050131cb</sys_update_name><sys_updated_by>vincent_sutanto</sys_updated_by><sys_updated_on>2025-08-04 02:26:19</sys_updated_on><team display_value="Investigate and resolve ITSM incidents (Copy)">3cc1001fc30fa610712af5f9050131a3</team></sn_aia_team_member></record_update>]]></payload>
+        <payload_hash>2030812616</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>d95efb43c30fa610712af5f905013132</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 02:26:19</sys_created_on>
+        <sys_id>09c1001fc30fa610712af5f9050131cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19872e6b81d0000001</sys_recorded_at>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:26:19</sys_updated_on>
+        <type>Team Member</type>
+        <update_guid>c9c1001f120fa610bc88baec1d1450cc</update_guid>
+        <update_guid_history>c9c1001f120fa610bc88baec1d1450cc:2030812616</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">68719893c3cfa610712af5f905013187</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 03:34:49</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_team_member">sn_aia_team_member</sys_db_object>
+        <sys_id>839cbe1991da491090c85b26b4c9fa40</sys_id>
+        <sys_metadata>05c1001fc30fa610712af5f9050131cb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sn_aia_team_member_05c1001fc30fa610712af5f9050131cb</sys_update_name>
+        <sys_update_version display_value="sn_aia_team_member_05c1001fc30fa610712af5f9050131cb">09c1001fc30fa610712af5f9050131cd</sys_update_version>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 03:34:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

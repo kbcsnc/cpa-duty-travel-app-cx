@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_trigger_configuration">
+    <sn_aia_trigger_configuration action="DELETE">
+        <active>false</active>
+        <business_rule/>
+        <channel display_value="Now Assist Panel">b023fcb3537321106167ddeeff7b12a8</channel>
+        <condition table="incident">stateCHANGESTO2^assigned_toISNOTEMPTY^EQ<item display_value="In Progress" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/>
+            <item endquery="false" field="assigned_to" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <enable_discovery>false</enable_discovery>
+        <internal_name>global.x_snc_duty_travel.Investigate and resolve ITSM incidents (Copy)</internal_name>
+        <name>Investigate and resolve ITSM incidents (Copy)</name>
+        <notification_script display_value="Show AIA notification - incident">080486e0472e2e105de26ea3a36d43fc</notification_script>
+        <objective_template><![CDATA[Help me resolve ${number}]]></objective_template>
+        <portal display_value="">undefined</portal>
+        <profile display_value="">undefined</profile>
+        <run_as>assigned_to</run_as>
+        <run_as_script/>
+        <run_dayofmonth/>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start/>
+        <run_time/>
+        <show_notifications>true</show_notifications>
+        <sys_class_name>sn_aia_trigger_configuration</sys_class_name>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 02:26:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>05c1001fc30fa610712af5f9050131ce</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_trigger_configuration_05c1001fc30fa610712af5f9050131ce</sys_update_name>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:26:21</sys_updated_on>
+        <target_table>incident</target_table>
+        <trigger_flow/>
+        <trigger_flow_definition_type>record_update</trigger_flow_definition_type>
+        <usecase display_value="">41c1001fc30fa610712af5f9050131a7</usecase>
+        <usecase_discovery>false</usecase_discovery>
+    </sn_aia_trigger_configuration>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>b48a4d13fbf422901feef633beefdc1e</instance_id>
+        <instance_name>cpagenaipov</instance_name>
+        <name>sn_aia_trigger_configuration_05c1001fc30fa610712af5f9050131ce</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sn_aia_trigger_configuration"&gt;&lt;sn_aia_trigger_configuration action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;business_rule/&gt;&lt;channel display_value="Now Assist Panel"&gt;b023fcb3537321106167ddeeff7b12a8&lt;/channel&gt;&lt;condition table="incident"&gt;stateCHANGESTO2^assigned_toISNOTEMPTY^EQ&lt;item display_value="In Progress" endquery="false" field="state" goto="false" newquery="false" operator="CHANGESTO" or="false" value="2"/&gt;&lt;item endquery="false" field="assigned_to" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/&gt;&lt;item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/&gt;&lt;/condition&gt;&lt;description/&gt;&lt;enable_discovery&gt;false&lt;/enable_discovery&gt;&lt;internal_name&gt;global.x_snc_duty_travel.Investigate and resolve ITSM incidents (Copy)&lt;/internal_name&gt;&lt;name&gt;Investigate and resolve ITSM incidents (Copy)&lt;/name&gt;&lt;notification_script display_value="Show AIA notification - incident"&gt;080486e0472e2e105de26ea3a36d43fc&lt;/notification_script&gt;&lt;objective_template&gt;&lt;![CDATA[Help me resolve ${number}]]&gt;&lt;/objective_template&gt;&lt;portal display_value=""&gt;undefined&lt;/portal&gt;&lt;profile display_value=""&gt;undefined&lt;/profile&gt;&lt;run_as&gt;assigned_to&lt;/run_as&gt;&lt;run_as_script/&gt;&lt;run_dayofmonth/&gt;&lt;run_dayofweek/&gt;&lt;run_period/&gt;&lt;run_start/&gt;&lt;run_time/&gt;&lt;show_notifications&gt;true&lt;/show_notifications&gt;&lt;sys_class_name&gt;sn_aia_trigger_configuration&lt;/sys_class_name&gt;&lt;sys_created_by&gt;vincent_sutanto&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-04 02:26:19&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_id&gt;05c1001fc30fa610712af5f9050131ce&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;incident&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Duty Travel" source="x_snc_duty_travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Duty Travel"&gt;76e946e3976e2250fc1cf4ef9153af01&lt;/sys_scope&gt;&lt;sys_update_name&gt;sn_aia_trigger_configuration_05c1001fc30fa610712af5f9050131ce&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;vincent_sutanto&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-04 02:26:21&lt;/sys_updated_on&gt;&lt;target_table&gt;incident&lt;/target_table&gt;&lt;trigger_flow/&gt;&lt;trigger_flow_definition_type&gt;record_update&lt;/trigger_flow_definition_type&gt;&lt;usecase display_value=""&gt;41c1001fc30fa610712af5f9050131a7&lt;/usecase&gt;&lt;usecase_discovery&gt;false&lt;/usecase_discovery&gt;&lt;/sn_aia_trigger_configuration&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>173943487</payload_hash>
+        <record_name>incident</record_name>
+        <reverted_from/>
+        <source>d95efb43c30fa610712af5f905013132</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 03:34:48</sys_created_on>
+        <sys_id>84715893c3cfa610712af5f9050131d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198732568ce0000001</sys_recorded_at>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 03:34:48</sys_updated_on>
+        <type>AIA Trigger Configuration</type>
+        <update_guid>85c1001f4d0fa610d4ceea86bdf24dd0</update_guid>
+        <update_guid_history>85c1001f4d0fa610d4ceea86bdf24dd0:1835764345,85c1001f4d0fa610d4ceea86bdf24dd0:1835764345</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="incident">5c719893c3cfa610712af5f905013173</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 03:34:49</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_trigger_configuration">sn_aia_trigger_configuration</sys_db_object>
+        <sys_id>06d7885967e1467980e349091e8e8061</sys_id>
+        <sys_metadata>05c1001fc30fa610712af5f9050131ce</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>incident</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sn_aia_trigger_configuration_05c1001fc30fa610712af5f9050131ce</sys_update_name>
+        <sys_update_version display_value="sn_aia_trigger_configuration_05c1001fc30fa610712af5f9050131ce">84715893c3cfa610712af5f9050131d0</sys_update_version>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 03:34:49</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

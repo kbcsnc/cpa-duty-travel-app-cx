@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="INSERT_OR_UPDATE">
+        <condition/>
+        <instructions>Here's a structured approach to resolving incidents based on your context-gathering steps:
+
+### **Incident Resolution Process**
+
+#### **Context-Gathering Steps (Run Each Step Only Once)**
+
+## Follow these instructions step-by-step:
+
+Step 1. **Check for Related Catalog Items**
+- Determine if the incident is related to an existing catalog item (e.g., a request for service or hardware).
+- 'Find catalog item AI agent' can help with this.
+
+Step 2. **Check for Similar Incidents &amp; Knowledge Articles**
+- Look for past incidents that are similar but not classified as major.
+- Retrieve relevant knowledge base articles that might provide solutions.
+- 'ITSM incident resolution investigation AI agent' can help with this.</instructions>
+        <state>published</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>vincent_sutanto</sys_created_by>
+        <sys_created_on>2025-08-04 02:27:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>2df1481fc30fa610712af5f9050131f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_version_2df1481fc30fa610712af5f9050131f2</sys_update_name>
+        <sys_updated_by>vincent_sutanto</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:27:10</sys_updated_on>
+        <target_id>29f1481fc30fa610712af5f9050131f1</target_id>
+        <target_table>sn_aia_usecase</target_table>
+        <version_name>V1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+</record_update>
