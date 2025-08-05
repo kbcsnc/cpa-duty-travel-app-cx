@@ -4,13 +4,13 @@
             <element>number</element>
             <position>0</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>4c9f7a69970fa610fc1cf4ef9153af3e</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>5cb4676bc34f2e10712af5f9050131ef</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -18,13 +18,13 @@
             <element>traveller</element>
             <position>1</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c89f7a69970fa610fc1cf4ef9153af3f</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>54b4676bc34f2e10712af5f9050131f0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -32,13 +32,13 @@
             <element>leaving_from</element>
             <position>2</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c09f7a69970fa610fc1cf4ef9153af40</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>5cb4676bc34f2e10712af5f9050131f0</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -46,13 +46,13 @@
             <element>trip_type</element>
             <position>3</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c89f7a69970fa610fc1cf4ef9153af40</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>54b4676bc34f2e10712af5f9050131f1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -60,13 +60,13 @@
             <element>departing_on</element>
             <position>4</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c09f7a69970fa610fc1cf4ef9153af41</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>5cb4676bc34f2e10712af5f9050131f1</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -74,13 +74,13 @@
             <element>ai_decision</element>
             <position>5</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c89f7a69970fa610fc1cf4ef9153af41</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>54b4676bc34f2e10712af5f9050131f2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -88,13 +88,13 @@
             <element>.split</element>
             <position>6</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c09f7a69970fa610fc1cf4ef9153af42</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>5cb4676bc34f2e10712af5f9050131f2</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type>.split</type>
         </sys_ui_element>
@@ -102,13 +102,13 @@
             <element>state</element>
             <position>7</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c89f7a69970fa610fc1cf4ef9153af42</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>54b4676bc34f2e10712af5f9050131f3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -116,13 +116,13 @@
             <element>traveller.department</element>
             <position>8</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c09f7a69970fa610fc1cf4ef9153af43</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>5cb4676bc34f2e10712af5f9050131f3</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -130,13 +130,13 @@
             <element>going_to</element>
             <position>9</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c89f7a69970fa610fc1cf4ef9153af43</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>54b4676bc34f2e10712af5f9050131f4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -144,13 +144,13 @@
             <element>cabin_class</element>
             <position>10</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c09f7a69970fa610fc1cf4ef9153af44</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>5cb4676bc34f2e10712af5f9050131f4</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -158,13 +158,13 @@
             <element>returning_on</element>
             <position>11</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c89f7a69970fa610fc1cf4ef9153af44</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>54b4676bc34f2e10712af5f9050131f5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
@@ -172,13 +172,13 @@
             <element>.end_split</element>
             <position>12</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c09f7a69970fa610fc1cf4ef9153af45</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>5cb4676bc34f2e10712af5f9050131f5</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type>.end_split</type>
         </sys_ui_element>
@@ -186,41 +186,27 @@
             <element>short_description</element>
             <position>13</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c89f7a69970fa610fc1cf4ef9153af45</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>54b4676bc34f2e10712af5f9050131f6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
-            <sys_user/>
-            <type/>
-        </sys_ui_element>
-        <sys_ui_element action="INSERT_OR_UPDATE">
-            <element>business_justification</element>
-            <position>14</position>
-            <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c09f7a69970fa610fc1cf4ef9153af46</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_ui_formatter/>
-            <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
-            <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
         <sys_ui_element action="INSERT_OR_UPDATE">
             <element>work_notes</element>
-            <position>15</position>
+            <position>14</position>
             <sys_created_by>carmen.man</sys_created_by>
-            <sys_created_on>2025-07-30 05:46:11</sys_created_on>
-            <sys_id>c89f7a69970fa610fc1cf4ef9153af46</sys_id>
+            <sys_created_on>2025-08-05 13:36:15</sys_created_on>
+            <sys_id>5cb4676bc34f2e10712af5f9050131f6</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_ui_formatter/>
             <sys_ui_section caption="NULL" display_value="" name="x_snc_duty_travel_duty_travel_req" sys_domain="global" view="Default view">33afca6b976e2250fc1cf4ef9153af73</sys_ui_section>
             <sys_updated_by>carmen.man</sys_updated_by>
-            <sys_updated_on>2025-07-30 05:46:11</sys_updated_on>
+            <sys_updated_on>2025-08-05 13:36:15</sys_updated_on>
             <sys_user/>
             <type/>
         </sys_ui_element>
