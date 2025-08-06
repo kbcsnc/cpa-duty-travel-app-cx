@@ -5,69 +5,74 @@
         <compiled_handbook>```markdown
 - **Step 1: Retrieve Duty Travel Request Details**
   - Start by identifying the duty travel request number (${number}) from the user input or context.
-  - Use the 'Retrieve Duty Travel Request' tool with the input `duty_travel_number` set to ${number} to obtain the following details: traveller sysid, traveller name, employee job grade, trip type, leaving from location, destination city, destination country, cabin class, departure date, and return date.
-  - If the tool fails to return details (e.g., invalid or missing request number), use the 'User Input' tool to prompt the user for the correct duty travel request number. Do not proceed until valid details are retrieved.
-  - If the trip duration (difference between departure and return dates) exceeds 14 days, note that a warning about potentially high estimated trip cost must be included in the summary (to be used in later communication).
+  - Use the 'Retrieve Duty Travel Request' tool with the input `duty_travel_number` set to ${number} to fetch the request details.
+  - If the tool returns the request details, extract the following: Traveller Name, Traveller Job Grade, Departing On, Returning On, Leaving From, Destination City, Destination Country, Cabin Class, and Trip Type.
+  - If the trip duration (Returning On - Departing On) exceeds 14 days, note that a warning about high estimated trip cost must be included in the summary.
+  - If the tool fails to return details or the request number is invalid, use the 'User Output' tool to inform the user that the request could not be found, then proceed to the 'Finish' step.
 
 - **Step 2: Retrieve Travel Alerts**
-  - Use the 'Retrieve Travel Alerts' tool with the input `country` set to the destination country obtained from Step 1.
-  - If a travel alert is found, capture the travel alert classification, details, and recommendations.
-  - If no travel alert is found, the tool will return "No Travel Alerts" as the classification. Proceed accordingly.
-  - If the tool fails or returns an unexpected result, use the 'User Output' tool to inform the user that travel alert information could not be retrieved, and then use the 'Finish' tool to conclude.
+  - Use the 'Retrieve Travel Alerts' tool with the input `country` set to the Destination Country obtained in Step 1.
+  - If a travel alert is found, summarize the travel alert category, alert details, and travel recommendations in no more than 60 words.
+  - If the tool returns "No Travel Alerts," proceed without a summary.
+  - If the tool fails or returns an unexpected result, use the 'User Output' tool to inform the user that travel alert information could not be retrieved, then proceed to the 'Finish' step.
 
 - **Step 3: Retrieve Traveller Historical Request and Approval Trends**
   - Use the 'Retrieve Traveller Historical Request and Approval Trends' tool with the input `traveller` set to the traveller sysid obtained from Step 1.
-  - Analyze the output to determine the count of approved and rejected requests, as well as the approved and rejected countries for the traveller.
-  - If the tool fails or returns no data, use the 'User Output' tool to inform the user that historical request data could not be retrieved, and then use the 'Finish' tool to conclude.
+  - Analyze the output to determine the traveller’s historical approval and rejection trends by country, especially focusing on the destination country.
+  - If the tool fails or returns no data, use the 'User Output' tool to inform the user that historical travel data could not be retrieved, then proceed to the 'Finish' step.
 
-- **Step 4: Retrieve and Analyze Duty Travel Policies**
-  - Use the 'Retrieve Knowledge Base on Duty Travel Policies' tool to search for relevant policy articles.
-    - Set the `query` input to keywords such as "cabin class eligibility" and "travel alert protocols" to retrieve information on cabin class guidelines and travel alert protocols.
-    - Use the default or provided values for other required fields.
-  - Extract the cabin class eligibility information and travel alert protocols from the article body.
-  - If the tool fails or no relevant policy is found, use the 'User Output' tool to inform the user that policy information could not be retrieved, and then use the 'Finish' tool to conclude.
+- **Step 4: Retrieve Duty Travel Policy and Travel Alert Policy**
+  - Use the 'Retrieve Knowledge Base on Duty Travel Policies' tool with the following inputs:
+    - `search_profile`: "sn_hr_sp_esc_search_result_configuration"
+    - `query`: "Cathay Latest Travel Policy"
+    - Other fields as per tool defaults or requirements.
+  - Extract the cabin class eligibility guidelines and protocols or policies on travel alerts (e.g., No Threat, Signs of Threat).
+  - Summarize the cabin class guidelines and travel alert recommendations in no more than 50 words.
+  - If the tool fails or no relevant policy is found, use the 'User Output' tool to inform the user that policy information could not be retrieved, then proceed to the 'Finish' step.
 
 - **Step 5: Synthesize and Analyze All Gathered Information**
-  - Use the 'Content Analysis' tool to synthesize the following:
-    - Duty travel request summary (including warning if trip duration &gt; 14 days).
-    - Travel alert summary (if any).
-    - Historical request and approval trends.
-    - Policy alignment (cabin class vs. job grade, travel alert protocols).
-  - Analyze for compliance, risk, and historical patterns. For example, if the traveller’s previous requests to the same destination country were rejected, consider recommending "AI Reject".
-  - Formulate a resolution plan (not exceeding 50 words) and a summary of cabin class guidelines and travel alert recommendations (within 50 words each).
+  - Use the 'Content Analysis' tool to synthesize all information gathered from Steps 1–4.
+  - Analyze for:
+    - Compliance of the request with cabin class guidelines based on traveller job grade.
+    - Relevance and impact of any travel alerts.
+    - Historical approval/rejection trends for the traveller and destination.
+    - Any warnings (e.g., trip duration &gt;14 days).
+  - Formulate a resolution plan (not more than 50 words) and determine the most appropriate decision: "AI Approve", "AI Reject", or "AI Suggests Executive Approval".
+  - If the analysis is inconclusive or information is insufficient, use the 'User Output' tool to inform the user that a decision cannot be made due to lack of data, then proceed to the 'Finish' step.
 
-- **Step 6: Make and Update the Duty Travel Decision**
-  - Based on the analysis in Step 5, determine the appropriate decision: "AI Approve", "AI Reject", or "AI Suggests Executive Approval".
-  - Use the 'Update Duty Travel Decision' tool with the inputs:
-    - `decision`: the selected decision.
-    - `duty_travel_number`: the request number from Step 1.
-  - If the tool fails to update the decision, use the 'User Output' tool to inform the user of the failure, and then use the 'Finish' tool to conclude.
+- **Step 6: Update Duty Travel Decision**
+  - Use the 'Update Duty Travel Decision' tool with the following inputs:
+    - `decision`: The decision determined in Step 5 ("AI Approve", "AI Reject", or "AI Suggests Executive Approval").
+    - `duty_travel_number`: ${number}
+  - Provide a verbose explanation of the decision and the reasons for it as required by the tool.
+  - If the tool fails to update the decision, use the 'User Output' tool to inform the user that the decision could not be updated, then proceed to the 'Finish' step.
 
-- **Step 7: Communicate the Decision to the Traveller**
-  - Use the 'Content Analysis' tool to draft a clear, formal email summarizing:
-    - The decision made.
-    - The rationale, including key points from the request summary, travel alerts, historical trends, and policy alignment.
-    - Any warnings (e.g., high estimated cost for long trips).
-  - Use the 'User Output' tool to send this message to the traveller via email, ensuring the tone is polite and professional as per the communication style.
-  - If the tool fails to deliver the message, use the 'User Output' tool to inform the user of the communication issue, and then use the 'Finish' tool to conclude.
+- **Step 7: Communicate Decision to Traveller**
+  - Use the 'User Output' tool to clearly communicate the decision and the reasoning behind it to the traveller via email, as specified in the instructions.
+  - Ensure the message is polite, formal, and professional, adhering to the required communication style.
+  - Do not ask questions or request input in this step.
 
-- **Step 8: Collect Additional User Input (if required)**
-  - If at any point additional information is needed from the user (e.g., missing request number, clarification on traveller identity), use the 'User Input' tool with a clear, formal prompt.
-  - Do not proceed until the required input is received.
+- **Step 8: Collect Additional Input from User (if required)**
+  - If at any point mandatory information (such as the duty travel request number) is missing or unclear, use the 'User Input' tool to prompt the user for the required information.
+  - Do not proceed with the workflow until the necessary input is obtained.
 
-- **Step 9: Finish**
-  - Once the decision has been communicated and all steps are complete, use the 'Finish' tool to conclude the execution.
+- **Step 9: Handle Unexpected Scenarios**
+  - If any tool returns an unexpected result, error, or if the scenario is not covered by the available tools, use the 'User Output' tool to inform the user that the request cannot be processed further.
+  - Proceed to the 'Finish' step.
 
-- **Tool Usage Scenarios (for completeness):**
-  - **Retrieve Duty Travel Request**: Use whenever you need to obtain details of a duty travel request by its number. Input: `duty_travel_number`. Output: all relevant travel details.
-  - **Retrieve Knowledge Base on Duty Travel Policies**: Use to search for and extract policy information, especially cabin class eligibility and travel alert protocols. Input: `query` (e.g., "cabin class eligibility"), other fields as needed.
-  - **Update Duty Travel Decision**: Use to record the AI’s decision on a duty travel request. Inputs: `decision` (AI Approve/Reject/Suggests Executive Approval), `duty_travel_number`.
-  - **Retrieve Traveller Historical Request and Approval Trends**: Use to analyze a traveller’s past travel requests and outcomes. Input: `traveller` (sysid).
-  - **Retrieve Travel Alerts**: Use to check for travel alerts for a specific destination country. Input: `country`.
-  - **Content Analysis**: Use to synthesize, summarize, or analyze information at any step requiring complex reasoning, summary, or drafting communications.
-  - **User Input**: Use to request missing or clarifying information from the user when required data is unavailable or ambiguous.
-  - **User Output**: Use to communicate information, summaries, or decisions to the user or traveller. Do not use for collecting input.
-  - **Finish**: Use only as the final step to conclude the process after all actions are complete or if an unrecoverable error occurs.
+- **Step 10: Finish**
+  - Use the 'Finish' tool to conclude the execution once the mission is complete or if the process cannot continue due to missing or invalid data.
+
+- **Tool Usage Reference**
+  - **Retrieve Duty Travel Request**: Use at the start to obtain all details of the duty travel request using the request number.
+  - **Retrieve Travel Alerts**: Use after retrieving travel request details to check for any travel alerts for the destination country.
+  - **Retrieve Traveller Historical Request and Approval Trends**: Use after retrieving the traveller’s details to analyze their historical travel request outcomes.
+  - **Retrieve Knowledge Base on Duty Travel Policies**: Use to obtain current travel policy, cabin class eligibility, and travel alert protocols.
+  - **Update Duty Travel Decision**: Use to record the AI’s decision and rationale in the duty travel request record.
+  - **Content Analysis**: Use to synthesize, analyze, or break down complex information at any step where integration or deeper understanding of multiple data points is required.
+  - **User Input**: Use whenever required information is missing or clarification is needed from the user.
+  - **User Output**: Use to communicate information, decisions, or errors to the user, but never to collect input.
+  - **Finish**: Use only as the final step to conclude the process.
 ```</compiled_handbook>
         <description>This agent streamlines the approval or rejection of duty travel requests by gathering all necessary information, including travel details, alerts, historical trends, and policy guidelines. It is designed for employees and managers involved in the duty travel process, ensuring decisions are made efficiently and in accordance with company policies.</description>
         <external_agent_configuration/>
@@ -100,13 +105,13 @@
         <sys_created_on>2025-07-30 03:26:33</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>358c9ead9787a610fc1cf4ef9153af7a</sys_id>
-        <sys_mod_count>75</sys_mod_count>
+        <sys_mod_count>78</sys_mod_count>
         <sys_name>Duty Travel Fulfillment Agent</sys_name>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
         <sys_policy/>
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
         <sys_update_name>sn_aia_agent_358c9ead9787a610fc1cf4ef9153af7a</sys_update_name>
         <sys_updated_by>carmen.man</sys_updated_by>
-        <sys_updated_on>2025-08-05 13:11:30</sys_updated_on>
+        <sys_updated_on>2025-08-06 03:57:36</sys_updated_on>
     </sn_aia_agent>
 </record_update>
