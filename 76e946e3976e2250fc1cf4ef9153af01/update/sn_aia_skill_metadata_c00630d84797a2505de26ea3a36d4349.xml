@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_skill_metadata">
+    <sn_aia_skill_metadata action="INSERT_OR_UPDATE">
+        <description>Assists employees in booking duty travel by analyzing past travel data, checking for travel alerts, suggesting optimal booking configurations, and managing the submission and approval of travel requests. Designed for corporate travelers and travel coordinators seeking a streamlined, compliant, and interactive booking experience.</description>
+        <document_id>5bdb3f88471f62505de26ea3a36d4324</document_id>
+        <document_table>sn_aia_agent</document_table>
+        <internal_name>global.x_snc_duty_travel.Duty Travel Agent (KB Testing)</internal_name>
+        <name>Duty Travel Agent (KB Testing)</name>
+        <sys_class_name>sn_aia_skill_metadata</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-07 08:48:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c00630d84797a2505de26ea3a36d4349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Duty Travel Agent (KB Testing)</sys_name>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_skill_metadata_c00630d84797a2505de26ea3a36d4349</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-07 08:48:27</sys_updated_on>
+    </sn_aia_skill_metadata>
+</record_update>

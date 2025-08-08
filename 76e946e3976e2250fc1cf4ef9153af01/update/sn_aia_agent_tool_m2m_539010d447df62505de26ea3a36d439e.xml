@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Duty Travel Agent (KB Testing)">5bdb3f88471f62505de26ea3a36d4324</agent>
+        <description>This action is responsible for requesting approval of an existing duty travel request record. It takes as parameter an existing record, updates the status to 'Pending Approval' and outputs the updated state.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Request for Approval</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_processing_script/>
+        <pre_message>Requesting for approval...</pre_message>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-07 06:05:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>539010d447df62505de26ea3a36d439e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Request for Approval</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_539010d447df62505de26ea3a36d439e</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-07 06:05:07</sys_updated_on>
+        <tool display_value="Request for Approval">aafc8711970f2610fc1cf4ef9153af34</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+</record_update>

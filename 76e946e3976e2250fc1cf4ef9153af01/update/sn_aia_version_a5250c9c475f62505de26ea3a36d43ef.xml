@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="INSERT_OR_UPDATE">
+        <condition/>
+        <instructions>Section 1: Destination Input and Analysis
+1. Check if a destination port is provided by the user.
+2.a. If no destination is provided, fetch the traveller's historical itineraries using the Get Historical Itinerary tool.
+2.b. Aggregate the top 3 most frequently visited destination ports by volume.
+2.c. Summarize each destination with request volume and justification in less than 25 words.
+2.d. Present the top 3 destinations to the traveller but suggest to proceed with the very top as destination port choice but you must prompt if the choice is OK and provide choice to change.
+
+Section 2: Travel Alert Check
+3. Convert the selected or provided destination port into a valid port name format.
+4. Identify the country associated with the destination port.
+5. Retrieve outbound travel alerts for the country using the Retrieve Travel Alerts tool.
+6. If travel alerts are present, summarize alert details and recommendations in less than 50 words (2 sections: alert details and recommendations).
+7. Present the travel alert summary to the traveller and explicitly ask for confirmation to proceed.
+8. Pause and wait for traveller confirmation before continuing if alerts exist.
+
+Section 3: Booking Configuration Suggestion
+9. Fetch the traveller's historical itineraries again to identify patterns in cabin class, business justification, departure location, trip type, and airline.
+10. Generate a suggested booking configuration based on identified patterns.
+11. Present the suggested booking configuration as a summary to the traveller.
+12. Prompt the traveller to confirm or modify the configuration.
+13. You must ask the traveller to provide new departure and optionally return date depending on the trip type and validate the business justification for the trip.
+
+Section 4: Duty Travel Request Submission
+14. Collect all confirmed details: traveller information, airline preference, departure and destination ports, trip type, cabin class, justification, and itinerary dates.
+15. You must ask explicitly the traveller to confirm readiness for submission, do not proceed otherwise.
+16. Upon explicit confirmation, create the duty travel request using the Book Duty Travel tool.
+17. You must then present a concise summary of the booking details and the URL reference for tracking before proceeding.
+
+Section 5: Approval Workflow
+18. Ask the traveller if they want to submit the request for approval.
+19. If confirmed, update the duty travel request state to 'Pending Approval'.
+20. You must present the record reference number, new state, and URL reference to the traveller.
+21. Summarize the approval submission and reference number to complete the workflow.</instructions>
+        <state>published</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-07 05:15:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>a5250c9c475f62505de26ea3a36d43ef</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_version_a5250c9c475f62505de26ea3a36d43ef</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-07 07:11:37</sys_updated_on>
+        <target_id>5bdb3f88471f62505de26ea3a36d4324</target_id>
+        <target_table>sn_aia_agent</target_table>
+        <version_name>V1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+</record_update>

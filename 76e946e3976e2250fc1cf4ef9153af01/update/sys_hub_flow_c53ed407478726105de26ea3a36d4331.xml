@@ -2,7 +2,7 @@
     <sys_hub_flow action="INSERT_OR_UPDATE">
         <access>public</access>
         <acls/>
-        <active>true</active>
+        <active>false</active>
         <annotation/>
         <attributes>intermediateFlowVersion=0.4,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=638000</attributes>
         <authored_on_release_version>27000</authored_on_release_version>
@@ -28,7 +28,7 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>published</status>
+        <status>draft</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>kinbon</sys_created_by>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c53ed407478726105de26ea3a36d4331</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Duty Travel Request - AI Agent: Outbound Travel Alert Agent - 093ed407478726105de26ea3a36d4330</sys_name>
         <sys_overrides/>
         <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
         <sys_update_name>sys_hub_flow_c53ed407478726105de26ea3a36d4331</sys_update_name>
         <sys_updated_by>kinbon</sys_updated_by>
-        <sys_updated_on>2025-08-03 10:02:45</sys_updated_on>
+        <sys_updated_on>2025-08-07 08:56:53</sys_updated_on>
         <type>flow</type>
         <updation_source/>
         <version>1</version>
@@ -289,10 +289,10 @@
         <sys_created_by>kinbon</sys_created_by>
         <sys_created_on>2025-08-03 09:52:06</sys_created_on>
         <sys_id>5d3ed407478726105de26ea3a36d4376</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_scope/>
         <sys_updated_by>kinbon</sys_updated_by>
-        <sys_updated_on>2025-08-03 10:02:44</sys_updated_on>
+        <sys_updated_on>2025-08-07 08:56:54</sys_updated_on>
         <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
         <trigger_inputs/>
         <trigger_outputs/>

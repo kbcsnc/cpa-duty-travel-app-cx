@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_team_member">
+    <sn_aia_team_member action="DELETE">
+        <agent display_value="Duty Travel Booking Agent">2b1be58c47036ad0873506f1d16d435b</agent>
+        <sys_class_name>sn_aia_team_member</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-07 08:46:07</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>317578584797a2505de26ea3a36d438f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_update_name>sn_aia_team_member_317578584797a2505de26ea3a36d438f</sys_update_name>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-07 08:46:07</sys_updated_on>
+        <team display_value="Default VA Workflow">046db51eff942210d09effffffffffdb</team>
+    </sn_aia_team_member>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</application>
+        <file_path/>
+        <instance_id>b48a4d13fbf422901feef633beefdc1e</instance_id>
+        <instance_name>cpagenaipov</instance_name>
+        <name>sn_aia_team_member_317578584797a2505de26ea3a36d438f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_team_member"><sn_aia_team_member action="INSERT_OR_UPDATE"><agent display_value="Duty Travel Booking Agent">2b1be58c47036ad0873506f1d16d435b</agent><sys_class_name>sn_aia_team_member</sys_class_name><sys_created_by>kinbon</sys_created_by><sys_created_on>2025-08-07 08:46:07</sys_created_on><sys_domain>global</sys_domain><sys_id>317578584797a2505de26ea3a36d438f</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package><sys_policy/><sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope><sys_update_name>sn_aia_team_member_317578584797a2505de26ea3a36d438f</sys_update_name><sys_updated_by>kinbon</sys_updated_by><sys_updated_on>2025-08-07 08:46:07</sys_updated_on><team display_value="Default VA Workflow">046db51eff942210d09effffffffffdb</team></sn_aia_team_member></record_update>]]></payload>
+        <payload_hash>-1651280607</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>0a1c6b2fc38f2e10712af5f905013188</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-07 08:46:07</sys_created_on>
+        <sys_id>fd7578584797a2505de26ea3a36d4391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19883b583530000001</sys_recorded_at>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-07 08:46:07</sys_updated_on>
+        <type>Team Member</type>
+        <update_guid>71757858a497a250bfd14b5f3efe5991</update_guid>
+        <update_guid_history>71757858a497a250bfd14b5f3efe5991:-1651280607</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">7be5bc984797a2505de26ea3a36d4364</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>kinbon</sys_created_by>
+        <sys_created_on>2025-08-07 08:48:10</sys_created_on>
+        <sys_db_object display_value="" name="sn_aia_team_member">sn_aia_team_member</sys_db_object>
+        <sys_id>0ab3cff202d4475f81f8da864257e279</sys_id>
+        <sys_metadata>317578584797a2505de26ea3a36d438f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Duty Travel" source="x_snc_duty_travel">76e946e3976e2250fc1cf4ef9153af01</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Duty Travel">76e946e3976e2250fc1cf4ef9153af01</sys_scope>
+        <sys_scope_delete display_value="">0cdcac447e544b2e81d61650b5dfb741</sys_scope_delete>
+        <sys_update_name>sn_aia_team_member_317578584797a2505de26ea3a36d438f</sys_update_name>
+        <sys_update_version display_value="sn_aia_team_member_317578584797a2505de26ea3a36d438f">fd7578584797a2505de26ea3a36d4391</sys_update_version>
+        <sys_updated_by>kinbon</sys_updated_by>
+        <sys_updated_on>2025-08-07 08:48:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
